@@ -1,0 +1,95 @@
+extends:
+  - eslint:recommended
+
+env:
+  es6: true
+  commonjs: true
+
+ecmaFeatures:
+  modules: true
+
+parserOptions:
+  sourceType: module
+
+rules:
+  array-bracket-spacing:
+    - error
+    - never
+
+  arrow-parens: warn
+  arrow-spacing: warn
+
+  brace-style:
+    - error
+    - 1tbs
+
+  comma-dangle:
+    - error
+    - never
+
+  comma-spacing: error
+
+  comma-style:
+    - error
+    - last
+
+  curly:
+    - error
+    - all
+
+  eqeqeq:
+    - warn
+    - smart
+
+  id-length: warn
+
+  indent:
+    - error
+    - 2
+    - SwitchCase: 1
+      MemberExpression: 1
+      FunctionDeclaration:
+        parameters: first
+      FunctionExpression:
+        parameters: first
+
+  key-spacing: error
+  keyword-spacing: error
+  linebreak-style: error
+  no-const-assign: error
+  no-duplicate-imports: error
+  no-eval: error
+  no-implied-eval: error
+  no-new-require: error
+  no-trailing-spaces: error
+  no-unsafe-negation: error
+  no-unused-vars: error
+  no-useless-rename: warn
+  no-var: warn
+
+  object-curly-spacing:
+    - error
+    - always
+
+  one-var:
+    - error
+    - initialized: never
+
+  one-var-declaration-per-line: error
+  prefer-const: warn
+  radix: warn
+  semi: error
+  semi-spacing: error
+
+  space-before-function-paren:
+    - error
+    - never
+
+  space-in-parens:
+    - error
+    - never
+
+  space-infix-ops: error
+  space-unary-ops: error
+  strict: error
+  unicode-bom: error

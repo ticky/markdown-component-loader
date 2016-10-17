@@ -1,0 +1,36 @@
+{
+  "name": "markdown-component-loader",
+  "version": "0.0.1",
+  "description": "Turn Markdown into dynamic, stateless React components",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "lint-and-fixup": "eslint --fix ."
+  },
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "react",
+    "jsx"
+  ],
+  "author": "Jessica Stokes <hello@jessicastokes.net>",
+  "license": "MIT",
+  "dependencies": {
+    "front-matter": "^2.1.0",
+    "highlight.js": "^9.6.0",
+    "markdown-it": "^7.0.1",
+    "markdown-it-regexp": "^0.4.0",
+    "sha.js": "^2.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.0",
+    "jest": "^16.0.1"
+  },
+  "peerDependencies": {
+    "react": "^15.3.2"
+  },
+  "jest": {
+    "collectCoverage": true
+  }
+}
