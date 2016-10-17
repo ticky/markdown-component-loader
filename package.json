@@ -14,6 +14,11 @@
     "react",
     "jsx"
   ],
+  "homepage": "https://github.com/ticky/markdown-component-loader",
+  "bugs": {
+    "url": "https://github.com/ticky/markdown-component-loader/issues"
+  },
+  "repository": "https://github.com/ticky/markdown-component-loader.git",
   "author": "Jessica Stokes <hello@jessicastokes.net>",
   "license": "MIT",
   "dependencies": {
