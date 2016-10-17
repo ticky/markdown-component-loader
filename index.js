@@ -78,9 +78,9 @@ module.exports = function(source) {
   return `// Module generated from markdown by ${name} v${version}
 ${imports.join(`\n`)}
 
-export default function(props) {
+export default function({className, style, ...props}) {
   return (
-    <div>
+    <div className={className} style={style}>
       ${
         markdown
           .render(body)

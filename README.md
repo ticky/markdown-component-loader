@@ -68,9 +68,9 @@ The above `mdx` file will produce the following module within Webpack;
 import React from 'react';
 import { name, version } from './package.json';
 
-export default function(props) {
+export default function({className, style, ...props}) {
   return (
-    <div>
+    <div className={className} style={style}>
       <p>This is a <em>Markdown Component</em> file. Here you can include JSX-style assignment expressions; this component was generated using version { version } of { name }!</p>
       <p>Props passed to this component are available as <code>props</code>, so you can embed those too! Hello there, { props.who || 'world' }!</p>
       <p>Another cool thing you can do is use JSX <strong>directly</strong> - here’s an SVG element, used inline: { <svg style={{ display: 'inline', height: '1em' }} width="304" height="290"><path stroke="black" d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z" /></svg> }.</p>
