@@ -2,15 +2,15 @@ exports[`Webpack loader returns a valid React module 1`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 
-export default function({className, style, ...props}) {
+export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
-      <h1>Basic Markdown Template</h1>
-      <p>This is a basic Markdown template, with no interpolations going on.</p>
-      <p>This should be</p>
-      <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+      <h1 {...elementProps[\'h1\']}>Basic Markdown Template</h1>
+      <p {...elementProps[\'p\']}>This is a basic Markdown template, with no interpolations going on.</p>
+      <p {...elementProps[\'p\']}>This should be</p>
+      <ul {...elementProps[\'ul\']}>
+      <li {...elementProps[\'li\']}>easy and;</li>
+      <li {...elementProps[\'li\']}>predictable!</li>
       </ul>
     </div>
   );
@@ -22,11 +22,11 @@ exports[`Webpack loader returns a valid React module 2`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 
-export default function({className, style, ...props}) {
+export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
-      <h1>Here\'s a code snippet with no interpolations</h1>
-      <pre><code className=\"language-shell\">npm <span className=\"hljs-keyword\">install</span> -g yarn<br /></code></pre>
+      <h1 {...elementProps[\'h1\']}>Here\'s a code snippet with no interpolations</h1>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-shell\">npm <span {...elementProps[\'span\']} className=\"hljs-keyword\">install</span> -g yarn<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
 };
@@ -37,11 +37,11 @@ exports[`Webpack loader returns a valid React module 3`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 
-export default function({className, style, ...props}) {
+export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
-      <h1>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h1>
-      <pre><code className=\"language-shell\"><span className=\"hljs-function\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-title\">rbenv</span><span className=\"hljs-params\">()</span> </span>{<br />  RUBY=blah<br />}<br /></code></pre>
+      <h1 {...elementProps[\'h1\']}>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h1>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-shell\"><span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span><span {...elementProps[\'span\']} className=\"hljs-params\">()</span> </span>{<br {...elementProps[\'br\']} />  RUBY=blah<br {...elementProps[\'br\']} />}<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
 };
@@ -52,11 +52,11 @@ exports[`Webpack loader returns a valid React module 4`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 
-export default function({className, style, ...props}) {
+export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
-      <h1>Here\'s a paragraph with a simple interpolation</h1>
-      <p>There are {Object.keys(props).length} props being supplied to this component.</p>
+      <h1 {...elementProps[\'h1\']}>Here\'s a paragraph with a simple interpolation</h1>
+      <p {...elementProps[\'p\']}>There are {Object.keys(props).length} props being supplied to this component.</p>
     </div>
   );
 };
@@ -67,11 +67,11 @@ exports[`Webpack loader returns a valid React module 5`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 
-export default function({className, style, ...props}) {
+export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
-      <h1>Here\'s a code snippet with a simple interpolation</h1>
-      <pre><code className=\"language-shell\"><span className=\"hljs-function\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-title\">rbenv</span><span className=\"hljs-params\">()</span> </span>{<br />  RUBY={props.rubycontent}<br />}<br /></code></pre>
+      <h1 {...elementProps[\'h1\']}>Here\'s a code snippet with a simple interpolation</h1>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-shell\"><span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span><span {...elementProps[\'span\']} className=\"hljs-params\">()</span> </span>{<br {...elementProps[\'br\']} />  RUBY={props.rubycontent}<br {...elementProps[\'br\']} />}<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
 };
@@ -82,14 +82,14 @@ exports[`Webpack loader returns a valid React module 6`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 
-export default function({className, style, ...props}) {
+export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
-      <h1>Markdown Template</h1>
-      <p>This is a changed {\'{Markdown}\'} template!!! {props.foo || \'{bar}\'}</p>
-      <p>If you have <a href=\"http://brew.sh/\">Homebrew</a> installed you can use our <a href=\"https://github.com/buildkite/homebrew-buildkite\">buildkite formula repository</a> to install the agent:</p>
-      <pre><code className=\"language-shell\"><span className=\"hljs-keyword\">brew </span>tap <span className=\"hljs-keyword\">buildkite/buildkite<br /></span><span className=\"hljs-keyword\">brew </span><span className=\"hljs-keyword\">install </span>--token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> <span className=\"hljs-keyword\">buildkite-agent<br /></span><br />function() {<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />}<br /></code></pre>
-      <p>If you don\'t use Homebrew you should follow the <a href=\"/docs/agent/linux\">Linux</a> install instructions.</p>
+      <h1 {...elementProps[\'h1\']}>Markdown Template</h1>
+      <p {...elementProps[\'p\']}>This is a changed {\'{Markdown}\'} template!!! {props.foo || \'{bar}\'}</p>
+      <p {...elementProps[\'p\']}>If you have <a {...elementProps[\'a\']} href=\"http://brew.sh/\">Homebrew</a> installed you can use our <a {...elementProps[\'a\']} href=\"https://github.com/buildkite/homebrew-buildkite\">buildkite formula repository</a> to install the agent:</p>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-shell\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">brew </span>tap <span {...elementProps[\'span\']} className=\"hljs-keyword\">buildkite/buildkite<br {...elementProps[\'br\']} /></span><span {...elementProps[\'span\']} className=\"hljs-keyword\">brew </span><span {...elementProps[\'span\']} className=\"hljs-keyword\">install </span>--token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> <span {...elementProps[\'span\']} className=\"hljs-keyword\">buildkite-agent<br {...elementProps[\'br\']} /></span><br {...elementProps[\'br\']} />function() {<br {...elementProps[\'br\']} />  ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />}<br {...elementProps[\'br\']} /></code></pre>
+      <p {...elementProps[\'p\']}>If you don\'t use Homebrew you should follow the <a {...elementProps[\'a\']} href=\"/docs/agent/linux\">Linux</a> install instructions.</p>
     </div>
   );
 };
@@ -102,12 +102,12 @@ import React from \'react\';
 import foo from \'./foo\';
 import { foo as Bar, baz as bat } from \'./another\';
 
-export default function({className, style, ...props}) {
+export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
-      <h1>Markdown template with imports and interpolations</h1>
-      <p>We\'re importing foo, which is {foo}.</p>
-      <p>We\'re also adding a react component here: {<Bar {...bat} style={{ foo: \'bar\' }} />}</p>
+      <h1 {...elementProps[\'h1\']}>Markdown template with imports and interpolations</h1>
+      <p {...elementProps[\'p\']}>We\'re importing foo, which is {foo}.</p>
+      <p {...elementProps[\'p\']}>We\'re also adding a react component here: {<Bar {...bat} style={{ foo: \'bar\' }} />}</p>
     </div>
   );
 };
@@ -119,12 +119,12 @@ exports[`Webpack loader returns a valid React module 8`] = `
 import React from \'react\';
 import { name, version } from \'./package.json\';
 
-export default function({className, style, ...props}) {
+export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
-      <p>This is a <em>Markdown Component</em> file. Here you can include JSX-style assignment expressions; this component was generated using version { version } of { name }!</p>
-      <p>Props passed to this component are available as <code>props</code>, so you can embed those too! Hello there, { props.who || \'world\' }!</p>
-      <p>Another cool thing you can do is use JSX <strong>directly</strong> - here\'s an SVG element, used inline: { <svg style={{ display: \'inline\', height: \'1em\' }} width=\"304\" height=\"290\"><path stroke=\"black\" d=\"M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z\" /></svg> }.</p>
+      <p {...elementProps[\'p\']}>This is a <em {...elementProps[\'em\']}>Markdown Component</em> file. Here you can include JSX-style assignment expressions; this component was generated using version { version } of { name }!</p>
+      <p {...elementProps[\'p\']}>Props passed to this component are available as <code {...elementProps[\'code\']}>props</code>, so you can embed those too! Hello there, { props.who || \'world\' }!</p>
+      <p {...elementProps[\'p\']}>Another cool thing you can do is use JSX <strong {...elementProps[\'strong\']}>directly</strong> - here\'s an SVG element, used inline: { <svg {...elementProps[\'svg\']} style={{ display: \'inline\', height: \'1em\' }} width=\"304\" height=\"290\"><path {...elementProps[\'path\']} stroke=\"black\" d=\"M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z\" /></svg> }.</p>
     </div>
   );
 };

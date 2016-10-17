@@ -4,6 +4,7 @@ const highlight = require('highlight.js');
 const RegexPlugin = require('markdown-it-regexp');
 const { name, version } = require('./package.json');
 const hash = require('sha.js');
+const ReactDOM = require('react').DOM;
 
 highlight.configure({
   useBR: true,
@@ -78,16 +79,25 @@ module.exports = function(source) {
   return `// Module generated from markdown by ${name} v${version}
 ${imports.join(`\n`)}
 
-export default function({className, style, ...props}) {
+export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
       ${
         markdown
           .render(body)
-          .replace(/class=/g, 'className=')
-          .replace(/<br>/g, '<br />')
-          .replace(/\n/g, '\n      ')
-          .replace(/\n\s+$/g, '')
+          .replace(/class=/g, 'className=') // React compatibility
+          .replace(/<br>/g, '<br />')       // More React compatibility (markdown-it doesn't let you output XHTML-style self-closers 🙃)
+          .replace(/\n/g, '\n      ')       // For pretty inspector output 🎉
+          .replace(/\n\s+$/g, '')           // Remove the trailing blank line
+          .replace(
+            /<([^\/][^\s>]*)([^/>\s]*)/g,
+            (match, tagName) => {
+              // Pass through `elementProps` to tags React knows about (the others are already under our control)
+              return (tagName in ReactDOM)
+                ? `${match} {...elementProps['${tagName}']}`
+                : match;
+            }
+          )
       }
     </div>
   );
