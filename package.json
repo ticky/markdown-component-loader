@@ -30,7 +30,8 @@
   },
   "devDependencies": {
     "eslint": "^3.8.0",
-    "jest": "^16.0.1"
+    "jest": "^16.0.1",
+    "react": "^15.3.2"
   },
   "peerDependencies": {
     "react": "^15.3.2"
