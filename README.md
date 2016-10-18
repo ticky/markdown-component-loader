@@ -66,7 +66,7 @@ _**Note**: destructuring imports must be quoted, but others need not be._
 The above `mdx` file will produce the following module within Webpack;
 
 ```javascript
-// Module generated from Markdown by markdown-component-loader v0.0.2
+// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from 'react';
 import { name, version } from './package.json';
 

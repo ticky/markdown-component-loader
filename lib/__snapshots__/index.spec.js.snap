@@ -15,7 +15,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.2
+}; // Module generated from Markdown by markdown-component-loader v0.0.3
 
 
 MarkdownComponent.defaultProps = {
@@ -73,7 +73,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.3
 
 
 var _react = require(\'react\');
@@ -129,7 +129,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.3
 
 
 var _react = require(\'react\');
@@ -215,7 +215,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.2
+}; // Module generated from Markdown by markdown-component-loader v0.0.3
 
 
 MarkdownComponent.defaultProps = {
@@ -256,7 +256,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.3
 
 
 var _react = require(\'react\');
@@ -333,7 +333,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.3
 
 
 var _react = require(\'react\');
@@ -400,7 +400,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.3
 
 
 var _react = require(\'react\');
@@ -467,7 +467,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.3
 
 
 var _react = require(\'react\');
@@ -562,7 +562,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.3
 
 
 var _react = require(\'react\');
@@ -627,7 +627,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.3
 
 
 var _react = require(\'react\');
@@ -725,7 +725,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.2
+}; // Module generated from Markdown by markdown-component-loader v0.0.3
 
 
 MarkdownComponent.defaultProps = {
@@ -761,7 +761,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.2
+}; // Module generated from Markdown by markdown-component-loader v0.0.3
 
 
 MarkdownComponent.defaultProps = {
@@ -1054,7 +1054,7 @@ exports[`Webpack loader renders as expected within React 10`] = `
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.2
+    0.0.3
      of 
     markdown-component-loader
     !
@@ -1113,7 +1113,7 @@ exports[`Webpack loader renders as expected within React 12`] = `
 `;
 
 exports[`Webpack loader returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.2
+"// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -1147,7 +1147,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader returns an expected React module 2`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.2
+"// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -1176,7 +1176,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader returns an expected React module 3`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.2
+"// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -1205,7 +1205,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader returns an expected React module 4`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.2
+"// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -1234,7 +1234,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader returns an expected React module 5`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.2
+"// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -1263,7 +1263,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader returns an expected React module 6`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.2
+"// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -1292,7 +1292,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader returns an expected React module 7`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.2
+"// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -1321,7 +1321,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader returns an expected React module 8`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.2
+"// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -1352,7 +1352,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader returns an expected React module 9`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.2
+"// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 import foo from \'foo\';
 import { foo as Bar, baz as bat } from \'another\';
@@ -1384,7 +1384,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader returns an expected React module 10`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.2
+"// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 import { name, version } from \'../package.json\';
 
@@ -1415,7 +1415,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader returns an expected React module 11`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.2
+"// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -1443,7 +1443,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader returns an expected React module 12`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.2
+"// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
