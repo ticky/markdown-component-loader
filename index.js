@@ -74,6 +74,26 @@ module.exports = function(source) {
     });
   }
 
+  let content = markdown
+    .render(body)
+    .replace(/class=/g, 'className=') // React compatibility
+    .replace(/<br>/g, '<br />')       // More React compatibility (markdown-it doesn't let you output XHTML-style self-closers 🙃)
+    .replace(/\n/g, '\n      ')       // For pretty inspector output 🎉
+    .replace(/\n\s+$/g, '')           // Remove the trailing blank line
+    .replace(
+      /<([^\/][^\s>]*)([^/>\s]*)/g,
+      (match, tagName) => {
+        // Pass through `elementProps` to tags React knows about (the others are already under our control)
+        return (tagName in ReactDOM)
+          ? `${match} {...elementProps['${tagName}']}`
+          : match;
+      }
+    );
+
+  if (!content) {
+    content = '{/* no input given */}';
+  }
+
   return `// Module generated from Markdown by ${name} v${version}
 ${imports.join(`\n`)}
 
@@ -82,23 +102,7 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      ${
-        markdown
-          .render(body)
-          .replace(/class=/g, 'className=') // React compatibility
-          .replace(/<br>/g, '<br />')       // More React compatibility (markdown-it doesn't let you output XHTML-style self-closers 🙃)
-          .replace(/\n/g, '\n      ')       // For pretty inspector output 🎉
-          .replace(/\n\s+$/g, '')           // Remove the trailing blank line
-          .replace(
-            /<([^\/][^\s>]*)([^/>\s]*)/g,
-            (match, tagName) => {
-              // Pass through `elementProps` to tags React knows about (the others are already under our control)
-              return (tagName in ReactDOM)
-                ? `${match} {...elementProps['${tagName}']}`
-                : match;
-            }
-          )
-      }
+      ${content}
     </div>
   );
 };

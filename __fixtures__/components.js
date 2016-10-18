@@ -1,6 +1,6 @@
 export default [
 
-`# Basic Markdown Template
+  `# Basic Markdown Template
 
 This is a basic Markdown template, with no interpolations going on.
 
@@ -11,14 +11,14 @@ This should be
 `,
 
 
-`# Here's a code snippet with no interpolations
+  `# Here's a code snippet with no interpolations
 
 \`\`\`bash
 npm install -g yarn
 \`\`\`
 `,
 
-`# Here's a code snippet with things which shouldn't be treated as interpolations
+  `# Here's a code snippet with things which shouldn't be treated as interpolations
 
 \`\`\`bash
 function rbenv() {
@@ -28,12 +28,12 @@ function rbenv() {
 `,
 
 
-`# Here's a paragraph with a simple interpolation
+  `# Here's a paragraph with a simple interpolation
 
 There are {{Object.keys(props).length}} props being supplied to this component.
 `,
 
-`# Here's a code snippet with a simple interpolation
+  `# Here's a code snippet with a simple interpolation
 
 \`\`\`bash
 function rbenv() {
@@ -43,7 +43,7 @@ function rbenv() {
 `,
 
 
-`# Here's an unhinted code snippet
+  `# Here's an unhinted code snippet
 
 \`\`\`
 the quick brown fox jumps over the lazy dog
@@ -51,7 +51,7 @@ the quick brown fox jumps over the lazy dog
 `,
 
 
-`# Here's an unhinted snippet with no discernible language
+  `# Here's an unhinted snippet with no discernible language
 
 \`\`\`
 )()(())
@@ -59,7 +59,7 @@ the quick brown fox jumps over the lazy dog
 `,
 
 
-`# Markdown Template
+  `# Markdown Template
 
 This is a {{'{Markdown}'}} template!!! {{props.foo || '{bar}'}}
 
@@ -74,7 +74,7 @@ function() {
 `,
 
 
-`---
+  `---
 imports:
   foo: foo
   '{ foo as Bar, baz as bat }': another
@@ -88,7 +88,7 @@ We're also adding a react component here: {{<Bar {...bat} style={{ foo: 'bar' }}
 `,
 
 
-`---
+  `---
 imports:
   '{ name, version }': ./package.json
 ---
@@ -98,5 +98,7 @@ This is a _Markdown Component_ file. Here you can include JSX-style assignment e
 Props passed to this component are available as \`props\`, so you can embed those too! Hello there, {{ props.who || 'world' }}!
 
 Another cool thing you can do is use JSX **directly** - here’s an SVG element, used inline: {{ <svg style={{ display: 'inline', height: '1em' }} viewBox="0 0 304 290"><path fill="none" stroke="currentColor" strokeWidth="16" d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z" /></svg> }}.
-`
+`,
+
+  `` // Test that empty input works as expected
 ];

@@ -708,6 +708,42 @@ MarkdownComponent.defaultProps = {
 exports.default = MarkdownComponent;"
 `;
 
+exports[`Webpack loader compiles with Babel without issue 11`] = `
+"\'use strict\';
+
+Object.defineProperty(exports, \"__esModule\", {
+  value: true
+});
+
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MarkdownComponent(props) {
+  var className = props.className;
+  var style = props.style;
+  var elementProps = props.elementProps;
+
+
+  return _react2.default.createElement(\'div\', { className: className, style: style });
+} // Module generated from Markdown by markdown-component-loader v0.0.2
+;
+
+MarkdownComponent.propTypes = {
+  className: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object,
+  elementProps: _react2.default.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+exports.default = MarkdownComponent;"
+`;
+
 exports[`Webpack loader renders as expected within React 1`] = `
 <div
   className={undefined}
@@ -1008,6 +1044,12 @@ exports[`Webpack loader renders as expected within React 10`] = `
 </div>
 `;
 
+exports[`Webpack loader renders as expected within React 11`] = `
+<div
+  className={undefined}
+  style={undefined} />
+`;
+
 exports[`Webpack loader returns an expected React module 1`] = `
 "// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from \'react\';
@@ -1292,6 +1334,34 @@ function MarkdownComponent(props) {
       <p {...elementProps[\'p\']}>This is a <em {...elementProps[\'em\']}>Markdown Component</em> file. Here you can include JSX-style assignment expressions; this component was generated using version { version } of { name }!</p>
       <p {...elementProps[\'p\']}>Props passed to this component are available as <code {...elementProps[\'code\']}>props</code>, so you can embed those too! Hello there, { props.who || \'world\' }!</p>
       <p {...elementProps[\'p\']}>Another cool thing you can do is use JSX <strong {...elementProps[\'strong\']}>directly</strong> - here’s an SVG element, used inline: { <svg {...elementProps[\'svg\']} style={{ display: \'inline\', height: \'1em\' }} viewBox=\"0 0 304 290\"><path {...elementProps[\'path\']} fill=\"none\" stroke=\"currentColor\" strokeWidth=\"16\" d=\"M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z\" /></svg> }.</p>
+    </div>
+  );
+};
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 11`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.2
+import React from \'react\';
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      {/* no input given */}
     </div>
   );
 };
