@@ -10,7 +10,7 @@ class Editor {
     this.session = this.editor.getSession();
     this.document = this.session.getDocument();
 
-    this.editor.setTheme('ace/theme/tomorrow');
+    this.editor.setTheme('ace/theme/tomorrow_night_eighties');
     this.editor.setShowPrintMargin(false);
     this.editor.commands.removeCommands(['gotoline', 'find']);
     this.$el.setAttribute('style', 'font-family: Menlo, Monaco, Consolas, "Courier New", monospace; line-height: inherit');
@@ -62,7 +62,7 @@ class REPL {
     try {
       transformed = markdownComponentLoader.call({ cacheable() {} }, code);
     } catch (err) {
-      this.printError(err.message);
+      this.printError(`Errors:\n${err.message}`);
     }
 
     if (transformed) {
