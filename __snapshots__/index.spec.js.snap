@@ -5,13 +5,17 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-exports.default = function (_ref) {
-  var className = _ref.className;
-  var style = _ref.style;
-  var _ref$elementProps = _ref.elementProps;
-  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
+var _react = require(\'react\');
 
-  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MarkdownComponent(props) {
+  var className = props.className;
+  var style = props.style;
+  var elementProps = props.elementProps;
+
 
   return _react2.default.createElement(
     \'div\',
@@ -46,18 +50,20 @@ exports.default = function (_ref) {
       )
     )
   );
+} // Module generated from Markdown by markdown-component-loader v0.0.2
+;
+
+MarkdownComponent.propTypes = {
+  className: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object,
+  elementProps: _react2.default.PropTypes.object
 };
 
-var _react = require(\'react\');
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
 
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
-
-
-;"
+exports.default = MarkdownComponent;"
 `;
 
 exports[`Webpack loader compiles with Babel without issue 2`] = `
@@ -67,15 +73,20 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
 
-exports.default = function (_ref) {
-  var className = _ref.className;
-  var style = _ref.style;
-  var _ref$elementProps = _ref.elementProps;
-  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
 
-  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MarkdownComponent(props) {
+  var className = props.className;
+  var style = props.style;
+  var elementProps = props.elementProps;
+
 
   return _react2.default.createElement(
     \'div\',
@@ -98,16 +109,17 @@ exports.default = function (_ref) {
   );
 };
 
-var _react = require(\'react\');
+MarkdownComponent.propTypes = {
+  className: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object,
+  elementProps: _react2.default.PropTypes.object
+};
 
-var _react2 = _interopRequireDefault(_react);
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
-
-
-;"
+exports.default = MarkdownComponent;"
 `;
 
 exports[`Webpack loader compiles with Babel without issue 3`] = `
@@ -117,15 +129,20 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
 
-exports.default = function (_ref) {
-  var className = _ref.className;
-  var style = _ref.style;
-  var _ref$elementProps = _ref.elementProps;
-  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
 
-  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MarkdownComponent(props) {
+  var className = props.className;
+  var style = props.style;
+  var elementProps = props.elementProps;
+
 
   return _react2.default.createElement(
     \'div\',
@@ -168,16 +185,17 @@ exports.default = function (_ref) {
   );
 };
 
-var _react = require(\'react\');
+MarkdownComponent.propTypes = {
+  className: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object,
+  elementProps: _react2.default.PropTypes.object
+};
 
-var _react2 = _interopRequireDefault(_react);
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
-
-
-;"
+exports.default = MarkdownComponent;"
 `;
 
 exports[`Webpack loader compiles with Babel without issue 4`] = `
@@ -187,13 +205,17 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-exports.default = function (_ref) {
-  var className = _ref.className;
-  var style = _ref.style;
-  var _ref$elementProps = _ref.elementProps;
-  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
+var _react = require(\'react\');
 
-  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MarkdownComponent(props) {
+  var className = props.className;
+  var style = props.style;
+  var elementProps = props.elementProps;
+
 
   return _react2.default.createElement(
     \'div\',
@@ -211,18 +233,20 @@ exports.default = function (_ref) {
       \' props being supplied to this component.\'
     )
   );
+} // Module generated from Markdown by markdown-component-loader v0.0.2
+;
+
+MarkdownComponent.propTypes = {
+  className: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object,
+  elementProps: _react2.default.PropTypes.object
 };
 
-var _react = require(\'react\');
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
 
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
-
-
-;"
+exports.default = MarkdownComponent;"
 `;
 
 exports[`Webpack loader compiles with Babel without issue 5`] = `
@@ -232,15 +256,20 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
 
-exports.default = function (_ref) {
-  var className = _ref.className;
-  var style = _ref.style;
-  var _ref$elementProps = _ref.elementProps;
-  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
 
-  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MarkdownComponent(props) {
+  var className = props.className;
+  var style = props.style;
+  var elementProps = props.elementProps;
+
 
   return _react2.default.createElement(
     \'div\',
@@ -284,16 +313,17 @@ exports.default = function (_ref) {
   );
 };
 
-var _react = require(\'react\');
+MarkdownComponent.propTypes = {
+  className: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object,
+  elementProps: _react2.default.PropTypes.object
+};
 
-var _react2 = _interopRequireDefault(_react);
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
-
-
-;"
+exports.default = MarkdownComponent;"
 `;
 
 exports[`Webpack loader compiles with Babel without issue 6`] = `
@@ -303,15 +333,20 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
 
-exports.default = function (_ref) {
-  var className = _ref.className;
-  var style = _ref.style;
-  var _ref$elementProps = _ref.elementProps;
-  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
 
-  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MarkdownComponent(props) {
+  var className = props.className;
+  var style = props.style;
+  var elementProps = props.elementProps;
+
 
   return _react2.default.createElement(
     \'div\',
@@ -345,16 +380,17 @@ exports.default = function (_ref) {
   );
 };
 
-var _react = require(\'react\');
+MarkdownComponent.propTypes = {
+  className: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object,
+  elementProps: _react2.default.PropTypes.object
+};
 
-var _react2 = _interopRequireDefault(_react);
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
-
-
-;"
+exports.default = MarkdownComponent;"
 `;
 
 exports[`Webpack loader compiles with Babel without issue 7`] = `
@@ -364,15 +400,20 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
 
-exports.default = function (_ref) {
-  var className = _ref.className;
-  var style = _ref.style;
-  var _ref$elementProps = _ref.elementProps;
-  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
 
-  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MarkdownComponent(props) {
+  var className = props.className;
+  var style = props.style;
+  var elementProps = props.elementProps;
+
 
   return _react2.default.createElement(
     \'div\',
@@ -406,16 +447,17 @@ exports.default = function (_ref) {
   );
 };
 
-var _react = require(\'react\');
+MarkdownComponent.propTypes = {
+  className: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object,
+  elementProps: _react2.default.PropTypes.object
+};
 
-var _react2 = _interopRequireDefault(_react);
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
-
-
-;"
+exports.default = MarkdownComponent;"
 `;
 
 exports[`Webpack loader compiles with Babel without issue 8`] = `
@@ -425,15 +467,20 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
 
-exports.default = function (_ref) {
-  var className = _ref.className;
-  var style = _ref.style;
-  var _ref$elementProps = _ref.elementProps;
-  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
 
-  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MarkdownComponent(props) {
+  var className = props.className;
+  var style = props.style;
+  var elementProps = props.elementProps;
+
 
   return _react2.default.createElement(
     \'div\',
@@ -495,16 +542,17 @@ exports.default = function (_ref) {
   );
 };
 
-var _react = require(\'react\');
+MarkdownComponent.propTypes = {
+  className: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object,
+  elementProps: _react2.default.PropTypes.object
+};
 
-var _react2 = _interopRequireDefault(_react);
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
-
-
-;"
+exports.default = MarkdownComponent;"
 `;
 
 exports[`Webpack loader compiles with Babel without issue 9`] = `
@@ -514,15 +562,26 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
 
-exports.default = function (_ref) {
-  var className = _ref.className;
-  var style = _ref.style;
-  var _ref$elementProps = _ref.elementProps;
-  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
 
-  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _foo = require(\'foo\');
+
+var _foo2 = _interopRequireDefault(_foo);
+
+var _another = require(\'another\');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MarkdownComponent(props) {
+  var className = props.className;
+  var style = props.style;
+  var elementProps = props.elementProps;
+
 
   return _react2.default.createElement(
     \'div\',
@@ -548,22 +607,17 @@ exports.default = function (_ref) {
   );
 };
 
-var _react = require(\'react\');
+MarkdownComponent.propTypes = {
+  className: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object,
+  elementProps: _react2.default.PropTypes.object
+};
 
-var _react2 = _interopRequireDefault(_react);
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
 
-var _foo = require(\'foo\');
-
-var _foo2 = _interopRequireDefault(_foo);
-
-var _another = require(\'another\');
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
-
-
-;"
+exports.default = MarkdownComponent;"
 `;
 
 exports[`Webpack loader compiles with Babel without issue 10`] = `
@@ -573,15 +627,22 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.2
 
-exports.default = function (_ref) {
-  var className = _ref.className;
-  var style = _ref.style;
-  var _ref$elementProps = _ref.elementProps;
-  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
 
-  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _package = require(\'./package.json\');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function MarkdownComponent(props) {
+  var className = props.className;
+  var style = props.style;
+  var elementProps = props.elementProps;
+
 
   return _react2.default.createElement(
     \'div\',
@@ -634,18 +695,17 @@ exports.default = function (_ref) {
   );
 };
 
-var _react = require(\'react\');
+MarkdownComponent.propTypes = {
+  className: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object,
+  elementProps: _react2.default.PropTypes.object
+};
 
-var _react2 = _interopRequireDefault(_react);
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
 
-var _package = require(\'./package.json\');
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
-
-
-;"
+exports.default = MarkdownComponent;"
 `;
 
 exports[`Webpack loader renders as expected within React 1`] = `
@@ -732,7 +792,7 @@ exports[`Webpack loader renders as expected within React 4`] = `
   </h1>
   <p>
     There are 
-    0
+    1
      props being supplied to this component.
   </p>
 </div>
@@ -909,7 +969,7 @@ exports[`Webpack loader renders as expected within React 10`] = `
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.1
+    0.0.2
      of 
     markdown-component-loader
     !
@@ -949,10 +1009,12 @@ exports[`Webpack loader renders as expected within React 10`] = `
 `;
 
 exports[`Webpack loader returns an expected React module 1`] = `
-"// Module generated from markdown by markdown-component-loader v0.0.1
+"// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from \'react\';
 
-export default function({className, style, elementProps = {}, ...props}) {
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Basic Markdown Template</h1>
@@ -965,14 +1027,28 @@ export default function({className, style, elementProps = {}, ...props}) {
     </div>
   );
 };
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
 "
 `;
 
 exports[`Webpack loader returns an expected React module 2`] = `
-"// Module generated from markdown by markdown-component-loader v0.0.1
+"// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from \'react\';
 
-export default function({className, style, elementProps = {}, ...props}) {
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Here\'s a code snippet with no interpolations</h1>
@@ -980,14 +1056,28 @@ export default function({className, style, elementProps = {}, ...props}) {
     </div>
   );
 };
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
 "
 `;
 
 exports[`Webpack loader returns an expected React module 3`] = `
-"// Module generated from markdown by markdown-component-loader v0.0.1
+"// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from \'react\';
 
-export default function({className, style, elementProps = {}, ...props}) {
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h1>
@@ -995,14 +1085,28 @@ export default function({className, style, elementProps = {}, ...props}) {
     </div>
   );
 };
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
 "
 `;
 
 exports[`Webpack loader returns an expected React module 4`] = `
-"// Module generated from markdown by markdown-component-loader v0.0.1
+"// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from \'react\';
 
-export default function({className, style, elementProps = {}, ...props}) {
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Here\'s a paragraph with a simple interpolation</h1>
@@ -1010,14 +1114,28 @@ export default function({className, style, elementProps = {}, ...props}) {
     </div>
   );
 };
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
 "
 `;
 
 exports[`Webpack loader returns an expected React module 5`] = `
-"// Module generated from markdown by markdown-component-loader v0.0.1
+"// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from \'react\';
 
-export default function({className, style, elementProps = {}, ...props}) {
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Here\'s a code snippet with a simple interpolation</h1>
@@ -1025,14 +1143,28 @@ export default function({className, style, elementProps = {}, ...props}) {
     </div>
   );
 };
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
 "
 `;
 
 exports[`Webpack loader returns an expected React module 6`] = `
-"// Module generated from markdown by markdown-component-loader v0.0.1
+"// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from \'react\';
 
-export default function({className, style, elementProps = {}, ...props}) {
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Here\'s an unhinted code snippet</h1>
@@ -1040,14 +1172,28 @@ export default function({className, style, elementProps = {}, ...props}) {
     </div>
   );
 };
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
 "
 `;
 
 exports[`Webpack loader returns an expected React module 7`] = `
-"// Module generated from markdown by markdown-component-loader v0.0.1
+"// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from \'react\';
 
-export default function({className, style, elementProps = {}, ...props}) {
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Here\'s an unhinted snippet with no discernible language</h1>
@@ -1055,14 +1201,28 @@ export default function({className, style, elementProps = {}, ...props}) {
     </div>
   );
 };
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
 "
 `;
 
 exports[`Webpack loader returns an expected React module 8`] = `
-"// Module generated from markdown by markdown-component-loader v0.0.1
+"// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from \'react\';
 
-export default function({className, style, elementProps = {}, ...props}) {
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Markdown Template</h1>
@@ -1072,16 +1232,30 @@ export default function({className, style, elementProps = {}, ...props}) {
     </div>
   );
 };
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
 "
 `;
 
 exports[`Webpack loader returns an expected React module 9`] = `
-"// Module generated from markdown by markdown-component-loader v0.0.1
+"// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from \'react\';
 import foo from \'foo\';
 import { foo as Bar, baz as bat } from \'another\';
 
-export default function({className, style, elementProps = {}, ...props}) {
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Markdown template with imports and interpolations</h1>
@@ -1090,15 +1264,29 @@ export default function({className, style, elementProps = {}, ...props}) {
     </div>
   );
 };
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
 "
 `;
 
 exports[`Webpack loader returns an expected React module 10`] = `
-"// Module generated from markdown by markdown-component-loader v0.0.1
+"// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from \'react\';
 import { name, version } from \'./package.json\';
 
-export default function({className, style, elementProps = {}, ...props}) {
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
   return (
     <div className={className} style={style}>
       <p {...elementProps[\'p\']}>This is a <em {...elementProps[\'em\']}>Markdown Component</em> file. Here you can include JSX-style assignment expressions; this component was generated using version { version } of { name }!</p>
@@ -1107,5 +1295,17 @@ export default function({className, style, elementProps = {}, ...props}) {
     </div>
   );
 };
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
 "
 `;

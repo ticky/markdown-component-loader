@@ -74,10 +74,12 @@ module.exports = function(source) {
     });
   }
 
-  return `// Module generated from markdown by ${name} v${version}
+  return `// Module generated from Markdown by ${name} v${version}
 ${imports.join(`\n`)}
 
-export default function({className, style, elementProps = {}, ...props}) {
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
   return (
     <div className={className} style={style}>
       ${
@@ -100,5 +102,17 @@ export default function({className, style, elementProps = {}, ...props}) {
     </div>
   );
 };
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
 `;
 };
