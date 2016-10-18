@@ -66,9 +66,19 @@ _**Note**: destructuring imports must be quoted, but others need not be._
 The above `mdx` file will produce the following module within Webpack;
 
 ```javascript
-// Module generated from markdown by markdown-component-loader v0.0.2
+// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from 'react';
 import { name, version } from './package.json';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
 
 function MarkdownComponent(props) {
   const {className, style, elementProps} = props;
@@ -80,16 +90,6 @@ function MarkdownComponent(props) {
       <p {...elementProps['p']}>Another cool thing you can do is use JSX <strong {...elementProps['strong']}>directly</strong> - here’s an SVG element, used inline: { <svg {...elementProps['svg']} style={{ display: 'inline', height: '1em' }} viewBox="0 0 304 290"><path {...elementProps['path']} fill="none" stroke="currentColor" strokeWidth="16" d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z" /></svg> }.</p>
     </div>
   );
-};
-
-MarkdownComponent.propTypes = {
-  className: React.PropTypes.string,
-  style: React.PropTypes.object,
-  elementProps: React.PropTypes.object
-};
-
-MarkdownComponent.defaultProps = {
-  elementProps: {}
 };
 
 export default MarkdownComponent;
