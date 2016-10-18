@@ -2,7 +2,7 @@
   "name": "markdown-component-loader",
   "version": "0.0.2",
   "description": "Turn Markdown into dynamic, stateless React components",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "jest",
     "build": "webpack",
