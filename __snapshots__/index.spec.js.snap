@@ -784,7 +784,7 @@ function MarkdownComponent(props) {
       _react2.default.createElement(
         \'code\',
         elementProps[\'code\'],
-        window.navigator.userAgent
+        \"foo bar\"
       )
     )
   );
@@ -1106,7 +1106,7 @@ exports[`Webpack loader renders as expected within React 12`] = `
   <p>
     This file is for testing interpolation inside other elements. 
     <code>
-      Node.js (darwin; U; rv:v6.6.0) AppleWebKit/537.36 (KHTML, like Gecko)
+      foo bar
     </code>
   </p>
 </div>
@@ -1461,7 +1461,7 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <p {...elementProps[\'p\']}>This file is for testing interpolation inside other elements. <code {...elementProps[\'code\']}>{ window.navigator.userAgent }</code></p>
+      <p {...elementProps[\'p\']}>This file is for testing interpolation inside other elements. <code {...elementProps[\'code\']}>{ \"foo bar\" }</code></p>
     </div>
   );
 };

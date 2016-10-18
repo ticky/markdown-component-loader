@@ -102,6 +102,6 @@ Another cool thing you can do is use JSX **directly** - here’s an SVG element,
 
   ``, // Test that empty input works as expected
 
-  `This file is for testing interpolation inside other elements. <code>{{ window.navigator.userAgent }}</code>
+  `This file is for testing interpolation inside other elements. <code>{{ "foo bar" }}</code>
 `
 ];
