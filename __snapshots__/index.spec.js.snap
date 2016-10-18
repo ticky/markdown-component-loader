@@ -446,27 +446,10 @@ exports.default = function (_ref) {
     _react2.default.createElement(
       \'p\',
       elementProps[\'p\'],
-      \'This is a changed \',
+      \'This is a \',
       \'{Markdown}\',
       \' template!!! \',
       props.foo || \'{bar}\'
-    ),
-    _react2.default.createElement(
-      \'p\',
-      elementProps[\'p\'],
-      \'If you have \',
-      _react2.default.createElement(
-        \'a\',
-        _extends({}, elementProps[\'a\'], { href: \'http://brew.sh/\' }),
-        \'Homebrew\'
-      ),
-      \' installed you can use our \',
-      _react2.default.createElement(
-        \'a\',
-        _extends({}, elementProps[\'a\'], { href: \'https://github.com/buildkite/homebrew-buildkite\' }),
-        \'buildkite formula repository\'
-      ),
-      \' to install the agent:\'
     ),
     _react2.default.createElement(
       \'pre\',
@@ -508,17 +491,6 @@ exports.default = function (_ref) {
         \'}\',
         _react2.default.createElement(\'br\', elementProps[\'br\'])
       )
-    ),
-    _react2.default.createElement(
-      \'p\',
-      elementProps[\'p\'],
-      \'If you don\\\'t use Homebrew you should follow the \',
-      _react2.default.createElement(
-        \'a\',
-        _extends({}, elementProps[\'a\'], { href: \'/docs/agent/linux\' }),
-        \'Linux\'
-      ),
-      \' install instructions.\'
     )
   );
 };
@@ -651,11 +623,11 @@ exports.default = function (_ref) {
         elementProps[\'strong\'],
         \'directly\'
       ),
-      \' - here\\\'s an SVG element, used inline: \',
+      \' - here\\u2019s an SVG element, used inline: \',
       _react2.default.createElement(
         \'svg\',
-        _extends({}, elementProps[\'svg\'], { style: { display: \'inline\', height: \'1em\' }, width: \'304\', height: \'290\' }),
-        _react2.default.createElement(\'path\', _extends({}, elementProps[\'path\'], { stroke: \'black\', d: \'M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z\' }))
+        _extends({}, elementProps[\'svg\'], { style: { display: \'inline\', height: \'1em\' }, viewBox: \'0 0 304 290\' }),
+        _react2.default.createElement(\'path\', _extends({}, elementProps[\'path\'], { fill: \'none\', stroke: \'currentColor\', strokeWidth: \'16\', d: \'M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z\' }))
       ),
       \'.\'
     )
@@ -858,23 +830,10 @@ exports[`Webpack loader renders as expected within React 8`] = `
     Markdown Template
   </h1>
   <p>
-    This is a changed 
+    This is a 
     {Markdown}
      template!!! 
     {bar}
-  </p>
-  <p>
-    If you have 
-    <a
-      href="http://brew.sh/">
-      Homebrew
-    </a>
-     installed you can use our 
-    <a
-      href="https://github.com/buildkite/homebrew-buildkite">
-      buildkite formula repository
-    </a>
-     to install the agent:
   </p>
   <pre>
     <code
@@ -910,14 +869,6 @@ exports[`Webpack loader renders as expected within React 8`] = `
       <br />
     </code>
   </pre>
-  <p>
-    If you don\'t use Homebrew you should follow the 
-    <a
-      href="/docs/agent/linux">
-      Linux
-    </a>
-     install instructions.
-  </p>
 </div>
 `;
 
@@ -977,19 +928,20 @@ exports[`Webpack loader renders as expected within React 10`] = `
     <strong>
       directly
     </strong>
-     - here\'s an SVG element, used inline: 
+     - here’s an SVG element, used inline: 
     <svg
-      height="290"
       style={
         Object {
           "display": "inline",
           "height": "1em",
         }
       }
-      width="304">
+      viewBox="0 0 304 290">
       <path
         d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z"
-        stroke="black" />
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="16" />
     </svg>
     .
   </p>
@@ -1114,11 +1066,9 @@ export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Markdown Template</h1>
-      <p {...elementProps[\'p\']}>This is a changed {\'{Markdown}\'} template!!! {props.foo || \'{bar}\'}</p>
-      <p {...elementProps[\'p\']}>If you have <a {...elementProps[\'a\']} href=\"http://brew.sh/\">Homebrew</a> installed you can use our <a {...elementProps[\'a\']} href=\"https://github.com/buildkite/homebrew-buildkite\">buildkite formula repository</a> to install the agent:</p>
+      <p {...elementProps[\'p\']}>This is a {\'{Markdown}\'} template!!! {props.foo || \'{bar}\'}</p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />
       <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
-      <p {...elementProps[\'p\']}>If you don\'t use Homebrew you should follow the <a {...elementProps[\'a\']} href=\"/docs/agent/linux\">Linux</a> install instructions.</p>
     </div>
   );
 };
@@ -1153,7 +1103,7 @@ export default function({className, style, elementProps = {}, ...props}) {
     <div className={className} style={style}>
       <p {...elementProps[\'p\']}>This is a <em {...elementProps[\'em\']}>Markdown Component</em> file. Here you can include JSX-style assignment expressions; this component was generated using version { version } of { name }!</p>
       <p {...elementProps[\'p\']}>Props passed to this component are available as <code {...elementProps[\'code\']}>props</code>, so you can embed those too! Hello there, { props.who || \'world\' }!</p>
-      <p {...elementProps[\'p\']}>Another cool thing you can do is use JSX <strong {...elementProps[\'strong\']}>directly</strong> - here\'s an SVG element, used inline: { <svg {...elementProps[\'svg\']} style={{ display: \'inline\', height: \'1em\' }} width=\"304\" height=\"290\"><path {...elementProps[\'path\']} stroke=\"black\" d=\"M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z\" /></svg> }.</p>
+      <p {...elementProps[\'p\']}>Another cool thing you can do is use JSX <strong {...elementProps[\'strong\']}>directly</strong> - here’s an SVG element, used inline: { <svg {...elementProps[\'svg\']} style={{ display: \'inline\', height: \'1em\' }} viewBox=\"0 0 304 290\"><path {...elementProps[\'path\']} fill=\"none\" stroke=\"currentColor\" strokeWidth=\"16\" d=\"M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z\" /></svg> }.</p>
     </div>
   );
 };
