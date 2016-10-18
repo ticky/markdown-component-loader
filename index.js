@@ -97,16 +97,6 @@ module.exports = function(source) {
   return `// Module generated from Markdown by ${name} v${version}
 ${imports.join(`\n`)}
 
-function MarkdownComponent(props) {
-  const {className, style, elementProps} = props;
-
-  return (
-    <div className={className} style={style}>
-      ${content}
-    </div>
-  );
-};
-
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
   style: React.PropTypes.object,
@@ -115,6 +105,16 @@ MarkdownComponent.propTypes = {
 
 MarkdownComponent.defaultProps = {
   elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      ${content}
+    </div>
+  );
 };
 
 export default MarkdownComponent;
