@@ -1,9 +1,15 @@
+parser: babel-eslint
+
 extends:
   - eslint:recommended
+  - plugin:react/recommended
 
 env:
   es6: true
   commonjs: true
+
+plugins:
+  - react
 
 ecmaFeatures:
   modules: true

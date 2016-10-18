@@ -39,17 +39,15 @@ const markdown = new Markdown({
       } catch (err) {} // eslint-disable-line no-empty
     }
 
+    // Quote curly braces
+    highlightedContent = highlightedContent.replace(/[\{\}]/g, (match) => `{'${match}'}`);
 
-    if (highlightedContent) {
-      // Put back the JSX assignment expressions we pulled out before returning
-      Object.keys(preprocessed_content).forEach((key) =>
-        highlightedContent = highlightedContent.replace(key, preprocessed_content[key])
-      );
+    // Put back the JSX assignment expressions we pulled out before returning
+    Object.keys(preprocessed_content).forEach((key) =>
+      highlightedContent = highlightedContent.replace(key, preprocessed_content[key])
+    );
 
-      return highlight.fixMarkup(highlightedContent);
-    }
-
-    return '';
+    return highlight.fixMarkup(highlightedContent);
   }
 });
 

@@ -1,4 +1,1002 @@
-exports[`Webpack loader returns a valid React module 1`] = `
+exports[`Webpack loader compiles with Babel without issue 1`] = `
+"\'use strict\';
+
+Object.defineProperty(exports, \"__esModule\", {
+  value: true
+});
+
+exports.default = function (_ref) {
+  var className = _ref.className;
+  var style = _ref.style;
+  var _ref$elementProps = _ref.elementProps;
+  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
+
+  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+
+  return _react2.default.createElement(
+    \'div\',
+    { className: className, style: style },
+    _react2.default.createElement(
+      \'h1\',
+      elementProps[\'h1\'],
+      \'Basic Markdown Template\'
+    ),
+    _react2.default.createElement(
+      \'p\',
+      elementProps[\'p\'],
+      \'This is a basic Markdown template, with no interpolations going on.\'
+    ),
+    _react2.default.createElement(
+      \'p\',
+      elementProps[\'p\'],
+      \'This should be\'
+    ),
+    _react2.default.createElement(
+      \'ul\',
+      elementProps[\'ul\'],
+      _react2.default.createElement(
+        \'li\',
+        elementProps[\'li\'],
+        \'easy and;\'
+      ),
+      _react2.default.createElement(
+        \'li\',
+        elementProps[\'li\'],
+        \'predictable!\'
+      )
+    )
+  );
+};
+
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
+
+
+;"
+`;
+
+exports[`Webpack loader compiles with Babel without issue 2`] = `
+"\'use strict\';
+
+Object.defineProperty(exports, \"__esModule\", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function (_ref) {
+  var className = _ref.className;
+  var style = _ref.style;
+  var _ref$elementProps = _ref.elementProps;
+  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
+
+  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+
+  return _react2.default.createElement(
+    \'div\',
+    { className: className, style: style },
+    _react2.default.createElement(
+      \'h1\',
+      elementProps[\'h1\'],
+      \'Here\\\'s a code snippet with no interpolations\'
+    ),
+    _react2.default.createElement(
+      \'pre\',
+      elementProps[\'pre\'],
+      _react2.default.createElement(
+        \'code\',
+        _extends({}, elementProps[\'code\'], { className: \'language-bash\' }),
+        \'npm install -g yarn\',
+        _react2.default.createElement(\'br\', elementProps[\'br\'])
+      )
+    )
+  );
+};
+
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
+
+
+;"
+`;
+
+exports[`Webpack loader compiles with Babel without issue 3`] = `
+"\'use strict\';
+
+Object.defineProperty(exports, \"__esModule\", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function (_ref) {
+  var className = _ref.className;
+  var style = _ref.style;
+  var _ref$elementProps = _ref.elementProps;
+  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
+
+  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+
+  return _react2.default.createElement(
+    \'div\',
+    { className: className, style: style },
+    _react2.default.createElement(
+      \'h1\',
+      elementProps[\'h1\'],
+      \'Here\\\'s a code snippet with things which shouldn\\\'t be treated as interpolations\'
+    ),
+    _react2.default.createElement(
+      \'pre\',
+      elementProps[\'pre\'],
+      _react2.default.createElement(
+        \'code\',
+        _extends({}, elementProps[\'code\'], { className: \'language-bash\' }),
+        _react2.default.createElement(
+          \'span\',
+          _extends({}, elementProps[\'span\'], { className: \'hljs-keyword\' }),
+          \'function\'
+        ),
+        \' \',
+        _react2.default.createElement(
+          \'span\',
+          _extends({}, elementProps[\'span\'], { className: \'hljs-function\' }),
+          _react2.default.createElement(
+            \'span\',
+            _extends({}, elementProps[\'span\'], { className: \'hljs-title\' }),
+            \'rbenv\'
+          )
+        ),
+        \'() \',
+        \'{\',
+        _react2.default.createElement(\'br\', elementProps[\'br\']),
+        \'  RUBY=blah\',
+        _react2.default.createElement(\'br\', elementProps[\'br\']),
+        \'}\',
+        _react2.default.createElement(\'br\', elementProps[\'br\'])
+      )
+    )
+  );
+};
+
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
+
+
+;"
+`;
+
+exports[`Webpack loader compiles with Babel without issue 4`] = `
+"\'use strict\';
+
+Object.defineProperty(exports, \"__esModule\", {
+  value: true
+});
+
+exports.default = function (_ref) {
+  var className = _ref.className;
+  var style = _ref.style;
+  var _ref$elementProps = _ref.elementProps;
+  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
+
+  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+
+  return _react2.default.createElement(
+    \'div\',
+    { className: className, style: style },
+    _react2.default.createElement(
+      \'h1\',
+      elementProps[\'h1\'],
+      \'Here\\\'s a paragraph with a simple interpolation\'
+    ),
+    _react2.default.createElement(
+      \'p\',
+      elementProps[\'p\'],
+      \'There are \',
+      Object.keys(props).length,
+      \' props being supplied to this component.\'
+    )
+  );
+};
+
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
+
+
+;"
+`;
+
+exports[`Webpack loader compiles with Babel without issue 5`] = `
+"\'use strict\';
+
+Object.defineProperty(exports, \"__esModule\", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function (_ref) {
+  var className = _ref.className;
+  var style = _ref.style;
+  var _ref$elementProps = _ref.elementProps;
+  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
+
+  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+
+  return _react2.default.createElement(
+    \'div\',
+    { className: className, style: style },
+    _react2.default.createElement(
+      \'h1\',
+      elementProps[\'h1\'],
+      \'Here\\\'s a code snippet with a simple interpolation\'
+    ),
+    _react2.default.createElement(
+      \'pre\',
+      elementProps[\'pre\'],
+      _react2.default.createElement(
+        \'code\',
+        _extends({}, elementProps[\'code\'], { className: \'language-bash\' }),
+        _react2.default.createElement(
+          \'span\',
+          _extends({}, elementProps[\'span\'], { className: \'hljs-keyword\' }),
+          \'function\'
+        ),
+        \' \',
+        _react2.default.createElement(
+          \'span\',
+          _extends({}, elementProps[\'span\'], { className: \'hljs-function\' }),
+          _react2.default.createElement(
+            \'span\',
+            _extends({}, elementProps[\'span\'], { className: \'hljs-title\' }),
+            \'rbenv\'
+          )
+        ),
+        \'() \',
+        \'{\',
+        _react2.default.createElement(\'br\', elementProps[\'br\']),
+        \'  RUBY=\',
+        props.rubycontent,
+        _react2.default.createElement(\'br\', elementProps[\'br\']),
+        \'}\',
+        _react2.default.createElement(\'br\', elementProps[\'br\'])
+      )
+    )
+  );
+};
+
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
+
+
+;"
+`;
+
+exports[`Webpack loader compiles with Babel without issue 6`] = `
+"\'use strict\';
+
+Object.defineProperty(exports, \"__esModule\", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function (_ref) {
+  var className = _ref.className;
+  var style = _ref.style;
+  var _ref$elementProps = _ref.elementProps;
+  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
+
+  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+
+  return _react2.default.createElement(
+    \'div\',
+    { className: className, style: style },
+    _react2.default.createElement(
+      \'h1\',
+      elementProps[\'h1\'],
+      \'Here\\\'s an unhinted code snippet\'
+    ),
+    _react2.default.createElement(
+      \'pre\',
+      elementProps[\'pre\'],
+      _react2.default.createElement(
+        \'code\',
+        elementProps[\'code\'],
+        _react2.default.createElement(
+          \'span\',
+          _extends({}, elementProps[\'span\'], { className: \'hljs-keyword\' }),
+          \'the\'
+        ),
+        \' quick brown fox jumps over \',
+        _react2.default.createElement(
+          \'span\',
+          _extends({}, elementProps[\'span\'], { className: \'hljs-keyword\' }),
+          \'the\'
+        ),
+        \' lazy dog\',
+        _react2.default.createElement(\'br\', elementProps[\'br\'])
+      )
+    )
+  );
+};
+
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
+
+
+;"
+`;
+
+exports[`Webpack loader compiles with Babel without issue 7`] = `
+"\'use strict\';
+
+Object.defineProperty(exports, \"__esModule\", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function (_ref) {
+  var className = _ref.className;
+  var style = _ref.style;
+  var _ref$elementProps = _ref.elementProps;
+  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
+
+  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+
+  return _react2.default.createElement(
+    \'div\',
+    { className: className, style: style },
+    _react2.default.createElement(
+      \'h1\',
+      elementProps[\'h1\'],
+      \'Here\\\'s an unhinted snippet with no discernible language\'
+    ),
+    _react2.default.createElement(
+      \'pre\',
+      elementProps[\'pre\'],
+      _react2.default.createElement(
+        \'code\',
+        elementProps[\'code\'],
+        \')\',
+        _react2.default.createElement(
+          \'span\',
+          _extends({}, elementProps[\'span\'], { className: \'hljs-comment\' }),
+          \'()\'
+        ),
+        _react2.default.createElement(
+          \'span\',
+          _extends({}, elementProps[\'span\'], { className: \'hljs-comment\' }),
+          \'(()\'
+        ),
+        \')\',
+        _react2.default.createElement(\'br\', elementProps[\'br\'])
+      )
+    )
+  );
+};
+
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
+
+
+;"
+`;
+
+exports[`Webpack loader compiles with Babel without issue 8`] = `
+"\'use strict\';
+
+Object.defineProperty(exports, \"__esModule\", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function (_ref) {
+  var className = _ref.className;
+  var style = _ref.style;
+  var _ref$elementProps = _ref.elementProps;
+  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
+
+  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+
+  return _react2.default.createElement(
+    \'div\',
+    { className: className, style: style },
+    _react2.default.createElement(
+      \'h1\',
+      elementProps[\'h1\'],
+      \'Markdown Template\'
+    ),
+    _react2.default.createElement(
+      \'p\',
+      elementProps[\'p\'],
+      \'This is a changed \',
+      \'{Markdown}\',
+      \' template!!! \',
+      props.foo || \'{bar}\'
+    ),
+    _react2.default.createElement(
+      \'p\',
+      elementProps[\'p\'],
+      \'If you have \',
+      _react2.default.createElement(
+        \'a\',
+        _extends({}, elementProps[\'a\'], { href: \'http://brew.sh/\' }),
+        \'Homebrew\'
+      ),
+      \' installed you can use our \',
+      _react2.default.createElement(
+        \'a\',
+        _extends({}, elementProps[\'a\'], { href: \'https://github.com/buildkite/homebrew-buildkite\' }),
+        \'buildkite formula repository\'
+      ),
+      \' to install the agent:\'
+    ),
+    _react2.default.createElement(
+      \'pre\',
+      elementProps[\'pre\'],
+      _react2.default.createElement(
+        \'code\',
+        _extends({}, elementProps[\'code\'], { className: \'language-bash\' }),
+        \'brew tap buildkite/buildkite\',
+        _react2.default.createElement(\'br\', elementProps[\'br\']),
+        \'brew install --token=\',
+        _react2.default.createElement(
+          \'span\',
+          _extends({}, elementProps[\'span\'], { className: \'hljs-string\' }),
+          \'\\\'\',
+          props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\',
+          \'\\\'\'
+        ),
+        \' buildkite-agent\',
+        _react2.default.createElement(\'br\', elementProps[\'br\']),
+        _react2.default.createElement(
+          \'span\',
+          _extends({}, elementProps[\'span\'], { className: \'hljs-function\' }),
+          _react2.default.createElement(
+            \'span\',
+            _extends({}, elementProps[\'span\'], { className: \'hljs-title\' }),
+            \'function\'
+          )
+        ),
+        \'() \',
+        \'{\',
+        _react2.default.createElement(\'br\', elementProps[\'br\']),
+        \'  ENV=\',
+        _react2.default.createElement(
+          \'span\',
+          _extends({}, elementProps[\'span\'], { className: \'hljs-string\' }),
+          \'\"foo_bar\"\'
+        ),
+        _react2.default.createElement(\'br\', elementProps[\'br\']),
+        \'}\',
+        _react2.default.createElement(\'br\', elementProps[\'br\'])
+      )
+    ),
+    _react2.default.createElement(
+      \'p\',
+      elementProps[\'p\'],
+      \'If you don\\\'t use Homebrew you should follow the \',
+      _react2.default.createElement(
+        \'a\',
+        _extends({}, elementProps[\'a\'], { href: \'/docs/agent/linux\' }),
+        \'Linux\'
+      ),
+      \' install instructions.\'
+    )
+  );
+};
+
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
+
+
+;"
+`;
+
+exports[`Webpack loader compiles with Babel without issue 9`] = `
+"\'use strict\';
+
+Object.defineProperty(exports, \"__esModule\", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function (_ref) {
+  var className = _ref.className;
+  var style = _ref.style;
+  var _ref$elementProps = _ref.elementProps;
+  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
+
+  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+
+  return _react2.default.createElement(
+    \'div\',
+    { className: className, style: style },
+    _react2.default.createElement(
+      \'h1\',
+      elementProps[\'h1\'],
+      \'Markdown template with imports and interpolations\'
+    ),
+    _react2.default.createElement(
+      \'p\',
+      elementProps[\'p\'],
+      \'We\\\'re importing foo, which is \',
+      _foo2.default,
+      \'.\'
+    ),
+    _react2.default.createElement(
+      \'p\',
+      elementProps[\'p\'],
+      \'We\\\'re also adding a react component here: \',
+      _react2.default.createElement(_another.foo, _extends({}, _another.baz, { style: { foo: \'bar\' } }))
+    )
+  );
+};
+
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _foo = require(\'foo\');
+
+var _foo2 = _interopRequireDefault(_foo);
+
+var _another = require(\'another\');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
+
+
+;"
+`;
+
+exports[`Webpack loader compiles with Babel without issue 10`] = `
+"\'use strict\';
+
+Object.defineProperty(exports, \"__esModule\", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+exports.default = function (_ref) {
+  var className = _ref.className;
+  var style = _ref.style;
+  var _ref$elementProps = _ref.elementProps;
+  var elementProps = _ref$elementProps === undefined ? {} : _ref$elementProps;
+
+  var props = _objectWithoutProperties(_ref, [\'className\', \'style\', \'elementProps\']);
+
+  return _react2.default.createElement(
+    \'div\',
+    { className: className, style: style },
+    _react2.default.createElement(
+      \'p\',
+      elementProps[\'p\'],
+      \'This is a \',
+      _react2.default.createElement(
+        \'em\',
+        elementProps[\'em\'],
+        \'Markdown Component\'
+      ),
+      \' file. Here you can include JSX-style assignment expressions; this component was generated using version \',
+      _package.version,
+      \' of \',
+      _package.name,
+      \'!\'
+    ),
+    _react2.default.createElement(
+      \'p\',
+      elementProps[\'p\'],
+      \'Props passed to this component are available as \',
+      _react2.default.createElement(
+        \'code\',
+        elementProps[\'code\'],
+        \'props\'
+      ),
+      \', so you can embed those too! Hello there, \',
+      props.who || \'world\',
+      \'!\'
+    ),
+    _react2.default.createElement(
+      \'p\',
+      elementProps[\'p\'],
+      \'Another cool thing you can do is use JSX \',
+      _react2.default.createElement(
+        \'strong\',
+        elementProps[\'strong\'],
+        \'directly\'
+      ),
+      \' - here\\\'s an SVG element, used inline: \',
+      _react2.default.createElement(
+        \'svg\',
+        _extends({}, elementProps[\'svg\'], { style: { display: \'inline\', height: \'1em\' }, width: \'304\', height: \'290\' }),
+        _react2.default.createElement(\'path\', _extends({}, elementProps[\'path\'], { stroke: \'black\', d: \'M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z\' }))
+      ),
+      \'.\'
+    )
+  );
+};
+
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _package = require(\'./package.json\');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; } // Module generated from markdown by markdown-component-loader v0.0.1
+
+
+;"
+`;
+
+exports[`Webpack loader renders as expected within React 1`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <h1>
+    Basic Markdown Template
+  </h1>
+  <p>
+    This is a basic Markdown template, with no interpolations going on.
+  </p>
+  <p>
+    This should be
+  </p>
+  <ul>
+    <li>
+      easy and;
+    </li>
+    <li>
+      predictable!
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Webpack loader renders as expected within React 2`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <h1>
+    Here\'s a code snippet with no interpolations
+  </h1>
+  <pre>
+    <code
+      className="language-bash">
+      npm install -g yarn
+      <br />
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`Webpack loader renders as expected within React 3`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <h1>
+    Here\'s a code snippet with things which shouldn\'t be treated as interpolations
+  </h1>
+  <pre>
+    <code
+      className="language-bash">
+      <span
+        className="hljs-keyword">
+        function
+      </span>
+       
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-title">
+          rbenv
+        </span>
+      </span>
+      () 
+      {
+      <br />
+        RUBY=blah
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`Webpack loader renders as expected within React 4`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <h1>
+    Here\'s a paragraph with a simple interpolation
+  </h1>
+  <p>
+    There are 
+    0
+     props being supplied to this component.
+  </p>
+</div>
+`;
+
+exports[`Webpack loader renders as expected within React 5`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <h1>
+    Here\'s a code snippet with a simple interpolation
+  </h1>
+  <pre>
+    <code
+      className="language-bash">
+      <span
+        className="hljs-keyword">
+        function
+      </span>
+       
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-title">
+          rbenv
+        </span>
+      </span>
+      () 
+      {
+      <br />
+        RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`Webpack loader renders as expected within React 6`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <h1>
+    Here\'s an unhinted code snippet
+  </h1>
+  <pre>
+    <code>
+      <span
+        className="hljs-keyword">
+        the
+      </span>
+       quick brown fox jumps over 
+      <span
+        className="hljs-keyword">
+        the
+      </span>
+       lazy dog
+      <br />
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`Webpack loader renders as expected within React 7`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <h1>
+    Here\'s an unhinted snippet with no discernible language
+  </h1>
+  <pre>
+    <code>
+      )
+      <span
+        className="hljs-comment">
+        ()
+      </span>
+      <span
+        className="hljs-comment">
+        (()
+      </span>
+      )
+      <br />
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`Webpack loader renders as expected within React 8`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <h1>
+    Markdown Template
+  </h1>
+  <p>
+    This is a changed 
+    {Markdown}
+     template!!! 
+    {bar}
+  </p>
+  <p>
+    If you have 
+    <a
+      href="http://brew.sh/">
+      Homebrew
+    </a>
+     installed you can use our 
+    <a
+      href="https://github.com/buildkite/homebrew-buildkite">
+      buildkite formula repository
+    </a>
+     to install the agent:
+  </p>
+  <pre>
+    <code
+      className="language-bash">
+      brew tap buildkite/buildkite
+      <br />
+      brew install --token=
+      <span
+        className="hljs-string">
+        \'
+        INSERT-YOUR-AGENT-TOKEN-HERE
+        \'
+      </span>
+       buildkite-agent
+      <br />
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-title">
+          function
+        </span>
+      </span>
+      () 
+      {
+      <br />
+        ENV=
+      <span
+        className="hljs-string">
+        \"foo_bar\"
+      </span>
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <p>
+    If you don\'t use Homebrew you should follow the 
+    <a
+      href="/docs/agent/linux">
+      Linux
+    </a>
+     install instructions.
+  </p>
+</div>
+`;
+
+exports[`Webpack loader renders as expected within React 9`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <h1>
+    Markdown template with imports and interpolations
+  </h1>
+  <p>
+    We\'re importing foo, which is 
+    bar
+    .
+  </p>
+  <p>
+    We\'re also adding a react component here: 
+    <foo
+      0="b"
+      1="a"
+      2="z"
+      style={
+        Object {
+          "foo": "bar",
+        }
+      } />
+  </p>
+</div>
+`;
+
+exports[`Webpack loader renders as expected within React 10`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <p>
+    This is a 
+    <em>
+      Markdown Component
+    </em>
+     file. Here you can include JSX-style assignment expressions; this component was generated using version 
+    0.0.1
+     of 
+    markdown-component-loader
+    !
+  </p>
+  <p>
+    Props passed to this component are available as 
+    <code>
+      props
+    </code>
+    , so you can embed those too! Hello there, 
+    world
+    !
+  </p>
+  <p>
+    Another cool thing you can do is use JSX 
+    <strong>
+      directly
+    </strong>
+     - here\'s an SVG element, used inline: 
+    <svg
+      height="290"
+      style={
+        Object {
+          "display": "inline",
+          "height": "1em",
+        }
+      }
+      width="304">
+      <path
+        d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z"
+        stroke="black" />
+    </svg>
+    .
+  </p>
+</div>
+`;
+
+exports[`Webpack loader returns an expected React module 1`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 
@@ -18,7 +1016,7 @@ export default function({className, style, elementProps = {}, ...props}) {
 "
 `;
 
-exports[`Webpack loader returns a valid React module 2`] = `
+exports[`Webpack loader returns an expected React module 2`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 
@@ -26,14 +1024,14 @@ export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Here\'s a code snippet with no interpolations</h1>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-shell\">npm <span {...elementProps[\'span\']} className=\"hljs-keyword\">install</span> -g yarn<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">npm install -g yarn<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
 };
 "
 `;
 
-exports[`Webpack loader returns a valid React module 3`] = `
+exports[`Webpack loader returns an expected React module 3`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 
@@ -41,14 +1039,14 @@ export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h1>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-shell\"><span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span><span {...elementProps[\'span\']} className=\"hljs-params\">()</span> </span>{<br {...elementProps[\'br\']} />  RUBY=blah<br {...elementProps[\'br\']} />}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY=blah<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
 };
 "
 `;
 
-exports[`Webpack loader returns a valid React module 4`] = `
+exports[`Webpack loader returns an expected React module 4`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 
@@ -63,7 +1061,7 @@ export default function({className, style, elementProps = {}, ...props}) {
 "
 `;
 
-exports[`Webpack loader returns a valid React module 5`] = `
+exports[`Webpack loader returns an expected React module 5`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 
@@ -71,14 +1069,44 @@ export default function({className, style, elementProps = {}, ...props}) {
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Here\'s a code snippet with a simple interpolation</h1>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-shell\"><span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span><span {...elementProps[\'span\']} className=\"hljs-params\">()</span> </span>{<br {...elementProps[\'br\']} />  RUBY={props.rubycontent}<br {...elementProps[\'br\']} />}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
 };
 "
 `;
 
-exports[`Webpack loader returns a valid React module 6`] = `
+exports[`Webpack loader returns an expected React module 6`] = `
+"// Module generated from markdown by markdown-component-loader v0.0.1
+import React from \'react\';
+
+export default function({className, style, elementProps = {}, ...props}) {
+  return (
+    <div className={className} style={style}>
+      <h1 {...elementProps[\'h1\']}>Here\'s an unhinted code snippet</h1>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}><span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> quick brown fox jumps over <span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> lazy dog<br {...elementProps[\'br\']} /></code></pre>
+    </div>
+  );
+};
+"
+`;
+
+exports[`Webpack loader returns an expected React module 7`] = `
+"// Module generated from markdown by markdown-component-loader v0.0.1
+import React from \'react\';
+
+export default function({className, style, elementProps = {}, ...props}) {
+  return (
+    <div className={className} style={style}>
+      <h1 {...elementProps[\'h1\']}>Here\'s an unhinted snippet with no discernible language</h1>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>)<span {...elementProps[\'span\']} className=\"hljs-comment\">()</span><span {...elementProps[\'span\']} className=\"hljs-comment\">(()</span>)<br {...elementProps[\'br\']} /></code></pre>
+    </div>
+  );
+};
+"
+`;
+
+exports[`Webpack loader returns an expected React module 8`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 
@@ -88,7 +1116,8 @@ export default function({className, style, elementProps = {}, ...props}) {
       <h1 {...elementProps[\'h1\']}>Markdown Template</h1>
       <p {...elementProps[\'p\']}>This is a changed {\'{Markdown}\'} template!!! {props.foo || \'{bar}\'}</p>
       <p {...elementProps[\'p\']}>If you have <a {...elementProps[\'a\']} href=\"http://brew.sh/\">Homebrew</a> installed you can use our <a {...elementProps[\'a\']} href=\"https://github.com/buildkite/homebrew-buildkite\">buildkite formula repository</a> to install the agent:</p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-shell\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">brew </span>tap <span {...elementProps[\'span\']} className=\"hljs-keyword\">buildkite/buildkite<br {...elementProps[\'br\']} /></span><span {...elementProps[\'span\']} className=\"hljs-keyword\">brew </span><span {...elementProps[\'span\']} className=\"hljs-keyword\">install </span>--token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> <span {...elementProps[\'span\']} className=\"hljs-keyword\">buildkite-agent<br {...elementProps[\'br\']} /></span><br {...elementProps[\'br\']} />function() {<br {...elementProps[\'br\']} />  ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />
+      <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
       <p {...elementProps[\'p\']}>If you don\'t use Homebrew you should follow the <a {...elementProps[\'a\']} href=\"/docs/agent/linux\">Linux</a> install instructions.</p>
     </div>
   );
@@ -96,11 +1125,11 @@ export default function({className, style, elementProps = {}, ...props}) {
 "
 `;
 
-exports[`Webpack loader returns a valid React module 7`] = `
+exports[`Webpack loader returns an expected React module 9`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
-import foo from \'./foo\';
-import { foo as Bar, baz as bat } from \'./another\';
+import foo from \'foo\';
+import { foo as Bar, baz as bat } from \'another\';
 
 export default function({className, style, elementProps = {}, ...props}) {
   return (
@@ -114,7 +1143,7 @@ export default function({className, style, elementProps = {}, ...props}) {
 "
 `;
 
-exports[`Webpack loader returns a valid React module 8`] = `
+exports[`Webpack loader returns an expected React module 10`] = `
 "// Module generated from markdown by markdown-component-loader v0.0.1
 import React from \'react\';
 import { name, version } from \'./package.json\';
