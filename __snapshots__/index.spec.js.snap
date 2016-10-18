@@ -104,7 +104,7 @@ function MarkdownComponent(props) {
     _react2.default.createElement(
       \'h1\',
       elementProps[\'h1\'],
-      \'Here\\\'s a code snippet with no interpolations\'
+      \'Here\\u2019s a code snippet with no interpolations\'
     ),
     _react2.default.createElement(
       \'pre\',
@@ -160,7 +160,7 @@ function MarkdownComponent(props) {
     _react2.default.createElement(
       \'h1\',
       elementProps[\'h1\'],
-      \'Here\\\'s a code snippet with things which shouldn\\\'t be treated as interpolations\'
+      \'Here\\u2019s a code snippet with things which shouldn\\u2019t be treated as interpolations\'
     ),
     _react2.default.createElement(
       \'pre\',
@@ -234,7 +234,7 @@ function MarkdownComponent(props) {
     _react2.default.createElement(
       \'h1\',
       elementProps[\'h1\'],
-      \'Here\\\'s a paragraph with a simple interpolation\'
+      \'Here\\u2019s a paragraph with a simple interpolation\'
     ),
     _react2.default.createElement(
       \'p\',
@@ -287,7 +287,7 @@ function MarkdownComponent(props) {
     _react2.default.createElement(
       \'h1\',
       elementProps[\'h1\'],
-      \'Here\\\'s a code snippet with a simple interpolation\'
+      \'Here\\u2019s a code snippet with a simple interpolation\'
     ),
     _react2.default.createElement(
       \'pre\',
@@ -364,7 +364,7 @@ function MarkdownComponent(props) {
     _react2.default.createElement(
       \'h1\',
       elementProps[\'h1\'],
-      \'Here\\\'s an unhinted code snippet\'
+      \'Here\\u2019s an unhinted code snippet\'
     ),
     _react2.default.createElement(
       \'pre\',
@@ -431,7 +431,7 @@ function MarkdownComponent(props) {
     _react2.default.createElement(
       \'h1\',
       elementProps[\'h1\'],
-      \'Here\\\'s an unhinted snippet with no discernible language\'
+      \'Here\\u2019s an unhinted snippet with no discernible language\'
     ),
     _react2.default.createElement(
       \'pre\',
@@ -604,14 +604,14 @@ function MarkdownComponent(props) {
     _react2.default.createElement(
       \'p\',
       elementProps[\'p\'],
-      \'We\\\'re importing foo, which is \',
+      \'We\\u2019re importing foo, which is \',
       _foo2.default,
       \'.\'
     ),
     _react2.default.createElement(
       \'p\',
       elementProps[\'p\'],
-      \'We\\\'re also adding a react component here: \',
+      \'We\\u2019re also adding a react component here: \',
       _react2.default.createElement(_another.foo, _extends({}, _another.baz, { style: { foo: \'bar\' } }))
     )
   );
@@ -744,6 +744,55 @@ function MarkdownComponent(props) {
 exports.default = MarkdownComponent;"
 `;
 
+exports[`Webpack loader compiles with Babel without issue 12`] = `
+"\'use strict\';
+
+Object.defineProperty(exports, \"__esModule\", {
+  value: true
+});
+
+var _react = require(\'react\');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+MarkdownComponent.propTypes = {
+  className: _react2.default.PropTypes.string,
+  style: _react2.default.PropTypes.object,
+  elementProps: _react2.default.PropTypes.object
+}; // Module generated from Markdown by markdown-component-loader v0.0.2
+
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  var className = props.className;
+  var style = props.style;
+  var elementProps = props.elementProps;
+
+
+  return _react2.default.createElement(
+    \'div\',
+    { className: className, style: style },
+    _react2.default.createElement(
+      \'p\',
+      elementProps[\'p\'],
+      \'This file is for testing interpolation inside other elements. \',
+      _react2.default.createElement(
+        \'code\',
+        elementProps[\'code\'],
+        window.navigator.userAgent
+      )
+    )
+  );
+};
+
+exports.default = MarkdownComponent;"
+`;
+
 exports[`Webpack loader renders as expected within React 1`] = `
 <div
   className={undefined}
@@ -773,7 +822,7 @@ exports[`Webpack loader renders as expected within React 2`] = `
   className={undefined}
   style={undefined}>
   <h1>
-    Here\'s a code snippet with no interpolations
+    Here’s a code snippet with no interpolations
   </h1>
   <pre>
     <code
@@ -790,7 +839,7 @@ exports[`Webpack loader renders as expected within React 3`] = `
   className={undefined}
   style={undefined}>
   <h1>
-    Here\'s a code snippet with things which shouldn\'t be treated as interpolations
+    Here’s a code snippet with things which shouldn’t be treated as interpolations
   </h1>
   <pre>
     <code
@@ -824,7 +873,7 @@ exports[`Webpack loader renders as expected within React 4`] = `
   className={undefined}
   style={undefined}>
   <h1>
-    Here\'s a paragraph with a simple interpolation
+    Here’s a paragraph with a simple interpolation
   </h1>
   <p>
     There are 
@@ -839,7 +888,7 @@ exports[`Webpack loader renders as expected within React 5`] = `
   className={undefined}
   style={undefined}>
   <h1>
-    Here\'s a code snippet with a simple interpolation
+    Here’s a code snippet with a simple interpolation
   </h1>
   <pre>
     <code
@@ -873,7 +922,7 @@ exports[`Webpack loader renders as expected within React 6`] = `
   className={undefined}
   style={undefined}>
   <h1>
-    Here\'s an unhinted code snippet
+    Here’s an unhinted code snippet
   </h1>
   <pre>
     <code>
@@ -898,7 +947,7 @@ exports[`Webpack loader renders as expected within React 7`] = `
   className={undefined}
   style={undefined}>
   <h1>
-    Here\'s an unhinted snippet with no discernible language
+    Here’s an unhinted snippet with no discernible language
   </h1>
   <pre>
     <code>
@@ -976,12 +1025,12 @@ exports[`Webpack loader renders as expected within React 9`] = `
     Markdown template with imports and interpolations
   </h1>
   <p>
-    We\'re importing foo, which is 
+    We’re importing foo, which is 
     bar
     .
   </p>
   <p>
-    We\'re also adding a react component here: 
+    We’re also adding a react component here: 
     <foo
       0="b"
       1="a"
@@ -1050,6 +1099,19 @@ exports[`Webpack loader renders as expected within React 11`] = `
   style={undefined} />
 `;
 
+exports[`Webpack loader renders as expected within React 12`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <p>
+    This file is for testing interpolation inside other elements. 
+    <code>
+      Node.js (darwin; U; rv:v6.6.0) AppleWebKit/537.36 (KHTML, like Gecko)
+    </code>
+  </p>
+</div>
+`;
+
 exports[`Webpack loader returns an expected React module 1`] = `
 "// Module generated from Markdown by markdown-component-loader v0.0.2
 import React from \'react\';
@@ -1103,7 +1165,7 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}>Here\'s a code snippet with no interpolations</h1>
+      <h1 {...elementProps[\'h1\']}>Here’s a code snippet with no interpolations</h1>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">npm install -g yarn<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
@@ -1132,7 +1194,7 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h1>
+      <h1 {...elementProps[\'h1\']}>Here’s a code snippet with things which shouldn’t be treated as interpolations</h1>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY=blah<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
@@ -1161,7 +1223,7 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}>Here\'s a paragraph with a simple interpolation</h1>
+      <h1 {...elementProps[\'h1\']}>Here’s a paragraph with a simple interpolation</h1>
       <p {...elementProps[\'p\']}>There are {Object.keys(props).length} props being supplied to this component.</p>
     </div>
   );
@@ -1190,7 +1252,7 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}>Here\'s a code snippet with a simple interpolation</h1>
+      <h1 {...elementProps[\'h1\']}>Here’s a code snippet with a simple interpolation</h1>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
@@ -1219,7 +1281,7 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}>Here\'s an unhinted code snippet</h1>
+      <h1 {...elementProps[\'h1\']}>Here’s an unhinted code snippet</h1>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}><span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> quick brown fox jumps over <span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> lazy dog<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
@@ -1248,7 +1310,7 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}>Here\'s an unhinted snippet with no discernible language</h1>
+      <h1 {...elementProps[\'h1\']}>Here’s an unhinted snippet with no discernible language</h1>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>)<span {...elementProps[\'span\']} className=\"hljs-comment\">()</span><span {...elementProps[\'span\']} className=\"hljs-comment\">(()</span>)<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
@@ -1311,8 +1373,8 @@ function MarkdownComponent(props) {
   return (
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Markdown template with imports and interpolations</h1>
-      <p {...elementProps[\'p\']}>We\'re importing foo, which is {foo}.</p>
-      <p {...elementProps[\'p\']}>We\'re also adding a react component here: {<Bar {...bat} style={{ foo: \'bar\' }} />}</p>
+      <p {...elementProps[\'p\']}>We’re importing foo, which is {foo}.</p>
+      <p {...elementProps[\'p\']}>We’re also adding a react component here: {<Bar {...bat} style={{ foo: \'bar\' }} />}</p>
     </div>
   );
 };
@@ -1372,6 +1434,34 @@ function MarkdownComponent(props) {
   return (
     <div className={className} style={style}>
       {/* no input given */}
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 12`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.2
+import React from \'react\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      <p {...elementProps[\'p\']}>This file is for testing interpolation inside other elements. <code {...elementProps[\'code\']}>{ window.navigator.userAgent }</code></p>
     </div>
   );
 };

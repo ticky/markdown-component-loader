@@ -1,7 +1,13 @@
+/* global process */
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const isDevServer = process.argv.find((arg) => arg.includes('webpack-dev-server'));
+
+const devtool = isDevServer ? "cheap-module-eval-source-map" : "source-map";
+
 module.exports = {
+  devtool,
   entry: [
     'babel-polyfill',
     './app/index.js'

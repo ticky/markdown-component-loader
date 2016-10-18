@@ -100,5 +100,8 @@ Props passed to this component are available as \`props\`, so you can embed thos
 Another cool thing you can do is use JSX **directly** - here’s an SVG element, used inline: {{ <svg style={{ display: 'inline', height: '1em' }} viewBox="0 0 304 290"><path fill="none" stroke="currentColor" strokeWidth="16" d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z" /></svg> }}.
 `,
 
-  `` // Test that empty input works as expected
+  ``, // Test that empty input works as expected
+
+  `This file is for testing interpolation inside other elements. <code>{{ window.navigator.userAgent }}</code>
+`
 ];
