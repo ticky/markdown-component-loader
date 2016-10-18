@@ -70,7 +70,9 @@ The above `mdx` file will produce the following module within Webpack;
 import React from 'react';
 import { name, version } from './package.json';
 
-export default function({className, style, elementProps = {}, ...props}) {
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
   return (
     <div className={className} style={style}>
       <p {...elementProps['p']}>This is a <em {...elementProps['em']}>Markdown Component</em> file. Here you can include JSX-style assignment expressions; this component was generated using version { version } of { name }!</p>
@@ -79,6 +81,18 @@ export default function({className, style, elementProps = {}, ...props}) {
     </div>
   );
 };
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+export default MarkdownComponent;
 
 ```
 
