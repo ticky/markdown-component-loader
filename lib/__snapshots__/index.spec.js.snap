@@ -1165,6 +1165,40 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
+      <h1 {...elementProps[\'h1\']}>Basic Markdown Template</h1>
+      <p {...elementProps[\'p\']}>This is a basic Markdown template, with no interpolations going on.</p>
+      <p {...elementProps[\'p\']}>This should be</p>
+      <ul {...elementProps[\'ul\']}>
+      <li {...elementProps[\'li\']}>easy and;</li>
+      <li {...elementProps[\'li\']}>predictable!</li>
+      </ul>
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 3`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.3
+import React from \'react\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}>Here’s a code snippet with no interpolations</h1>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">npm install -g yarn<br {...elementProps[\'br\']} /></code></pre>
     </div>
@@ -1175,7 +1209,36 @@ export default MarkdownComponent;
 "
 `;
 
-exports[`Webpack loader returns an expected React module 3`] = `
+exports[`Webpack loader returns an expected React module 4`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.3
+import React from \'react\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      <h1 {...elementProps[\'h1\']}>Here’s a code snippet with no interpolations</h1>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">npm install -g yarn<br {...elementProps[\'br\']} /></code></pre>
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 5`] = `
 "// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
@@ -1204,7 +1267,36 @@ export default MarkdownComponent;
 "
 `;
 
-exports[`Webpack loader returns an expected React module 4`] = `
+exports[`Webpack loader returns an expected React module 6`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.3
+import React from \'react\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      <h1 {...elementProps[\'h1\']}>Here’s a code snippet with things which shouldn’t be treated as interpolations</h1>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY=blah<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 7`] = `
 "// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
@@ -1233,7 +1325,36 @@ export default MarkdownComponent;
 "
 `;
 
-exports[`Webpack loader returns an expected React module 5`] = `
+exports[`Webpack loader returns an expected React module 8`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.3
+import React from \'react\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      <h1 {...elementProps[\'h1\']}>Here’s a paragraph with a simple interpolation</h1>
+      <p {...elementProps[\'p\']}>There are {Object.keys(props).length} props being supplied to this component.</p>
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 9`] = `
 "// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
@@ -1262,7 +1383,36 @@ export default MarkdownComponent;
 "
 `;
 
-exports[`Webpack loader returns an expected React module 6`] = `
+exports[`Webpack loader returns an expected React module 10`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.3
+import React from \'react\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      <h1 {...elementProps[\'h1\']}>Here’s a code snippet with a simple interpolation</h1>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 11`] = `
 "// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
@@ -1291,7 +1441,36 @@ export default MarkdownComponent;
 "
 `;
 
-exports[`Webpack loader returns an expected React module 7`] = `
+exports[`Webpack loader returns an expected React module 12`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.3
+import React from \'react\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      <h1 {...elementProps[\'h1\']}>Here’s an unhinted code snippet</h1>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}><span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> quick brown fox jumps over <span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> lazy dog<br {...elementProps[\'br\']} /></code></pre>
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 13`] = `
 "// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
@@ -1320,7 +1499,36 @@ export default MarkdownComponent;
 "
 `;
 
-exports[`Webpack loader returns an expected React module 8`] = `
+exports[`Webpack loader returns an expected React module 14`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.3
+import React from \'react\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      <h1 {...elementProps[\'h1\']}>Here’s an unhinted snippet with no discernible language</h1>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>)<span {...elementProps[\'span\']} className=\"hljs-comment\">()</span><span {...elementProps[\'span\']} className=\"hljs-comment\">(()</span>)<br {...elementProps[\'br\']} /></code></pre>
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 15`] = `
 "// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
@@ -1351,7 +1559,38 @@ export default MarkdownComponent;
 "
 `;
 
-exports[`Webpack loader returns an expected React module 9`] = `
+exports[`Webpack loader returns an expected React module 16`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.3
+import React from \'react\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      <h1 {...elementProps[\'h1\']}>Markdown Template</h1>
+      <p {...elementProps[\'p\']}>This is a {\'{Markdown}\'} template!!! {props.foo || \'{bar}\'}</p>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />
+      <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 17`] = `
 "// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 import foo from \'foo\';
@@ -1383,7 +1622,39 @@ export default MarkdownComponent;
 "
 `;
 
-exports[`Webpack loader returns an expected React module 10`] = `
+exports[`Webpack loader returns an expected React module 18`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.3
+import React from \'react\';
+import foo from \'foo\';
+import { foo as Bar, baz as bat } from \'another\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      <h1 {...elementProps[\'h1\']}>Markdown template with imports and interpolations</h1>
+      <p {...elementProps[\'p\']}>We’re importing foo, which is {foo}.</p>
+      <p {...elementProps[\'p\']}>We’re also adding a react component here: {<Bar {...bat} style={{ foo: \'bar\' }} />}</p>
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 19`] = `
 "// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 import { name, version } from \'../package.json\';
@@ -1414,7 +1685,38 @@ export default MarkdownComponent;
 "
 `;
 
-exports[`Webpack loader returns an expected React module 11`] = `
+exports[`Webpack loader returns an expected React module 20`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.3
+import React from \'react\';
+import { name, version } from \'../package.json\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      <p {...elementProps[\'p\']}>This is a <em {...elementProps[\'em\']}>Markdown Component</em> file. Here you can include JSX-style assignment expressions; this component was generated using version { version } of { name }!</p>
+      <p {...elementProps[\'p\']}>Props passed to this component are available as <code {...elementProps[\'code\']}>props</code>, so you can embed those too! Hello there, { props.who || \'world\' }!</p>
+      <p {...elementProps[\'p\']}>Another cool thing you can do is use JSX <strong {...elementProps[\'strong\']}>directly</strong> - here’s an SVG element, used inline: { <svg {...elementProps[\'svg\']} style={{ display: \'inline\', height: \'1em\' }} viewBox=\"0 0 304 290\"><path {...elementProps[\'path\']} fill=\"none\" stroke=\"currentColor\" strokeWidth=\"16\" d=\"M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z\" /></svg> }.</p>
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 21`] = `
 "// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
@@ -1442,7 +1744,63 @@ export default MarkdownComponent;
 "
 `;
 
-exports[`Webpack loader returns an expected React module 12`] = `
+exports[`Webpack loader returns an expected React module 22`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.3
+import React from \'react\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      {/* no input given */}
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 23`] = `
+"// Module generated from Markdown by markdown-component-loader v0.0.3
+import React from \'react\';
+
+MarkdownComponent.propTypes = {
+  className: React.PropTypes.string,
+  style: React.PropTypes.object,
+  elementProps: React.PropTypes.object
+};
+
+MarkdownComponent.defaultProps = {
+  elementProps: {}
+};
+
+function MarkdownComponent(props) {
+  const {className, style, elementProps} = props;
+
+  return (
+    <div className={className} style={style}>
+      <p {...elementProps[\'p\']}>This file is for testing interpolation inside other elements. <code {...elementProps[\'code\']}>{ \"foo bar\" }</code></p>
+    </div>
+  );
+};
+
+export default MarkdownComponent;
+"
+`;
+
+exports[`Webpack loader returns an expected React module 24`] = `
 "// Module generated from Markdown by markdown-component-loader v0.0.3
 import React from \'react\';
 
