@@ -3,7 +3,7 @@ node_js:
   - node
 sudo: false
 before_install:
-  - npm install -g yarn@^0.15.1
+  - npm install -g yarn@^0.16.0
 install:
   - yarn
 script:
