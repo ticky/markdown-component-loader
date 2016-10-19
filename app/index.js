@@ -60,7 +60,17 @@ class REPL {
     this.clearOutput();
 
     try {
-      transformed = markdownComponentLoader.call({ cacheable() {} }, code);
+      transformed = markdownComponentLoader.call(
+        {
+          cacheable() {},
+          options: {
+            markdownComponentLoader: {
+              passElementProps: false
+            }
+          }
+        },
+        code
+      );
     } catch (err) {
       this.printError(`Errors:\n${err.message}`);
     }

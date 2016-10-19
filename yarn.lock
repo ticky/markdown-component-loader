@@ -2700,7 +2700,7 @@ load-json-file@^1.0.0:
     pinkie-promise "^2.0.0"
     strip-bom "^2.0.0"
 
-loader-utils@^0.2.11, loader-utils@^0.2.3, loader-utils@~0.2.2:
+loader-utils, loader-utils@^0.2.11, loader-utils@^0.2.3, loader-utils@~0.2.2:
   version "0.2.16"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-0.2.16.tgz#f08632066ed8282835dff88dfb52704765adee6d"
   dependencies:
@@ -3598,6 +3598,10 @@ qs@~6.2.0:
 qs@6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.2.0.tgz#3b7848c03c2dece69a9522b0fae8c4126d745f3b"
+
+query-params:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/query-params/-/query-params-0.0.1.tgz#0af04eebd63b266b0e0971d104e0dc4ce558c604"
 
 query-string@^4.1.0:
   version "4.2.3"

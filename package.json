@@ -27,6 +27,7 @@
     "doc-chomp": "^1.0.0",
     "front-matter": "^2.1.0",
     "highlight.js": "^9.6.0",
+    "loader-utils": "^0.2.16",
     "markdown-it": "^7.0.1",
     "markdown-it-regexp": "^0.4.0",
     "sha.js": "^2.4.5"
@@ -46,6 +47,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "jest": "^16.0.1",
     "json-loader": "^0.5.4",
+    "query-params": "^0.0.1",
     "react": "^15.3.2",
     "react-test-renderer": "^15.3.2",
     "webpack": "^1.13.2",
