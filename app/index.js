@@ -1,5 +1,5 @@
 /* global ace, document */
-import markdownComponentLoader from '../lib';
+import markdownComponentLoader from '../src';
 
 require('./index.css');
 

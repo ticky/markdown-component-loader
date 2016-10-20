@@ -1,4 +1,4 @@
-const DocChomp = require('doc-chomp');
+import DocChomp from 'doc-chomp';
 
 export default [
 

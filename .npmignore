@@ -1,2 +1,7 @@
+__snapshots__
+*.spec.js
 app
 docs
+
+# `lib` is included in npm dist
+!lib

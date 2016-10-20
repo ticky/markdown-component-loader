@@ -1,26 +1,29 @@
 /* global jest, describe, expect, it */
-const markdownComponentLoader = require('./index');
-const React = require('react');
-const Babel = require('babel-core');
-const renderer = require('react-test-renderer');
-const { encode: encodeQuery } = require('query-params');
+import markdownComponentLoader from './index';
+import React from 'react';
+import { transform as BabelTransform } from 'babel-core';
+import renderer from 'react-test-renderer';
+import { encode as encodeQuery } from 'query-params';
 
+import MARKDOWN_COMPONENT_FIXTURES from './__fixtures__/components';
 const BOOL_FIXTURES = [undefined, true, false];
-const MARKDOWN_COMPONENT_FIXTURES = require('./__fixtures__/components').default;
 
 jest.mock('foo');
 
 // Call out to Babel and supply the shared configuration
-const TRANSFORM_WITH_BABEL = (code) => Babel.transform(code, require('../package.json').babel).code;
+const TRANSFORM_WITH_BABEL = (code) => BabelTransform(code, require('../package.json').babel).code;
 
 // Requires the module generated via transforming with Babel,
 // makes a simple attempt to sandbox, but either way this _is_
 // still calling `eval`, friends.
-const REQUIRE_STRING_MODULE = (code) => (function() {
-  const exports = {};
-  eval(code); // eslint-disable-line no-eval
-  return exports;
-})();
+const REQUIRE_STRING_MODULE = (code) => (
+  // We have to explicitly expose React to the `eval` context otherwise it's hidden
+  function(React) { // eslint-disable-line no-unused-vars
+    const exports = {};
+    eval(code); // eslint-disable-line no-eval
+    return exports;
+  }
+)(React);
 
 // A fake Webpack context, supplying `cacheable` so the loader
 // can still call that from this envrionment.

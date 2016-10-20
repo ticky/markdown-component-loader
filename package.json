@@ -4,6 +4,7 @@
   "description": "Turn Markdown into dynamic, stateless React components",
   "main": "lib/index.js",
   "scripts": {
+    "prepublish": "babel src --out-dir lib --source-maps inline --ignore \"**/*.spec.js,**/__fixtures__,**/__mocks__\"",
     "test": "jest",
     "build": "webpack",
     "start": "webpack-dev-server",
@@ -24,7 +25,7 @@
   "author": "Jessica Stokes <hello@jessicastokes.net>",
   "license": "MIT",
   "dependencies": {
-    "doc-chomp": "^1.0.0",
+    "doc-chomp": "1.1.0",
     "front-matter": "^2.1.0",
     "highlight.js": "^9.6.0",
     "loader-utils": "^0.2.16",
@@ -34,6 +35,7 @@
   },
   "devDependencies": {
     "babel": "^6.5.2",
+    "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
     "babel-eslint": "^7.0.0",
     "babel-jest": "^16.0.0",

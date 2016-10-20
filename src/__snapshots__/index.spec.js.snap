@@ -1063,7 +1063,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
     </li>
   </ul>
   <h2>
-    Here\'s a code snippet with no interpolations
+    Here's a code snippet with no interpolations
   </h2>
   <pre>
     <code
@@ -1073,7 +1073,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
     </code>
   </pre>
   <h2>
-    Here\'s a code snippet with things which shouldn\'t be treated as interpolations
+    Here's a code snippet with things which shouldn't be treated as interpolations
   </h2>
   <pre>
     <code
@@ -1100,7 +1100,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
     </code>
   </pre>
   <h2>
-    Here\'s a paragraph with a simple interpolation
+    Here's a paragraph with a simple interpolation
   </h2>
   <p>
     There are 
@@ -1108,7 +1108,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
      props being supplied to this component.
   </p>
   <h2>
-    Here\'s a code snippet with a simple interpolation
+    Here's a code snippet with a simple interpolation
   </h2>
   <pre>
     <code
@@ -1135,7 +1135,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted code snippet
+    Here's an unhinted code snippet
   </h2>
   <pre>
     <code>
@@ -1153,7 +1153,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted snippet with no discernible language
+    Here's an unhinted snippet with no discernible language
   </h2>
   <pre>
     <code>
@@ -1178,9 +1178,9 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       brew install --token=
       <span
         className="hljs-string">
-        \'
+        '
         INSERT-YOUR-AGENT-TOKEN-HERE
-        \'
+        '
       </span>
        buildkite-agent
       <br />
@@ -1197,7 +1197,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
         ENV=
       <span
         className="hljs-string">
-        \"foo_bar\"
+        "foo_bar"
       </span>
       <br />
       }
@@ -1356,12 +1356,12 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
     !
   </p>
   <p>
-    We\'re importing foo, which is 
+    We're importing foo, which is 
     bar
     .
   </p>
   <p>
-    We\'re also adding a react component here: 
+    We're also adding a react component here: 
     <bar
       style={
         Object {
@@ -1834,7 +1834,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
     </li>
   </ul>
   <h2>
-    Here\'s a code snippet with no interpolations
+    Here's a code snippet with no interpolations
   </h2>
   <pre>
     <code
@@ -1844,7 +1844,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
     </code>
   </pre>
   <h2>
-    Here\'s a code snippet with things which shouldn\'t be treated as interpolations
+    Here's a code snippet with things which shouldn't be treated as interpolations
   </h2>
   <pre>
     <code
@@ -1871,7 +1871,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
     </code>
   </pre>
   <h2>
-    Here\'s a paragraph with a simple interpolation
+    Here's a paragraph with a simple interpolation
   </h2>
   <p>
     There are 
@@ -1879,7 +1879,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
      props being supplied to this component.
   </p>
   <h2>
-    Here\'s a code snippet with a simple interpolation
+    Here's a code snippet with a simple interpolation
   </h2>
   <pre>
     <code
@@ -1906,7 +1906,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted code snippet
+    Here's an unhinted code snippet
   </h2>
   <pre>
     <code>
@@ -1924,7 +1924,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted snippet with no discernible language
+    Here's an unhinted snippet with no discernible language
   </h2>
   <pre>
     <code>
@@ -1949,9 +1949,9 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       brew install --token=
       <span
         className="hljs-string">
-        \'
+        '
         INSERT-YOUR-AGENT-TOKEN-HERE
-        \'
+        '
       </span>
        buildkite-agent
       <br />
@@ -1968,7 +1968,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
         ENV=
       <span
         className="hljs-string">
-        \"foo_bar\"
+        "foo_bar"
       </span>
       <br />
       }
@@ -2138,12 +2138,12 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
     !
   </p>
   <p>
-    We\'re importing foo, which is 
+    We're importing foo, which is 
     bar
     .
   </p>
   <p>
-    We\'re also adding a react component here: 
+    We're also adding a react component here: 
     <bar
       style={
         Object {
@@ -2634,7 +2634,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
     </li>
   </ul>
   <h2>
-    Here\'s a code snippet with no interpolations
+    Here's a code snippet with no interpolations
   </h2>
   <pre>
     <code
@@ -2644,7 +2644,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
     </code>
   </pre>
   <h2>
-    Here\'s a code snippet with things which shouldn\'t be treated as interpolations
+    Here's a code snippet with things which shouldn't be treated as interpolations
   </h2>
   <pre>
     <code
@@ -2671,7 +2671,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
     </code>
   </pre>
   <h2>
-    Here\'s a paragraph with a simple interpolation
+    Here's a paragraph with a simple interpolation
   </h2>
   <p>
     There are 
@@ -2679,7 +2679,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
      props being supplied to this component.
   </p>
   <h2>
-    Here\'s a code snippet with a simple interpolation
+    Here's a code snippet with a simple interpolation
   </h2>
   <pre>
     <code
@@ -2706,7 +2706,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted code snippet
+    Here's an unhinted code snippet
   </h2>
   <pre>
     <code>
@@ -2724,7 +2724,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted snippet with no discernible language
+    Here's an unhinted snippet with no discernible language
   </h2>
   <pre>
     <code>
@@ -2749,9 +2749,9 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
       brew install --token=
       <span
         className="hljs-string">
-        \'
+        '
         INSERT-YOUR-AGENT-TOKEN-HERE
-        \'
+        '
       </span>
        buildkite-agent
       <br />
@@ -2768,7 +2768,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
         ENV=
       <span
         className="hljs-string">
-        \"foo_bar\"
+        "foo_bar"
       </span>
       <br />
       }
@@ -2927,12 +2927,12 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
     !
   </p>
   <p>
-    We\'re importing foo, which is 
+    We're importing foo, which is 
     bar
     .
   </p>
   <p>
-    We\'re also adding a react component here: 
+    We're also adding a react component here: 
     <bar
       style={
         Object {
@@ -7428,7 +7428,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </li>
   </ul>
   <h2>
-    Here\'s a code snippet with no interpolations
+    Here's a code snippet with no interpolations
   </h2>
   <pre>
     <code
@@ -7438,7 +7438,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </code>
   </pre>
   <h2>
-    Here\'s a code snippet with things which shouldn\'t be treated as interpolations
+    Here's a code snippet with things which shouldn't be treated as interpolations
   </h2>
   <pre>
     <code
@@ -7465,7 +7465,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </code>
   </pre>
   <h2>
-    Here\'s a paragraph with a simple interpolation
+    Here's a paragraph with a simple interpolation
   </h2>
   <p>
     There are 
@@ -7473,7 +7473,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
      props being supplied to this component.
   </p>
   <h2>
-    Here\'s a code snippet with a simple interpolation
+    Here's a code snippet with a simple interpolation
   </h2>
   <pre>
     <code
@@ -7500,7 +7500,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted code snippet
+    Here's an unhinted code snippet
   </h2>
   <pre>
     <code>
@@ -7518,7 +7518,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted snippet with no discernible language
+    Here's an unhinted snippet with no discernible language
   </h2>
   <pre>
     <code>
@@ -7543,9 +7543,9 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       brew install --token=
       <span
         className="hljs-string">
-        \'
+        '
         INSERT-YOUR-AGENT-TOKEN-HERE
-        \'
+        '
       </span>
        buildkite-agent
       <br />
@@ -7562,7 +7562,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
         ENV=
       <span
         className="hljs-string">
-        \"foo_bar\"
+        "foo_bar"
       </span>
       <br />
       }
@@ -7721,12 +7721,12 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     !
   </p>
   <p>
-    We\'re importing foo, which is 
+    We're importing foo, which is 
     bar
     .
   </p>
   <p>
-    We\'re also adding a react component here: 
+    We're also adding a react component here: 
     <bar
       style={
         Object {
@@ -8199,7 +8199,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </li>
   </ul>
   <h2>
-    Here\'s a code snippet with no interpolations
+    Here's a code snippet with no interpolations
   </h2>
   <pre>
     <code
@@ -8209,7 +8209,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </code>
   </pre>
   <h2>
-    Here\'s a code snippet with things which shouldn\'t be treated as interpolations
+    Here's a code snippet with things which shouldn't be treated as interpolations
   </h2>
   <pre>
     <code
@@ -8236,7 +8236,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </code>
   </pre>
   <h2>
-    Here\'s a paragraph with a simple interpolation
+    Here's a paragraph with a simple interpolation
   </h2>
   <p>
     There are 
@@ -8244,7 +8244,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
      props being supplied to this component.
   </p>
   <h2>
-    Here\'s a code snippet with a simple interpolation
+    Here's a code snippet with a simple interpolation
   </h2>
   <pre>
     <code
@@ -8271,7 +8271,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted code snippet
+    Here's an unhinted code snippet
   </h2>
   <pre>
     <code>
@@ -8289,7 +8289,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted snippet with no discernible language
+    Here's an unhinted snippet with no discernible language
   </h2>
   <pre>
     <code>
@@ -8314,9 +8314,9 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       brew install --token=
       <span
         className="hljs-string">
-        \'
+        '
         INSERT-YOUR-AGENT-TOKEN-HERE
-        \'
+        '
       </span>
        buildkite-agent
       <br />
@@ -8333,7 +8333,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
         ENV=
       <span
         className="hljs-string">
-        \"foo_bar\"
+        "foo_bar"
       </span>
       <br />
       }
@@ -8503,12 +8503,12 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     !
   </p>
   <p>
-    We\'re importing foo, which is 
+    We're importing foo, which is 
     bar
     .
   </p>
   <p>
-    We\'re also adding a react component here: 
+    We're also adding a react component here: 
     <bar
       style={
         Object {
@@ -8999,7 +8999,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </li>
   </ul>
   <h2>
-    Here\'s a code snippet with no interpolations
+    Here's a code snippet with no interpolations
   </h2>
   <pre>
     <code
@@ -9009,7 +9009,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </code>
   </pre>
   <h2>
-    Here\'s a code snippet with things which shouldn\'t be treated as interpolations
+    Here's a code snippet with things which shouldn't be treated as interpolations
   </h2>
   <pre>
     <code
@@ -9036,7 +9036,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </code>
   </pre>
   <h2>
-    Here\'s a paragraph with a simple interpolation
+    Here's a paragraph with a simple interpolation
   </h2>
   <p>
     There are 
@@ -9044,7 +9044,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
      props being supplied to this component.
   </p>
   <h2>
-    Here\'s a code snippet with a simple interpolation
+    Here's a code snippet with a simple interpolation
   </h2>
   <pre>
     <code
@@ -9071,7 +9071,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted code snippet
+    Here's an unhinted code snippet
   </h2>
   <pre>
     <code>
@@ -9089,7 +9089,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted snippet with no discernible language
+    Here's an unhinted snippet with no discernible language
   </h2>
   <pre>
     <code>
@@ -9114,9 +9114,9 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       brew install --token=
       <span
         className="hljs-string">
-        \'
+        '
         INSERT-YOUR-AGENT-TOKEN-HERE
-        \'
+        '
       </span>
        buildkite-agent
       <br />
@@ -9133,7 +9133,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
         ENV=
       <span
         className="hljs-string">
-        \"foo_bar\"
+        "foo_bar"
       </span>
       <br />
       }
@@ -9292,12 +9292,12 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
     !
   </p>
   <p>
-    We\'re importing foo, which is 
+    We're importing foo, which is 
     bar
     .
   </p>
   <p>
-    We\'re also adding a react component here: 
+    We're also adding a react component here: 
     <bar
       style={
         Object {
@@ -12171,7 +12171,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
     </li>
   </ul>
   <h2>
-    Here\'s a code snippet with no interpolations
+    Here's a code snippet with no interpolations
   </h2>
   <pre>
     <code
@@ -12181,7 +12181,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
     </code>
   </pre>
   <h2>
-    Here\'s a code snippet with things which shouldn\'t be treated as interpolations
+    Here's a code snippet with things which shouldn't be treated as interpolations
   </h2>
   <pre>
     <code
@@ -12208,7 +12208,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
     </code>
   </pre>
   <h2>
-    Here\'s a paragraph with a simple interpolation
+    Here's a paragraph with a simple interpolation
   </h2>
   <p>
     There are 
@@ -12216,7 +12216,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
      props being supplied to this component.
   </p>
   <h2>
-    Here\'s a code snippet with a simple interpolation
+    Here's a code snippet with a simple interpolation
   </h2>
   <pre>
     <code
@@ -12243,7 +12243,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted code snippet
+    Here's an unhinted code snippet
   </h2>
   <pre>
     <code>
@@ -12261,7 +12261,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted snippet with no discernible language
+    Here's an unhinted snippet with no discernible language
   </h2>
   <pre>
     <code>
@@ -12286,9 +12286,9 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       brew install --token=
       <span
         className="hljs-string">
-        \'
+        '
         INSERT-YOUR-AGENT-TOKEN-HERE
-        \'
+        '
       </span>
        buildkite-agent
       <br />
@@ -12305,7 +12305,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
         ENV=
       <span
         className="hljs-string">
-        \"foo_bar\"
+        "foo_bar"
       </span>
       <br />
       }
@@ -12464,12 +12464,12 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
     !
   </p>
   <p>
-    We\'re importing foo, which is 
+    We're importing foo, which is 
     bar
     .
   </p>
   <p>
-    We\'re also adding a react component here: 
+    We're also adding a react component here: 
     <bar
       style={
         Object {
@@ -12942,7 +12942,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
     </li>
   </ul>
   <h2>
-    Here\'s a code snippet with no interpolations
+    Here's a code snippet with no interpolations
   </h2>
   <pre>
     <code
@@ -12952,7 +12952,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
     </code>
   </pre>
   <h2>
-    Here\'s a code snippet with things which shouldn\'t be treated as interpolations
+    Here's a code snippet with things which shouldn't be treated as interpolations
   </h2>
   <pre>
     <code
@@ -12979,7 +12979,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
     </code>
   </pre>
   <h2>
-    Here\'s a paragraph with a simple interpolation
+    Here's a paragraph with a simple interpolation
   </h2>
   <p>
     There are 
@@ -12987,7 +12987,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
      props being supplied to this component.
   </p>
   <h2>
-    Here\'s a code snippet with a simple interpolation
+    Here's a code snippet with a simple interpolation
   </h2>
   <pre>
     <code
@@ -13014,7 +13014,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted code snippet
+    Here's an unhinted code snippet
   </h2>
   <pre>
     <code>
@@ -13032,7 +13032,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted snippet with no discernible language
+    Here's an unhinted snippet with no discernible language
   </h2>
   <pre>
     <code>
@@ -13057,9 +13057,9 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       brew install --token=
       <span
         className="hljs-string">
-        \'
+        '
         INSERT-YOUR-AGENT-TOKEN-HERE
-        \'
+        '
       </span>
        buildkite-agent
       <br />
@@ -13076,7 +13076,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
         ENV=
       <span
         className="hljs-string">
-        \"foo_bar\"
+        "foo_bar"
       </span>
       <br />
       }
@@ -13246,12 +13246,12 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
     !
   </p>
   <p>
-    We\'re importing foo, which is 
+    We're importing foo, which is 
     bar
     .
   </p>
   <p>
-    We\'re also adding a react component here: 
+    We're also adding a react component here: 
     <bar
       style={
         Object {
@@ -13742,7 +13742,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
     </li>
   </ul>
   <h2>
-    Here\'s a code snippet with no interpolations
+    Here's a code snippet with no interpolations
   </h2>
   <pre>
     <code
@@ -13752,7 +13752,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
     </code>
   </pre>
   <h2>
-    Here\'s a code snippet with things which shouldn\'t be treated as interpolations
+    Here's a code snippet with things which shouldn't be treated as interpolations
   </h2>
   <pre>
     <code
@@ -13779,7 +13779,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
     </code>
   </pre>
   <h2>
-    Here\'s a paragraph with a simple interpolation
+    Here's a paragraph with a simple interpolation
   </h2>
   <p>
     There are 
@@ -13787,7 +13787,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
      props being supplied to this component.
   </p>
   <h2>
-    Here\'s a code snippet with a simple interpolation
+    Here's a code snippet with a simple interpolation
   </h2>
   <pre>
     <code
@@ -13814,7 +13814,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted code snippet
+    Here's an unhinted code snippet
   </h2>
   <pre>
     <code>
@@ -13832,7 +13832,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
     </code>
   </pre>
   <h2>
-    Here\'s an unhinted snippet with no discernible language
+    Here's an unhinted snippet with no discernible language
   </h2>
   <pre>
     <code>
@@ -13857,9 +13857,9 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
       brew install --token=
       <span
         className="hljs-string">
-        \'
+        '
         INSERT-YOUR-AGENT-TOKEN-HERE
-        \'
+        '
       </span>
        buildkite-agent
       <br />
@@ -13876,7 +13876,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
         ENV=
       <span
         className="hljs-string">
-        \"foo_bar\"
+        "foo_bar"
       </span>
       <br />
       }
@@ -14035,12 +14035,12 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
     !
   </p>
   <p>
-    We\'re importing foo, which is 
+    We're importing foo, which is 
     bar
     .
   </p>
   <p>
-    We\'re also adding a react component here: 
+    We're also adding a react component here: 
     <bar
       style={
         Object {

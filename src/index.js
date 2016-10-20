@@ -1,11 +1,11 @@
-const frontMatter = require('front-matter');
-const Markdown = require('markdown-it');
-const RegexPlugin = require('markdown-it-regexp');
-const { name, version } = require('../package.json');
-const hash = require('sha.js');
-const ReactDOM = require('react').DOM;
-const { getLoaderConfig } = require('loader-utils');
-const DocChomp = require('doc-chomp');
+import frontMatter from 'front-matter';
+import Markdown from 'markdown-it';
+import RegexPlugin from 'markdown-it-regexp';
+import { name, version } from '../package.json';
+import hash from 'sha.js';
+import { DOM as ReactDOM } from 'react';
+import { getLoaderConfig } from 'loader-utils';
+import DocChomp from 'doc-chomp';
 
 const DEFAULT_CONFIGURATION = {
   implicitlyImportReact: true,
@@ -23,8 +23,7 @@ const formatModule = ({ passElementProps }, imports, content) => {
       style: React.PropTypes.object`;
 
   if (passElementProps) {
-    moduleText += DocChomp`
-      ,
+    moduleText += DocChomp(2)`,
         elementProps: React.PropTypes.object
       };
 
@@ -32,8 +31,8 @@ const formatModule = ({ passElementProps }, imports, content) => {
         elementProps: {}`;
   }
 
-  moduleText += DocChomp`
-    
+  moduleText += DocChomp(1)`
+
     };
 
     function MarkdownComponent(props) {
@@ -52,7 +51,7 @@ const formatModule = ({ passElementProps }, imports, content) => {
   return moduleText;
 };
 
-module.exports = function(source) {
+export default function(source) {
   // This loader is deterministic and will return the same thing for the same inputs!
   this.cacheable && this.cacheable();
 
@@ -150,4 +149,4 @@ module.exports = function(source) {
   }
 
   return formatModule(config, imports.join(''), content || '{/* no input given */}');
-};
+}
