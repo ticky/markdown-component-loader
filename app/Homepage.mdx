@@ -1,0 +1,48 @@
+---
+title: Markdown Component Loader
+---
+<center>
+<h1><img src={require('./images/logo.svg')} alt="Markdown Component Loader" /></h1>
+
+A Webpack loader that turns Markdown into dynamic, stateless React components!
+
+<a className="github-link" href="https://github.com/ticky/markdown-component-loader">Check it out on GitHub</a>
+</center>
+
+### welcome.mdx
+```markdown
+{{ <span className="emphasis">Hey there **{'{'+'{ props.who }'+'}'}** ✌🏼</span> }}
+```
+
+### app.jsx
+```jsx
+{{ <span className="emphasis">import Welcome from './welcome.mdx';</span> }}
+ 
+ReactDOM.render(
+{{ <span className="emphasis">{'  <Welcome who="Monkey Magic" />,'}</span>}}
+{{`  document.getElementById('app')`}}
+);
+```
+
+### Rendered:
+```html
+<div id="app">
+{{ <span className="emphasis">{'  <p>Hey there <strong>Monkey Magic</strong> ✌️</p>'}</span>}}
+</div>
+```
+
+## What else can it do?
+
+Embed SVG directly into your mdx file, just as you would a jsx file:
+
+```markdown
+Here’s an inline SVG: {{'{'+'{'}} <svg style={{'{'+'{ display: \'inline\', height: \'1em\' }'+'}'}} viewBox="0 0 304 290"><path fill="none" stroke="currentColor" strokeWidth="16" d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z" /></svg> {{'}'+'}'}}. You can see that nested curly braces are also fully supported.
+```
+
+<center>
+<a className="github-link" href="https://github.com/ticky/markdown-component-loader">Check it out on GitHub</a>
+
+---
+
+Made with 💜 by [@ticky](https://twitter.com/ticky)
+</center>

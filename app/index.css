@@ -8,16 +8,91 @@ html, body {
 }
 
 body {
-  font-size: 14px;
-  color: #515151;
-  background-color: #fbfbfb;
+  font-size: 18px;
+  color: black;
+  background-color: white;
   margin: 0;
   padding: 2em;
   font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Lucida Grande";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: default;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  max-width: 45em;
+  width: 100%;
+}
+
+/* tagline */
+h1 + p {
+  color: #52B2E4;
+  font-size: 1.16em;
+  width: 60%;
+  margin: 2.25em auto;
+}
+
+h2 {
+  color: #52B2E4;
+  font-weight: normal;
+  font-size: 1.33em;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: .77em;
+}
+
+pre {
+  font-size: 1em;
+  color: #7E7E7E;
+  border: 1px solid #E5E5E5;
+  border-radius: .6em;
+  padding: 2em;
+  margin: 1em -.2em;
+  white-space: pre;
+  white-space: pre-wrap;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+pre span.emphasis {
+  color: #6A00C9;
+}
+
+a:link.github-link, a:visited.github-link {
+  display: inline-block;
+  color: white;
+  line-height: 1em;
+  padding: 1em 3em;
+  border-radius: 2em;
+  text-indent: 1em;
+  text-decoration: none;
+  background-color: #6A00C9;
+  background-image: url(images/github-logo.svg);
+  background-repeat: no-repeat;
+  background-size: auto 66%;
+  background-position: .5em .5em;
+}
+
+a:link.github-link:hover {
+  text-decoration: none;
+}
+
+hr {
+  width: 33%;
+  border: none;
+  border-top: 1px solid #E5E5E5;
+  margin: 2em auto;
 }
 
 a:link, a:visited {
-  color: #893ff4;
+  color: #6A00C9;
   text-decoration: none;
 }
 
@@ -25,18 +100,7 @@ a:link:hover, a:visited:hover {
   text-decoration: underline;
 }
 
-/* Homepage-specific styles */
-
-body.homepage {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  -webkit-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  cursor: default;
-}
+/* REPL frame styles (old) */
 
 .repl-frame {
   position: relative;
@@ -65,74 +129,4 @@ body.homepage {
   border: 1px solid #ccc;
   left: 0;
   right: 0;
-}
-
-/* REPL-specific styles */
-
-html.repl, html.repl body {
-  height: 100%;
-}
-
-html.repl body {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  color: #fbfbfb;
-  background-color: #515151;
-  padding: 0;
-  height: 100%;
-}
-
-div.repl {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.repl-editor {
-  width: 100%;
-  height: 100%;
-}
-
-.repl-input, .repl-output {
-  height: 35%;
-}
-
-@media (min-width: 710px) {
-  .repl-editor {
-    position: absolute;
-    top: 0px;
-    bottom: 5em;
-    width: 50%;
-  }
-
-  .repl-input {
-    left: 0;
-    height: auto;
-  }
-
-  .repl-output {
-    right: 0;
-    height: auto;
-  }
-}
-
-.repl-editor .ace_editor {
-  font-size: 14px;
-  width: 100%;
-  height: 100%;
-  border-radius: none;
-}
-
-.repl-editor .ace_scroller.ace_scroll-left {
-  box-shadow: none;
-}
-
-.repl-reporter {
-  position: absolute;
-  z-index: 4;
-  bottom: 0;
-  min-height: 5em;
-  max-height: 30%;
-  overflow: auto;
-  white-space: pre;
-  border-radius: 0;
 }

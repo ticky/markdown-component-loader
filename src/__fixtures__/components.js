@@ -97,5 +97,35 @@ export default [
     `,
 
   DocChomp`
+    ---
+    title: Markdown Component Loader
+    ---
+    # ![Markdown Component Loader](logo.svg)
+
+    A Webpack loader that turns Markdown into dynamic, stateless React components!
+
+    <a className="github-link">Check it out on GitHub</a>
+
+    **welcome.mdx**
+    <pre><code>Hey there **{'{{'} props.who {'}}'}** ✌🏼
+    </code></pre>
+
+    **app.jsx**
+    <pre><code>import Welcome from './welcome.mdx';
+
+    ReactDOM.render(
+      {'<Welcome who="Monkey Magic" />'},
+      document.getElementById('app')
+    );
+    </code></pre>
+
+    **Rendered:**
+    <pre><code>{'<div id="app">'}
+      {'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>'}
+    {'</div>'}
+    </code></pre>
+    `,
+
+  DocChomp`
     ` // Test that empty input works as expected
 ];
