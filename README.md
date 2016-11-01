@@ -69,7 +69,7 @@ _**Note**: destructuring imports must be quoted, but others need not be._
 The above `mdx` file will produce the following module within Webpack;
 
 ```javascript
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from 'react';
 import { name, version } from './package.json';
 
@@ -150,7 +150,7 @@ All generated standard elements (read: elements which are known to `React.DOM`) 
 Here's the above example markdown document converted with this option;
 
 ```javascript
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from 'react';
 import { name, version } from './package.json';
 

@@ -14,7 +14,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -432,7 +432,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -482,7 +482,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _react = require(\'react\');
@@ -579,7 +579,7 @@ exports[`Webpack loader with a loader query of \`?\` for component example 1 ren
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -631,7 +631,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 import foo from \'foo\';
 import Bar from \'foo\';
@@ -676,7 +676,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent[\'title\'] = \'a custom title\';
@@ -734,7 +734,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -784,7 +784,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -811,7 +811,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -849,7 +849,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -896,7 +896,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -924,7 +924,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -1346,7 +1346,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=false\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -1395,7 +1395,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _foo = require(\'foo\');
@@ -1488,7 +1488,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -1540,7 +1540,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=false\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -1574,7 +1574,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -1636,7 +1636,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=false\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -1675,7 +1675,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -1706,7 +1706,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=false\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -1733,7 +1733,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -1784,7 +1784,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=false\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -1814,7 +1814,7 @@ Object.defineProperty(exports, \"__esModule\", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -2243,7 +2243,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=true\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -2297,7 +2297,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _foo = require(\'foo\');
@@ -2396,7 +2396,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -2449,7 +2449,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=true\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -2488,7 +2488,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -2557,7 +2557,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=true\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -2601,7 +2601,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -2639,7 +2639,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=true\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -2671,7 +2671,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -2729,7 +2729,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=true\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -2761,7 +2761,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -3183,7 +3183,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -3232,7 +3232,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _foo = require(\'foo\');
@@ -3325,7 +3325,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -3377,7 +3377,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -3411,7 +3411,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -3473,7 +3473,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -3512,7 +3512,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -3543,7 +3543,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -3570,7 +3570,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -3621,7 +3621,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -3658,7 +3658,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -4076,7 +4076,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=false\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -4126,7 +4126,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _react = require(\'react\');
@@ -4223,7 +4223,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -4275,7 +4275,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=false\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 import foo from \'foo\';
 import Bar from \'foo\';
@@ -4320,7 +4320,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent[\'title\'] = \'a custom title\';
@@ -4378,7 +4378,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=false\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -4428,7 +4428,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -4455,7 +4455,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=false\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -4493,7 +4493,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -4540,7 +4540,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=false\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -4569,7 +4569,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _react = require(\'react\');
@@ -5005,7 +5005,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=true\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -5060,7 +5060,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _react = require(\'react\');
@@ -5163,7 +5163,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -5216,7 +5216,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=true\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 import foo from \'foo\';
 import Bar from \'foo\';
@@ -5267,7 +5267,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent.defaultProps = {
@@ -5331,7 +5331,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=true\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -5387,7 +5387,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent.defaultProps = {
@@ -5420,7 +5420,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=true\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -5464,7 +5464,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent.defaultProps = {
@@ -5517,7 +5517,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=true\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -5560,7 +5560,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -5978,7 +5978,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -6028,7 +6028,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _react = require(\'react\');
@@ -6125,7 +6125,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` f
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -6177,7 +6177,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 import foo from \'foo\';
 import Bar from \'foo\';
@@ -6222,7 +6222,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent[\'title\'] = \'a custom title\';
@@ -6280,7 +6280,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -6330,7 +6330,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -6357,7 +6357,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -6395,7 +6395,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -6442,7 +6442,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -6480,7 +6480,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -6898,7 +6898,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=false\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -6948,7 +6948,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _react = require(\'react\');
@@ -7045,7 +7045,7 @@ exports[`Webpack loader with a loader query of \`?passElementProps=false\` for c
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -7097,7 +7097,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=false\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 import foo from \'foo\';
 import Bar from \'foo\';
@@ -7142,7 +7142,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent[\'title\'] = \'a custom title\';
@@ -7200,7 +7200,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=false\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -7250,7 +7250,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -7277,7 +7277,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=false\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -7315,7 +7315,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -7362,7 +7362,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=false\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -7391,7 +7391,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _react = require(\'react\');
@@ -7827,7 +7827,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=true\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -7882,7 +7882,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _react = require(\'react\');
@@ -7985,7 +7985,7 @@ exports[`Webpack loader with a loader query of \`?passElementProps=true\` for co
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -8038,7 +8038,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=true\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 import foo from \'foo\';
 import Bar from \'foo\';
@@ -8089,7 +8089,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent.defaultProps = {
@@ -8153,7 +8153,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=true\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -8209,7 +8209,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent.defaultProps = {
@@ -8242,7 +8242,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=true\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -8286,7 +8286,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent.defaultProps = {
@@ -8339,7 +8339,7 @@ Array [
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=true\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -8372,7 +8372,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -8794,7 +8794,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false}\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -8843,7 +8843,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _foo = require(\'foo\');
@@ -8936,7 +8936,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -8988,7 +8988,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false}\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -9022,7 +9022,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -9084,7 +9084,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false}\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -9123,7 +9123,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -9154,7 +9154,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false}\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -9181,7 +9181,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -9232,7 +9232,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false}\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -9262,7 +9262,7 @@ Object.defineProperty(exports, \"__esModule\", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -9691,7 +9691,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true}\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -9745,7 +9745,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _foo = require(\'foo\');
@@ -9844,7 +9844,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -9897,7 +9897,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true}\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -9936,7 +9936,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -10005,7 +10005,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true}\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -10049,7 +10049,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -10087,7 +10087,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true}\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -10119,7 +10119,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -10177,7 +10177,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true}\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -10209,7 +10209,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -10631,7 +10631,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false}\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -10680,7 +10680,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _foo = require(\'foo\');
@@ -10773,7 +10773,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -10825,7 +10825,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false}\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -10859,7 +10859,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -10921,7 +10921,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false}\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -10960,7 +10960,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -10991,7 +10991,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false}\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -11018,7 +11018,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -11069,7 +11069,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false}\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -11106,7 +11106,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -11524,7 +11524,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false}\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -11574,7 +11574,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _react = require(\'react\');
@@ -11671,7 +11671,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -11723,7 +11723,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false}\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 import foo from \'foo\';
 import Bar from \'foo\';
@@ -11768,7 +11768,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent[\'title\'] = \'a custom title\';
@@ -11826,7 +11826,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false}\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -11876,7 +11876,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -11903,7 +11903,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false}\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -11941,7 +11941,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -11988,7 +11988,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false}\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -12017,7 +12017,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _react = require(\'react\');
@@ -12453,7 +12453,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true}\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -12508,7 +12508,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _react = require(\'react\');
@@ -12611,7 +12611,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -12664,7 +12664,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true}\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 import foo from \'foo\';
 import Bar from \'foo\';
@@ -12715,7 +12715,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent.defaultProps = {
@@ -12779,7 +12779,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true}\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -12835,7 +12835,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent.defaultProps = {
@@ -12868,7 +12868,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true}\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -12912,7 +12912,7 @@ MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object,
   elementProps: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent.defaultProps = {
@@ -12965,7 +12965,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true}\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -13008,7 +13008,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -13426,7 +13426,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true}\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -13476,7 +13476,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _react = require(\'react\');
@@ -13573,7 +13573,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -13625,7 +13625,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true}\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 import foo from \'foo\';
 import Bar from \'foo\';
@@ -13670,7 +13670,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 MarkdownComponent[\'title\'] = \'a custom title\';
@@ -13728,7 +13728,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true}\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -13778,7 +13778,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -13805,7 +13805,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true}\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -13843,7 +13843,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 MarkdownComponent.propTypes = {
   className: _react2.default.PropTypes.string,
   style: _react2.default.PropTypes.object
-}; // Module generated from Markdown by markdown-component-loader v0.0.4
+}; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 function MarkdownComponent(props) {
@@ -13890,7 +13890,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true}\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import React from \'react\';
 
 MarkdownComponent.propTypes = {
@@ -13918,7 +13918,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -14340,7 +14340,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false}\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -14389,7 +14389,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _foo = require(\'foo\');
@@ -14482,7 +14482,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -14534,7 +14534,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false}\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -14568,7 +14568,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -14630,7 +14630,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false}\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -14669,7 +14669,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -14700,7 +14700,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false}\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -14727,7 +14727,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -14778,7 +14778,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false}\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -14808,7 +14808,7 @@ Object.defineProperty(exports, \"__esModule\", {
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -15237,7 +15237,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true}\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -15291,7 +15291,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _foo = require(\'foo\');
@@ -15390,7 +15390,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -15443,7 +15443,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true}\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -15482,7 +15482,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -15551,7 +15551,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true}\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -15595,7 +15595,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -15633,7 +15633,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true}\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -15665,7 +15665,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -15723,7 +15723,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true}\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -15755,7 +15755,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -16177,7 +16177,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{}\` for component example 0 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -16226,7 +16226,7 @@ Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.4
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; // Module generated from Markdown by markdown-component-loader v0.0.5
 
 
 var _foo = require(\'foo\');
@@ -16319,7 +16319,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.0.4
+    0.0.5
      of 
     markdown-component-loader
     !
@@ -16371,7 +16371,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{}\` for component example 1 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -16405,7 +16405,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -16467,7 +16467,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{}\` for component example 2 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -16506,7 +16506,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -16537,7 +16537,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{}\` for component example 3 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -16564,7 +16564,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
-// Module generated from Markdown by markdown-component-loader v0.0.4
+// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
@@ -16615,7 +16615,7 @@ Array [
 `;
 
 exports[`Webpack loader with a webpack config object of \`{}\` for component example 4 returns an expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.0.4
+"// Module generated from Markdown by markdown-component-loader v0.0.5
 
 MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
