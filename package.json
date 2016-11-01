@@ -1,6 +1,6 @@
 {
   "name": "markdown-component-loader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Turn Markdown into dynamic, stateless React components",
   "main": "lib/index.js",
   "scripts": {
@@ -13,7 +13,10 @@
   },
   "keywords": [
     "markdown",
+    "markdown-component",
     "markdown-it",
+    "component",
+    "webpack",
     "react",
     "jsx"
   ],
@@ -28,6 +31,7 @@
     "doc-chomp": "1.1.0",
     "front-matter": "^2.1.0",
     "highlight.js": "^9.6.0",
+    "jsesc": "^2.2.0",
     "loader-utils": "^0.2.16",
     "markdown-it": "^7.0.1",
     "markdown-it-regexp": "^0.4.0",
@@ -40,6 +44,7 @@
     "babel-eslint": "^7.0.0",
     "babel-jest": "^16.0.0",
     "babel-loader": "^6.2.5",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
     "babel-polyfill": "^6.16.0",
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-react": "^6.16.0",
@@ -59,6 +64,9 @@
     "react": "^15.3.2"
   },
   "babel": {
+    "plugins": [
+      "transform-object-rest-spread"
+    ],
     "presets": [
       "es2015",
       "react"

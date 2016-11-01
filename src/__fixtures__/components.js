@@ -81,6 +81,20 @@ export default [
     `,
 
   DocChomp`
+    ---
+    title: a custom title
+    myArray:
+      - foo
+      - bar
+    anObject:
+      foo: bar
+    ---
+    # Markdown template with static attributes
+
+    This file includes some custom static attributes which should be reflected fine on the resultant object
+    `,
+
+  DocChomp`
     `, // Test that empty input works as expected
 
   DocChomp`
