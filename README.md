@@ -78,7 +78,7 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent["displayName"] = "MarkdownComponentLoaderReadme";
+MarkdownComponent['displayName'] = 'MarkdownComponentLoaderReadme';
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -164,7 +164,7 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent["displayName"] = "MarkdownComponentLoaderReadme";
+MarkdownComponent['displayName'] = 'MarkdownComponentLoaderReadme';
 
 function MarkdownComponent(props) {
   const {className, style, elementProps} = props;

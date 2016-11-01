@@ -661,13 +661,13 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a loader query of \`?\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _react = require(\"react\");
+var _react = require(\'react\');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -679,11 +679,13 @@ MarkdownComponent.propTypes = {
 }; // Module generated from Markdown by markdown-component-loader v0.0.4
 
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -691,17 +693,17 @@ function MarkdownComponent(props) {
 
 
   return _react2.default.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     _react2.default.createElement(
-      \"h1\",
+      \'h1\',
       null,
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     _react2.default.createElement(
-      \"p\",
+      \'p\',
       null,
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -740,11 +742,16 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -1562,7 +1569,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=false\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
@@ -1574,11 +1581,13 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -1586,17 +1595,17 @@ function MarkdownComponent(props) {
 
 
   return React.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     React.createElement(
-      \"h1\",
+      \'h1\',
       null,
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     React.createElement(
-      \"p\",
+      \'p\',
       null,
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -1634,11 +1643,16 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -2469,7 +2483,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=true\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
@@ -2486,11 +2500,13 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -2499,17 +2515,17 @@ function MarkdownComponent(props) {
 
 
   return React.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     React.createElement(
-      \"h1\",
+      \'h1\',
       elementProps[\'h1\'],
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     React.createElement(
-      \"p\",
+      \'p\',
       elementProps[\'p\'],
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -2553,11 +2569,16 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style, elementProps} = props;
@@ -3385,7 +3406,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
@@ -3397,11 +3418,13 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -3409,17 +3432,17 @@ function MarkdownComponent(props) {
 
 
   return React.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     React.createElement(
-      \"h1\",
+      \'h1\',
       null,
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     React.createElement(
-      \"p\",
+      \'p\',
       null,
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -3457,11 +3480,16 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -4277,13 +4305,13 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=false\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _react = require(\"react\");
+var _react = require(\'react\');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -4295,11 +4323,13 @@ MarkdownComponent.propTypes = {
 }; // Module generated from Markdown by markdown-component-loader v0.0.4
 
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -4307,17 +4337,17 @@ function MarkdownComponent(props) {
 
 
   return _react2.default.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     _react2.default.createElement(
-      \"h1\",
+      \'h1\',
       null,
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     _react2.default.createElement(
-      \"p\",
+      \'p\',
       null,
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -4356,11 +4386,16 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -5216,13 +5251,13 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=true\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _react = require(\"react\");
+var _react = require(\'react\');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -5239,11 +5274,13 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -5252,17 +5289,17 @@ function MarkdownComponent(props) {
 
 
   return _react2.default.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     _react2.default.createElement(
-      \"h1\",
+      \'h1\',
       elementProps[\'h1\'],
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     _react2.default.createElement(
-      \"p\",
+      \'p\',
       elementProps[\'p\'],
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -5307,11 +5344,16 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style, elementProps} = props;
@@ -6165,13 +6207,13 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _react = require(\"react\");
+var _react = require(\'react\');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -6183,11 +6225,13 @@ MarkdownComponent.propTypes = {
 }; // Module generated from Markdown by markdown-component-loader v0.0.4
 
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -6195,17 +6239,17 @@ function MarkdownComponent(props) {
 
 
   return _react2.default.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     _react2.default.createElement(
-      \"h1\",
+      \'h1\',
       null,
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     _react2.default.createElement(
-      \"p\",
+      \'p\',
       null,
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -6244,11 +6288,16 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -7078,13 +7127,13 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=false\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _react = require(\"react\");
+var _react = require(\'react\');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -7096,11 +7145,13 @@ MarkdownComponent.propTypes = {
 }; // Module generated from Markdown by markdown-component-loader v0.0.4
 
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -7108,17 +7159,17 @@ function MarkdownComponent(props) {
 
 
   return _react2.default.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     _react2.default.createElement(
-      \"h1\",
+      \'h1\',
       null,
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     _react2.default.createElement(
-      \"p\",
+      \'p\',
       null,
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -7157,11 +7208,16 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -8017,13 +8073,13 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=true\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _react = require(\"react\");
+var _react = require(\'react\');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -8040,11 +8096,13 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -8053,17 +8111,17 @@ function MarkdownComponent(props) {
 
 
   return _react2.default.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     _react2.default.createElement(
-      \"h1\",
+      \'h1\',
       elementProps[\'h1\'],
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     _react2.default.createElement(
-      \"p\",
+      \'p\',
       elementProps[\'p\'],
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -8108,11 +8166,16 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style, elementProps} = props;
@@ -8954,7 +9017,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false}\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
@@ -8966,11 +9029,13 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -8978,17 +9043,17 @@ function MarkdownComponent(props) {
 
 
   return React.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     React.createElement(
-      \"h1\",
+      \'h1\',
       null,
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     React.createElement(
-      \"p\",
+      \'p\',
       null,
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -9026,11 +9091,16 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -9861,7 +9931,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true}\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
@@ -9878,11 +9948,13 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -9891,17 +9963,17 @@ function MarkdownComponent(props) {
 
 
   return React.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     React.createElement(
-      \"h1\",
+      \'h1\',
       elementProps[\'h1\'],
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     React.createElement(
-      \"p\",
+      \'p\',
       elementProps[\'p\'],
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -9945,11 +10017,16 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style, elementProps} = props;
@@ -10777,7 +10854,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false}\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
@@ -10789,11 +10866,13 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -10801,17 +10880,17 @@ function MarkdownComponent(props) {
 
 
   return React.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     React.createElement(
-      \"h1\",
+      \'h1\',
       null,
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     React.createElement(
-      \"p\",
+      \'p\',
       null,
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -10849,11 +10928,16 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -11669,13 +11753,13 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false}\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _react = require(\"react\");
+var _react = require(\'react\');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -11687,11 +11771,13 @@ MarkdownComponent.propTypes = {
 }; // Module generated from Markdown by markdown-component-loader v0.0.4
 
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -11699,17 +11785,17 @@ function MarkdownComponent(props) {
 
 
   return _react2.default.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     _react2.default.createElement(
-      \"h1\",
+      \'h1\',
       null,
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     _react2.default.createElement(
-      \"p\",
+      \'p\',
       null,
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -11748,11 +11834,16 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -12608,13 +12699,13 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true}\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _react = require(\"react\");
+var _react = require(\'react\');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -12631,11 +12722,13 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -12644,17 +12737,17 @@ function MarkdownComponent(props) {
 
 
   return _react2.default.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     _react2.default.createElement(
-      \"h1\",
+      \'h1\',
       elementProps[\'h1\'],
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     _react2.default.createElement(
-      \"p\",
+      \'p\',
       elementProps[\'p\'],
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -12699,11 +12792,16 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style, elementProps} = props;
@@ -13557,13 +13655,13 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true}\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
 });
 
-var _react = require(\"react\");
+var _react = require(\'react\');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -13575,11 +13673,13 @@ MarkdownComponent.propTypes = {
 }; // Module generated from Markdown by markdown-component-loader v0.0.4
 
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -13587,17 +13687,17 @@ function MarkdownComponent(props) {
 
 
   return _react2.default.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     _react2.default.createElement(
-      \"h1\",
+      \'h1\',
       null,
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     _react2.default.createElement(
-      \"p\",
+      \'p\',
       null,
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -13636,11 +13736,16 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -14458,7 +14563,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false}\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
@@ -14470,11 +14575,13 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -14482,17 +14589,17 @@ function MarkdownComponent(props) {
 
 
   return React.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     React.createElement(
-      \"h1\",
+      \'h1\',
       null,
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     React.createElement(
-      \"p\",
+      \'p\',
       null,
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -14530,11 +14637,16 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -15365,7 +15477,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true}\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
@@ -15382,11 +15494,13 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -15395,17 +15509,17 @@ function MarkdownComponent(props) {
 
 
   return React.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     React.createElement(
-      \"h1\",
+      \'h1\',
       elementProps[\'h1\'],
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     React.createElement(
-      \"p\",
+      \'p\',
       elementProps[\'p\'],
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -15449,11 +15563,16 @@ MarkdownComponent.defaultProps = {
   elementProps: {}
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style, elementProps} = props;
@@ -16281,7 +16400,7 @@ export default MarkdownComponent;
 `;
 
 exports[`Webpack loader with a webpack config object of \`{}\` for component example 2 compiles with Babel without issue 1`] = `
-"\"use strict\";
+"\'use strict\';
 
 Object.defineProperty(exports, \"__esModule\", {
   value: true
@@ -16293,11 +16412,13 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\", \"bar\"];
+MarkdownComponent[\'myArray\'] = [\'foo\', \'bar\'];
 
-MarkdownComponent[\"anObject\"] = { \"foo\": \"bar\" };
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   var className = props.className;
@@ -16305,17 +16426,17 @@ function MarkdownComponent(props) {
 
 
   return React.createElement(
-    \"div\",
+    \'div\',
     { className: className, style: style },
     React.createElement(
-      \"h1\",
+      \'h1\',
       null,
-      \"Markdown template with static attributes\"
+      \'Markdown template with static attributes\'
     ),
     React.createElement(
-      \"p\",
+      \'p\',
       null,
-      \"This file includes some custom static attributes which should be reflected fine on the resultant object\"
+      \'This file includes some custom static attributes which should be reflected fine on the resultant object\'
     )
   );
 };
@@ -16353,11 +16474,16 @@ MarkdownComponent.propTypes = {
   style: React.PropTypes.object
 };
 
-MarkdownComponent[\"title\"] = \"a custom title\";
+MarkdownComponent[\'title\'] = \'a custom title\';
 
-MarkdownComponent[\"myArray\"] = [\"foo\",\"bar\"];
+MarkdownComponent[\'myArray\'] = [
+  \'foo\',
+  \'bar\'
+];
 
-MarkdownComponent[\"anObject\"] = {\"foo\":\"bar\"};
+MarkdownComponent[\'anObject\'] = {
+  \'foo\': \'bar\'
+};
 
 function MarkdownComponent(props) {
   const {className, style} = props;

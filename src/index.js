@@ -6,15 +6,26 @@ import hash from 'sha.js';
 import { DOM as ReactDOM } from 'react';
 import { getLoaderConfig } from 'loader-utils';
 import DocChomp from 'doc-chomp';
+import JSEsc from 'jsesc';
+
+const JSESC_CONFIG = {
+  compact: false,
+  indent: '  ',
+  wrap: true
+};
 
 const DEFAULT_CONFIGURATION = {
   implicitlyImportReact: true,
   passElementProps: false
 };
 
-const formatImport = (name, source) => `import ${name} from '${source}';\n`;
+const formatImport = (name, source) => (
+  `import ${name} from '${source}';\n`
+);
 
-const formatStatic = (name, value) => `\nMarkdownComponent[${JSON.stringify(name)}] = ${JSON.stringify(value)};\n`;
+const formatStatic = (name, value) => (
+  `\nMarkdownComponent[${JSEsc(name, JSESC_CONFIG)}] = ${JSEsc(value, JSESC_CONFIG)};\n`
+);
 
 const formatModule = ({ passElementProps }, imports, statics, content) => {
   let moduleText = DocChomp`

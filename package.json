@@ -13,7 +13,10 @@
   },
   "keywords": [
     "markdown",
+    "markdown-component",
     "markdown-it",
+    "component",
+    "webpack",
     "react",
     "jsx"
   ],
@@ -28,6 +31,7 @@
     "doc-chomp": "1.1.0",
     "front-matter": "^2.1.0",
     "highlight.js": "^9.6.0",
+    "jsesc": "^2.2.0",
     "loader-utils": "^0.2.16",
     "markdown-it": "^7.0.1",
     "markdown-it-regexp": "^0.4.0",
