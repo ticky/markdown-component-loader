@@ -33,8 +33,8 @@ const formatModule = ({ passElementProps }, imports, statics, content) => {
         elementProps: {}`;
   }
 
-  moduleText += DocChomp(1)`
-
+  moduleText += DocChomp(0)`
+    
     };
     ${statics}
     function MarkdownComponent(props) {
