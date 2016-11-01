@@ -4,6 +4,7 @@ import React from 'react';
 import { transform as BabelTransform } from 'babel-core';
 import renderer from 'react-test-renderer';
 import { encode as encodeQuery } from 'query-params';
+import DocChomp from 'doc-chomp';
 
 import MARKDOWN_COMPONENT_FIXTURES from './__fixtures__/components';
 const BOOL_FIXTURES = [undefined, true, false];
@@ -50,6 +51,7 @@ const RUN_WITH_CONTEXT = (context) => (() => {
         const tree = renderer.create(<Component />);
 
         expect(tree.toJSON()).toMatchSnapshot();
+        expect(Object.keys(Component)).toMatchSnapshot();
       });
     });
   });
@@ -72,5 +74,21 @@ describe('Webpack loader', () => {
         RUN_WITH_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: {}, query }))
       );
     });
+  });
+
+  it('throws if a reserved static is specified', () => {
+    expect(() => markdownComponentLoader.call(
+      Object.assign(
+        {},
+        FAKE_WEBPACK_CONTEXT,
+        { options: { markdownComponentLoader: {} } }
+      ),
+      DocChomp`
+        ---
+        propTypes: this is reserved so it should throw!
+        ---
+        # This should throw!
+      `
+    )).toThrowError(`You can't supply a \`propTypes\` static! That name is reserved.`);
   });
 });

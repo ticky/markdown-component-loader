@@ -14,7 +14,9 @@ const DEFAULT_CONFIGURATION = {
 
 const formatImport = (name, source) => `import ${name} from '${source}';\n`;
 
-const formatModule = ({ passElementProps }, imports, content) => {
+const formatStatic = (name, value) => `\nMarkdownComponent[${JSON.stringify(name)}] = ${JSON.stringify(value)};\n`;
+
+const formatModule = ({ passElementProps }, imports, statics, content) => {
   let moduleText = DocChomp`
     // Module generated from Markdown by ${name} v${version}
     ${imports}
@@ -34,7 +36,7 @@ const formatModule = ({ passElementProps }, imports, content) => {
   moduleText += DocChomp(1)`
 
     };
-
+    ${statics}
     function MarkdownComponent(props) {
       const {className, style${passElementProps ? ', elementProps' : ''}} = props;
 
@@ -58,6 +60,7 @@ export default function(source) {
   // Loads configuration from webpack config as well as loader query string
   const config = Object.assign({}, DEFAULT_CONFIGURATION, getLoaderConfig(this, 'markdownComponentLoader'));
 
+  const invalidStatics = ['propTypes'];
   const imports = [];
 
   // Import React unless we've been asked otherwise
@@ -65,15 +68,29 @@ export default function(source) {
     imports.push(formatImport('React', 'react'));
   }
 
-  // Pull out front-matter
-  const { body, attributes } = frontMatter(source);
+  // Pull out imports & front-matter
+  const { body, attributes: { imports: importMap, ...extraAttributes } } = frontMatter(source);
 
   // Add additional imports
-  if (attributes.imports) {
-    Object.keys(attributes.imports).forEach((name) => {
-      imports.push(formatImport(name, attributes.imports[name]));
+  if (importMap) {
+    Object.keys(importMap).forEach((name) => {
+      imports.push(formatImport(name, importMap[name]));
     });
   }
+
+  // Disallow passing `defaultProps` if we're passing our own
+  if (config.passElementProps) {
+    invalidStatics.push('defaultProps');
+  }
+
+  // Add additional statics
+  const statics = Object.keys(extraAttributes).map((attribute) => {
+    if (invalidStatics.indexOf(attribute) !== -1) {
+      throw new Error(`You can't supply a \`${attribute}\` static! That name is reserved.`);
+    }
+
+    return formatStatic(attribute, extraAttributes[attribute]);
+  });
 
   // Configure Markdown renderer, highlight code snippets, and post-process
   let content = new Markdown()
@@ -148,5 +165,10 @@ export default function(source) {
     );
   }
 
-  return formatModule(config, imports.join(''), content || '{/* no input given */}');
+  return formatModule(
+    config,
+    imports.join(''),
+    statics.join(''),
+    content || '{/* no input given */}'
+  );
 }

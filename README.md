@@ -44,13 +44,16 @@ module.exports = {
 
 ### Usage and Syntax
 
-`mdx` allows you interleave both React props and React components within your prose and code snippets! `mdx` files may optionally start with yaml-formatted frontmatter. `imports` specified will be included in the React component's definition.
+`mdx` allows you interleave both React props and React components within your prose and code snippets! `mdx` files may optionally start with yaml-formatted front-matter.
+
+Front-matter accepts `imports`, which will be included in the React component's definition. Other front-matter keys are added as static properties of the resultant Markdown component.
 
 Here's an example of an `mdx` file;
 ```markdown
 ---
 imports:
   '{ name, version }': ./package.json
+displayName: MarkdownComponentLoaderReadme
 ---
 
 This is a _Markdown Component_ file. Here you can include JSX-style assignment expressions; this component was generated using version {{ version }} of {{ name }}!
@@ -66,7 +69,7 @@ _**Note**: destructuring imports must be quoted, but others need not be._
 The above `mdx` file will produce the following module within Webpack;
 
 ```javascript
-// Module generated from Markdown by markdown-component-loader v0.0.3
+// Module generated from Markdown by markdown-component-loader v0.0.4
 import React from 'react';
 import { name, version } from './package.json';
 
@@ -74,6 +77,8 @@ MarkdownComponent.propTypes = {
   className: React.PropTypes.string,
   style: React.PropTypes.object
 };
+
+MarkdownComponent["displayName"] = "MarkdownComponentLoaderReadme";
 
 function MarkdownComponent(props) {
   const {className, style} = props;
@@ -145,7 +150,7 @@ All generated standard elements (read: elements which are known to `React.DOM`) 
 Here's the above example markdown document converted with this option;
 
 ```javascript
-// Module generated from Markdown by markdown-component-loader v0.0.3
+// Module generated from Markdown by markdown-component-loader v0.0.4
 import React from 'react';
 import { name, version } from './package.json';
 
@@ -157,8 +162,9 @@ MarkdownComponent.propTypes = {
 
 MarkdownComponent.defaultProps = {
   elementProps: {}
-
 };
+
+MarkdownComponent["displayName"] = "MarkdownComponentLoaderReadme";
 
 function MarkdownComponent(props) {
   const {className, style, elementProps} = props;
