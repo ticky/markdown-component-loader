@@ -101,11 +101,12 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  RUBY=blah\",
+        \"  \",
+        \"RUBY=blah\",
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     ),
@@ -148,12 +149,13 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  RUBY=\",
+        \"  \",
+        \"RUBY=\",
         props.rubycontent,
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     ),
@@ -227,6 +229,7 @@ function MarkdownComponent(props) {
         ),
         \" buildkite-agent\",
         _react2.default.createElement(\"br\", null),
+        \"\\n\",
         _react2.default.createElement(
           \"span\",
           { className: \"hljs-function\" },
@@ -237,16 +240,17 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  ENV=\",
+        \"  \",
+        \"ENV=\",
         _react2.default.createElement(
           \"span\",
           { className: \"hljs-string\" },
           \"\\\"foo_bar\\\"\"
         ),
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     )
@@ -311,7 +315,8 @@ exports[`Webpack loader with a loader query of \`?\` for component example 0 ren
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -346,7 +351,8 @@ exports[`Webpack loader with a loader query of \`?\` for component example 0 ren
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -402,6 +408,8 @@ exports[`Webpack loader with a loader query of \`?\` for component example 0 ren
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -412,7 +420,8 @@ exports[`Webpack loader with a loader query of \`?\` for component example 0 ren
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -450,23 +459,22 @@ function MarkdownComponent(props) {
       <p>This is a basic Markdown template, with no interpolations going on.</p>
       <p>This should be</p>
       <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+        <li>easy and;</li>
+        <li>predictable!</li>
       </ul>
       <h2>Here\'s a code snippet with no interpolations</h2>
       <pre><code className=\"language-bash\">npm install -g yarn<br /></code></pre>
       <h2>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY=blah<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY=blah<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s a paragraph with a simple interpolation</h2>
       <p>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2>Here\'s a code snippet with a simple interpolation</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY={props.rubycontent}<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY={props.rubycontent}<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s an unhinted code snippet</h2>
       <pre><code><span className=\"hljs-keyword\">the</span> quick brown fox jumps over <span className=\"hljs-keyword\">the</span> lazy dog<br /></code></pre>
       <h2>Here\'s an unhinted snippet with no discernible language</h2>
       <pre><code>)<span className=\"hljs-comment\">()</span><span className=\"hljs-comment\">(()</span>)<br /></code></pre>
-      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />
-      <span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\'{\'}<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />{\"\\n\"}<span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\"{\"}<br />{\"  \"}ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\"}\"}<br /></code></pre>
     </div>
   );
 };
@@ -1015,11 +1023,12 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  RUBY=blah\",
+        \"  \",
+        \"RUBY=blah\",
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     ),
@@ -1062,12 +1071,13 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  RUBY=\",
+        \"  \",
+        \"RUBY=\",
         props.rubycontent,
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     ),
@@ -1141,6 +1151,7 @@ function MarkdownComponent(props) {
         ),
         \" buildkite-agent\",
         React.createElement(\"br\", null),
+        \"\\n\",
         React.createElement(
           \"span\",
           { className: \"hljs-function\" },
@@ -1151,16 +1162,17 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  ENV=\",
+        \"  \",
+        \"ENV=\",
         React.createElement(
           \"span\",
           { className: \"hljs-string\" },
           \"\\\"foo_bar\\\"\"
         ),
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     )
@@ -1225,7 +1237,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -1260,7 +1273,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -1316,6 +1330,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -1326,7 +1342,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -1363,23 +1380,22 @@ function MarkdownComponent(props) {
       <p>This is a basic Markdown template, with no interpolations going on.</p>
       <p>This should be</p>
       <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+        <li>easy and;</li>
+        <li>predictable!</li>
       </ul>
       <h2>Here\'s a code snippet with no interpolations</h2>
       <pre><code className=\"language-bash\">npm install -g yarn<br /></code></pre>
       <h2>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY=blah<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY=blah<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s a paragraph with a simple interpolation</h2>
       <p>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2>Here\'s a code snippet with a simple interpolation</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY={props.rubycontent}<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY={props.rubycontent}<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s an unhinted code snippet</h2>
       <pre><code><span className=\"hljs-keyword\">the</span> quick brown fox jumps over <span className=\"hljs-keyword\">the</span> lazy dog<br /></code></pre>
       <h2>Here\'s an unhinted snippet with no discernible language</h2>
       <pre><code>)<span className=\"hljs-comment\">()</span><span className=\"hljs-comment\">(()</span>)<br /></code></pre>
-      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />
-      <span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\'{\'}<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />{\"\\n\"}<span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\"{\"}<br />{\"  \"}ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\"}\"}<br /></code></pre>
     </div>
   );
 };
@@ -1911,11 +1927,12 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         React.createElement(\'br\', elementProps[\'br\']),
-        \'  RUBY=blah\',
+        \"  \",
+        \'RUBY=blah\',
         React.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         React.createElement(\'br\', elementProps[\'br\'])
       )
     ),
@@ -1958,12 +1975,13 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         React.createElement(\'br\', elementProps[\'br\']),
-        \'  RUBY=\',
+        \"  \",
+        \'RUBY=\',
         props.rubycontent,
         React.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         React.createElement(\'br\', elementProps[\'br\'])
       )
     ),
@@ -2037,6 +2055,7 @@ function MarkdownComponent(props) {
         ),
         \' buildkite-agent\',
         React.createElement(\'br\', elementProps[\'br\']),
+        \"\\n\",
         React.createElement(
           \'span\',
           _extends({}, elementProps[\'span\'], { className: \'hljs-function\' }),
@@ -2047,16 +2066,17 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         React.createElement(\'br\', elementProps[\'br\']),
-        \'  ENV=\',
+        \"  \",
+        \'ENV=\',
         React.createElement(
           \'span\',
           _extends({}, elementProps[\'span\'], { className: \'hljs-string\' }),
           \'\"foo_bar\"\'
         ),
         React.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         React.createElement(\'br\', elementProps[\'br\'])
       )
     )
@@ -2121,7 +2141,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -2156,7 +2177,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -2212,6 +2234,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -2222,7 +2246,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -2265,23 +2290,22 @@ function MarkdownComponent(props) {
       <p {...elementProps[\'p\']}>This is a basic Markdown template, with no interpolations going on.</p>
       <p {...elementProps[\'p\']}>This should be</p>
       <ul {...elementProps[\'ul\']}>
-      <li {...elementProps[\'li\']}>easy and;</li>
-      <li {...elementProps[\'li\']}>predictable!</li>
+        <li {...elementProps[\'li\']}>easy and;</li>
+        <li {...elementProps[\'li\']}>predictable!</li>
       </ul>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with no interpolations</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">npm install -g yarn<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY=blah<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}RUBY=blah<br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s a paragraph with a simple interpolation</h2>
       <p {...elementProps[\'p\']}>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with a simple interpolation</h2>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s an unhinted code snippet</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}><span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> quick brown fox jumps over <span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> lazy dog<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s an unhinted snippet with no discernible language</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>)<span {...elementProps[\'span\']} className=\"hljs-comment\">()</span><span {...elementProps[\'span\']} className=\"hljs-comment\">(()</span>)<br {...elementProps[\'br\']} /></code></pre>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />
-      <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />{\"\\n\"}<span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
 };
@@ -2852,11 +2876,12 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  RUBY=blah\",
+        \"  \",
+        \"RUBY=blah\",
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     ),
@@ -2899,12 +2924,13 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  RUBY=\",
+        \"  \",
+        \"RUBY=\",
         props.rubycontent,
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     ),
@@ -2978,6 +3004,7 @@ function MarkdownComponent(props) {
         ),
         \" buildkite-agent\",
         React.createElement(\"br\", null),
+        \"\\n\",
         React.createElement(
           \"span\",
           { className: \"hljs-function\" },
@@ -2988,16 +3015,17 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  ENV=\",
+        \"  \",
+        \"ENV=\",
         React.createElement(
           \"span\",
           { className: \"hljs-string\" },
           \"\\\"foo_bar\\\"\"
         ),
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     )
@@ -3062,7 +3090,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -3097,7 +3126,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -3153,6 +3183,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -3163,7 +3195,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -3200,23 +3233,22 @@ function MarkdownComponent(props) {
       <p>This is a basic Markdown template, with no interpolations going on.</p>
       <p>This should be</p>
       <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+        <li>easy and;</li>
+        <li>predictable!</li>
       </ul>
       <h2>Here\'s a code snippet with no interpolations</h2>
       <pre><code className=\"language-bash\">npm install -g yarn<br /></code></pre>
       <h2>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY=blah<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY=blah<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s a paragraph with a simple interpolation</h2>
       <p>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2>Here\'s a code snippet with a simple interpolation</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY={props.rubycontent}<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY={props.rubycontent}<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s an unhinted code snippet</h2>
       <pre><code><span className=\"hljs-keyword\">the</span> quick brown fox jumps over <span className=\"hljs-keyword\">the</span> lazy dog<br /></code></pre>
       <h2>Here\'s an unhinted snippet with no discernible language</h2>
       <pre><code>)<span className=\"hljs-comment\">()</span><span className=\"hljs-comment\">(()</span>)<br /></code></pre>
-      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />
-      <span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\'{\'}<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />{\"\\n\"}<span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\"{\"}<br />{\"  \"}ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\"}\"}<br /></code></pre>
     </div>
   );
 };
@@ -3745,11 +3777,12 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  RUBY=blah\",
+        \"  \",
+        \"RUBY=blah\",
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     ),
@@ -3792,12 +3825,13 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  RUBY=\",
+        \"  \",
+        \"RUBY=\",
         props.rubycontent,
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     ),
@@ -3871,6 +3905,7 @@ function MarkdownComponent(props) {
         ),
         \" buildkite-agent\",
         _react2.default.createElement(\"br\", null),
+        \"\\n\",
         _react2.default.createElement(
           \"span\",
           { className: \"hljs-function\" },
@@ -3881,16 +3916,17 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  ENV=\",
+        \"  \",
+        \"ENV=\",
         _react2.default.createElement(
           \"span\",
           { className: \"hljs-string\" },
           \"\\\"foo_bar\\\"\"
         ),
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     )
@@ -3955,7 +3991,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -3990,7 +4027,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -4046,6 +4084,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -4056,7 +4096,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -4094,23 +4135,22 @@ function MarkdownComponent(props) {
       <p>This is a basic Markdown template, with no interpolations going on.</p>
       <p>This should be</p>
       <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+        <li>easy and;</li>
+        <li>predictable!</li>
       </ul>
       <h2>Here\'s a code snippet with no interpolations</h2>
       <pre><code className=\"language-bash\">npm install -g yarn<br /></code></pre>
       <h2>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY=blah<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY=blah<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s a paragraph with a simple interpolation</h2>
       <p>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2>Here\'s a code snippet with a simple interpolation</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY={props.rubycontent}<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY={props.rubycontent}<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s an unhinted code snippet</h2>
       <pre><code><span className=\"hljs-keyword\">the</span> quick brown fox jumps over <span className=\"hljs-keyword\">the</span> lazy dog<br /></code></pre>
       <h2>Here\'s an unhinted snippet with no discernible language</h2>
       <pre><code>)<span className=\"hljs-comment\">()</span><span className=\"hljs-comment\">(()</span>)<br /></code></pre>
-      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />
-      <span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\'{\'}<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />{\"\\n\"}<span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\"{\"}<br />{\"  \"}ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\"}\"}<br /></code></pre>
     </div>
   );
 };
@@ -4673,11 +4713,12 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'  RUBY=blah\',
+        \"  \",
+        \'RUBY=blah\',
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\'br\', elementProps[\'br\'])
       )
     ),
@@ -4720,12 +4761,13 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'  RUBY=\',
+        \"  \",
+        \'RUBY=\',
         props.rubycontent,
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\'br\', elementProps[\'br\'])
       )
     ),
@@ -4799,6 +4841,7 @@ function MarkdownComponent(props) {
         ),
         \' buildkite-agent\',
         _react2.default.createElement(\'br\', elementProps[\'br\']),
+        \"\\n\",
         _react2.default.createElement(
           \'span\',
           _extends({}, elementProps[\'span\'], { className: \'hljs-function\' }),
@@ -4809,16 +4852,17 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'  ENV=\',
+        \"  \",
+        \'ENV=\',
         _react2.default.createElement(
           \'span\',
           _extends({}, elementProps[\'span\'], { className: \'hljs-string\' }),
           \'\"foo_bar\"\'
         ),
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\'br\', elementProps[\'br\'])
       )
     )
@@ -4883,7 +4927,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -4918,7 +4963,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -4974,6 +5020,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -4984,7 +5032,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -5028,23 +5077,22 @@ function MarkdownComponent(props) {
       <p {...elementProps[\'p\']}>This is a basic Markdown template, with no interpolations going on.</p>
       <p {...elementProps[\'p\']}>This should be</p>
       <ul {...elementProps[\'ul\']}>
-      <li {...elementProps[\'li\']}>easy and;</li>
-      <li {...elementProps[\'li\']}>predictable!</li>
+        <li {...elementProps[\'li\']}>easy and;</li>
+        <li {...elementProps[\'li\']}>predictable!</li>
       </ul>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with no interpolations</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">npm install -g yarn<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY=blah<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}RUBY=blah<br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s a paragraph with a simple interpolation</h2>
       <p {...elementProps[\'p\']}>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with a simple interpolation</h2>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s an unhinted code snippet</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}><span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> quick brown fox jumps over <span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> lazy dog<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s an unhinted snippet with no discernible language</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>)<span {...elementProps[\'span\']} className=\"hljs-comment\">()</span><span {...elementProps[\'span\']} className=\"hljs-comment\">(()</span>)<br {...elementProps[\'br\']} /></code></pre>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />
-      <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />{\"\\n\"}<span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
 };
@@ -5647,11 +5695,12 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  RUBY=blah\",
+        \"  \",
+        \"RUBY=blah\",
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     ),
@@ -5694,12 +5743,13 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  RUBY=\",
+        \"  \",
+        \"RUBY=\",
         props.rubycontent,
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     ),
@@ -5773,6 +5823,7 @@ function MarkdownComponent(props) {
         ),
         \" buildkite-agent\",
         _react2.default.createElement(\"br\", null),
+        \"\\n\",
         _react2.default.createElement(
           \"span\",
           { className: \"hljs-function\" },
@@ -5783,16 +5834,17 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  ENV=\",
+        \"  \",
+        \"ENV=\",
         _react2.default.createElement(
           \"span\",
           { className: \"hljs-string\" },
           \"\\\"foo_bar\\\"\"
         ),
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     )
@@ -5857,7 +5909,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` f
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -5892,7 +5945,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` f
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -5948,6 +6002,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` f
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -5958,7 +6014,8 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` f
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -5996,23 +6053,22 @@ function MarkdownComponent(props) {
       <p>This is a basic Markdown template, with no interpolations going on.</p>
       <p>This should be</p>
       <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+        <li>easy and;</li>
+        <li>predictable!</li>
       </ul>
       <h2>Here\'s a code snippet with no interpolations</h2>
       <pre><code className=\"language-bash\">npm install -g yarn<br /></code></pre>
       <h2>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY=blah<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY=blah<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s a paragraph with a simple interpolation</h2>
       <p>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2>Here\'s a code snippet with a simple interpolation</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY={props.rubycontent}<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY={props.rubycontent}<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s an unhinted code snippet</h2>
       <pre><code><span className=\"hljs-keyword\">the</span> quick brown fox jumps over <span className=\"hljs-keyword\">the</span> lazy dog<br /></code></pre>
       <h2>Here\'s an unhinted snippet with no discernible language</h2>
       <pre><code>)<span className=\"hljs-comment\">()</span><span className=\"hljs-comment\">(()</span>)<br /></code></pre>
-      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />
-      <span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\'{\'}<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />{\"\\n\"}<span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\"{\"}<br />{\"  \"}ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\"}\"}<br /></code></pre>
     </div>
   );
 };
@@ -6567,11 +6623,12 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  RUBY=blah\",
+        \"  \",
+        \"RUBY=blah\",
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     ),
@@ -6614,12 +6671,13 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  RUBY=\",
+        \"  \",
+        \"RUBY=\",
         props.rubycontent,
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     ),
@@ -6693,6 +6751,7 @@ function MarkdownComponent(props) {
         ),
         \" buildkite-agent\",
         _react2.default.createElement(\"br\", null),
+        \"\\n\",
         _react2.default.createElement(
           \"span\",
           { className: \"hljs-function\" },
@@ -6703,16 +6762,17 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  ENV=\",
+        \"  \",
+        \"ENV=\",
         _react2.default.createElement(
           \"span\",
           { className: \"hljs-string\" },
           \"\\\"foo_bar\\\"\"
         ),
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     )
@@ -6777,7 +6837,8 @@ exports[`Webpack loader with a loader query of \`?passElementProps=false\` for c
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -6812,7 +6873,8 @@ exports[`Webpack loader with a loader query of \`?passElementProps=false\` for c
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -6868,6 +6930,8 @@ exports[`Webpack loader with a loader query of \`?passElementProps=false\` for c
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -6878,7 +6942,8 @@ exports[`Webpack loader with a loader query of \`?passElementProps=false\` for c
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -6916,23 +6981,22 @@ function MarkdownComponent(props) {
       <p>This is a basic Markdown template, with no interpolations going on.</p>
       <p>This should be</p>
       <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+        <li>easy and;</li>
+        <li>predictable!</li>
       </ul>
       <h2>Here\'s a code snippet with no interpolations</h2>
       <pre><code className=\"language-bash\">npm install -g yarn<br /></code></pre>
       <h2>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY=blah<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY=blah<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s a paragraph with a simple interpolation</h2>
       <p>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2>Here\'s a code snippet with a simple interpolation</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY={props.rubycontent}<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY={props.rubycontent}<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s an unhinted code snippet</h2>
       <pre><code><span className=\"hljs-keyword\">the</span> quick brown fox jumps over <span className=\"hljs-keyword\">the</span> lazy dog<br /></code></pre>
       <h2>Here\'s an unhinted snippet with no discernible language</h2>
       <pre><code>)<span className=\"hljs-comment\">()</span><span className=\"hljs-comment\">(()</span>)<br /></code></pre>
-      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />
-      <span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\'{\'}<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />{\"\\n\"}<span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\"{\"}<br />{\"  \"}ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\"}\"}<br /></code></pre>
     </div>
   );
 };
@@ -7495,11 +7559,12 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'  RUBY=blah\',
+        \"  \",
+        \'RUBY=blah\',
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\'br\', elementProps[\'br\'])
       )
     ),
@@ -7542,12 +7607,13 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'  RUBY=\',
+        \"  \",
+        \'RUBY=\',
         props.rubycontent,
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\'br\', elementProps[\'br\'])
       )
     ),
@@ -7621,6 +7687,7 @@ function MarkdownComponent(props) {
         ),
         \' buildkite-agent\',
         _react2.default.createElement(\'br\', elementProps[\'br\']),
+        \"\\n\",
         _react2.default.createElement(
           \'span\',
           _extends({}, elementProps[\'span\'], { className: \'hljs-function\' }),
@@ -7631,16 +7698,17 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'  ENV=\',
+        \"  \",
+        \'ENV=\',
         _react2.default.createElement(
           \'span\',
           _extends({}, elementProps[\'span\'], { className: \'hljs-string\' }),
           \'\"foo_bar\"\'
         ),
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\'br\', elementProps[\'br\'])
       )
     )
@@ -7705,7 +7773,8 @@ exports[`Webpack loader with a loader query of \`?passElementProps=true\` for co
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -7740,7 +7809,8 @@ exports[`Webpack loader with a loader query of \`?passElementProps=true\` for co
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -7796,6 +7866,8 @@ exports[`Webpack loader with a loader query of \`?passElementProps=true\` for co
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -7806,7 +7878,8 @@ exports[`Webpack loader with a loader query of \`?passElementProps=true\` for co
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -7850,23 +7923,22 @@ function MarkdownComponent(props) {
       <p {...elementProps[\'p\']}>This is a basic Markdown template, with no interpolations going on.</p>
       <p {...elementProps[\'p\']}>This should be</p>
       <ul {...elementProps[\'ul\']}>
-      <li {...elementProps[\'li\']}>easy and;</li>
-      <li {...elementProps[\'li\']}>predictable!</li>
+        <li {...elementProps[\'li\']}>easy and;</li>
+        <li {...elementProps[\'li\']}>predictable!</li>
       </ul>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with no interpolations</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">npm install -g yarn<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY=blah<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}RUBY=blah<br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s a paragraph with a simple interpolation</h2>
       <p {...elementProps[\'p\']}>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with a simple interpolation</h2>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s an unhinted code snippet</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}><span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> quick brown fox jumps over <span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> lazy dog<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s an unhinted snippet with no discernible language</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>)<span {...elementProps[\'span\']} className=\"hljs-comment\">()</span><span {...elementProps[\'span\']} className=\"hljs-comment\">(()</span>)<br {...elementProps[\'br\']} /></code></pre>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />
-      <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />{\"\\n\"}<span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
 };
@@ -8463,11 +8535,12 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  RUBY=blah\",
+        \"  \",
+        \"RUBY=blah\",
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     ),
@@ -8510,12 +8583,13 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  RUBY=\",
+        \"  \",
+        \"RUBY=\",
         props.rubycontent,
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     ),
@@ -8589,6 +8663,7 @@ function MarkdownComponent(props) {
         ),
         \" buildkite-agent\",
         React.createElement(\"br\", null),
+        \"\\n\",
         React.createElement(
           \"span\",
           { className: \"hljs-function\" },
@@ -8599,16 +8674,17 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  ENV=\",
+        \"  \",
+        \"ENV=\",
         React.createElement(
           \"span\",
           { className: \"hljs-string\" },
           \"\\\"foo_bar\\\"\"
         ),
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     )
@@ -8673,7 +8749,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -8708,7 +8785,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -8764,6 +8842,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -8774,7 +8854,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -8811,23 +8892,22 @@ function MarkdownComponent(props) {
       <p>This is a basic Markdown template, with no interpolations going on.</p>
       <p>This should be</p>
       <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+        <li>easy and;</li>
+        <li>predictable!</li>
       </ul>
       <h2>Here\'s a code snippet with no interpolations</h2>
       <pre><code className=\"language-bash\">npm install -g yarn<br /></code></pre>
       <h2>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY=blah<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY=blah<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s a paragraph with a simple interpolation</h2>
       <p>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2>Here\'s a code snippet with a simple interpolation</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY={props.rubycontent}<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY={props.rubycontent}<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s an unhinted code snippet</h2>
       <pre><code><span className=\"hljs-keyword\">the</span> quick brown fox jumps over <span className=\"hljs-keyword\">the</span> lazy dog<br /></code></pre>
       <h2>Here\'s an unhinted snippet with no discernible language</h2>
       <pre><code>)<span className=\"hljs-comment\">()</span><span className=\"hljs-comment\">(()</span>)<br /></code></pre>
-      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />
-      <span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\'{\'}<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />{\"\\n\"}<span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\"{\"}<br />{\"  \"}ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\"}\"}<br /></code></pre>
     </div>
   );
 };
@@ -9359,11 +9439,12 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         React.createElement(\'br\', elementProps[\'br\']),
-        \'  RUBY=blah\',
+        \"  \",
+        \'RUBY=blah\',
         React.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         React.createElement(\'br\', elementProps[\'br\'])
       )
     ),
@@ -9406,12 +9487,13 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         React.createElement(\'br\', elementProps[\'br\']),
-        \'  RUBY=\',
+        \"  \",
+        \'RUBY=\',
         props.rubycontent,
         React.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         React.createElement(\'br\', elementProps[\'br\'])
       )
     ),
@@ -9485,6 +9567,7 @@ function MarkdownComponent(props) {
         ),
         \' buildkite-agent\',
         React.createElement(\'br\', elementProps[\'br\']),
+        \"\\n\",
         React.createElement(
           \'span\',
           _extends({}, elementProps[\'span\'], { className: \'hljs-function\' }),
@@ -9495,16 +9578,17 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         React.createElement(\'br\', elementProps[\'br\']),
-        \'  ENV=\',
+        \"  \",
+        \'ENV=\',
         React.createElement(
           \'span\',
           _extends({}, elementProps[\'span\'], { className: \'hljs-string\' }),
           \'\"foo_bar\"\'
         ),
         React.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         React.createElement(\'br\', elementProps[\'br\'])
       )
     )
@@ -9569,7 +9653,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -9604,7 +9689,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -9660,6 +9746,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -9670,7 +9758,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -9713,23 +9802,22 @@ function MarkdownComponent(props) {
       <p {...elementProps[\'p\']}>This is a basic Markdown template, with no interpolations going on.</p>
       <p {...elementProps[\'p\']}>This should be</p>
       <ul {...elementProps[\'ul\']}>
-      <li {...elementProps[\'li\']}>easy and;</li>
-      <li {...elementProps[\'li\']}>predictable!</li>
+        <li {...elementProps[\'li\']}>easy and;</li>
+        <li {...elementProps[\'li\']}>predictable!</li>
       </ul>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with no interpolations</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">npm install -g yarn<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY=blah<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}RUBY=blah<br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s a paragraph with a simple interpolation</h2>
       <p {...elementProps[\'p\']}>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with a simple interpolation</h2>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s an unhinted code snippet</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}><span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> quick brown fox jumps over <span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> lazy dog<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s an unhinted snippet with no discernible language</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>)<span {...elementProps[\'span\']} className=\"hljs-comment\">()</span><span {...elementProps[\'span\']} className=\"hljs-comment\">(()</span>)<br {...elementProps[\'br\']} /></code></pre>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />
-      <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />{\"\\n\"}<span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
 };
@@ -10300,11 +10388,12 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  RUBY=blah\",
+        \"  \",
+        \"RUBY=blah\",
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     ),
@@ -10347,12 +10436,13 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  RUBY=\",
+        \"  \",
+        \"RUBY=\",
         props.rubycontent,
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     ),
@@ -10426,6 +10516,7 @@ function MarkdownComponent(props) {
         ),
         \" buildkite-agent\",
         React.createElement(\"br\", null),
+        \"\\n\",
         React.createElement(
           \"span\",
           { className: \"hljs-function\" },
@@ -10436,16 +10527,17 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  ENV=\",
+        \"  \",
+        \"ENV=\",
         React.createElement(
           \"span\",
           { className: \"hljs-string\" },
           \"\\\"foo_bar\\\"\"
         ),
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     )
@@ -10510,7 +10602,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -10545,7 +10638,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -10601,6 +10695,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -10611,7 +10707,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -10648,23 +10745,22 @@ function MarkdownComponent(props) {
       <p>This is a basic Markdown template, with no interpolations going on.</p>
       <p>This should be</p>
       <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+        <li>easy and;</li>
+        <li>predictable!</li>
       </ul>
       <h2>Here\'s a code snippet with no interpolations</h2>
       <pre><code className=\"language-bash\">npm install -g yarn<br /></code></pre>
       <h2>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY=blah<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY=blah<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s a paragraph with a simple interpolation</h2>
       <p>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2>Here\'s a code snippet with a simple interpolation</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY={props.rubycontent}<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY={props.rubycontent}<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s an unhinted code snippet</h2>
       <pre><code><span className=\"hljs-keyword\">the</span> quick brown fox jumps over <span className=\"hljs-keyword\">the</span> lazy dog<br /></code></pre>
       <h2>Here\'s an unhinted snippet with no discernible language</h2>
       <pre><code>)<span className=\"hljs-comment\">()</span><span className=\"hljs-comment\">(()</span>)<br /></code></pre>
-      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />
-      <span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\'{\'}<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />{\"\\n\"}<span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\"{\"}<br />{\"  \"}ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\"}\"}<br /></code></pre>
     </div>
   );
 };
@@ -11193,11 +11289,12 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  RUBY=blah\",
+        \"  \",
+        \"RUBY=blah\",
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     ),
@@ -11240,12 +11337,13 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  RUBY=\",
+        \"  \",
+        \"RUBY=\",
         props.rubycontent,
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     ),
@@ -11319,6 +11417,7 @@ function MarkdownComponent(props) {
         ),
         \" buildkite-agent\",
         _react2.default.createElement(\"br\", null),
+        \"\\n\",
         _react2.default.createElement(
           \"span\",
           { className: \"hljs-function\" },
@@ -11329,16 +11428,17 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  ENV=\",
+        \"  \",
+        \"ENV=\",
         _react2.default.createElement(
           \"span\",
           { className: \"hljs-string\" },
           \"\\\"foo_bar\\\"\"
         ),
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     )
@@ -11403,7 +11503,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -11438,7 +11539,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -11494,6 +11596,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -11504,7 +11608,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -11542,23 +11647,22 @@ function MarkdownComponent(props) {
       <p>This is a basic Markdown template, with no interpolations going on.</p>
       <p>This should be</p>
       <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+        <li>easy and;</li>
+        <li>predictable!</li>
       </ul>
       <h2>Here\'s a code snippet with no interpolations</h2>
       <pre><code className=\"language-bash\">npm install -g yarn<br /></code></pre>
       <h2>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY=blah<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY=blah<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s a paragraph with a simple interpolation</h2>
       <p>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2>Here\'s a code snippet with a simple interpolation</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY={props.rubycontent}<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY={props.rubycontent}<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s an unhinted code snippet</h2>
       <pre><code><span className=\"hljs-keyword\">the</span> quick brown fox jumps over <span className=\"hljs-keyword\">the</span> lazy dog<br /></code></pre>
       <h2>Here\'s an unhinted snippet with no discernible language</h2>
       <pre><code>)<span className=\"hljs-comment\">()</span><span className=\"hljs-comment\">(()</span>)<br /></code></pre>
-      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />
-      <span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\'{\'}<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />{\"\\n\"}<span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\"{\"}<br />{\"  \"}ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\"}\"}<br /></code></pre>
     </div>
   );
 };
@@ -12121,11 +12225,12 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'  RUBY=blah\',
+        \"  \",
+        \'RUBY=blah\',
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\'br\', elementProps[\'br\'])
       )
     ),
@@ -12168,12 +12273,13 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'  RUBY=\',
+        \"  \",
+        \'RUBY=\',
         props.rubycontent,
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\'br\', elementProps[\'br\'])
       )
     ),
@@ -12247,6 +12353,7 @@ function MarkdownComponent(props) {
         ),
         \' buildkite-agent\',
         _react2.default.createElement(\'br\', elementProps[\'br\']),
+        \"\\n\",
         _react2.default.createElement(
           \'span\',
           _extends({}, elementProps[\'span\'], { className: \'hljs-function\' }),
@@ -12257,16 +12364,17 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'  ENV=\',
+        \"  \",
+        \'ENV=\',
         _react2.default.createElement(
           \'span\',
           _extends({}, elementProps[\'span\'], { className: \'hljs-string\' }),
           \'\"foo_bar\"\'
         ),
         _react2.default.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\'br\', elementProps[\'br\'])
       )
     )
@@ -12331,7 +12439,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -12366,7 +12475,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -12422,6 +12532,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -12432,7 +12544,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -12476,23 +12589,22 @@ function MarkdownComponent(props) {
       <p {...elementProps[\'p\']}>This is a basic Markdown template, with no interpolations going on.</p>
       <p {...elementProps[\'p\']}>This should be</p>
       <ul {...elementProps[\'ul\']}>
-      <li {...elementProps[\'li\']}>easy and;</li>
-      <li {...elementProps[\'li\']}>predictable!</li>
+        <li {...elementProps[\'li\']}>easy and;</li>
+        <li {...elementProps[\'li\']}>predictable!</li>
       </ul>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with no interpolations</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">npm install -g yarn<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY=blah<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}RUBY=blah<br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s a paragraph with a simple interpolation</h2>
       <p {...elementProps[\'p\']}>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with a simple interpolation</h2>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s an unhinted code snippet</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}><span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> quick brown fox jumps over <span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> lazy dog<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s an unhinted snippet with no discernible language</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>)<span {...elementProps[\'span\']} className=\"hljs-comment\">()</span><span {...elementProps[\'span\']} className=\"hljs-comment\">(()</span>)<br {...elementProps[\'br\']} /></code></pre>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />
-      <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />{\"\\n\"}<span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
 };
@@ -13095,11 +13207,12 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  RUBY=blah\",
+        \"  \",
+        \"RUBY=blah\",
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     ),
@@ -13142,12 +13255,13 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  RUBY=\",
+        \"  \",
+        \"RUBY=\",
         props.rubycontent,
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     ),
@@ -13221,6 +13335,7 @@ function MarkdownComponent(props) {
         ),
         \" buildkite-agent\",
         _react2.default.createElement(\"br\", null),
+        \"\\n\",
         _react2.default.createElement(
           \"span\",
           { className: \"hljs-function\" },
@@ -13231,16 +13346,17 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         _react2.default.createElement(\"br\", null),
-        \"  ENV=\",
+        \"  \",
+        \"ENV=\",
         _react2.default.createElement(
           \"span\",
           { className: \"hljs-string\" },
           \"\\\"foo_bar\\\"\"
         ),
         _react2.default.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         _react2.default.createElement(\"br\", null)
       )
     )
@@ -13305,7 +13421,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -13340,7 +13457,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -13396,6 +13514,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -13406,7 +13526,8 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -13444,23 +13565,22 @@ function MarkdownComponent(props) {
       <p>This is a basic Markdown template, with no interpolations going on.</p>
       <p>This should be</p>
       <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+        <li>easy and;</li>
+        <li>predictable!</li>
       </ul>
       <h2>Here\'s a code snippet with no interpolations</h2>
       <pre><code className=\"language-bash\">npm install -g yarn<br /></code></pre>
       <h2>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY=blah<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY=blah<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s a paragraph with a simple interpolation</h2>
       <p>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2>Here\'s a code snippet with a simple interpolation</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY={props.rubycontent}<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY={props.rubycontent}<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s an unhinted code snippet</h2>
       <pre><code><span className=\"hljs-keyword\">the</span> quick brown fox jumps over <span className=\"hljs-keyword\">the</span> lazy dog<br /></code></pre>
       <h2>Here\'s an unhinted snippet with no discernible language</h2>
       <pre><code>)<span className=\"hljs-comment\">()</span><span className=\"hljs-comment\">(()</span>)<br /></code></pre>
-      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />
-      <span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\'{\'}<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />{\"\\n\"}<span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\"{\"}<br />{\"  \"}ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\"}\"}<br /></code></pre>
     </div>
   );
 };
@@ -14009,11 +14129,12 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  RUBY=blah\",
+        \"  \",
+        \"RUBY=blah\",
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     ),
@@ -14056,12 +14177,13 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  RUBY=\",
+        \"  \",
+        \"RUBY=\",
         props.rubycontent,
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     ),
@@ -14135,6 +14257,7 @@ function MarkdownComponent(props) {
         ),
         \" buildkite-agent\",
         React.createElement(\"br\", null),
+        \"\\n\",
         React.createElement(
           \"span\",
           { className: \"hljs-function\" },
@@ -14145,16 +14268,17 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  ENV=\",
+        \"  \",
+        \"ENV=\",
         React.createElement(
           \"span\",
           { className: \"hljs-string\" },
           \"\\\"foo_bar\\\"\"
         ),
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     )
@@ -14219,7 +14343,8 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -14254,7 +14379,8 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -14310,6 +14436,8 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -14320,7 +14448,8 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -14357,23 +14486,22 @@ function MarkdownComponent(props) {
       <p>This is a basic Markdown template, with no interpolations going on.</p>
       <p>This should be</p>
       <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+        <li>easy and;</li>
+        <li>predictable!</li>
       </ul>
       <h2>Here\'s a code snippet with no interpolations</h2>
       <pre><code className=\"language-bash\">npm install -g yarn<br /></code></pre>
       <h2>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY=blah<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY=blah<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s a paragraph with a simple interpolation</h2>
       <p>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2>Here\'s a code snippet with a simple interpolation</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY={props.rubycontent}<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY={props.rubycontent}<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s an unhinted code snippet</h2>
       <pre><code><span className=\"hljs-keyword\">the</span> quick brown fox jumps over <span className=\"hljs-keyword\">the</span> lazy dog<br /></code></pre>
       <h2>Here\'s an unhinted snippet with no discernible language</h2>
       <pre><code>)<span className=\"hljs-comment\">()</span><span className=\"hljs-comment\">(()</span>)<br /></code></pre>
-      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />
-      <span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\'{\'}<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />{\"\\n\"}<span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\"{\"}<br />{\"  \"}ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\"}\"}<br /></code></pre>
     </div>
   );
 };
@@ -14905,11 +15033,12 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         React.createElement(\'br\', elementProps[\'br\']),
-        \'  RUBY=blah\',
+        \"  \",
+        \'RUBY=blah\',
         React.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         React.createElement(\'br\', elementProps[\'br\'])
       )
     ),
@@ -14952,12 +15081,13 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         React.createElement(\'br\', elementProps[\'br\']),
-        \'  RUBY=\',
+        \"  \",
+        \'RUBY=\',
         props.rubycontent,
         React.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         React.createElement(\'br\', elementProps[\'br\'])
       )
     ),
@@ -15031,6 +15161,7 @@ function MarkdownComponent(props) {
         ),
         \' buildkite-agent\',
         React.createElement(\'br\', elementProps[\'br\']),
+        \"\\n\",
         React.createElement(
           \'span\',
           _extends({}, elementProps[\'span\'], { className: \'hljs-function\' }),
@@ -15041,16 +15172,17 @@ function MarkdownComponent(props) {
           )
         ),
         \'() \',
-        \'{\',
+        \"{\",
         React.createElement(\'br\', elementProps[\'br\']),
-        \'  ENV=\',
+        \"  \",
+        \'ENV=\',
         React.createElement(
           \'span\',
           _extends({}, elementProps[\'span\'], { className: \'hljs-string\' }),
           \'\"foo_bar\"\'
         ),
         React.createElement(\'br\', elementProps[\'br\']),
-        \'}\',
+        \"}\",
         React.createElement(\'br\', elementProps[\'br\'])
       )
     )
@@ -15115,7 +15247,8 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -15150,7 +15283,8 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -15206,6 +15340,8 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -15216,7 +15352,8 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -15259,23 +15396,22 @@ function MarkdownComponent(props) {
       <p {...elementProps[\'p\']}>This is a basic Markdown template, with no interpolations going on.</p>
       <p {...elementProps[\'p\']}>This should be</p>
       <ul {...elementProps[\'ul\']}>
-      <li {...elementProps[\'li\']}>easy and;</li>
-      <li {...elementProps[\'li\']}>predictable!</li>
+        <li {...elementProps[\'li\']}>easy and;</li>
+        <li {...elementProps[\'li\']}>predictable!</li>
       </ul>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with no interpolations</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">npm install -g yarn<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY=blah<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}RUBY=blah<br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s a paragraph with a simple interpolation</h2>
       <p {...elementProps[\'p\']}>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2 {...elementProps[\'h2\']}>Here\'s a code snippet with a simple interpolation</h2>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\"><span {...elementProps[\'span\']} className=\"hljs-keyword\">function</span> <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}RUBY={props.rubycontent}<br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s an unhinted code snippet</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}><span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> quick brown fox jumps over <span {...elementProps[\'span\']} className=\"hljs-keyword\">the</span> lazy dog<br {...elementProps[\'br\']} /></code></pre>
       <h2 {...elementProps[\'h2\']}>Here\'s an unhinted snippet with no discernible language</h2>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>)<span {...elementProps[\'span\']} className=\"hljs-comment\">()</span><span {...elementProps[\'span\']} className=\"hljs-comment\">(()</span>)<br {...elementProps[\'br\']} /></code></pre>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />
-      <span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\'{\'}<br {...elementProps[\'br\']} />  ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\'}\'}<br {...elementProps[\'br\']} /></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']} className=\"language-bash\">brew tap buildkite/buildkite<br {...elementProps[\'br\']} />brew install --token=<span {...elementProps[\'span\']} className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br {...elementProps[\'br\']} />{\"\\n\"}<span {...elementProps[\'span\']} className=\"hljs-function\"><span {...elementProps[\'span\']} className=\"hljs-title\">function</span></span>() {\"{\"}<br {...elementProps[\'br\']} />{\"  \"}ENV=<span {...elementProps[\'span\']} className=\"hljs-string\">\"foo_bar\"</span><br {...elementProps[\'br\']} />{\"}\"}<br {...elementProps[\'br\']} /></code></pre>
     </div>
   );
 };
@@ -15846,11 +15982,12 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  RUBY=blah\",
+        \"  \",
+        \"RUBY=blah\",
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     ),
@@ -15893,12 +16030,13 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  RUBY=\",
+        \"  \",
+        \"RUBY=\",
         props.rubycontent,
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     ),
@@ -15972,6 +16110,7 @@ function MarkdownComponent(props) {
         ),
         \" buildkite-agent\",
         React.createElement(\"br\", null),
+        \"\\n\",
         React.createElement(
           \"span\",
           { className: \"hljs-function\" },
@@ -15982,16 +16121,17 @@ function MarkdownComponent(props) {
           )
         ),
         \"() \",
-        \'{\',
+        \"{\",
         React.createElement(\"br\", null),
-        \"  ENV=\",
+        \"  \",
+        \"ENV=\",
         React.createElement(
           \"span\",
           { className: \"hljs-string\" },
           \"\\\"foo_bar\\\"\"
         ),
         React.createElement(\"br\", null),
-        \'}\',
+        \"}\",
         React.createElement(\"br\", null)
       )
     )
@@ -16056,7 +16196,8 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
       () 
       {
       <br />
-        RUBY=blah
+        
+      RUBY=blah
       <br />
       }
       <br />
@@ -16091,7 +16232,8 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
       () 
       {
       <br />
-        RUBY=
+        
+      RUBY=
       <br />
       }
       <br />
@@ -16147,6 +16289,8 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
       </span>
        buildkite-agent
       <br />
+      
+      
       <span
         className="hljs-function">
         <span
@@ -16157,7 +16301,8 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
       () 
       {
       <br />
-        ENV=
+        
+      ENV=
       <span
         className="hljs-string">
         \"foo_bar\"
@@ -16194,23 +16339,22 @@ function MarkdownComponent(props) {
       <p>This is a basic Markdown template, with no interpolations going on.</p>
       <p>This should be</p>
       <ul>
-      <li>easy and;</li>
-      <li>predictable!</li>
+        <li>easy and;</li>
+        <li>predictable!</li>
       </ul>
       <h2>Here\'s a code snippet with no interpolations</h2>
       <pre><code className=\"language-bash\">npm install -g yarn<br /></code></pre>
       <h2>Here\'s a code snippet with things which shouldn\'t be treated as interpolations</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY=blah<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY=blah<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s a paragraph with a simple interpolation</h2>
       <p>There are {Object.keys(props).length} props being supplied to this component.</p>
       <h2>Here\'s a code snippet with a simple interpolation</h2>
-      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\'{\'}<br />  RUBY={props.rubycontent}<br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\"><span className=\"hljs-keyword\">function</span> <span className=\"hljs-function\"><span className=\"hljs-title\">rbenv</span></span>() {\"{\"}<br />{\"  \"}RUBY={props.rubycontent}<br />{\"}\"}<br /></code></pre>
       <h2>Here\'s an unhinted code snippet</h2>
       <pre><code><span className=\"hljs-keyword\">the</span> quick brown fox jumps over <span className=\"hljs-keyword\">the</span> lazy dog<br /></code></pre>
       <h2>Here\'s an unhinted snippet with no discernible language</h2>
       <pre><code>)<span className=\"hljs-comment\">()</span><span className=\"hljs-comment\">(()</span>)<br /></code></pre>
-      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />
-      <span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\'{\'}<br />  ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\'}\'}<br /></code></pre>
+      <pre><code className=\"language-bash\">brew tap buildkite/buildkite<br />brew install --token=<span className=\"hljs-string\">\'{props.token || \'INSERT-YOUR-AGENT-TOKEN-HERE\'}\'</span> buildkite-agent<br />{\"\\n\"}<span className=\"hljs-function\"><span className=\"hljs-title\">function</span></span>() {\"{\"}<br />{\"  \"}ENV=<span className=\"hljs-string\">\"foo_bar\"</span><br />{\"}\"}<br /></code></pre>
     </div>
   );
 };
