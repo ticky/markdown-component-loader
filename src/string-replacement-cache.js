@@ -12,10 +12,6 @@ export default class StringReplacementCache {
   }
 
   load(body) {
-    if (this.loaded === true) {
-      throw new Error("StringReplacementCache: `load` called when cache was already loaded!");
-    }
-
     const processed = body
       .replace(this.expression, (match, ...values) => {
         const identityHash = hash(this.algorithm)
@@ -38,10 +34,6 @@ export default class StringReplacementCache {
   }
 
   unload(body) {
-    if (this.loaded === false) {
-      throw new Error("StringReplacementCache: `unload` called when cache was not loaded!");
-    }
-
     let processed = body;
 
     Object.keys(this._cache).forEach((identity) =>
