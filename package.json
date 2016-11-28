@@ -28,12 +28,15 @@
   "author": "Jessica Stokes <hello@jessicastokes.net>",
   "license": "MIT",
   "dependencies": {
+    "babel-jest": "^17.0.2",
+    "css-loader": "^0.26.0",
     "doc-chomp": "1.1.0",
     "front-matter": "^2.1.0",
     "highlight.js": "^9.6.0",
+    "jest": "^17.0.3",
     "jsesc": "^2.2.0",
     "loader-utils": "^0.2.16",
-    "markdown-it": "^7.0.1",
+    "markdown-it": "^8.1.0",
     "markdown-it-regexp": "^0.4.0",
     "sha.js": "^2.4.5"
   },
