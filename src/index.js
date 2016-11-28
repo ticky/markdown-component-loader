@@ -13,7 +13,8 @@ import StringReplacementCache from './string-replacement-cache';
 
 const DEFAULT_CONFIGURATION = {
   implicitlyImportReact: true,
-  passElementProps: false
+  passElementProps: false,
+  markdownItPlugins: []
 };
 
 module.exports = function(source) {
@@ -72,11 +73,9 @@ module.exports = function(source) {
   const markdownSansAssignments = assignmentExpressionCache.load(stylePropertyCache.load(markdown));
 
   // Configure Markdown renderer, highlight code snippets, and post-process
-  const html = new MarkdownIt()
+  let renderer = new MarkdownIt()
     .configure('commonmark')
-    .enable([
-      'smartquotes'
-    ])
+    .enable(['smartquotes'])
     .set({
       // We need explicit line breaks
       breaks: true,
@@ -105,9 +104,18 @@ module.exports = function(source) {
 
         return HighlightJS.fixMarkup(highlightedContent);
       }
-    })
-    .render(markdownSansAssignments);
+    });
 
+  // Load MarkdownIt plugins
+  renderer = config.markdownItPlugins
+    .reduce(
+      (markdownRenderer, pluginArgs) => (
+        markdownRenderer.use(...pluginArgs)
+      ),
+      renderer
+    );
+
+  const html = renderer.render(markdownSansAssignments);
 
   let jsx = htmlToJsx(
     html || '<!-- no input given -->',
