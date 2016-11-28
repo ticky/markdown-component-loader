@@ -29,6 +29,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.DefinePlugin({ IN_BROWSER: true }), // gotta do this to make HTMLtoJSX not break in-browser
     new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin("bundle.css", { allChunks: true })
   ]

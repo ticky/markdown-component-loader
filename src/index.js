@@ -1,67 +1,19 @@
 import frontMatter from 'front-matter';
-import Markdown from 'markdown-it';
-import RegexPlugin from 'markdown-it-regexp';
-import { name, version } from '../package.json';
-import hash from 'sha.js';
-import { DOM as ReactDOM } from 'react';
 import { getLoaderConfig } from 'loader-utils';
-import DocChomp from 'doc-chomp';
-import JSEsc from 'jsesc';
+import HighlightJS from 'highlight.js';
+import MarkdownIt from 'markdown-it';
+import { DOM as ReactDOM } from 'react';
 
-const JSESC_CONFIG = {
-  compact: false,
-  indent: '  ',
-  wrap: true
-};
+import formatImport from './formatters/import';
+import formatModule from './formatters/module';
+import formatStatic from './formatters/static';
+import hexToAlpha from './hex-to-alpha';
+import htmlToJsx from './html-to-jsx';
+import StringReplacementCache from './string-replacement-cache';
 
 const DEFAULT_CONFIGURATION = {
   implicitlyImportReact: true,
   passElementProps: false
-};
-
-const formatImport = (name, source) => (
-  `import ${name} from '${source}';\n`
-);
-
-const formatStatic = (name, value) => (
-  `\nMarkdownComponent[${JSEsc(name, JSESC_CONFIG)}] = ${JSEsc(value, JSESC_CONFIG)};\n`
-);
-
-const formatModule = ({ passElementProps }, imports, statics, content) => {
-  let moduleText = DocChomp`
-    // Module generated from Markdown by ${name} v${version}
-    ${imports}
-    MarkdownComponent.propTypes = {
-      className: React.PropTypes.string,
-      style: React.PropTypes.object`;
-
-  if (passElementProps) {
-    moduleText += DocChomp(2)`,
-        elementProps: React.PropTypes.object
-      };
-
-      MarkdownComponent.defaultProps = {
-        elementProps: {}`;
-  }
-
-  moduleText += DocChomp(0)`
-    
-    };
-    ${statics}
-    function MarkdownComponent(props) {
-      const {className, style${passElementProps ? ', elementProps' : ''}} = props;
-
-      return (
-        <div className={className} style={style}>
-          ${content}
-        </div>
-      );
-    };
-
-    export default MarkdownComponent;
-    `;
-
-  return moduleText;
 };
 
 module.exports = function(source) {
@@ -80,7 +32,7 @@ module.exports = function(source) {
   }
 
   // Pull out imports & front-matter
-  const { body, attributes: { imports: importMap, ...extraAttributes } } = frontMatter(source);
+  const { body: markdown, attributes: { imports: importMap, ...staticAttributes } } = frontMatter(source);
 
   // Add additional imports
   if (importMap) {
@@ -95,20 +47,33 @@ module.exports = function(source) {
   }
 
   // Add additional statics
-  const statics = Object.keys(extraAttributes).map((attribute) => {
+  const statics = Object.keys(staticAttributes).map((attribute) => {
     if (invalidStatics.indexOf(attribute) !== -1) {
       throw new Error(`You can't supply a \`${attribute}\` static! That name is reserved.`);
     }
 
-    return formatStatic(attribute, extraAttributes[attribute]);
+    return formatStatic(attribute, staticAttributes[attribute]);
   });
 
+  // Hold onto assignment expressions before passing to htmlToJsx
+  //
+  // Object style properties get special treatment here as HTMLtoJSX
+  // will ignore them because they're not strings - what fun!
+  //
+  // p.s. We use hexToAlpha in these so that `highlight.js` doesn't
+  // try to highlight sha256es which begin with numbers 🙄
+  const stylePropertyCache = new StringReplacementCache(/style={{[^}]*}}/g, undefined, (identity) => hexToAlpha(identity));
+  const assignmentExpressionCache = new StringReplacementCache(
+    /{({\s*(?:<.*?>|.*?)\s*})}/g,
+    (match, value) => value,
+    (identity) => hexToAlpha(identity)
+  );
+
+  const markdownSansAssignments = assignmentExpressionCache.load(stylePropertyCache.load(markdown));
+
   // Configure Markdown renderer, highlight code snippets, and post-process
-  let content = new Markdown()
+  const html = new MarkdownIt()
     .configure('commonmark')
-    .use(
-      RegexPlugin(/{({\s*(?:<.*?>|.*?)\s*})}/, (match) => match[1]) // Plugin to pass through assignment expressions without escaping
-    )
     .enable([
       'smartquotes'
     ])
@@ -116,57 +81,45 @@ module.exports = function(source) {
       // We need explicit line breaks
       breaks: true,
       typographer: config.typographer,
-      highlight(content, languageHint) {
-        const preprocessed_content = {};
+      highlight(code, languageHint) {
         let highlightedContent;
 
-        const highlight = require('highlight.js');
-        highlight.configure({
+        HighlightJS.configure({
           useBR: true,
           tabReplace: '  '
         });
 
-        // Hold onto JSX assignment expressions before passing to highlighter
-        content = content.replace(/{({\s*(?:<.*?>|.*?)\s*})}/g, (match, value) => {
-          const key = hash('sha256').update(value, 'utf-8').digest('hex');
-          preprocessed_content[key] = value;
-          return key;
-        });
-
         // Try highlighting with a given hint
-        if (languageHint && highlight.getLanguage(languageHint)) {
+        if (languageHint && HighlightJS.getLanguage(languageHint)) {
           try {
-            highlightedContent = highlight.highlight(languageHint, content).value;
+            highlightedContent = HighlightJS.highlight(languageHint, code).value;
           } catch (err) {} // eslint-disable-line no-empty
         }
 
         // Highlight without a hint
         if (!highlightedContent) {
           try {
-            highlightedContent = highlight.highlightAuto(content).value;
+            highlightedContent = HighlightJS.highlightAuto(code).value;
           } catch (err) {} // eslint-disable-line no-empty
         }
 
-        // Quote curly braces
-        highlightedContent = highlightedContent.replace(/[\{\}]/g, (match) => `{'${match}'}`);
-
-        // Put back the JSX assignment expressions we pulled out before returning
-        Object.keys(preprocessed_content).forEach((key) =>
-          highlightedContent = highlightedContent.replace(key, preprocessed_content[key])
-        );
-
-        return highlight.fixMarkup(highlightedContent);
+        return HighlightJS.fixMarkup(highlightedContent);
       }
     })
-    .render(body)                     // --- Above this line, we talk markdown, below, we start talking something in the overlap of (JS(X)HTML) ---
-    .replace(/class=/g, 'className=') // React compatibility
-    .replace(/<br>/g, '<br />')       // More React compatibility (markdown-it doesn’t let you output XHTML-style self-closers 🙃)
-    .replace(/\n/g, '\n          ')   // For pretty inspector output 🎉
-    .replace(/\n\s+$/g, '');          // Remove the trailing blank line
+    .render(markdownSansAssignments);
+
+
+  let jsx = htmlToJsx(
+    html || '<!-- no input given -->',
+    '          ' // indentation
+  );
+
+  // Unload caches so we've got our values back!
+  jsx = stylePropertyCache.unload(assignmentExpressionCache.unload(jsx));
 
   // Pass through `elementProps` to tags React knows about (the others are already under our control)
   if (config.passElementProps) {
-    content = content.replace(
+    jsx = jsx.replace(
       /<([^\/][^\s>]*)([^/>\s]*)/g,
       (match, tagName) => {
         return (tagName in ReactDOM)
@@ -180,6 +133,6 @@ module.exports = function(source) {
     config,
     imports.join(''),
     statics.join(''),
-    content || '{/* no input given */}'
+    jsx
   );
 };
