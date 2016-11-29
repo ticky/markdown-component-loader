@@ -28,6 +28,7 @@
   "author": "Jessica Stokes <hello@jessicastokes.net>",
   "license": "MIT",
   "dependencies": {
+    "any-base": "^1.0.0",
     "doc-chomp": "1.1.0",
     "front-matter": "^2.1.0",
     "highlight.js": "^9.6.0",

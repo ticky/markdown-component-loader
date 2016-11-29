@@ -5,6 +5,8 @@ export default [
   DocChomp`
     # Test Document
 
+    [[toc]]
+
     ## Basic Markdown Template
 
     This is a basic Markdown template, with no interpolations going on.

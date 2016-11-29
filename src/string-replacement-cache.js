@@ -1,4 +1,9 @@
 import hash from 'sha.js';
+import anyBase from 'any-base';
+
+const hexToBase52 = ((alphabet) =>
+  anyBase(anyBase.HEX, alphabet + alphabet.toUpperCase())
+)('abcdefghijklmnopqrstuvwxyz');
 
 const noOpReplacer = (thing) => thing;
 
@@ -14,9 +19,13 @@ export default class StringReplacementCache {
   load(body) {
     const processed = body
       .replace(this.expression, (match, ...values) => {
-        const identityHash = hash(this.algorithm)
-          .update(match, 'utf-8')
-          .digest('hex');
+        // we use `hexToBase52` so generated identities are exclusively alphabetic
+        // as this causes them to fly under parsers' radars more effectively
+        const identityHash = hexToBase52(
+          hash(this.algorithm)
+            .update(match, 'utf-8')
+            .digest('hex')
+        );
 
         const identity = this.identityReplacer(
             identityHash,
@@ -29,7 +38,6 @@ export default class StringReplacementCache {
         return identity;
       });
 
-    this.loaded = true;
     return processed;
   }
 
@@ -51,7 +59,6 @@ export default class StringReplacementCache {
     );
 
     this._cache = {};
-    this.loaded = false;
     return processed;
   }
 }

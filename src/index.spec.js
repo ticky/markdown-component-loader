@@ -57,14 +57,17 @@ const RUN_WITH_CONTEXT = (context) => (() => {
   });
 });
 
-const PLUGIN_FIXTURES = [undefined];
+const PLUGIN_FIXTURES = [
+  undefined,          // test for default fallback
+  "somenonsensevalue" // test resilience
+];
 
 PLUGIN_FIXTURES.push([
-  [require("markdown-it-anchor")]
+  require("markdown-it-anchor")
 ]);
 
 PLUGIN_FIXTURES.push([
-  [require("markdown-it-anchor")],
+  require("markdown-it-anchor"),
   [require("markdown-it-table-of-contents"), { containerClass: 'my-container-class' }]
 ]);
 
@@ -84,7 +87,7 @@ describe('Webpack loader', () => {
         );
 
         // `markdownItPlugins` can't be passed via query because they're JavaScript!
-        if (!markdownItPlugins) {
+        if (!config.hasOwnProperty('markdownItPlugins')) {
           const query = `?${encodeQuery(config)}`;
 
           describe(

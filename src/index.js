@@ -7,7 +7,6 @@ import { DOM as ReactDOM } from 'react';
 import formatImport from './formatters/import';
 import formatModule from './formatters/module';
 import formatStatic from './formatters/static';
-import hexToAlpha from './hex-to-alpha';
 import htmlToJsx from './html-to-jsx';
 import StringReplacementCache from './string-replacement-cache';
 
@@ -60,14 +59,10 @@ module.exports = function(source) {
   //
   // Object style properties get special treatment here as HTMLtoJSX
   // will ignore them because they're not strings - what fun!
-  //
-  // p.s. We use hexToAlpha in these so that `highlight.js` doesn't
-  // try to highlight sha256es which begin with numbers 🙄
-  const stylePropertyCache = new StringReplacementCache(/style={{[^}]*}}/g, undefined, (identity) => hexToAlpha(identity));
+  const stylePropertyCache = new StringReplacementCache(/style={{[^}]*}}/g);
   const assignmentExpressionCache = new StringReplacementCache(
     /{({\s*(?:<.*?>|.*?)\s*})}/g,
-    (match, value) => value,
-    (identity) => hexToAlpha(identity)
+    (match, value) => value
   );
 
   const markdownSansAssignments = assignmentExpressionCache.load(stylePropertyCache.load(markdown));
@@ -107,13 +102,19 @@ module.exports = function(source) {
     });
 
   // Load MarkdownIt plugins
-  renderer = config.markdownItPlugins
-    .reduce(
-      (markdownRenderer, pluginArgs) => (
-        markdownRenderer.use(...pluginArgs)
-      ),
-      renderer
-    );
+  if (config.markdownItPlugins && Array.isArray(config.markdownItPlugins)) {
+    renderer = config.markdownItPlugins
+      .reduce(
+        (markdownRenderer, pluginDefinition) => (
+          markdownRenderer.use(...(
+            Array.isArray(pluginDefinition)
+              ? pluginDefinition
+              : [pluginDefinition]
+          ))
+        ),
+        renderer
+      );
+  }
 
   const html = renderer.render(markdownSansAssignments);
 
