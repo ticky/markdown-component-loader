@@ -78,10 +78,7 @@ module.exports = function(source) {
       highlight(code, languageHint) {
         let highlightedContent;
 
-        HighlightJS.configure({
-          useBR: true,
-          tabReplace: '  '
-        });
+        HighlightJS.configure({ tabReplace: '  ' });
 
         // Try highlighting with a given hint
         if (languageHint && HighlightJS.getLanguage(languageHint)) {
@@ -97,7 +94,7 @@ module.exports = function(source) {
           } catch (err) {} // eslint-disable-line no-empty
         }
 
-        return HighlightJS.fixMarkup(highlightedContent);
+        return highlightedContent.replace(/\n/g, '<br />');
       }
     });
 
