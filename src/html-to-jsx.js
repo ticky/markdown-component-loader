@@ -1,10 +1,13 @@
 import HTMLtoJSX from 'htmltojsx';
 
-export default function htmlToJsx(html, indent = '') {
+export default function htmlToJsx(html, indent) {
   const jsxConverter = new HTMLtoJSX({ createClass: false });
 
   let jsx = jsxConverter.convert(html);
 
+  // This is a slightly odd hack, but if the jsxConverter returns
+  // and has a level of 1, it means it wrapped the contents in
+  // <div/> tags because it detected multiple child elements
   if (jsxConverter.level === 1) {
     // Remove the wrapping tags HTMLtoJSX adds, as we use our own!
     jsx = jsx.replace(/(?:^<div>\n\s+|\n\s+<\/div>\n+$)/g, '');

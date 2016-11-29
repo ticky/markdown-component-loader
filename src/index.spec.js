@@ -33,46 +33,74 @@ const FAKE_WEBPACK_CONTEXT = { cacheable: jest.fn() };
 const RUN_WITH_CONTEXT = (context) => (() => {
   MARKDOWN_COMPONENT_FIXTURES.forEach((component, index) => {
     describe(`for component example ${index}`, () => {
-      const transformedComponent = markdownComponentLoader.call(context, component);
-      const transpiledComponent = TRANSFORM_WITH_BABEL(transformedComponent);
+      let loadedComponent;
+      let transformedComponent;
 
-      it('returns an expected React module', () => {
-        expect(transformedComponent).toMatchSnapshot();
+      it('executes without errors', () => {
+        expect(() => loadedComponent = markdownComponentLoader.call(context, component)).not.toThrowError();
         expect(context.cacheable).toHaveBeenCalled();
       });
 
-      it('compiles with Babel without issue', () => {
-        expect(transpiledComponent).toMatchSnapshot();
+      it('returns the expected React module', () => {
+        expect(loadedComponent).toMatchSnapshot();
+      });
+
+      it('transforms with Babel without issue', () => {
+        expect(() => transformedComponent = TRANSFORM_WITH_BABEL(loadedComponent)).not.toThrowError();
       });
 
       it('renders as expected within React', () => {
-        const Component = REQUIRE_STRING_MODULE(transpiledComponent).default;
+        const Component = REQUIRE_STRING_MODULE(transformedComponent).default;
+
+        expect(Object.keys(Component)).toMatchSnapshot();
 
         const tree = renderer.create(<Component />);
 
         expect(tree.toJSON()).toMatchSnapshot();
-        expect(Object.keys(Component)).toMatchSnapshot();
       });
     });
   });
 });
 
+const PLUGIN_FIXTURES = [
+  undefined,          // test for default fallback
+  "somenonsensevalue" // test resilience
+];
+
+PLUGIN_FIXTURES.push([
+  require("markdown-it-anchor")
+]);
+
+PLUGIN_FIXTURES.push([
+  require("markdown-it-anchor"),
+  [require("markdown-it-table-of-contents"), { containerClass: 'my-container-class' }]
+]);
+
 describe('Webpack loader', () => {
   BOOL_FIXTURES.forEach((implicitlyImportReact) => {
     BOOL_FIXTURES.forEach((passElementProps) => {
-      const config = { implicitlyImportReact, passElementProps };
+      PLUGIN_FIXTURES.forEach((markdownItPlugins) => {
+        const config = { implicitlyImportReact, passElementProps };
 
-      describe(
-        `with a webpack config object of \`${JSON.stringify(config)}\``,
-        RUN_WITH_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: { markdownComponentLoader: config } }))
-      );
+        if (markdownItPlugins) {
+          config.markdownItPlugins = markdownItPlugins;
+        }
 
-      const query = `?${encodeQuery(config)}`;
+        describe(
+          `with a webpack config object of \`${JSON.stringify(config)}\``,
+          RUN_WITH_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: { markdownComponentLoader: config } }))
+        );
 
-      describe(
-        `with a loader query of \`${query}\``,
-        RUN_WITH_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: {}, query }))
-      );
+        // `markdownItPlugins` can't be passed via query because they're JavaScript!
+        if (!config.hasOwnProperty('markdownItPlugins')) {
+          const query = `?${encodeQuery(config)}`;
+
+          describe(
+            `with a loader query of \`${query}\``,
+            RUN_WITH_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: {}, query }))
+          );
+        }
+      });
     });
   });
 
