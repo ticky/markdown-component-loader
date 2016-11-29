@@ -57,22 +57,42 @@ const RUN_WITH_CONTEXT = (context) => (() => {
   });
 });
 
+const PLUGIN_FIXTURES = [undefined];
+
+PLUGIN_FIXTURES.push([
+  [require("markdown-it-anchor")]
+]);
+
+PLUGIN_FIXTURES.push([
+  [require("markdown-it-anchor")],
+  [require("markdown-it-table-of-contents"), { containerClass: 'my-container-class' }]
+]);
+
 describe('Webpack loader', () => {
   BOOL_FIXTURES.forEach((implicitlyImportReact) => {
     BOOL_FIXTURES.forEach((passElementProps) => {
-      const config = { implicitlyImportReact, passElementProps };
+      PLUGIN_FIXTURES.forEach((markdownItPlugins) => {
+        const config = { implicitlyImportReact, passElementProps };
 
-      describe(
-        `with a webpack config object of \`${JSON.stringify(config)}\``,
-        RUN_WITH_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: { markdownComponentLoader: config } }))
-      );
+        if (markdownItPlugins) {
+          config.markdownItPlugins = markdownItPlugins;
+        }
 
-      const query = `?${encodeQuery(config)}`;
+        describe(
+          `with a webpack config object of \`${JSON.stringify(config)}\``,
+          RUN_WITH_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: { markdownComponentLoader: config } }))
+        );
 
-      describe(
-        `with a loader query of \`${query}\``,
-        RUN_WITH_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: {}, query }))
-      );
+        // `markdownItPlugins` can't be passed via query because they're JavaScript!
+        if (!markdownItPlugins) {
+          const query = `?${encodeQuery(config)}`;
+
+          describe(
+            `with a loader query of \`${query}\``,
+            RUN_WITH_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: {}, query }))
+          );
+        }
+      });
     });
   });
 
