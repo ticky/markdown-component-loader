@@ -33,25 +33,30 @@ const FAKE_WEBPACK_CONTEXT = { cacheable: jest.fn() };
 const RUN_WITH_CONTEXT = (context) => (() => {
   MARKDOWN_COMPONENT_FIXTURES.forEach((component, index) => {
     describe(`for component example ${index}`, () => {
-      const transformedComponent = markdownComponentLoader.call(context, component);
-      const transpiledComponent = TRANSFORM_WITH_BABEL(transformedComponent);
+      let loadedComponent;
+      let transformedComponent;
 
-      it('returns an expected React module', () => {
-        expect(transformedComponent).toMatchSnapshot();
+      it('executes without errors', () => {
+        expect(() => loadedComponent = markdownComponentLoader.call(context, component)).not.toThrowError();
         expect(context.cacheable).toHaveBeenCalled();
       });
 
-      it('compiles with Babel without issue', () => {
-        expect(transpiledComponent).toMatchSnapshot();
+      it('returns the expected React module', () => {
+        expect(loadedComponent).toMatchSnapshot();
+      });
+
+      it('transforms with Babel without issue', () => {
+        expect(() => transformedComponent = TRANSFORM_WITH_BABEL(loadedComponent)).not.toThrowError();
       });
 
       it('renders as expected within React', () => {
-        const Component = REQUIRE_STRING_MODULE(transpiledComponent).default;
+        const Component = REQUIRE_STRING_MODULE(transformedComponent).default;
+
+        expect(Object.keys(Component)).toMatchSnapshot();
 
         const tree = renderer.create(<Component />);
 
         expect(tree.toJSON()).toMatchSnapshot();
-        expect(Object.keys(Component)).toMatchSnapshot();
       });
     });
   });

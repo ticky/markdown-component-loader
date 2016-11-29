@@ -62,6 +62,8 @@ export default [
       ENV="foo_bar"
     }
     \`\`\`
+
+    Let's also test interpolation inside other elements. <code>{{ "foo bar" }}</code>
     `,
 
   DocChomp`
@@ -70,8 +72,16 @@ export default [
       foo: foo
       Bar: foo
       '{ bugs, name, version }': ../package.json
+    title: a custom title
+    myArray:
+      - foo
+      - bar
+    anObject:
+      foo: bar
     ---
-    # Markdown template with imports and interpolations
+    # Markdown template with imports, static attributes and interpolations
+
+    This file includes some custom static attributes which should be reflected fine on the resultant object
 
     This is a _Markdown Component_ file. Here you can include JSX-style assignment expressions; this component was generated using version {{ version }} of {{ name }}!
 
@@ -83,23 +93,5 @@ export default [
     `,
 
   DocChomp`
-    ---
-    title: a custom title
-    myArray:
-      - foo
-      - bar
-    anObject:
-      foo: bar
-    ---
-    # Markdown template with static attributes
-
-    This file includes some custom static attributes which should be reflected fine on the resultant object
-    `,
-
-  DocChomp`
-    `, // Test that empty input works as expected
-
-  DocChomp`
-    This file is for testing interpolation inside other elements. <code>{{ "foo bar" }}</code>
-    `
+    ` // Test that empty input works as expected
 ];
