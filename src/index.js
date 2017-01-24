@@ -1,13 +1,18 @@
+import anyBase from 'any-base';
 import frontMatter from 'front-matter';
 import { getLoaderConfig } from 'loader-utils';
+import hash from 'sha.js';
 import HighlightJS from 'highlight.js';
 import MarkdownIt from 'markdown-it';
 import { DOM as ReactDOM } from 'react';
+
+import VOID_ELEMENTS from 'html-void-elements';
 
 import formatImport from './formatters/import';
 import formatModule from './formatters/module';
 import formatStatic from './formatters/static';
 import htmlToJsx from './html-to-jsx';
+import processHtml from './process-html';
 import StringReplacementCache from './string-replacement-cache';
 
 const DEFAULT_CONFIGURATION = {
@@ -15,6 +20,14 @@ const DEFAULT_CONFIGURATION = {
   passElementProps: false,
   markdownItPlugins: []
 };
+
+const lowercaseHash = (content) => (
+  anyBase(anyBase.HEX, 'abcdefghijklmnopqrstuvwxyz')(
+    hash('sha256')
+      .update(content, 'utf-8')
+      .digest('hex')
+  )
+);
 
 module.exports = function(source) {
   // This loader is deterministic and will return the same thing for the same inputs!
@@ -114,7 +127,34 @@ module.exports = function(source) {
       );
   }
 
-  const html = renderer.render(markdownSansAssignments);
+  const tagCache = {};
+
+  const html = processHtml(
+    renderer.render(markdownSansAssignments),
+    (match, tagFragment, tag) => {
+      switch (tagFragment) {
+        case '<':
+          // tag names which won't survive browser serialization, or those with
+          // special characters, need to be cached
+          if (tag.tagName.indexOf('.') !== -1 || tag.tagName.toLowerCase() !== tag.tagName) {
+            const nameHash = lowercaseHash(tag.tagName);
+            tagCache[nameHash] = tag.tagName;
+            tag.tagName = nameHash;
+          }
+          return `<${tag.tagName}`;
+        case '/>':
+          return (
+            VOID_ELEMENTS.indexOf(tagCache[tag.tagName] || tag.tagName) === -1
+              ? `></${tag.tagName}>`
+              : match
+          );
+        case '</':
+          return `</${tag.tagName}`;
+      }
+
+      return match;
+    }
+  );
 
   let jsx = htmlToJsx(
     html || '<!-- no input given -->',
@@ -124,17 +164,28 @@ module.exports = function(source) {
   // Unload caches so we've got our values back!
   jsx = stylePropertyCache.unload(assignmentExpressionCache.unload(jsx));
 
-  // Pass through `elementProps` to tags React knows about (the others are already under our control)
-  if (config.passElementProps) {
-    jsx = jsx.replace(
-      /<([^\/][^\s>]*)([^/>\s]*)/g,
-      (match, tagName) => {
-        return (tagName in ReactDOM)
-          ? `${match} {...elementProps['${tagName}']}`
-          : match;
+  jsx = processHtml(
+    jsx,
+    (match, tagFragment, { tagName, state }) => {
+      const correctedTagName = tagCache[tagName] || tagName;
+
+      switch (tagFragment) {
+        case '<':
+          // Pass through `elementProps` to tags React knows about (the others are already under our control)
+          if (config.passElementProps && correctedTagName in ReactDOM) {
+            return `<${correctedTagName} {...elementProps['${correctedTagName}']}`;
+          }
+          return `<${correctedTagName}`;
+        case '/>':
+        case '>':
+          return match;
+        case '</':
+          return `</${correctedTagName}`;
       }
-    );
-  }
+
+      return match;
+    }
+  ).replace(/\s\s\{/, ' {'); // Remove double spaces before spread statements;
 
   return formatModule(
     config,
