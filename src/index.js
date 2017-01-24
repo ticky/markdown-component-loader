@@ -171,13 +171,13 @@ module.exports = function(source) {
 
       switch (tagFragment) {
         case '<':
-          // Pass through `elementProps` to tags React knows about (the others are already under our control)
-          if (config.passElementProps && correctedTagName in ReactDOM) {
-            return `<${correctedTagName} {...elementProps['${correctedTagName}']}`;
-          }
           return `<${correctedTagName}`;
         case '/>':
         case '>':
+          // Pass through `elementProps` to tags React knows about (the others are already under our control)
+          if (config.passElementProps && (state === 'open' || state === 'content') && correctedTagName in ReactDOM) {
+            return ` {...elementProps['${correctedTagName}']}${tagFragment === '/>' ? ' ' : ''}${tagFragment}`;
+          }
           return match;
         case '</':
           return `</${correctedTagName}`;
