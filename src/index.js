@@ -1,9 +1,6 @@
-import anyBase from 'any-base';
 import frontMatter from 'front-matter';
 import { getLoaderConfig } from 'loader-utils';
-import hash from 'sha.js';
 import HighlightJS from 'highlight.js';
-import MarkdownIt from 'markdown-it';
 import { DOM as ReactDOM } from 'react';
 
 import VOID_ELEMENTS from 'html-void-elements';
@@ -11,23 +8,50 @@ import VOID_ELEMENTS from 'html-void-elements';
 import formatImport from './formatters/import';
 import formatModule from './formatters/module';
 import formatStatic from './formatters/static';
+
 import htmlToJsx from './html-to-jsx';
+import lowercaseHash from './lowercase-hash';
 import processHtml from './process-html';
 import StringReplacementCache from './string-replacement-cache';
+
+const MarkdownIt = (() => {
+  // welcome, to the
+  //
+  //  d8b                        d8b
+  //  ?88                        ?88
+  //   88b                        88b
+  //   888888b  d888b8b   d8888b  888  d88'
+  //   88P `?8bd8P' ?88  d8P' `P  888bd8P'
+  //  d88   88P88b  ,88b 88b     d88888b
+  // d88'   88b`?88P'`88b`?888P'd88' `?88b,
+  //
+  // d88888P  d8888b   88bd88b  d8888b
+  //    d8P' d8P' ?88  88P' ?8bd8b_,dP
+  //  d8P'   88b  d88 d88   88P88b
+  // d88888P'`?8888P'd88'   88b`?888P'
+  //
+  // Replace MarkdownIt's internal HTML regexes with JSX-friendly ones
+  const markdownItHtmlRegexes = require('markdown-it/lib/common/html_re');
+  Object.keys(markdownItHtmlRegexes).forEach((regexName) => {
+    const regex = markdownItHtmlRegexes[regexName];
+    // this adds support for the `.` character within tag names
+    markdownItHtmlRegexes[regexName] = new RegExp(
+      regex.source.replace(
+        /\[A\-Za\-z\]\[A\-Za\-z0\-9\\-\]\*/g,
+        '[A-Za-z][A-Za-z0-9\\.\\-]*'
+      ),
+      regex.flags
+    );
+  });
+
+  return require('markdown-it');
+})();
 
 const DEFAULT_CONFIGURATION = {
   implicitlyImportReact: true,
   passElementProps: false,
   markdownItPlugins: []
 };
-
-const lowercaseHash = (content) => (
-  anyBase(anyBase.HEX, 'abcdefghijklmnopqrstuvwxyz')(
-    hash('sha256')
-      .update(content, 'utf-8')
-      .digest('hex')
-  )
-);
 
 module.exports = function(source) {
   // This loader is deterministic and will return the same thing for the same inputs!
@@ -182,8 +206,6 @@ module.exports = function(source) {
         case '</':
           return `</${correctedTagName}`;
       }
-
-      return match;
     }
   ).replace(/\s\s\{/, ' {'); // Remove double spaces before spread statements;
 

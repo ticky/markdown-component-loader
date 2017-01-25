@@ -1,8 +1,4 @@
 export default (html, callback) => {
-  if (!(callback instanceof Function)) {
-    return html;
-  }
-
   const tree = [];
 
   return html.replace(
@@ -30,7 +26,8 @@ export default (html, callback) => {
         case '>':
           if (lastTag.state === 'open') {
             lastTag.state = 'content';
-          } else if (lastTag.state === 'closing') {
+          }
+          if (lastTag.state === 'closing') {
             shouldPopTree = true;
           }
           break;
