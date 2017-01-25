@@ -16,6 +16,10 @@ export default [
     - easy and;
     - predictable!
 
+    ## Here's a couple of hyperlinks
+
+    <https://duckduckgo.com> [GitHub](https://github.com)
+
     ## Here's a code snippet with no interpolations
 
     \`\`\`bash
