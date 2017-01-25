@@ -117,6 +117,6 @@ describe('Webpack loader', () => {
         ---
         # This should throw!
       `
-    )).toThrowError(`You can't supply a \`propTypes\` static! That name is reserved.`);
+    )).toThrowErrorMatchingSnapshot();
   });
 });
