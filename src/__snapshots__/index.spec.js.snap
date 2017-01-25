@@ -1,3 +1,5 @@
+exports[`Webpack loader throws if a reserved static is specified 1`] = `"You can\'t supply a \`propTypes\` static! That name is reserved."`;
+
 exports[`Webpack loader with a loader query of \`?\` for component example 0 renders as expected within React 1`] = `
 Array [
   "propTypes",
