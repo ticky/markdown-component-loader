@@ -32,7 +32,7 @@
     "doc-chomp": "1.1.0",
     "front-matter": "^2.1.0",
     "highlight.js": "^9.6.0",
-    "htmltojsx": "https://github.com/reactjs/react-magic#e63dabeefb87d4ce1e74ac2ddb73b0164c344219",
+    "htmltojsx": "^0.2.6",
     "jsesc": "^2.2.0",
     "loader-utils": "^0.2.16",
     "markdown-it": "^8.1.0",
