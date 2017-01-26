@@ -1,5 +1,6 @@
 # Markdown Component Loader
-[![npm](https://img.shields.io/npm/v/markdown-component-loader.svg?maxAge=2592000)](https://www.npmjs.com/package/markdown-component-loader) ![markdown-component-loader](https://img.shields.io/npm/l/markdown-component-loader.svg?maxAge=2592000) [![Build Status](https://travis-ci.org/ticky/markdown-component-loader.svg?branch=master)](https://travis-ci.org/ticky/markdown-component-loader) [![codecov](https://codecov.io/gh/ticky/markdown-component-loader/branch/master/graph/badge.svg)](https://codecov.io/gh/ticky/markdown-component-loader)
+
+[![npm](https://img.shields.io/npm/v/markdown-component-loader.svg?maxAge=2592000)](https://www.npmjs.com/package/markdown-component-loader) ![markdown-component-loader](https://img.shields.io/npm/l/markdown-component-loader.svg?maxAge=2592000) [![Build Status](https://travis-ci.org/ticky/markdown-component-loader.svg?branch=master)](https://travis-ci.org/ticky/markdown-component-loader) [![codecov](https://codecov.io/gh/ticky/markdown-component-loader/branch/master/graph/badge.svg)](https://codecov.io/gh/ticky/markdown-component-loader) [![Greenkeeper badge](https://badges.greenkeeper.io/ticky/markdown-component-loader.svg)](https://greenkeeper.io/)
 
 Turn Markdown into dynamic, stateless React components
 
