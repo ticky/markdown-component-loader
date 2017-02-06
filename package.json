@@ -54,7 +54,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "jest": "^18.1.0",
     "json-loader": "^0.5.4",
-    "markdown-it-anchor": "^2.5.1",
+    "markdown-it-anchor": "^3.0.0",
     "markdown-it-table-of-contents": "^0.3.0",
     "query-params": "^0.0.1",
     "react": "^15.3.2",
