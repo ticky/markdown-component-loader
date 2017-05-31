@@ -203,7 +203,7 @@ exports[`Webpack loader with a loader query of \`?\` for component example 0 ren
 `;
 
 exports[`Webpack loader with a loader query of \`?\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -275,7 +275,7 @@ exports[`Webpack loader with a loader query of \`?\` for component example 1 ren
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -321,7 +321,7 @@ exports[`Webpack loader with a loader query of \`?\` for component example 1 ren
 `;
 
 exports[`Webpack loader with a loader query of \`?\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -376,7 +376,7 @@ exports[`Webpack loader with a loader query of \`?\` for component example 2 ren
 `;
 
 exports[`Webpack loader with a loader query of \`?\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -602,7 +602,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=false\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -672,7 +672,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -718,7 +718,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=false\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -771,7 +771,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=false\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -996,7 +996,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=true\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -1072,7 +1072,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -1118,7 +1118,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=true\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -1177,7 +1177,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&passElementProps=true\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -1406,7 +1406,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -1476,7 +1476,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -1522,7 +1522,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -1575,7 +1575,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -1799,7 +1799,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=false\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -1871,7 +1871,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -1917,7 +1917,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=false\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -1972,7 +1972,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=false\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -2199,7 +2199,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=true\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -2277,7 +2277,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -2323,7 +2323,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=true\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -2384,7 +2384,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&passElementProps=true\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -2615,7 +2615,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` f
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -2687,7 +2687,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` f
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -2733,7 +2733,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` f
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -2788,7 +2788,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` f
 `;
 
 exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -3014,7 +3014,7 @@ exports[`Webpack loader with a loader query of \`?passElementProps=false\` for c
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=false\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -3086,7 +3086,7 @@ exports[`Webpack loader with a loader query of \`?passElementProps=false\` for c
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -3132,7 +3132,7 @@ exports[`Webpack loader with a loader query of \`?passElementProps=false\` for c
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=false\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -3187,7 +3187,7 @@ exports[`Webpack loader with a loader query of \`?passElementProps=false\` for c
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=false\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -3414,7 +3414,7 @@ exports[`Webpack loader with a loader query of \`?passElementProps=true\` for co
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=true\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -3492,7 +3492,7 @@ exports[`Webpack loader with a loader query of \`?passElementProps=true\` for co
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -3538,7 +3538,7 @@ exports[`Webpack loader with a loader query of \`?passElementProps=true\` for co
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=true\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -3599,7 +3599,7 @@ exports[`Webpack loader with a loader query of \`?passElementProps=true\` for co
 `;
 
 exports[`Webpack loader with a loader query of \`?passElementProps=true\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -3830,7 +3830,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -3900,7 +3900,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -3946,7 +3946,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -3999,7 +3999,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -4292,7 +4292,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -4363,7 +4363,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -4409,7 +4409,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -4462,7 +4462,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -4695,7 +4695,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"markdownItPlugins":[null]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -4766,7 +4766,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -4812,7 +4812,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"markdownItPlugins":[null]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -4865,7 +4865,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"markdownItPlugins":[null]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -5089,7 +5089,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -5159,7 +5159,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -5205,7 +5205,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -5258,7 +5258,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -5551,7 +5551,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -5622,7 +5622,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -5668,7 +5668,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -5721,7 +5721,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -5954,7 +5954,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false,"markdownItPlugins":[null]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -6025,7 +6025,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -6071,7 +6071,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false,"markdownItPlugins":[null]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -6124,7 +6124,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false,"markdownItPlugins":[null]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -6348,7 +6348,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -6418,7 +6418,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -6464,7 +6464,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -6517,7 +6517,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":false}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -6742,7 +6742,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true,"markdownItPlugins":"somenonsensevalue"}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -6818,7 +6818,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -6864,7 +6864,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true,"markdownItPlugins":"somenonsensevalue"}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -6923,7 +6923,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true,"markdownItPlugins":"somenonsensevalue"}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -7222,7 +7222,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -7299,7 +7299,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -7345,7 +7345,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -7404,7 +7404,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -7643,7 +7643,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true,"markdownItPlugins":[null]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -7720,7 +7720,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -7766,7 +7766,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true,"markdownItPlugins":[null]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -7825,7 +7825,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true,"markdownItPlugins":[null]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -8055,7 +8055,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -8131,7 +8131,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -8177,7 +8177,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -8236,7 +8236,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false,"passElementProps":true}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -8465,7 +8465,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -8535,7 +8535,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -8581,7 +8581,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -8634,7 +8634,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":false}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -8858,7 +8858,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"markdownItPlugins":"somenonsensevalue"}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -8930,7 +8930,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -8976,7 +8976,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"markdownItPlugins":"somenonsensevalue"}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -9031,7 +9031,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"markdownItPlugins":"somenonsensevalue"}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -9326,7 +9326,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -9399,7 +9399,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -9445,7 +9445,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -9500,7 +9500,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -9735,7 +9735,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"markdownItPlugins":[null]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -9808,7 +9808,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -9854,7 +9854,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"markdownItPlugins":[null]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -9909,7 +9909,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"markdownItPlugins":[null]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -10135,7 +10135,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -10207,7 +10207,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -10253,7 +10253,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -10308,7 +10308,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -10603,7 +10603,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -10676,7 +10676,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -10722,7 +10722,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -10777,7 +10777,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -11012,7 +11012,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false,"markdownItPlugins":[null]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -11085,7 +11085,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -11131,7 +11131,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false,"markdownItPlugins":[null]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -11186,7 +11186,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false,"markdownItPlugins":[null]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -11412,7 +11412,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -11484,7 +11484,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -11530,7 +11530,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -11585,7 +11585,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":false}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -11812,7 +11812,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true,"markdownItPlugins":"somenonsensevalue"}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -11890,7 +11890,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -11936,7 +11936,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true,"markdownItPlugins":"somenonsensevalue"}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -11997,7 +11997,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true,"markdownItPlugins":"somenonsensevalue"}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -12298,7 +12298,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -12377,7 +12377,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -12423,7 +12423,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -12484,7 +12484,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -12725,7 +12725,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true,"markdownItPlugins":[null]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -12804,7 +12804,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -12850,7 +12850,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true,"markdownItPlugins":[null]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -12911,7 +12911,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true,"markdownItPlugins":[null]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -13143,7 +13143,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -13221,7 +13221,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -13267,7 +13267,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -13328,7 +13328,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true,"passElementProps":true}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -13559,7 +13559,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -13631,7 +13631,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -13677,7 +13677,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 import foo from \'foo\';
@@ -13732,7 +13732,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReact":true}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from \'react\';
 import PropTypes from \'prop-types\';
 
@@ -13958,7 +13958,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":"
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":"somenonsensevalue"}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -14028,7 +14028,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":"
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -14074,7 +14074,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":"
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":"somenonsensevalue"}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -14127,7 +14127,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":"
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":"somenonsensevalue"}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -14420,7 +14420,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -14491,7 +14491,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -14537,7 +14537,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -14590,7 +14590,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -14823,7 +14823,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[null]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -14894,7 +14894,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -14940,7 +14940,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[null]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -14993,7 +14993,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[null]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -15217,7 +15217,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -15287,7 +15287,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -15333,7 +15333,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -15386,7 +15386,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -15679,7 +15679,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -15750,7 +15750,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -15796,7 +15796,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -15849,7 +15849,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -16082,7 +16082,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false,"markdownItPlugins":[null]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -16153,7 +16153,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -16199,7 +16199,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false,"markdownItPlugins":[null]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -16252,7 +16252,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false,"markdownItPlugins":[null]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -16476,7 +16476,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -16546,7 +16546,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -16592,7 +16592,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -16645,7 +16645,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":false}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -16870,7 +16870,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true,"markdownItPlugins":"somenonsensevalue"}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -16946,7 +16946,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -16992,7 +16992,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true,"markdownItPlugins":"somenonsensevalue"}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -17051,7 +17051,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true,"markdownItPlugins":"somenonsensevalue"}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -17350,7 +17350,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -17427,7 +17427,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -17473,7 +17473,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -17532,7 +17532,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true,"markdownItPlugins":[null,[null,{"containerClass":"my-container-class"}]]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -17771,7 +17771,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true,"markdownItPlugins":[null]}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -17848,7 +17848,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -17894,7 +17894,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true,"markdownItPlugins":[null]}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -17953,7 +17953,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true,"markdownItPlugins":[null]}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -18183,7 +18183,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -18259,7 +18259,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -18305,7 +18305,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -18364,7 +18364,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
 `;
 
 exports[`Webpack loader with a webpack config object of \`{"passElementProps":true}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -18593,7 +18593,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{}\` for component example 0 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
@@ -18663,7 +18663,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
       Markdown Component
     </em>
      file. Here you can include JSX-style assignment expressions; this component was generated using version 
-    0.7.1
+    0.8.0
      of 
     markdown-component-loader
     !
@@ -18709,7 +18709,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{}\` for component example 1 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 import foo from \'foo\';
 import Bar from \'foo\';
 import { bugs, name, version } from \'../package.json\';
@@ -18762,7 +18762,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
 `;
 
 exports[`Webpack loader with a webpack config object of \`{}\` for component example 2 returns the expected React module 1`] = `
-"// Module generated from Markdown by markdown-component-loader v0.7.1
+"// Module generated from Markdown by markdown-component-loader v0.8.0
 
 MarkdownComponent.propTypes = {
   className: PropTypes.string,
