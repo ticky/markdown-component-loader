@@ -15,7 +15,7 @@ Turn Markdown into dynamic, stateless React components
 yarn add markdown-component-loader
 ```
 
-~_or_~
+\~_or_\~
 
 ```shell
 npm install --save markdown-component-loader
