@@ -7,12 +7,12 @@ export default ({ passElementProps }, imports, statics, jsx) => {
     // Module generated from Markdown by ${name} v${version}
     ${imports}
     MarkdownComponent.propTypes = {
-      className: React.PropTypes.string,
-      style: React.PropTypes.object`;
+      className: PropTypes.string,
+      style: PropTypes.object`;
 
   if (passElementProps) {
     moduleText += DocChomp(2)`,
-        elementProps: React.PropTypes.object
+        elementProps: PropTypes.object
       };
 
       MarkdownComponent.defaultProps = {

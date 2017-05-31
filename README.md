@@ -71,11 +71,12 @@ The above `mdx` file will produce the following module within Webpack;
 ```javascript
 // Module generated from Markdown by markdown-component-loader v0.7.1
 import React from 'react';
+import PropTypes from 'prop-types';
 import { name, version } from './package.json';
 
 MarkdownComponent.propTypes = {
-  className: React.PropTypes.string,
-  style: React.PropTypes.object
+  className: PropTypes.string,
+  style: PropTypes.object
 };
 
 MarkdownComponent['displayName'] = 'MarkdownComponentLoaderReadme';
@@ -133,7 +134,7 @@ module.exports = {
 #### Available Options
 
 * `passElementProps`: Controls whether props can be passed from the parent to the generated elements. Defaults to `false`.
-* `implicitlyImportReact`: Whether to include React in the imports automatically. If set to `false`, you need to either supply React or import it explicitly. Defaults to `true`.
+* `implicitlyImportReact`: Whether to include React and PropTypes in the imports automatically. If set to `false`, you need to either supply React and PropTypes or import them explicitly. Defaults to `true`.
 * `markdownItPlugins`: An array of [MarkdownIt plugin instances](https://www.npmjs.org/browse/keyword/markdown-it-plugin) (and optionally their additional arguments) to use within the markdown renderer. As these are functions, this option is only able to be used via the Webpack configuration object.
 
 ##### MarkdownIt Plugins
@@ -171,12 +172,13 @@ Here's the above example markdown document converted with this option;
 ```javascript
 // Module generated from Markdown by markdown-component-loader v0.7.1
 import React from 'react';
+import PropTypes from 'prop-types';
 import { name, version } from './package.json';
 
 MarkdownComponent.propTypes = {
-  className: React.PropTypes.string,
-  style: React.PropTypes.object,
-  elementProps: React.PropTypes.object
+  className: PropTypes.string,
+  style: PropTypes.object,
+  elementProps: PropTypes.object
 };
 
 MarkdownComponent.defaultProps = {

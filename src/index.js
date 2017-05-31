@@ -26,9 +26,10 @@ module.exports = function(source) {
   const invalidStatics = ['propTypes'];
   const imports = [];
 
-  // Import React unless we've been asked otherwise
+  // Import React and PropTypes unless we've been asked otherwise
   if (config.implicitlyImportReact) {
     imports.push(formatImport('React', 'react'));
+    imports.push(formatImport('PropTypes', 'prop-types'));
   }
 
   // Pull out imports & front-matter

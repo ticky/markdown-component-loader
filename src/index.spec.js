@@ -1,6 +1,7 @@
 /* global jest, describe, expect, it */
 import markdownComponentLoader from './index';
 import React from 'react';
+import PropTypes from 'prop-types';
 import { transform as BabelTransform } from 'babel-core';
 import renderer from 'react-test-renderer';
 import { encode as encodeQuery } from 'query-params';
@@ -20,13 +21,14 @@ const TRANSFORM_WITH_BABEL = (code) => (
 // makes a simple attempt to sandbox, but either way this _is_
 // still calling `eval`, friends.
 const REQUIRE_STRING_MODULE = (code) => (
-  // We have to explicitly expose React to the `eval` context otherwise it's hidden
-  function(React) { // eslint-disable-line no-unused-vars
+  // We have to explicitly expose React & PropTypes to the `eval`
+  // context, otherwise they're unavailable when using explicit imports
+  function(React, PropTypes) { // eslint-disable-line no-unused-vars
     const exports = {};
     eval(code); // eslint-disable-line no-eval
     return exports;
   }
-)(React);
+)(React, PropTypes);
 
 // A fake Webpack context, supplying `cacheable` so the loader
 // can still call that from this envrionment.
