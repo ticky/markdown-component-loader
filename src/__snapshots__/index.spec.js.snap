@@ -364,7 +364,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -448,23 +448,17 @@ exports[`Webpack loader with a loader query of \`?\` for component example 2 ren
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -531,7 +525,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -938,7 +932,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -1022,23 +1016,17 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -1103,7 +1091,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -1520,7 +1508,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -1605,23 +1593,17 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -1685,15 +1667,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -2102,7 +2084,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -2186,23 +2168,17 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -2267,7 +2243,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -2676,7 +2652,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -2760,23 +2736,17 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -2843,7 +2813,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -3266,7 +3236,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -3351,23 +3321,17 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -3433,15 +3397,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -3856,7 +3820,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -3940,23 +3904,17 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` f
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -4023,7 +3981,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -4434,7 +4392,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -4518,23 +4476,17 @@ exports[`Webpack loader with a loader query of \`?passElementProps=false\` for c
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -4601,7 +4553,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -5024,7 +4976,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -5109,23 +5061,17 @@ exports[`Webpack loader with a loader query of \`?passElementProps=true\` for co
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -5191,15 +5137,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -5610,7 +5556,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -5694,23 +5640,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -5775,7 +5715,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -6250,7 +6190,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -6335,23 +6275,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -6416,7 +6350,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -6831,7 +6765,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -6916,23 +6850,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -6997,7 +6925,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -7402,7 +7330,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -7486,23 +7414,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -7567,7 +7489,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -8042,7 +7964,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -8127,23 +8049,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -8208,7 +8124,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -8623,7 +8539,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -8708,23 +8624,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -8789,7 +8699,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -9194,7 +9104,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -9278,23 +9188,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -9359,7 +9263,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -9776,7 +9680,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -9861,23 +9765,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -9941,15 +9839,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -10440,7 +10338,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -10526,23 +10424,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -10606,15 +10498,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']} id><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 id {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -11045,7 +10937,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -11131,23 +11023,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -11211,15 +11097,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']} id><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 id {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -11640,7 +11526,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -11725,23 +11611,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -11805,15 +11685,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -12222,7 +12102,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -12306,23 +12186,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -12387,7 +12261,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -12796,7 +12670,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -12880,23 +12754,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -12963,7 +12831,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -13444,7 +13312,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -13529,23 +13397,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -13612,7 +13474,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -14033,7 +13895,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -14118,23 +13980,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -14201,7 +14057,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -14612,7 +14468,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -14696,23 +14552,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -14779,7 +14629,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -15260,7 +15110,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -15345,23 +15195,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -15428,7 +15272,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -15849,7 +15693,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -15934,23 +15778,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -16017,7 +15855,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -16428,7 +16266,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -16512,23 +16350,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -16595,7 +16427,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -17018,7 +16850,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -17103,23 +16935,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -17185,15 +17011,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -17690,7 +17516,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -17776,23 +17602,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -17858,15 +17678,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']} id><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 id {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -18303,7 +18123,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -18389,23 +18209,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -18471,15 +18285,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']} id><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 id {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -18906,7 +18720,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -18991,23 +18805,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -19073,15 +18881,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -19496,7 +19304,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -19580,23 +19388,17 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -19663,7 +19465,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -20070,7 +19872,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -20154,23 +19956,17 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":"
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -20235,7 +20031,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -20710,7 +20506,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -20795,23 +20591,17 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -20876,7 +20666,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -21291,7 +21081,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -21376,23 +21166,17 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -21457,7 +21241,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -21862,7 +21646,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -21946,23 +21730,17 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -22027,7 +21805,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -22502,7 +22280,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -22587,23 +22365,17 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -22668,7 +22440,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -23083,7 +22855,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -23168,23 +22940,17 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -23249,7 +23015,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -23654,7 +23420,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -23738,23 +23504,17 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -23819,7 +23579,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
@@ -24236,7 +23996,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -24321,23 +24081,17 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -24401,15 +24155,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -24900,7 +24654,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -24986,23 +24740,17 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -25066,15 +24814,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']} id><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 id {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -25505,7 +25253,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -25591,23 +25339,17 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -25671,15 +25413,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']} id><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 id {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -26100,7 +25842,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -26185,23 +25927,17 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -26265,15 +26001,15 @@ function MarkdownComponent(props) {
 
   return (
     <div className={className} style={style}>
-      <h1 {...elementProps[\'h1\']}><img {...elementProps[\'img\']} src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
+      <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a {...elementProps[\'a\']} classname=\"github-link\">Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>Rendered:</strong></p>
-      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div {...elementProps[\'div\']} id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
+      <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>{\"{\"}\'<div id=\"app\" {...elementProps[\'div\']}>\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p {...elementProps[\'p\']}>Hey there <strong {...elementProps[\'strong\']}>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>
   );
 };
@@ -26682,7 +26418,7 @@ MarkdownComponent[\'anObject\'] = {
 };
 
 MarkdownComponent[\'NoReallyDontDoThis\'] = function anonymous(props
-/**/) {
+/*\`\`*/) {
  return React.createElement(\'span\', Object.assign({}, props), \'Please don\\\'t do this.\'); 
 };
 
@@ -26766,23 +26502,17 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
       
       
         
-      {
-      \'
-      <welcome
-        who="Monkey Magic">
-        \'
-        }
-        ,
+      <Welcome who=\"Monkey Magic\" />
+      ,
+      
+      
         
-        
-          
-        document.getElementById(\'app\')
-        
-        
-        );
-        
-        
-      </welcome>
+      document.getElementById(\'app\')
+      
+      
+      );
+      
+      
     </code>
   </pre>
   <p>
@@ -26847,7 +26577,7 @@ function MarkdownComponent(props) {
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
-      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\"{\"}\'<welcome who=\"Monkey Magic\">\'{\"}\"},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</welcome></code></pre>
+      <pre><code>import Welcome from \'./welcome.mdx\';{\"\\n\"}{\"\\n\"}ReactDOM.render({\"\\n\"}{\"  \"}{\'<Welcome who=\"Monkey Magic\" />\'},{\"\\n\"}{\"  \"}document.getElementById(\'app\'){\"\\n\"});{\"\\n\"}</code></pre>
       <p><strong>Rendered:</strong></p>
       <pre><code>{\"{\"}\'<div id=\"app\">\'{\"}\"}{\"\\n\"}{\"  \"}{\"{\"}\'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>\'{\"}\"}{\"\\n\"}{\"{\"}\'</div>\'{\"}\"}{\"\\n\"}</code></pre>
     </div>

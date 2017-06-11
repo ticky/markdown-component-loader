@@ -119,7 +119,7 @@ export default [
     <pre><code>import Welcome from './welcome.mdx';
 
     ReactDOM.render(
-      {'<Welcome who="Monkey Magic" />'},
+      {{'<Welcome who="Monkey Magic" />'}},
       document.getElementById('app')
     );
     </code></pre>
