@@ -14,6 +14,5 @@ if (typeof document !== 'undefined') {
 
 export default function(locals, callback) {
   const string = ReactDOMServer.renderToString(<Homepage />);
-  console.log(string);
   callback(null, string);
 }
