@@ -1,7 +1,6 @@
 /* global process */
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 
 const isDevServer = process.argv.find((arg) => arg.includes('webpack-dev-server'));
 
@@ -11,9 +10,9 @@ module.exports = {
   devtool,
   entry: {
     app: [
-    'babel-polyfill',
-    './app/index.js'
-  ],
+      'babel-polyfill',
+      './app/index.js'
+    ],
     repl: [
       'babel-polyfill',
       './app/repl.js'
@@ -34,12 +33,16 @@ module.exports = {
       { test: /\.mdx$/, loaders: ['babel-loader', '..'], exclude: /node_modules/ },
       { test: /\.json$/, loader: 'json-loader' },
       { test: /\.css$/, loader: ExtractTextPlugin.extract('css-loader'), exclude: /node_modules/ },
-      { test: /\.(jpe?g|png|gif|svg)$/i, loaders: ['file?hash=sha512&digest=hex&name=[hash].[ext]', 'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'] }
+      { test: /\.(jpe?g|png|gif|svg)$/i,
+        loaders: [
+          'file?hash=sha512&digest=hex&name=[hash].[ext]',
+          'image-webpack?bypassOnDebug'
+        ]
+      }
     ]
   },
   plugins: [
     new webpack.DefinePlugin({ IN_BROWSER: true }), // gotta do this to make HTMLtoJSX not break in-browser
-    new StaticSiteGeneratorPlugin('app', ['/'], {}),
     new webpack.optimize.UglifyJsPlugin(),
     new ExtractTextPlugin("[name].css")
   ]
