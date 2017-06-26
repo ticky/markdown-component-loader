@@ -1,4 +1,5 @@
 /* global process */
+const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -19,7 +20,7 @@ module.exports = {
     ]
   },
   output: {
-    path: "docs",
+    path: path.join(__dirname, "docs"),
     filename: "[name].js"
   },
   devServer: {
@@ -28,22 +29,49 @@ module.exports = {
     host: "0.0.0.0"
   },
   module: {
-    loaders: [
-      { test: /\.js$/, loader: 'babel-loader' },
-      { test: /\.mdx$/, loaders: ['babel-loader', '..'], exclude: /node_modules/ },
-      { test: /\.json$/, loader: 'json-loader' },
-      { test: /\.css$/, loader: ExtractTextPlugin.extract('css-loader'), exclude: /node_modules/ },
+    rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader'
+      },
+      {
+        test: /\.mdx$/,
+        use: [
+          'babel-loader',
+          path.join(__dirname, "lib/index.js")
+        ],
+        exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          use: 'css-loader'
+        }),
+        exclude: /node_modules/
+      },
       { test: /\.(jpe?g|png|gif|svg)$/i,
-        loaders: [
-          'file?hash=sha512&digest=hex&name=[hash].[ext]',
-          'image-webpack?bypassOnDebug'
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              hash: 'sha512',
+              digest: 'hex',
+              name: '[hash].[ext]'
+            }
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true
+            }
+          }
         ]
       }
     ]
   },
   plugins: [
     new webpack.DefinePlugin({ IN_BROWSER: true }), // gotta do this to make HTMLtoJSX not break in-browser
-    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({ sourceMap: true }),
     new ExtractTextPlugin("[name].css")
   ]
 };
