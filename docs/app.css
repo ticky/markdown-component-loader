@@ -30,11 +30,18 @@ img {
   width: 100%;
 }
 
+/* logo */
+h1 > img {
+  max-width: calc(100% + 2em);
+  margin-left: -1em;
+  margin-right: -1em;
+}
+
 /* tagline */
 h1 + p {
   color: #52B2E4;
   font-size: 1.16em;
-  width: 60%;
+  max-width: 20em;
   margin: 2.25em auto;
 }
 
@@ -54,25 +61,43 @@ pre {
   color: #7E7E7E;
   border: 1px solid #E5E5E5;
   border-radius: .6em;
-  padding: 2em;
+  padding: 1em;
   margin: 1em -.2em;
   white-space: pre;
   white-space: pre-wrap;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 480px) {
+  pre {
+    padding: 2em;
+  }
 }
 
 pre span.emphasis {
   color: #6A00C9;
 }
 
-a:link.github-link, a:visited.github-link {
-  display: inline-block;
-  color: white;
+a:link.bubble-link, a:visited.bubble-link {
+  display: inline-flex;
+  align-items: center;
+  color: #eee;
+  background-color: #333;
   line-height: 1em;
-  padding: 1em 3em;
+  min-height: 3em;
+  padding: 0 3em;
   border-radius: 2em;
-  text-indent: 1em;
   text-decoration: none;
+}
+
+a:link.bubble-link:hover {
+  text-decoration: none;
+}
+
+a:link.github-link, a:visited.github-link {
+  text-indent: 1em;
   background-color: #6A00C9;
   background-image: url(1e7ea3e8ac242d69c669bb535d4bdcf1.svg);
   background-repeat: no-repeat;
@@ -80,12 +105,8 @@ a:link.github-link, a:visited.github-link {
   background-position: .5em .5em;
 }
 
-a:link.github-link:hover {
-  text-decoration: none;
-}
-
 hr {
-  width: 33%;
+  max-width: 11em;
   border: none;
   border-top: 1px solid #E5E5E5;
   margin: 2em auto;
@@ -100,35 +121,27 @@ a:link:hover, a:visited:hover {
   text-decoration: underline;
 }
 
-/* REPL frame styles (old) */
-
-.repl-frame {
+.repl-image {
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 75%;
+  padding-bottom: 37.6744186%;
+  background: url(fe46ca0e3ce2350d930eaa2581cca071.png) 100%/100%;
 }
 
-@media (max-width: 767px) {
-  .repl-frame {
-    padding-bottom: 200%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .repl-frame {
-    padding-bottom: 50%;
-  }
-}
-
-.repl-frame iframe {
+.repl-image > div {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  left: 0;
-  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.repl-image > div > a:link.bubble-link,
+.repl-image > div > a:visited.bubble-link {
+  color: #6A00C9;
+  background-color: white;
 }
 
 /*# sourceMappingURL=app.css.map*/
