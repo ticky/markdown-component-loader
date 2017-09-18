@@ -12,7 +12,7 @@ body {
   color: black;
   background-color: white;
   margin: 0;
-  padding: 2em;
+  padding: 0 1em;
   font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Lucida Grande";
   display: flex;
   align-items: center;
@@ -31,10 +31,14 @@ img {
 }
 
 /* logo */
+h1 {
+  margin: 0;
+}
+
 h1 > img {
-  max-width: calc(100% + 2em);
-  margin-left: -1em;
-  margin-right: -1em;
+  max-width: calc(100% + 1em);
+  margin-left: -.5em;
+  margin-right: -.5em;
 }
 
 /* tagline */
@@ -49,11 +53,17 @@ h2 {
   color: #52B2E4;
   font-weight: normal;
   font-size: 1.33em;
+  margin-top: 3em;
 }
 
 h3 {
   font-weight: normal;
   font-size: .77em;
+  margin-bottom: .5em;
+}
+
+center {
+  margin: 3em 0;
 }
 
 pre {
@@ -62,7 +72,7 @@ pre {
   border: 1px solid #E5E5E5;
   border-radius: .6em;
   padding: 1em;
-  margin: 1em -.2em;
+  margin: 0 -.2em;
   white-space: pre;
   white-space: pre-wrap;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
@@ -106,10 +116,10 @@ a:link.github-link, a:visited.github-link {
 }
 
 hr {
-  max-width: 11em;
+  max-width: 16em;
   border: none;
   border-top: 1px solid #E5E5E5;
-  margin: 2em auto;
+  margin: 3em auto;
 }
 
 a:link, a:visited {
