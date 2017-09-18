@@ -19,7 +19,7 @@ A Webpack loader that turns Markdown into dynamic, stateless React components!
 {{ <span className="emphasis">import Welcome from './welcome.mdx';</span> }}
  
 ReactDOM.render(
-{{ <span className="emphasis">{'  <Welcome who="Monkey Magic" />,'}</span>}}
+{{ <span className="emphasis">{`  <Welcome who="${props.who || 'Monkey Magic'}" />,`}</span>}}
 {{`  document.getElementById('app')`}}
 );
 ```
@@ -27,38 +27,24 @@ ReactDOM.render(
 ### Rendered:
 ```html
 <div id="app">
-{{ <span className="emphasis">{'  <p>Hey there <strong>Monkey Magic</strong> ✌️</p>'}</span>}}
+{{ <span className="emphasis">{`  <p>Hey there <strong>${props.who || 'Monkey Magic'}</strong> ✌🏼</p>`}</span>}}
 </div>
 ```
 
 ## What else can it do?
 
-Embed SVG directly into your mdx file, just as you would a jsx file:
-
-```markdown
-Here’s an inline SVG: {{<span className="emphasis">{'{'+'{'} {'<svg style={{ display: \'inline\', height: \'1em\'}} viewBox="0 0 304 290"><path fill="none" stroke="currentColor" strokeWidth="16" d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z" /></svg>'} {'}'+'}'}</span>}}. You can see that nested curly braces are also fully supported.
-```
-
-Import functions, such as shared snippets or fancy library functions, using YAML front-matter:
+Use JSX within Markdown. Plus import objects such as shared snippets, fancy library functions or even whole React components, using YAML front-matter:
 
 ```markdown
 ---
 {{<span className="emphasis">{'imports:'}</span>}}
 {{<span className="emphasis">{'  window: global/window'}</span>}}
----
-
-Hello <code>{{<span className="emphasis">{'{{ window.navigator.userAgent }}'}</span>}}</code>
-```
-
-Import whole React components:
-
-```markdown
----
-{{<span className="emphasis">{'imports:'}</span>}}
 {{<span className="emphasis">{'  Button: ui/button'}</span>}}
 ---
 
-Please {{<span className="emphasis">{'{\{ <Button path="/login">Login</Button> }\}'}</span>}}
+Hello, your user agent is {{<span className="emphasis">{'{{ window.navigator.userAgent }}'}</span>}}.
+
+{{<span className="emphasis">{'{\{ <Button path="/browser-info">Details</Button> }\}'}</span>}}
 ```
 
 Destructured imports, with some added single quotes:
