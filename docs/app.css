@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 2em;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Lucida Grande";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: default;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  max-width: 45em;
+  width: 100%;
+}
+
+/* logo */
+h1 > img {
+  max-width: calc(100% + 2em);
+  margin-left: -1em;
+  margin-right: -1em;
+}
+
+/* tagline */
+h1 + p {
+  color: #52B2E4;
+  font-size: 1.16em;
+  max-width: 20em;
+  margin: 2.25em auto;
+}
+
+h2 {
+  color: #52B2E4;
+  font-weight: normal;
+  font-size: 1.33em;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: .77em;
+}
+
+pre {
+  font-size: 1em;
+  color: #7E7E7E;
+  border: 1px solid #E5E5E5;
+  border-radius: .6em;
+  padding: 1em;
+  margin: 1em -.2em;
+  white-space: pre;
+  white-space: pre-wrap;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 480px) {
+  pre {
+    padding: 2em;
+  }
+}
+
+pre span.emphasis {
+  color: #6A00C9;
+}
+
+a:link.bubble-link, a:visited.bubble-link {
+  display: inline-flex;
+  align-items: center;
+  color: #eee;
+  background-color: #333;
+  line-height: 1em;
+  min-height: 3em;
+  padding: 0 3em;
+  border-radius: 2em;
+  text-decoration: none;
+}
+
+a:link.bubble-link:hover {
+  text-decoration: none;
+}
+
+a:link.github-link, a:visited.github-link {
+  text-indent: 1em;
+  background-color: #6A00C9;
+  background-image: url(1e7ea3e8ac242d69c669bb535d4bdcf1.svg);
+  background-repeat: no-repeat;
+  background-size: auto 66%;
+  background-position: .5em .5em;
+}
+
+hr {
+  max-width: 11em;
+  border: none;
+  border-top: 1px solid #E5E5E5;
+  margin: 2em auto;
+}
+
+a:link, a:visited {
+  color: #6A00C9;
+  text-decoration: none;
+}
+
+a:link:hover, a:visited:hover {
+  text-decoration: underline;
+}
+
+.repl-image {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 37.6744186%;
+  background: url(fe46ca0e3ce2350d930eaa2581cca071.png) 100%/100%;
+}
+
+.repl-image > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.repl-image > div > a:link.bubble-link,
+.repl-image > div > a:visited.bubble-link {
+  color: #6A00C9;
+  background-color: white;
+}
+
+/*# sourceMappingURL=app.css.map*/
