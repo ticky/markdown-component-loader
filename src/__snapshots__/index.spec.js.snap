@@ -410,7 +410,7 @@ exports[`Webpack loader with a loader query of \`?\` for component example 2 ren
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -521,7 +521,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -978,7 +978,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -1087,7 +1087,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -1555,7 +1555,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false&pa
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -1669,7 +1669,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -2130,7 +2130,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=false\` 
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -2239,7 +2239,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -2698,7 +2698,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -2809,7 +2809,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -3283,7 +3283,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true&pas
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -3399,7 +3399,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -3866,7 +3866,7 @@ exports[`Webpack loader with a loader query of \`?implicitlyImportReact=true\` f
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -3977,7 +3977,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -4438,7 +4438,7 @@ exports[`Webpack loader with a loader query of \`?passElementProps=false\` for c
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -4549,7 +4549,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -5023,7 +5023,7 @@ exports[`Webpack loader with a loader query of \`?passElementProps=true\` for co
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -5139,7 +5139,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -5602,7 +5602,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -5711,7 +5711,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -6237,7 +6237,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -6346,7 +6346,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -6812,7 +6812,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -6921,7 +6921,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -7376,7 +7376,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -7485,7 +7485,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -8011,7 +8011,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -8120,7 +8120,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -8586,7 +8586,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -8695,7 +8695,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -9150,7 +9150,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -9259,7 +9259,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -9727,7 +9727,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -9841,7 +9841,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -10386,7 +10386,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -10500,7 +10500,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -10985,7 +10985,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -11099,7 +11099,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -11573,7 +11573,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -11687,7 +11687,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -12148,7 +12148,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -12257,7 +12257,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -12716,7 +12716,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -12827,7 +12827,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -13359,7 +13359,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -13470,7 +13470,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -13942,7 +13942,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -14053,7 +14053,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -14514,7 +14514,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -14625,7 +14625,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -15157,7 +15157,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -15268,7 +15268,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -15740,7 +15740,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -15851,7 +15851,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -16312,7 +16312,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -16423,7 +16423,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -16897,7 +16897,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -17013,7 +17013,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -17564,7 +17564,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -17680,7 +17680,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -18171,7 +18171,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -18287,7 +18287,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -18767,7 +18767,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -18883,7 +18883,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -19350,7 +19350,7 @@ exports[`Webpack loader with a webpack config object of \`{"implicitlyImportReac
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -19461,7 +19461,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -19918,7 +19918,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":"
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -20027,7 +20027,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -20553,7 +20553,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -20662,7 +20662,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -21128,7 +21128,7 @@ exports[`Webpack loader with a webpack config object of \`{"markdownItPlugins":[
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -21237,7 +21237,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -21692,7 +21692,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -21801,7 +21801,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -22327,7 +22327,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -22436,7 +22436,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -22902,7 +22902,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -23011,7 +23011,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -23466,7 +23466,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":fa
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -23575,7 +23575,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
@@ -24043,7 +24043,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -24157,7 +24157,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -24702,7 +24702,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -24816,7 +24816,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -25301,7 +25301,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -25415,7 +25415,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 id {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -25889,7 +25889,7 @@ exports[`Webpack loader with a webpack config object of \`{"passElementProps":tr
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -26003,7 +26003,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1 {...elementProps[\'h1\']}><img src=\"logo.svg\" alt=\"Markdown Component Loader\" {...elementProps[\'img\']} /></h1>
       <p {...elementProps[\'p\']}>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p {...elementProps[\'p\']}><a classname=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
+      <p {...elementProps[\'p\']}><a className=\"github-link\" {...elementProps[\'a\']}>Check it out on GitHub</a></p>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>welcome.mdx</strong></p>
       <pre {...elementProps[\'pre\']}><code {...elementProps[\'code\']}>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p {...elementProps[\'p\']}><strong {...elementProps[\'strong\']}>app.jsx</strong></p>
@@ -26464,7 +26464,7 @@ exports[`Webpack loader with a webpack config object of \`{}\` for component exa
   </p>
   <p>
     <a
-      classname="github-link">
+      className="github-link">
       Check it out on GitHub
     </a>
   </p>
@@ -26573,7 +26573,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <h1><img src=\"logo.svg\" alt=\"Markdown Component Loader\" /></h1>
       <p>A Webpack loader that turns Markdown into dynamic, stateless React components!</p>
-      <p><a classname=\"github-link\">Check it out on GitHub</a></p>
+      <p><a className=\"github-link\">Check it out on GitHub</a></p>
       <p><strong>welcome.mdx</strong></p>
       <pre><code>Hey there **{\"{\"}\'{\'} props.who {\'}\'{\"}\"}** ✌🏼{\"\\n\"}</code></pre>
       <p><strong>app.jsx</strong></p>
