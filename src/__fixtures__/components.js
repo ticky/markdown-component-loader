@@ -109,7 +109,7 @@ export default [
 
     A Webpack loader that turns Markdown into dynamic, stateless React components!
 
-    <a className="github-link">Check it out on GitHub</a>
+    <a class="github-link">Check it out on GitHub</a>
 
     **welcome.mdx**
     <pre><code>Hey there **{'{{'} props.who {'}}'}** ✌🏼
