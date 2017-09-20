@@ -126,7 +126,7 @@ module.exports = function(source) {
   });
 
   // Hold onto JSX properties and assignment expressions before converting
-  const htmlTagIndexes = [];
+  const markdownTagIndexes = [];
 
   // Find all opening or void HTML tags
   walkHtml(
@@ -136,9 +136,9 @@ module.exports = function(source) {
       if (typeof tag.closeIndex === 'number') {
         // Push its start and end coordinates into our list
         if (typeof tag.contentIndex === 'number') {
-          htmlTagIndexes.push([tag.openIndex, tag.contentIndex]);
+          markdownTagIndexes.push([tag.openIndex, tag.contentIndex]);
         } else {
-          htmlTagIndexes.push([tag.openIndex, tag.closeIndex]);
+          markdownTagIndexes.push([tag.openIndex, tag.closeIndex]);
         }
       }
     }
@@ -152,7 +152,7 @@ module.exports = function(source) {
     /[\w]+={[^}]*}}?|{\s*\.\.\.[^}]*}/g
   );
 
-  htmlTagIndexes.forEach(([start, end]) => {
+  markdownTagIndexes.forEach(([start, end]) => {
     const startIndex = start + offsetForPropertyReplacements;
     const endIndex = end + offsetForPropertyReplacements;
 
