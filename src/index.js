@@ -1,12 +1,10 @@
 import frontMatter from 'front-matter';
 import { getLoaderConfig } from 'loader-utils';
 import HighlightJS from 'highlight.js';
-import { ast as TsXML, Compiler as TsXMLCompiler } from 'tsxml';
 
 import formatImport from './formatters/import';
 import formatModule from './formatters/module';
 import formatStatic from './formatters/static';
-import formatEscape from './formatters/js-escape';
 import StringReplacementCache from './string-replacement-cache';
 import walkHtml from './process-html';
 
@@ -45,49 +43,40 @@ const MarkdownIt = (() => {
 
 const ASSIGNMENT_COMMENT_PREFIX = '[mcl-assignment]:';
 
-const processChildNodes = (node, passElementProps) => {
-  if (node instanceof TsXML.CommentNode) {
-    const content = node.content.trim();
+// const TsXML = {};
 
-    // Don't do anything to replaced assignment comments!
-    if (content.indexOf(ASSIGNMENT_COMMENT_PREFIX) !== 0) {
-      // Replace XML comment nodes with JSX style comment nodes
-      const oldNode = node;
+// const processChildNodes = (node, passElementProps) => {
+//   if (node instanceof TsXML.CommentNode) {
+//     const content = node.content.trim();
 
-      node = new TsXML.TextNode();
-      node.content = `{/* ${content} */}`;
+//     // Don't do anything to replaced assignment comments!
+//     if (content.indexOf(ASSIGNMENT_COMMENT_PREFIX) !== 0) {
+//       // Replace XML comment nodes with JSX style comment nodes
+//       const oldNode = node;
 
-      oldNode.parentNode.replaceChild(oldNode, node);
-    }
-  } else if (node instanceof TsXML.TextNode) {
-    // Wrap strings containing significant whitespace or curly braces
-    if (node.content && node.content.match(/^\s|{|}|\s$/)) {
-      node.content = `{${formatEscape(node.content)}}`;
-    }
-  } else if (node.tagName) {
-    // Pass through `elementProps` to tags
-    if (passElementProps) {
-      node.attrList[`{...elementProps['${node.tagName}']}`] = undefined;
-    }
-  }
+//       node = new TsXML.TextNode();
+//       node.content = `{/* ${content} */}`;
 
-  if (node.childNodes) {
-    node.forEachChildNode((childNode) => {
-      processChildNodes(childNode, passElementProps);
-    });
-  }
-};
+//       oldNode.parentNode.replaceChild(oldNode, node);
+//     }
+//   } else if (node instanceof TsXML.TextNode) {
+//     // Wrap strings containing significant whitespace or curly braces
+//     if (node.content && node.content.match(/^\s|{|}|\s$/)) {
+//       node.content = `{${formatEscape(node.content)}}`;
+//     }
+//   } else if (node.tagName) {
+//     // Pass through `elementProps` to tags
+//     if (passElementProps) {
+//       node.attrList[`{...elementProps['${node.tagName}']}`] = undefined;
+//     }
+//   }
 
-const htmlToJsx = (html, { indent, passElementProps } = {}) => {
-  return TsXMLCompiler.parseXmlToAst(html)
-    .then((jsxAst) => {
-      processChildNodes(jsxAst, passElementProps);
-
-      return jsxAst.toFormattedString()
-        .replace(/\n/g, `\n${indent}`) // Indent for pretty inspector output 🎉
-        .replace(/\n\s*$/g, '');      // Remove the trailing blank line
-    });
-};
+//   if (node.childNodes) {
+//     node.forEachChildNode((childNode) => {
+//       processChildNodes(childNode, passElementProps);
+//     });
+//   }
+// };
 
 const DEFAULT_CONFIGURATION = {
   implicitlyImportReact: true,
@@ -99,9 +88,6 @@ module.exports = function(source) {
   // This loader is deterministic, and will
   // return the same thing for the same inputs!
   this.cacheable && this.cacheable();
-
-  // This loader is asynchronous
-  const webpackCallback = this.async();
 
   // Loads configuration from webpack config as well as loader query string
   const config = Object.assign({}, DEFAULT_CONFIGURATION, getLoaderConfig(this, 'markdownComponentLoader'));
@@ -236,28 +222,17 @@ module.exports = function(source) {
 
   const html = renderer.render(markdownSansAssignments) || '<!-- no input given -->';
 
-  htmlToJsx(
-    html,
-    {
-      passElementProps: config.passElementProps,
-      indent: '          '
-    }
-  ).then(
-    (jsx) => {
-      // Unload caches so we've got our values back!
-      jsx = jsxPropertyCache.unload(assignmentExpressionCache.unload(jsx));
+  // Unload caches so we've got our values back!
+  const jsx = jsxPropertyCache.unload(assignmentExpressionCache.unload(
+    html
+      .replace(/\n/g, `\n        `) // Indent for pretty inspector output 🎉
+      .replace(/\n\s*$/g, '')        // Remove the trailing blank line
+  ));
 
-      return webpackCallback(
-        formatModule(
-          config,
-          imports.join(''),
-          statics.join(''),
-          jsx
-        )
-      );
-    },
-    (error) => {
-      return webpackCallback(error);
-    }
+  return formatModule(
+    config,
+    imports.join(''),
+    statics.join(''),
+    jsx
   );
 };

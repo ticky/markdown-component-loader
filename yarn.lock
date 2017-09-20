@@ -6191,10 +6191,6 @@ tryit@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/tryit/-/tryit-1.0.3.tgz#393be730a9446fd1ead6da59a014308f36c289cb"
 
-tsxml@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/tsxml/-/tsxml-0.1.0.tgz#d73f14a0d844af51edc0b98bdb52634a41b9b0d4"
-
 tty-browserify@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/tty-browserify/-/tty-browserify-0.0.0.tgz#a157ba402da24e9bf957f9aa69d524eed42901a6"

@@ -32,7 +32,6 @@ const REQUIRE_STRING_MODULE = (code) => (
 // A fake Webpack context, supplying `cacheable` so the loader
 // can still call that from this envrionment.
 const FAKE_WEBPACK_CONTEXT = {
-  async: jest.fn(),
   cacheable: jest.fn()
 };
 
@@ -44,17 +43,9 @@ const RUN_ONE_FIXTURE = (context, component, index) => {
     let loadedComponent;
     let transformedComponent;
 
-    it('executes without errors', (done) => {
-      const asyncCallback = jest.fn();
-      context.async.mockReturnValueOnce(asyncCallback);
-      asyncCallback.mockImplementationOnce((value) => {
-        loadedComponent = value;
-        done();
-      });
-
-      expect(() => markdownComponentLoader.call(context, component)).not.toThrowError();
+    it('executes without errors', () => {
+      expect(() => loadedComponent = markdownComponentLoader.call(context, component)).not.toThrowError();
       expect(context.cacheable).toHaveBeenCalled();
-      expect(context.async).toHaveBeenCalled();
     });
 
     it('returns the expected React module', () => {

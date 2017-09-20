@@ -36,8 +36,7 @@
     "jsesc": "^2.2.0",
     "loader-utils": "^0.2.16",
     "markdown-it": "^8.1.0",
-    "sha.js": "^2.4.5",
-    "tsxml": "^0.1.0"
+    "sha.js": "^2.4.5"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
