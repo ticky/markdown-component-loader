@@ -85,8 +85,7 @@ const DEFAULT_CONFIGURATION = {
 };
 
 module.exports = function(source) {
-  // This loader is deterministic, and will
-  // return the same thing for the same inputs!
+  // This loader is deterministic, and will return the same thing for the same inputs!
   this.cacheable && this.cacheable();
 
   // Loads configuration from webpack config as well as loader query string
