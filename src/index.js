@@ -158,7 +158,7 @@ const convert = (source, config) => {
   const htmlOffsets = [0];
 
   htmlTags.forEach((tag) => {
-    const { state, openIndex, contentIndex, closeIndex, closingIndex } = tag;
+    const { tagName, state, openIndex, contentIndex, closeIndex, closingIndex } = tag;
 
     if (typeof openIndex === 'number') {
       htmlOffsets.push(openIndex);
@@ -175,7 +175,11 @@ const convert = (source, config) => {
 
     if (typeof closeIndex === 'number') {
       if (state === 'open') {
-        htmlOffsets.push(closeIndex + 2);
+        if (tagName.indexOf('!--') === 0) {
+          htmlOffsets.push(closeIndex + 3);
+        } else {
+          htmlOffsets.push(closeIndex + 2);
+        }
       } else {
         htmlOffsets.push(closeIndex + 1);
       }

@@ -3,16 +3,16 @@ export default (html, callback) => {
     throw new Error('A callback is required!');
   }
 
-  // Stack for keeping track of HTML fragments encountered
+  // Stack for keeping track of SGML fragments encountered
   const stack = [];
 
   // We piggyback on `replace`, which means you can walk the tree and replace
   // stuff within it, but you don't have to!
   return html.replace(
-    /(<\/?([^\s/>]*)|\/>|>)/gi,
+    /(<\/?([^\s/>]*)|\/>|(?:--)?>)/gi,
     (match, tagFragment, tagName, offset, string) => {
       // This callback is called for every "tag fragment" encountered.
-      // This doesn't guarantee the HTML is valid, compliant, or even useful,
+      // This doesn't guarantee the SGML is valid, compliant, or even useful,
       // but it's simple and permissive enough to let you build smarter things
       // atop it.
 
@@ -56,7 +56,8 @@ export default (html, callback) => {
           break;
 
         case '/>':
-          // A void element tag is closing
+        case '-->':
+          // A void element or comment tag is closing
           lastTag.closeIndex = offset;
           shouldPopStack = true;
           break;
