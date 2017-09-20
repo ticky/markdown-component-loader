@@ -46,19 +46,7 @@ import walkHtml from './process-html';
 //   }
 // };
 
-const DEFAULT_CONFIGURATION = {
-  implicitlyImportReact: true,
-  passElementProps: false,
-  markdownItPlugins: []
-};
-
-module.exports = function(source) {
-  // This loader is deterministic, and will return the same thing for the same inputs!
-  this.cacheable && this.cacheable();
-
-  // Loads configuration from webpack config as well as loader query string
-  const config = Object.assign({}, DEFAULT_CONFIGURATION, getLoaderConfig(this, 'markdownComponentLoader'));
-
+const convert = (source, config) => {
   const invalidStatics = ['propTypes'];
   const imports = [];
 
@@ -203,4 +191,20 @@ module.exports = function(source) {
     statics.join(''),
     jsx
   );
+};
+
+const DEFAULT_CONFIGURATION = {
+  implicitlyImportReact: true,
+  passElementProps: false,
+  markdownItPlugins: []
+};
+
+module.exports = function(source) {
+  // This loader is deterministic, and will return the same thing for the same inputs!
+  this.cacheable && this.cacheable();
+
+  // Loads configuration from Webpack
+  const config = Object.assign({}, DEFAULT_CONFIGURATION, getLoaderConfig(this, 'markdownComponentLoader'));
+
+  return convert(source, config);
 };
