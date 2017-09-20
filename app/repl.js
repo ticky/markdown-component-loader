@@ -54,18 +54,25 @@ class REPL {
   }
 
   compile() {
-    let transformed;
     const code = this.getSource();
 
     this.clearOutput();
 
     try {
-      transformed = markdownComponentLoader.call(
+      markdownComponentLoader.call(
         {
           cacheable() {},
+          async: () => (result) => {
+            if (result instanceof Error) {
+              console.error(result);
+              return this.printError(result.toString());
+            }
+
+            this.setOutput(result);
+          },
           options: {
             markdownComponentLoader: {
-              passElementProps: false
+              passElementProps: true
             }
           }
         },
@@ -73,10 +80,6 @@ class REPL {
       );
     } catch (err) {
       this.printError(`Errors:\n${err.message}`);
-    }
-
-    if (transformed) {
-      this.setOutput(transformed);
     }
   }
 }

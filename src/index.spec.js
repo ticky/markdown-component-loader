@@ -4,7 +4,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { transform as BabelTransform } from 'babel-core';
 import renderer from 'react-test-renderer';
-import { encode as encodeQuery } from 'query-params';
 import DocChomp from 'doc-chomp';
 
 import MARKDOWN_COMPONENT_FIXTURES from './__fixtures__/components';
@@ -33,6 +32,7 @@ const REQUIRE_STRING_MODULE = (code) => (
 // A fake Webpack context, supplying `cacheable` so the loader
 // can still call that from this envrionment.
 const FAKE_WEBPACK_CONTEXT = {
+  async: jest.fn(),
   cacheable: jest.fn()
 };
 
@@ -40,13 +40,21 @@ const FAKE_WEBPACK_CONTEXT = {
 // that the React module matches our expectations, that Babel is happy with it, and
 // that it renders as expected.
 const RUN_ONE_FIXTURE = (context, component, index) => {
-  describe(`for component example ${index}`, () => {
+  describe(`for component example ${index + 1}`, () => {
     let loadedComponent;
     let transformedComponent;
 
-    it('executes without errors', () => {
-      expect(() => loadedComponent = markdownComponentLoader.call(context, component)).not.toThrowError();
+    it('executes without errors', (done) => {
+      const asyncCallback = jest.fn();
+      context.async.mockReturnValueOnce(asyncCallback);
+      asyncCallback.mockImplementationOnce((value) => {
+        loadedComponent = value;
+        done();
+      });
+
+      expect(() => markdownComponentLoader.call(context, component)).not.toThrowError();
       expect(context.cacheable).toHaveBeenCalled();
+      expect(context.async).toHaveBeenCalled();
     });
 
     it('returns the expected React module', () => {
@@ -90,25 +98,6 @@ PLUGIN_FIXTURES.push([
   [require("markdown-it-table-of-contents"), { containerClass: 'my-container-class' }]
 ]);
 
-// Runs all fixtures against each Webpack config, testing both object and query string
-// configuration methods
-const RUN_FIXTURES_FOR_CONFIG = (config) => {
-  describe(
-    `with a webpack config object of \`${JSON.stringify(config)}\``,
-    RUN_FIXTURES_IN_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: { markdownComponentLoader: config } }))
-  );
-
-  // `markdownItPlugins` can't be passed via query because they're JavaScript!
-  if (!config.hasOwnProperty('markdownItPlugins')) {
-    const query = `?${encodeQuery(config)}`;
-
-    describe(
-      `with a loader query of \`${query}\``,
-      RUN_FIXTURES_IN_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: {}, query }))
-    );
-  }
-};
-
 // And now, the party can start!
 describe('Webpack loader', () => {
   BOOL_FIXTURES.forEach((implicitlyImportReact) => {
@@ -120,7 +109,10 @@ describe('Webpack loader', () => {
           config.markdownItPlugins = markdownItPlugins;
         }
 
-        RUN_FIXTURES_FOR_CONFIG(config);
+        describe(
+          `with a webpack config object of \`${JSON.stringify(config)}\``,
+          RUN_FIXTURES_IN_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: { markdownComponentLoader: config } }))
+        );
       });
     });
   });

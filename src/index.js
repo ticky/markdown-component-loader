@@ -1,18 +1,14 @@
 import frontMatter from 'front-matter';
 import { getLoaderConfig } from 'loader-utils';
 import HighlightJS from 'highlight.js';
-import { DOM as ReactDOM } from 'react';
-
-import VOID_ELEMENTS from 'html-void-elements';
+import { ast as TsXML, Compiler as TsXMLCompiler } from 'tsxml';
 
 import formatImport from './formatters/import';
 import formatModule from './formatters/module';
 import formatStatic from './formatters/static';
-
-import htmlToJsx from './html-to-jsx';
-import lowercaseHash from './lowercase-hash';
-import processHtml from './process-html';
+import formatEscape from './formatters/js-escape';
 import StringReplacementCache from './string-replacement-cache';
+import walkHtml from './process-html';
 
 const MarkdownIt = (() => {
   // welcome, to the
@@ -47,6 +43,52 @@ const MarkdownIt = (() => {
   return require('markdown-it');
 })();
 
+const ASSIGNMENT_COMMENT_PREFIX = '[mcl-assignment]:';
+
+const processChildNodes = (node, passElementProps) => {
+  if (node instanceof TsXML.CommentNode) {
+    const content = node.content.trim();
+
+    // Don't do anything to replaced assignment comments!
+    if (content.indexOf(ASSIGNMENT_COMMENT_PREFIX) !== 0) {
+      // Replace XML comment nodes with JSX style comment nodes
+      const oldNode = node;
+
+      node = new TsXML.TextNode();
+      node.content = `{/* ${content} */}`;
+
+      oldNode.parentNode.replaceChild(oldNode, node);
+    }
+  } else if (node instanceof TsXML.TextNode) {
+    // Wrap strings containing significant whitespace or curly braces
+    if (node.content && node.content.match(/^\s|{|}|\s$/)) {
+      node.content = `{${formatEscape(node.content)}}`;
+    }
+  } else if (node.tagName) {
+    // Pass through `elementProps` to tags
+    if (passElementProps) {
+      node.attrList[`{...elementProps['${node.tagName}']}`] = undefined;
+    }
+  }
+
+  if (node.childNodes) {
+    node.forEachChildNode((childNode) => {
+      processChildNodes(childNode, passElementProps);
+    });
+  }
+};
+
+const htmlToJsx = (html, { indent, passElementProps } = {}) => {
+  return TsXMLCompiler.parseXmlToAst(html)
+    .then((jsxAst) => {
+      processChildNodes(jsxAst, passElementProps);
+
+      return jsxAst.toFormattedString()
+        .replace(/\n/g, `\n${indent}`) // Indent for pretty inspector output 🎉
+        .replace(/\n\s*$/g, '');      // Remove the trailing blank line
+    });
+};
+
 const DEFAULT_CONFIGURATION = {
   implicitlyImportReact: true,
   passElementProps: false,
@@ -54,8 +96,12 @@ const DEFAULT_CONFIGURATION = {
 };
 
 module.exports = function(source) {
-  // This loader is deterministic and will return the same thing for the same inputs!
+  // This loader is deterministic, and will
+  // return the same thing for the same inputs!
   this.cacheable && this.cacheable();
+
+  // This loader is asynchronous
+  const webpackCallback = this.async();
 
   // Loads configuration from webpack config as well as loader query string
   const config = Object.assign({}, DEFAULT_CONFIGURATION, getLoaderConfig(this, 'markdownComponentLoader'));
@@ -93,17 +139,52 @@ module.exports = function(source) {
     return formatStatic(attribute, staticAttributes[attribute]);
   });
 
-  // Hold onto assignment expressions before passing to htmlToJsx
-  //
-  // Object style properties get special treatment here as HTMLtoJSX
-  // will ignore them because they're not strings - what fun!
-  const stylePropertyCache = new StringReplacementCache(/style={{[^}]*}}/g);
-  const assignmentExpressionCache = new StringReplacementCache(
-    /{({\s*(?:<.*?>|.*?)\s*})}/g,
-    (match, value) => value
+  // Hold onto JSX properties and assignment expressions before converting
+  const htmlTagIndexes = [];
+
+  // Find all opening or void HTML tags
+  walkHtml(
+    markdown,
+    (match, tagFragment, offset, string, tag) => {
+      // Once we get a tag which is closing
+      if (typeof tag.closeIndex === 'number') {
+        // Push its start and end coordinates into our list
+        if (typeof tag.contentIndex === 'number') {
+          htmlTagIndexes.push([tag.openIndex, tag.contentIndex]);
+        } else {
+          htmlTagIndexes.push([tag.openIndex, tag.closeIndex]);
+        }
+      }
+    }
   );
 
-  const markdownSansAssignments = assignmentExpressionCache.load(stylePropertyCache.load(markdown));
+  let offsetForPropertyReplacements = 0;
+  let markdownSansJsxProperties = markdown;
+
+  // Then, within each HTML tag we found, replace any assignment expressions
+  const jsxPropertyCache = new StringReplacementCache(
+    /[\w]+={[^}]*}}?|{\s*\.\.\.[^}]*}/g
+  );
+
+  htmlTagIndexes.forEach(([start, end]) => {
+    const startIndex = start + offsetForPropertyReplacements;
+    const endIndex = end + offsetForPropertyReplacements;
+
+    const tagWithNoReplacements = markdownSansJsxProperties.slice(startIndex, endIndex);
+    const tagWithPropertyReplacements = jsxPropertyCache.load(tagWithNoReplacements);
+
+    markdownSansJsxProperties = markdownSansJsxProperties.slice(0, startIndex) + tagWithPropertyReplacements + markdownSansJsxProperties.slice(endIndex);
+
+    offsetForPropertyReplacements += tagWithPropertyReplacements.length - tagWithNoReplacements.length;
+  });
+
+  const assignmentExpressionCache = new StringReplacementCache(
+    /{({\s*(?:<.*?>|.*?)\s*})}/g,
+    (match, value) => value,
+    (identityHash) => `<!-- ${ASSIGNMENT_COMMENT_PREFIX}${identityHash} -->`
+  );
+
+  const markdownSansAssignments = assignmentExpressionCache.load(markdownSansJsxProperties);
 
   // Configure Markdown renderer, highlight code snippets, and post-process
   let renderer = new MarkdownIt()
@@ -132,7 +213,9 @@ module.exports = function(source) {
           } catch (err) {} // eslint-disable-line no-empty
         }
 
-        return highlightedContent.replace(/\n/g, '<br />');
+        return highlightedContent
+          .replace(/\n/g, '<br />')
+          .replace(/&lt;(!-- \[mcl-assignment\]:[^\s]+ --)&gt;/, '<$1>');
       }
     });
 
@@ -151,68 +234,30 @@ module.exports = function(source) {
       );
   }
 
-  const tagCache = {};
+  const html = renderer.render(markdownSansAssignments) || '<!-- no input given -->';
 
-  const html = processHtml(
-    renderer.render(markdownSansAssignments),
-    (match, tagFragment, tag) => {
-      switch (tagFragment) {
-        case '<':
-          // tag names which won't survive browser serialization, or those with
-          // special characters, need to be cached
-          if (tag.tagName.indexOf('.') !== -1 || tag.tagName.toLowerCase() !== tag.tagName) {
-            const nameHash = lowercaseHash(tag.tagName);
-            tagCache[nameHash] = tag.tagName;
-            tag.tagName = nameHash;
-          }
-          return `<${tag.tagName}`;
-        case '/>':
-          return (
-            VOID_ELEMENTS.indexOf(tagCache[tag.tagName] || tag.tagName) === -1
-              ? `></${tag.tagName}>`
-              : match
-          );
-        case '</':
-          return `</${tag.tagName}`;
-      }
-
-      return match;
+  htmlToJsx(
+    html,
+    {
+      passElementProps: config.passElementProps,
+      indent: '          '
     }
-  );
+  ).then(
+    (jsx) => {
+      // Unload caches so we've got our values back!
+      jsx = jsxPropertyCache.unload(assignmentExpressionCache.unload(jsx));
 
-  let jsx = htmlToJsx(
-    html || '<!-- no input given -->',
-    '          ' // indentation
-  );
-
-  // Unload caches so we've got our values back!
-  jsx = stylePropertyCache.unload(assignmentExpressionCache.unload(jsx));
-
-  jsx = processHtml(
-    jsx,
-    (match, tagFragment, { tagName, state }) => {
-      const correctedTagName = tagCache[tagName] || tagName;
-
-      switch (tagFragment) {
-        case '<':
-          return `<${correctedTagName}`;
-        case '/>':
-        case '>':
-          // Pass through `elementProps` to tags React knows about (the others are already under our control)
-          if (config.passElementProps && (state === 'open' || state === 'content') && correctedTagName in ReactDOM) {
-            return ` {...elementProps['${correctedTagName}']}${tagFragment === '/>' ? ' ' : ''}${tagFragment}`;
-          }
-          return match;
-        case '</':
-          return `</${correctedTagName}`;
-      }
+      return webpackCallback(
+        formatModule(
+          config,
+          imports.join(''),
+          statics.join(''),
+          jsx
+        )
+      );
+    },
+    (error) => {
+      return webpackCallback(error);
     }
-  ).replace(/\s\s\{/, ' {'); // Remove double spaces before spread statements;
-
-  return formatModule(
-    config,
-    imports.join(''),
-    statics.join(''),
-    jsx
   );
 };

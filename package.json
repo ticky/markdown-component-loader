@@ -33,11 +33,11 @@
     "front-matter": "^2.1.0",
     "highlight.js": "^9.6.0",
     "html-void-elements": "^1.0.1",
-    "htmltojsx": "^0.2.6",
     "jsesc": "^2.2.0",
     "loader-utils": "^0.2.16",
     "markdown-it": "^8.1.0",
-    "sha.js": "^2.4.5"
+    "sha.js": "^2.4.5",
+    "tsxml": "^0.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
@@ -60,7 +60,6 @@
     "markdown-it-anchor": "^2.5.1",
     "markdown-it-table-of-contents": "^0.3.0",
     "prop-types": "^15.5.10",
-    "query-params": "^0.0.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-router": "^2.8.1",
