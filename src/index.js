@@ -41,7 +41,7 @@ const MarkdownIt = (() => {
   return require('markdown-it');
 })();
 
-const ASSIGNMENT_COMMENT_PREFIX = '[mcl-assignment]:';
+// const ASSIGNMENT_COMMENT_PREFIX = '[mcl-assignment]:';
 
 // const TsXML = {};
 
@@ -166,8 +166,7 @@ module.exports = function(source) {
 
   const assignmentExpressionCache = new StringReplacementCache(
     /{({\s*(?:<.*?>|.*?)\s*})}/g,
-    (match, value) => value,
-    (identityHash) => `<!-- ${ASSIGNMENT_COMMENT_PREFIX}${identityHash} -->`
+    (match, value) => value
   );
 
   const markdownSansAssignments = assignmentExpressionCache.load(markdownSansJsxProperties);
@@ -200,8 +199,7 @@ module.exports = function(source) {
         }
 
         return highlightedContent
-          .replace(/\n/g, '<br />')
-          .replace(/&lt;(!-- \[mcl-assignment\]:[^\s]+ --)&gt;/, '<$1>');
+          .replace(/\n/g, '<br />');
       }
     });
 
@@ -221,6 +219,9 @@ module.exports = function(source) {
   }
 
   const html = renderer.render(markdownSansAssignments) || '<!-- no input given -->';
+
+  // TODO: Walk over each element, replacing HTMLisms with JSXisms
+  // (SEE commented out `processChildNodes`)
 
   // Unload caches so we've got our values back!
   const jsx = jsxPropertyCache.unload(assignmentExpressionCache.unload(
