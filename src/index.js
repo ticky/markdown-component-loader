@@ -1,5 +1,6 @@
 import frontMatter from 'front-matter';
 import { getLoaderConfig } from 'loader-utils';
+import walkHtml from 'hastml';
 import HighlightJS from 'highlight.js';
 import MarkdownIt from './jsx-friendly-markdown-it';
 
@@ -8,7 +9,6 @@ import formatModule from './formatters/module';
 import formatStatic from './formatters/static';
 import formatEscape from './formatters/js-escape';
 import StringReplacementCache from './string-replacement-cache';
-import walkHtml from './process-html';
 
 const ASSIGNMENT_COMMENT_PREFIX = '[mcl-assignment]:';
 
@@ -158,7 +158,7 @@ const convert = (source, config) => {
   const htmlOffsets = [0];
 
   htmlTags.forEach((tag) => {
-    const { tagName, state, openIndex, contentIndex, closeIndex, closingIndex } = tag;
+    const { state, openIndex, contentIndex, closeIndex, closingIndex } = tag;
 
     if (typeof openIndex === 'number') {
       htmlOffsets.push(openIndex);
@@ -175,7 +175,7 @@ const convert = (source, config) => {
 
     if (typeof closeIndex === 'number') {
       if (state === 'open') {
-        if (tagName.indexOf('!--') === 0) {
+        if (html[closeIndex] === '-') {
           htmlOffsets.push(closeIndex + 3);
         } else {
           htmlOffsets.push(closeIndex + 2);
