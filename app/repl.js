@@ -59,17 +59,9 @@ class REPL {
     this.clearOutput();
 
     try {
-      markdownComponentLoader.call(
+      this.setOutput(markdownComponentLoader.call(
         {
           cacheable() {},
-          async: () => (result) => {
-            if (result instanceof Error) {
-              console.error(result);
-              return this.printError(result.toString());
-            }
-
-            this.setOutput(result);
-          },
           options: {
             markdownComponentLoader: {
               passElementProps: true
@@ -77,7 +69,7 @@ class REPL {
           }
         },
         code
-      );
+      ));
     } catch (err) {
       this.printError(`Errors:\n${err.message}`);
     }
