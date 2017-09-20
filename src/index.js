@@ -6,45 +6,11 @@ import MarkdownIt from './jsx-friendly-markdown-it';
 import formatImport from './formatters/import';
 import formatModule from './formatters/module';
 import formatStatic from './formatters/static';
+import formatEscape from './formatters/js-escape';
 import StringReplacementCache from './string-replacement-cache';
 import walkHtml from './process-html';
 
-// const ASSIGNMENT_COMMENT_PREFIX = '[mcl-assignment]:';
-
-// const TsXML = {};
-
-// const processChildNodes = (node, passElementProps) => {
-//   if (node instanceof TsXML.CommentNode) {
-//     const content = node.content.trim();
-
-//     // Don't do anything to replaced assignment comments!
-//     if (content.indexOf(ASSIGNMENT_COMMENT_PREFIX) !== 0) {
-//       // Replace XML comment nodes with JSX style comment nodes
-//       const oldNode = node;
-
-//       node = new TsXML.TextNode();
-//       node.content = `{/* ${content} */}`;
-
-//       oldNode.parentNode.replaceChild(oldNode, node);
-//     }
-//   } else if (node instanceof TsXML.TextNode) {
-//     // Wrap strings containing significant whitespace or curly braces
-//     if (node.content && node.content.match(/^\s|{|}|\s$/)) {
-//       node.content = `{${formatEscape(node.content)}}`;
-//     }
-//   } else if (node.tagName) {
-//     // Pass through `elementProps` to tags
-//     if (passElementProps) {
-//       node.attrList[`{...elementProps['${node.tagName}']}`] = undefined;
-//     }
-//   }
-
-//   if (node.childNodes) {
-//     node.forEachChildNode((childNode) => {
-//       processChildNodes(childNode, passElementProps);
-//     });
-//   }
-// };
+const ASSIGNMENT_COMMENT_PREFIX = '[mcl-assignment]:';
 
 const convert = (source, config) => {
   const invalidStatics = ['propTypes'];
@@ -121,7 +87,8 @@ const convert = (source, config) => {
 
   const assignmentExpressionCache = new StringReplacementCache(
     /{({\s*(?:<.*?>|.*?)\s*})}/g,
-    (match, value) => value
+    (match, value) => value,
+    (identityHash) => `<!--${ASSIGNMENT_COMMENT_PREFIX}${identityHash}-->`
   );
 
   const markdownSansAssignments = assignmentExpressionCache.load(markdownSansJsxProperties);
@@ -154,7 +121,8 @@ const convert = (source, config) => {
         }
 
         return highlightedContent
-          .replace(/\n/g, '<br />');
+          .replace(/\n/g, '<br />')
+          .replace(/&lt;(!--\[mcl-assignment\]:[a-z]+--)&gt;/g, '<$1>');
       }
     });
 
@@ -173,17 +141,100 @@ const convert = (source, config) => {
       );
   }
 
-  const html = renderer.render(markdownSansAssignments) || '<!-- no input given -->';
+  const html = (renderer.render(markdownSansAssignments) || '<!-- no input given -->');
 
-  // TODO: Walk over each element, replacing HTMLisms with JSXisms
-  // (SEE commented out `processChildNodes`)
+  // Collect all the HTML tags and their positions
+  const htmlTags = [];
+
+  walkHtml(
+    html,
+    (match, tagFragment, offset, string, tag) => {
+      if (htmlTags.indexOf(tag) === -1) {
+        htmlTags.push(tag);
+      }
+    }
+  );
+
+  const htmlOffsets = [0];
+
+  htmlTags.forEach((tag) => {
+    const { state, openIndex, contentIndex, closeIndex, closingIndex } = tag;
+
+    if (typeof openIndex === 'number') {
+      htmlOffsets.push(openIndex);
+    }
+
+    if (typeof contentIndex === 'number') {
+      // contentIndex + 1 because contentIndex if the offset of '>'
+      htmlOffsets.push(contentIndex + 1);
+    }
+
+    if (typeof closingIndex === 'number') {
+      htmlOffsets.push(closingIndex);
+    }
+
+    if (typeof closeIndex === 'number') {
+      if (state === 'open') {
+        htmlOffsets.push(closeIndex + 2);
+      } else {
+        htmlOffsets.push(closeIndex + 1);
+      }
+    }
+  });
+
+  let jsx = htmlOffsets
+    .sort((first, second) => first - second)
+    .filter((number, index, array) => !index || number !== array[index - 1])
+    .reduce(
+      (acc, item, index, array) => (
+        acc.concat([html.slice(item, array[index + 1])])
+      ),
+      []
+    )
+    .map((fragment) => {
+      if (fragment[0] === '<' || fragment[fragment.length - 1] === '>') {
+        // this is a tag
+
+        if (fragment.slice(0, 4) === '<!--') {
+          // yay it's a comment!
+          // Don't do anything to replaced assignment comments!
+          if (fragment.slice(4, 4 + ASSIGNMENT_COMMENT_PREFIX.length) !== ASSIGNMENT_COMMENT_PREFIX) {
+            // Replace XML comment nodes with JSX style comment nodes
+            return `{/*${fragment.slice(4, -3)}*/}`;
+          }
+        } else {
+          if (fragment[1] !== '/') {
+            // Replace `class` with `className`
+            fragment = fragment.replace(/(\sclass)(=)/, '$1Name$2');
+
+            // Pass through `elementProps` to tags
+            if (config.passElementProps) {
+              const tagName = fragment.slice(1, fragment.search(/[\s\n]/));
+
+              return fragment.replace(
+                /(\s*\/?>)/,
+                ` {...elementProps[${formatEscape(tagName)}]}$1`
+              );
+            }
+          }
+        }
+      } else {
+        // this is a text node, let's wrap stuff on newlines
+        return fragment.split(/\n/g).map((line) => (
+          // Wrap string lines containing significant whitespace or curly braces
+          line.match(/^\s|{|}|\s$/) ? `{${formatEscape(line)}}` : line
+        )).join('\n');
+      }
+
+      // fall back to returning input
+      return fragment;
+    })
+    .join('')
+    .replace(/\n/g, `\n        `) // Indent for pretty inspector output 🎉
+    .replace(/\n\s*$/g, '');      // Remove the trailing blank line;
 
   // Unload caches so we've got our values back!
-  const jsx = jsxPropertyCache.unload(assignmentExpressionCache.unload(
-    html
-      .replace(/\n/g, `\n        `) // Indent for pretty inspector output 🎉
-      .replace(/\n\s*$/g, '')        // Remove the trailing blank line
-  ));
+  jsx = jsxPropertyCache.unload(assignmentExpressionCache.unload(jsx));
 
   return formatModule(
     config,

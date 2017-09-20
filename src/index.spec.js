@@ -48,18 +48,19 @@ const RUN_ONE_FIXTURE = (context, component, index) => {
       expect(context.cacheable).toHaveBeenCalled();
     });
 
-    it('returns the expected React module', () => {
-      expect(loadedComponent).toMatchSnapshot();
-    });
-
     it('transforms with Babel without issue', () => {
       expect(() => transformedComponent = TRANSFORM_WITH_BABEL(loadedComponent)).not.toThrowError();
     });
 
     it('renders as expected within React', () => {
-      const Component = REQUIRE_STRING_MODULE(transformedComponent).default;
+      let Component;
 
-      expect(Object.keys(Component)).toMatchSnapshot();
+      expect(() => Component = REQUIRE_STRING_MODULE(transformedComponent).default).not.toThrowError();;
+
+      expect(Object.keys(Component).reduce((acc, key) => {
+        acc[key] = Component[key];
+        return acc;
+      }, {})).toMatchSnapshot();
 
       const tree = renderer.create(<Component />);
 
