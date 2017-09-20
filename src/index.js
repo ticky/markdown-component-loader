@@ -70,7 +70,7 @@ const convert = (source, config) => {
 
   // Then, within each HTML tag we found, replace any assignment expressions
   const jsxPropertyCache = new StringReplacementCache(
-    /[\w]+={[^}]*}}?|{\s*\.\.\.[^}]*}/g
+    /[\w]+={[^}]*}\s*}?|{\s*\.\.\.[^}]*}/g
   );
 
   markdownTagIndexes.forEach(([start, end]) => {
@@ -230,7 +230,7 @@ const convert = (source, config) => {
       return fragment;
     })
     .join('')
-    .replace(/\n/g, `\n        `) // Indent for pretty inspector output 🎉
+    .replace(/\n/g, '\n          ') // Indent for pretty inspector output 🎉
     .replace(/\n\s*$/g, '');      // Remove the trailing blank line;
 
   // Unload caches so we've got our values back!
