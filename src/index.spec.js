@@ -55,7 +55,7 @@ const RUN_ONE_FIXTURE = (context, component, index) => {
     it('renders as expected within React', () => {
       let Component;
 
-      expect(() => Component = REQUIRE_STRING_MODULE(transformedComponent).default).not.toThrowError();;
+      expect(() => Component = REQUIRE_STRING_MODULE(transformedComponent).default).not.toThrowError();
 
       expect(Object.keys(Component).reduce((acc, key) => {
         acc[key] = Component[key];

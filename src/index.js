@@ -231,7 +231,7 @@ const convert = (source, config) => {
     })
     .join('')
     .replace(/\n/g, '\n          ') // Indent for pretty inspector output 🎉
-    .replace(/\n\s*$/g, '');      // Remove the trailing blank line;
+    .replace(/\n\s*$/g, '');        // Remove the trailing blank line;
 
   // Unload caches so we've got our values back!
   jsx = jsxPropertyCache.unload(assignmentExpressionCache.unload(jsx));
