@@ -54,24 +54,29 @@ class REPL {
   }
 
   compile() {
+    let transformed;
     const code = this.getSource();
 
     this.clearOutput();
 
     try {
-      this.setOutput(markdownComponentLoader.call(
+      transformed = markdownComponentLoader.call(
         {
           cacheable() {},
           options: {
             markdownComponentLoader: {
-              passElementProps: true
+              passElementProps: false
             }
           }
         },
         code
-      ));
+      );
     } catch (err) {
       this.printError(`Errors:\n${err.message}`);
+    }
+
+    if (transformed) {
+      this.setOutput(transformed);
     }
   }
 }
