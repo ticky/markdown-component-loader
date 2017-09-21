@@ -117,7 +117,7 @@ describe('convert', () => {
     });
   });
 
-  describe('gracefully handles loose greater-than symbols', () => {
+  describe('gracefully handles loose greater-than and less-than symbols', () => {
     RUN_ONE_FIXTURE(
       DocChomp`
         > foo bar!
@@ -127,6 +127,8 @@ describe('convert', () => {
         pizza < waffles
 
         food>sleep
+
+        <asdfrafghsgu
       `
     );
   });

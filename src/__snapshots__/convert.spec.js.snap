@@ -1,4 +1,4 @@
-exports[`convert gracefully handles loose greater-than symbols has the expected preamble 1`] = `
+exports[`convert gracefully handles loose greater-than and less-than symbols has the expected preamble 1`] = `
 "
 import React from \'react\';
 import PropTypes from \'prop-types\';
@@ -11,7 +11,7 @@ MarkdownComponent.propTypes = {
 "
 `;
 
-exports[`convert gracefully handles loose greater-than symbols renders as expected within React 1`] = `
+exports[`convert gracefully handles loose greater-than and less-than symbols renders as expected within React 1`] = `
 Object {
   "propTypes": Object {
     "className": [Function],
@@ -20,7 +20,7 @@ Object {
 }
 `;
 
-exports[`convert gracefully handles loose greater-than symbols renders as expected within React 2`] = `
+exports[`convert gracefully handles loose greater-than and less-than symbols renders as expected within React 2`] = `
 <div
   className={undefined}
   style={undefined}>
@@ -37,6 +37,9 @@ exports[`convert gracefully handles loose greater-than symbols renders as expect
   </p>
   <p>
     food>sleep
+  </p>
+  <p>
+    <asdfrafghsgu
   </p>
 </div>
 `;
