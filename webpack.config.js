@@ -10,7 +10,7 @@ const devtool = isDevServer ? "cheap-module-eval-source-map" : "source-map";
 module.exports = {
   devtool,
   entry: {
-    app: [
+    site: [
       'babel-polyfill',
       './app/index.js'
     ],
@@ -71,6 +71,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "shared",
+      filename: "shared.js"
+    }),
     new webpack.NormalModuleReplacementPlugin(
       /^highlight\.js$/,
       'highlight\.js/lib/highlight'
