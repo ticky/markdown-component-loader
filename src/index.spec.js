@@ -1,10 +1,10 @@
-/* global jest, describe, expect, it */
+/* global jest, describe, beforeEach, expect, it */
 import DocChomp from 'doc-chomp';
 
 describe('Webpack loader', () => {
-  let mockConvert = jest.fn();
+  const mockConvert = jest.fn();
   jest.mock('./convert', () => mockConvert);
-  let markdownComponentLoader = require('./index');
+  const markdownComponentLoader = require('./index');
 
   // A fake Webpack context, supplying `cacheable` so the loader
   // can still call that from this envrionment.
