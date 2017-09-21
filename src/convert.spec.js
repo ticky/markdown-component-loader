@@ -1,5 +1,5 @@
 /* global jest, describe, expect, it */
-import markdownComponentLoader from './index';
+import convert from './convert';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { transform as BabelTransform } from 'babel-core';
@@ -21,7 +21,7 @@ const TRANSFORM_WITH_BABEL = (code) => (
 // still calling `eval`, friends.
 const REQUIRE_STRING_MODULE = (code) => (
   // We have to explicitly expose React & PropTypes to the `eval`
-  // context, otherwise they're unavailable when using explicit imports
+  // context, otherwise they're unavailable when using implicit imports
   function(React, PropTypes) { // eslint-disable-line no-unused-vars
     const exports = {};
     eval(code); // eslint-disable-line no-eval
@@ -29,23 +29,16 @@ const REQUIRE_STRING_MODULE = (code) => (
   }
 )(React, PropTypes);
 
-// A fake Webpack context, supplying `cacheable` so the loader
-// can still call that from this envrionment.
-const FAKE_WEBPACK_CONTEXT = {
-  cacheable: jest.fn()
-};
-
 // Runs a single fixture, checking Markdown Component Loader successfully executes,
 // that the React module matches our expectations, that Babel is happy with it, and
 // that it renders as expected.
-const RUN_ONE_FIXTURE = (context, component, index) => {
+const RUN_ONE_FIXTURE = (component, configuration, index) => {
   describe(`for component example ${index + 1}`, () => {
     let loadedComponent;
     let transformedComponent;
 
     it('executes without errors', () => {
-      expect(() => loadedComponent = markdownComponentLoader.call(context, component)).not.toThrowError();
-      expect(context.cacheable).toHaveBeenCalled();
+      expect(() => loadedComponent = convert(component, configuration)).not.toThrowError();
     });
 
     it('transforms with Babel without issue', () => {
@@ -69,10 +62,10 @@ const RUN_ONE_FIXTURE = (context, component, index) => {
   });
 };
 
-// Runs all fixtures given a particular faux Webpack context
-const RUN_FIXTURES_IN_CONTEXT = (context) => (() => {
+// Runs all fixtures given a particular configuration
+const RUN_FIXTURES_WITH_CONFIG = (config) => (() => {
   MARKDOWN_COMPONENT_FIXTURES.forEach(
-    (component, index) => RUN_ONE_FIXTURE(context, component, index)
+    (component, index) => RUN_ONE_FIXTURE(component, config, index)
   );
 });
 
@@ -91,7 +84,7 @@ PLUGIN_FIXTURES.push([
 ]);
 
 // And now, the party can start!
-describe('Webpack loader', () => {
+describe('convert', () => {
   BOOL_FIXTURES.forEach((implicitlyImportReact) => {
     BOOL_FIXTURES.forEach((passElementProps) => {
       PLUGIN_FIXTURES.forEach((markdownItPlugins) => {
@@ -102,20 +95,15 @@ describe('Webpack loader', () => {
         }
 
         describe(
-          `with a webpack config object of \`${JSON.stringify(config)}\``,
-          RUN_FIXTURES_IN_CONTEXT(Object.assign({}, FAKE_WEBPACK_CONTEXT, { options: { markdownComponentLoader: config } }))
+          `with a config object of \`${JSON.stringify(config)}\``,
+          RUN_FIXTURES_WITH_CONFIG(config)
         );
       });
     });
   });
 
   it('throws if a reserved static is specified', () => {
-    expect(() => markdownComponentLoader.call(
-      Object.assign(
-        {},
-        FAKE_WEBPACK_CONTEXT,
-        { options: { markdownComponentLoader: {} } }
-      ),
+    expect(() => convert(
       DocChomp`
         ---
         propTypes: this is reserved so it should throw!

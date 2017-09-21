@@ -1,5 +1,5 @@
 /* global ace, document */
-import markdownComponentLoader from '../src';
+import convert from '../src/convert';
 
 require('./repl.css');
 
@@ -60,16 +60,11 @@ class REPL {
     this.clearOutput();
 
     try {
-      transformed = markdownComponentLoader.call(
+      transformed = convert(
+        code,
         {
-          cacheable() {},
-          options: {
-            markdownComponentLoader: {
-              passElementProps: false
-            }
-          }
-        },
-        code
+          passElementProps: false
+        }
       );
     } catch (err) {
       this.printError(`Errors:\n${err.message}`);

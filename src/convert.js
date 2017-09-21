@@ -12,7 +12,7 @@ import StringReplacementCache from './string-replacement-cache';
 
 const ASSIGNMENT_COMMENT_PREFIX = '[mcl-assignment]:';
 
-const convert = (source, config) => {
+export default (source, config) => {
   const invalidStatics = ['propTypes'];
   const imports = [];
 
@@ -246,20 +246,4 @@ const convert = (source, config) => {
     statics.join(''),
     jsx
   );
-};
-
-const DEFAULT_CONFIGURATION = {
-  implicitlyImportReact: true,
-  passElementProps: false,
-  markdownItPlugins: []
-};
-
-module.exports = function(source) {
-  // This loader is deterministic, and will return the same thing for the same inputs!
-  this.cacheable && this.cacheable();
-
-  // Loads configuration from Webpack
-  const config = Object.assign({}, DEFAULT_CONFIGURATION, getLoaderConfig(this, 'markdownComponentLoader'));
-
-  return convert(source, config);
 };
