@@ -10,6 +10,8 @@ import formatEscape from './formatters/js-escape';
 import StringReplacementCache from './string-replacement-cache';
 
 const ASSIGNMENT_COMMENT_PREFIX = '[mcl-assignment]:';
+const ASSIGNMENT_COMMENT_PREFIX_REGEXP =
+  ASSIGNMENT_COMMENT_PREFIX.replace(/[.?*+^$[\]\\(){}|-]/g, "\\$&");
 
 const DEFAULT_CONFIGURATION = {
   implicitlyImportReact: true,
@@ -129,7 +131,13 @@ export default (source, config) => {
 
         return highlightedContent
           .replace(/\n/g, '<br />')
-          .replace(/&lt;(!--\[mcl-assignment\]:[a-z]+--)&gt;/g, '<$1>');
+          .replace(
+            new RegExp(
+              `&lt;(!--${ASSIGNMENT_COMMENT_PREFIX_REGEXP}[a-z]+--)&gt;`,
+              'g'
+            ),
+            '<$1>'
+          );
       }
     });
 
