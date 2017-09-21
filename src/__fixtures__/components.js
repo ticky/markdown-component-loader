@@ -46,6 +46,14 @@ export default [
     }
     \`\`\`
 
+    ## Here's a code snippet with arrows in it
+
+    \`\`\`javascript
+    const MyComponent = () => {
+      return window.navigator.userAgent;
+    }
+    \`\`\`
+
     ## Here's an unhinted code snippet
 
     \`\`\`

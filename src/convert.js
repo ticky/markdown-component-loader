@@ -1,5 +1,6 @@
 import frontMatter from 'front-matter';
 import walkHtml from 'hastml';
+import { decode as decodeEntities } from 'he';
 import HighlightJS from 'highlight.js';
 import MarkdownIt from './jsx-friendly-markdown-it';
 
@@ -94,6 +95,7 @@ export default (source, config) => {
     offsetForPropertyReplacements += tagWithPropertyReplacements.length - tagWithNoReplacements.length;
   });
 
+  // Replace all remaining double-brace assignment expressions with comments
   const assignmentExpressionCache = new StringReplacementCache(
     /{({\s*(?:<.*?>|.*?)\s*})}/g,
     (match, value) => value,
@@ -156,6 +158,7 @@ export default (source, config) => {
       );
   }
 
+  // Render markdown to HTML
   const html = renderer.render(markdownSansAssignments) || '<!-- no input given -->';
 
   // Collect all the HTML tags and their positions
@@ -201,6 +204,7 @@ export default (source, config) => {
     }
   });
 
+  // Here, we collect all the positions at which SGML tags begin or end
   let jsx = htmlOffsets
     .sort((first, second) => first - second)
     .filter((number, index, array) => !index || number !== array[index - 1])
@@ -211,22 +215,22 @@ export default (source, config) => {
       []
     )
     .map((fragment) => {
+      // Then we check, for each of them, whether they are a tag or a text node
       if (fragment[0] === '<' || fragment[fragment.length - 1] === '>') {
-        // this is a tag
-
+        // If they're tags, we check whether they're a comment,
         if (fragment.slice(0, 4) === '<!--') {
-          // yay it's a comment!
-          // Don't do anything to replaced assignment comments!
+          // if so, unless they're our special assignment comments...
           if (fragment.slice(4, 4 + ASSIGNMENT_COMMENT_PREFIX.length) !== ASSIGNMENT_COMMENT_PREFIX) {
-            // Replace XML comment nodes with JSX style comment nodes
+            // ...we replace them with JSX style comments
             return `{/*${fragment.slice(4, -3)}*/}`;
           }
         } else {
+          // otherwise, we will...
           if (fragment[1] !== '/') {
-            // Replace `class` with `className`
+            // ...replace `class` properties with `className` for React compatibility
             fragment = fragment.replace(/(\sclass)(=)/, '$1Name$2');
 
-            // Pass through `elementProps` to tags
+            // and, if we've been asked to, add the `elementProps` pass-through.
             if (config.passElementProps) {
               const tagName = fragment.slice(1, fragment.search(/[\s\n]/));
 
@@ -238,16 +242,16 @@ export default (source, config) => {
           }
         }
       } else {
-        // this is a text node, let's wrap stuff on newlines
+        // If they're not tags, they're a text node. We split on newlines, and...
         return fragment.split(/\n/g).map((line, index, lines) => {
-          // Wrap string lines containing curly braces, and if this isn't the
+          // ...wrap string lines containing curly braces, and if this isn't the
           // first line of contiguous text, significant whitespace, too
           const regex = index > 0 && index < lines.length - 1
             ? /^\s|{|}|\s$/
             : /{|}/;
 
           if (line.match(regex)) {
-            return `{${formatEscape(line)}}`;
+            return `{${formatEscape(decodeEntities(line))}}`;
           }
 
           return line;

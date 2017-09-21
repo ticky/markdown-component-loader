@@ -175,6 +175,43 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -634,6 +671,12 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
             </li>
             <li>
               <a
+                href="#heres-a-code-snippet-with-arrows-in-it">
+                Here\'s a code snippet with arrows in it
+              </a>
+            </li>
+            <li>
+              <a
                 href="#heres-an-unhinted-code-snippet">
                 Here\'s an unhinted code snippet
               </a>
@@ -751,6 +794,44 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
@@ -1283,6 +1364,44 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
     </code>
   </pre>
   <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
     id="heres-an-unhinted-code-snippet">
     Here\'s an unhinted code snippet
   </h2>
@@ -1802,6 +1921,43 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -2261,6 +2417,12 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
             </li>
             <li>
               <a
+                href="#heres-a-code-snippet-with-arrows-in-it">
+                Here\'s a code snippet with arrows in it
+              </a>
+            </li>
+            <li>
+              <a
                 href="#heres-an-unhinted-code-snippet">
                 Here\'s an unhinted code snippet
               </a>
@@ -2378,6 +2540,44 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
@@ -2910,6 +3110,44 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     </code>
   </pre>
   <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
     id="heres-an-unhinted-code-snippet">
     Here\'s an unhinted code snippet
   </h2>
@@ -3423,6 +3661,43 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
@@ -3953,6 +4228,43 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -4448,6 +4760,12 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
             </li>
             <li>
               <a
+                href="#heres-a-code-snippet-with-arrows-in-it">
+                Here\'s a code snippet with arrows in it
+              </a>
+            </li>
+            <li>
+              <a
                 href="#heres-an-unhinted-code-snippet">
                 Here\'s an unhinted code snippet
               </a>
@@ -4565,6 +4883,44 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
@@ -5133,6 +5489,44 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     </code>
   </pre>
   <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
     id="heres-an-unhinted-code-snippet">
     Here\'s an unhinted code snippet
   </h2>
@@ -5688,6 +6082,43 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -6230,6 +6661,43 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false}\` for
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -6747,6 +7215,43 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -7214,6 +7719,12 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
             </li>
             <li>
               <a
+                href="#heres-a-code-snippet-with-arrows-in-it">
+                Here\'s a code snippet with arrows in it
+              </a>
+            </li>
+            <li>
+              <a
                 href="#heres-an-unhinted-code-snippet">
                 Here\'s an unhinted code snippet
               </a>
@@ -7331,6 +7842,44 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
@@ -7871,6 +8420,44 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
     </code>
   </pre>
   <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
     id="heres-an-unhinted-code-snippet">
     Here\'s an unhinted code snippet
   </h2>
@@ -8398,6 +8985,43 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -8865,6 +9489,12 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
             </li>
             <li>
               <a
+                href="#heres-a-code-snippet-with-arrows-in-it">
+                Here\'s a code snippet with arrows in it
+              </a>
+            </li>
+            <li>
+              <a
                 href="#heres-an-unhinted-code-snippet">
                 Here\'s an unhinted code snippet
               </a>
@@ -8982,6 +9612,44 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
@@ -9522,6 +10190,44 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     </code>
   </pre>
   <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
     id="heres-an-unhinted-code-snippet">
     Here\'s an unhinted code snippet
   </h2>
@@ -10043,6 +10749,43 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
@@ -10581,6 +11324,43 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -11084,6 +11864,12 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
             </li>
             <li>
               <a
+                href="#heres-a-code-snippet-with-arrows-in-it">
+                Here\'s a code snippet with arrows in it
+              </a>
+            </li>
+            <li>
+              <a
                 href="#heres-an-unhinted-code-snippet">
                 Here\'s an unhinted code snippet
               </a>
@@ -11201,6 +11987,44 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
@@ -11777,6 +12601,44 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     </code>
   </pre>
   <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
     id="heres-an-unhinted-code-snippet">
     Here\'s an unhinted code snippet
   </h2>
@@ -12340,6 +13202,43 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -12890,6 +13789,43 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true}\` for 
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -13411,6 +14347,43 @@ exports[`convert with a config object of \`{"markdownItPlugins":"somenonsenseval
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -13870,6 +14843,12 @@ exports[`convert with a config object of \`{"markdownItPlugins":[null,[null,{"co
             </li>
             <li>
               <a
+                href="#heres-a-code-snippet-with-arrows-in-it">
+                Here\'s a code snippet with arrows in it
+              </a>
+            </li>
+            <li>
+              <a
                 href="#heres-an-unhinted-code-snippet">
                 Here\'s an unhinted code snippet
               </a>
@@ -13987,6 +14966,44 @@ exports[`convert with a config object of \`{"markdownItPlugins":[null,[null,{"co
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
@@ -14519,6 +15536,44 @@ exports[`convert with a config object of \`{"markdownItPlugins":[null]}\` for co
     </code>
   </pre>
   <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
     id="heres-an-unhinted-code-snippet">
     Here\'s an unhinted code snippet
   </h2>
@@ -15038,6 +16093,43 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -15497,6 +16589,12 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
             </li>
             <li>
               <a
+                href="#heres-a-code-snippet-with-arrows-in-it">
+                Here\'s a code snippet with arrows in it
+              </a>
+            </li>
+            <li>
+              <a
                 href="#heres-an-unhinted-code-snippet">
                 Here\'s an unhinted code snippet
               </a>
@@ -15614,6 +16712,44 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
@@ -16146,6 +17282,44 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
     </code>
   </pre>
   <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
     id="heres-an-unhinted-code-snippet">
     Here\'s an unhinted code snippet
   </h2>
@@ -16659,6 +17833,43 @@ exports[`convert with a config object of \`{"passElementProps":false}\` for comp
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
@@ -17189,6 +18400,43 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -17684,6 +18932,12 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
             </li>
             <li>
               <a
+                href="#heres-a-code-snippet-with-arrows-in-it">
+                Here\'s a code snippet with arrows in it
+              </a>
+            </li>
+            <li>
+              <a
                 href="#heres-an-unhinted-code-snippet">
                 Here\'s an unhinted code snippet
               </a>
@@ -17801,6 +19055,44 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
@@ -18369,6 +19661,44 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
     </code>
   </pre>
   <h2
+    id="heres-a-code-snippet-with-arrows-in-it">
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2
     id="heres-an-unhinted-code-snippet">
     Here\'s an unhinted code snippet
   </h2>
@@ -18924,6 +20254,43 @@ exports[`convert with a config object of \`{"passElementProps":true}\` for compo
     </code>
   </pre>
   <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
     Here\'s an unhinted code snippet
   </h2>
   <pre>
@@ -19460,6 +20827,43 @@ exports[`convert with a config object of \`{}\` for component example 1 renders 
       () {
       <br />
         RUBY=
+      <br />
+      }
+      <br />
+    </code>
+  </pre>
+  <h2>
+    Here\'s a code snippet with arrows in it
+  </h2>
+  <pre>
+    <code
+      className="language-javascript">
+      <span
+        className="hljs-keyword">
+        const
+      </span>
+       MyComponent = 
+      <span
+        className="hljs-function">
+        <span
+          className="hljs-params">
+          ()
+        </span>
+         =>
+      </span>
+       {
+      <br />
+        
+      <span
+        className="hljs-keyword">
+        return
+      </span>
+       
+      <span
+        className="hljs-built_in">
+        window
+      </span>
+      .navigator.userAgent;
       <br />
       }
       <br />
