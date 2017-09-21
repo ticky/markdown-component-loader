@@ -60,7 +60,7 @@ This is a _Markdown Component_ file. Here you can include JSX-style assignment e
 
 Props passed to this component are available as `props`, so you can embed those too! Hello there, {{ props.who || 'world' }}!
 
-Another cool thing you can do is use JSX **directly** - here’s an SVG element, used inline: {{ <svg style={{ display: 'inline', height: '1em' }} viewBox="0 0 304 290"><path fill="none" stroke="currentColor" strokeWidth="16" d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z" /></svg> }}.
+Another cool thing you can do is use JSX **directly** - here’s an SVG element, used inline: <svg style={{ display: 'inline', height: '1em' }} viewBox="0 0 304 290"><path fill="none" stroke="currentColor" strokeWidth="16" d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z" /></svg>.
 
 ```
 
@@ -69,7 +69,6 @@ _**Note**: destructuring imports must be quoted, but others need not be._
 The above `mdx` file will produce the following module within Webpack;
 
 ```javascript
-// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from 'react';
 import PropTypes from 'prop-types';
 import { name, version } from './package.json';
@@ -88,7 +87,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <p>This is a <em>Markdown Component</em> file. Here you can include JSX-style assignment expressions; this component was generated using version { version } of { name }!</p>
       <p>Props passed to this component are available as <code>props</code>, so you can embed those too! Hello there, { props.who || 'world' }!</p>
-      <p>Another cool thing you can do is use JSX <strong>directly</strong> - here’s an SVG element, used inline: { <svg style={{ display: 'inline', height: '1em' }} viewBox="0 0 304 290"><path fill="none" stroke="currentColor" strokeWidth="16" d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z" /></svg> }.</p>
+      <p>Another cool thing you can do is use JSX <strong>directly</strong> - here’s an SVG element, used inline: <svg style={{ display: 'inline', height: '1em' }} viewBox="0 0 304 290"><path fill="none" stroke="currentColor" strokeWidth="16" d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z" /></svg>.</p>
     </div>
   );
 };
@@ -112,7 +111,7 @@ ReactDOM.render(
 
 ### Extra Configuration
 
-Markdown Component Loader accepts configuration of options via either the webpack configuration file, or query string parameters.
+Markdown Component Loader accepts configuration of options via the Webpack configuration file.
 
 ```javascript
 module.exports = {
@@ -163,14 +162,13 @@ The container will have supplied `className` and `style` props passed through to
 
 #### Inner Element Styling
 
-If `passElementProps` is set to `true`, elements within the Markdown Component can be styled on a per-element-name basis. You can set this either in the `webpack.config.js` (see the "Extra Configuration" section) or the loader's query string.
+If `passElementProps` is set to `true`, elements within the Markdown Component can be styled on a per-element-name basis. You can set this in the `webpack.config.js` (see the "Extra Configuration" section).
 
 All generated standard elements (read: elements which are known to `React.DOM`) will then have `elementProps['name']` spread onto them (where `name` is the tag name of the element). This option is intended to be used with [Basscss](http://www.basscss.com/) modular CSS.
 
 Here's the above example markdown document converted with this option;
 
 ```javascript
-// Module generated from Markdown by markdown-component-loader v0.8.0
 import React from 'react';
 import PropTypes from 'prop-types';
 import { name, version } from './package.json';
@@ -194,7 +192,7 @@ function MarkdownComponent(props) {
     <div className={className} style={style}>
       <p {...elementProps['p']}>This is a <em {...elementProps['em']}>Markdown Component</em> file. Here you can include JSX-style assignment expressions; this component was generated using version { version } of { name }!</p>
       <p {...elementProps['p']}>Props passed to this component are available as <code {...elementProps['code']}>props</code>, so you can embed those too! Hello there, { props.who || 'world' }!</p>
-      <p {...elementProps['p']}>Another cool thing you can do is use JSX <strong {...elementProps['strong']}>directly</strong> - here’s an SVG element, used inline: { <svg {...elementProps['svg']} style={{ display: 'inline', height: '1em' }} viewBox="0 0 304 290"><path {...elementProps['path']} fill="none" stroke="currentColor" strokeWidth="16" d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z" /></svg> }.</p>
+      <p {...elementProps['p']}>Another cool thing you can do is use JSX <strong {...elementProps['strong']}>directly</strong> - here’s an SVG element, used inline: <svg style={{ display: 'inline', height: '1em' }} viewBox="0 0 304 290" {...elementProps['svg']}><path fill="none" stroke="currentColor" strokeWidth="16" d="M2,111 h300 l-242.7,176.3 92.7,-285.3 92.7,285.3 z" {...elementProps['path']} /></svg>.</p>
     </div>
   );
 };
