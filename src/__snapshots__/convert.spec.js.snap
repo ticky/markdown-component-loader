@@ -1,3 +1,46 @@
+exports[`convert gracefully handles loose greater-than symbols has the expected preamble 1`] = `
+"
+import React from \'react\';
+import PropTypes from \'prop-types\';
+
+MarkdownComponent.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object
+};
+
+"
+`;
+
+exports[`convert gracefully handles loose greater-than symbols renders as expected within React 1`] = `
+Object {
+  "propTypes": Object {
+    "className": [Function],
+    "style": [Function],
+  },
+}
+`;
+
+exports[`convert gracefully handles loose greater-than symbols renders as expected within React 2`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <blockquote>
+    <p>
+      foo bar!
+    </p>
+    <p>
+      baz!
+    </p>
+  </blockquote>
+  <p>
+    pizza < waffles
+  </p>
+  <p>
+    food>sleep
+  </p>
+</div>
+`;
+
 exports[`convert throws if a reserved static is specified 1`] = `"You can\'t supply a \`propTypes\` static! That name is reserved."`;
 
 exports[`convert with a config object of \`{"implicitlyImportReact":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 1 has the expected preamble 1`] = `

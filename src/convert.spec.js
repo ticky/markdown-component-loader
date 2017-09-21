@@ -29,51 +29,58 @@ const REQUIRE_STRING_MODULE = (code) => (
   }
 )(React, PropTypes);
 
+const SLICE_OUT_PREAMBLE = (code) => {
+  // Trim the first line, as this is a version comment
+  const preambleStartOffset = code.indexOf('\n');
+  // Take until the function itself begins
+  const preambleEndOffset = code.indexOf('function MarkdownComponent(props) {');
+
+  return code.slice(preambleStartOffset, preambleEndOffset);
+};
+
 // Runs a single fixture, checking Markdown Component Loader successfully executes,
 // that the React module matches our expectations, that Babel is happy with it, and
 // that it renders as expected.
-const RUN_ONE_FIXTURE = (component, configuration, index) => {
-  describe(`for component example ${index + 1}`, () => {
-    let loadedComponent;
-    let transformedComponent;
+const RUN_ONE_FIXTURE = (component, configuration) => {
+  let loadedComponent;
+  let transformedComponent;
 
-    it('executes without errors', () => {
-      expect(() => loadedComponent = convert(component, configuration)).not.toThrowError();
-    });
+  it('executes without errors', () => {
+    expect(() => loadedComponent = convert(component, configuration)).not.toThrowError();
+  });
 
-    it('has the expected preamble', () => {
-      // Trim the first line, as this is a version comment
-      const preambleStartOffset = loadedComponent.indexOf('\n');
-      // Take until the function itself begins
-      const preambleEndOffset = loadedComponent.indexOf('function MarkdownComponent(props) {');
-      expect(loadedComponent.slice(preambleStartOffset, preambleEndOffset)).toMatchSnapshot();
-    });
+  it('has the expected preamble', () => {
+    expect(SLICE_OUT_PREAMBLE(loadedComponent)).toMatchSnapshot();
+  });
 
-    it('transforms with Babel without issue', () => {
-      expect(() => transformedComponent = TRANSFORM_WITH_BABEL(loadedComponent)).not.toThrowError();
-    });
+  it('transforms with Babel without issue', () => {
+    expect(() => transformedComponent = TRANSFORM_WITH_BABEL(loadedComponent)).not.toThrowError();
+  });
 
-    it('renders as expected within React', () => {
-      let Component;
+  it('renders as expected within React', () => {
+    let Component;
 
-      expect(() => Component = REQUIRE_STRING_MODULE(transformedComponent).default).not.toThrowError();
+    expect(() => Component = REQUIRE_STRING_MODULE(transformedComponent).default).not.toThrowError();
 
-      expect(Object.keys(Component).reduce((acc, key) => {
-        acc[key] = Component[key];
-        return acc;
-      }, {})).toMatchSnapshot();
+    expect(Object.keys(Component).reduce((acc, key) => {
+      acc[key] = Component[key];
+      return acc;
+    }, {})).toMatchSnapshot();
 
-      const tree = renderer.create(<Component />);
+    const tree = renderer.create(<Component />);
 
-      expect(tree.toJSON()).toMatchSnapshot();
-    });
+    expect(tree.toJSON()).toMatchSnapshot();
   });
 };
 
 // Runs all fixtures given a particular configuration
 const RUN_FIXTURES_WITH_CONFIG = (config) => (() => {
   MARKDOWN_COMPONENT_FIXTURES.forEach(
-    (component, index) => RUN_ONE_FIXTURE(component, config, index)
+    (component, index) => (
+      describe(`for component example ${index + 1}`, () => {
+        RUN_ONE_FIXTURE(component, config);
+      })
+    )
   );
 });
 
@@ -108,6 +115,20 @@ describe('convert', () => {
         );
       });
     });
+  });
+
+  describe('gracefully handles loose greater-than symbols', () => {
+    RUN_ONE_FIXTURE(
+      DocChomp`
+        > foo bar!
+        >
+        > baz!
+
+        pizza < waffles
+
+        food>sleep
+      `
+    );
   });
 
   it('throws if a reserved static is specified', () => {
