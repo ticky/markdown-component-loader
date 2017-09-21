@@ -1,5 +1,4 @@
 import frontMatter from 'front-matter';
-import { getLoaderConfig } from 'loader-utils';
 import walkHtml from 'hastml';
 import HighlightJS from 'highlight.js';
 import MarkdownIt from './jsx-friendly-markdown-it';
@@ -12,7 +11,7 @@ import StringReplacementCache from './string-replacement-cache';
 
 const ASSIGNMENT_COMMENT_PREFIX = '[mcl-assignment]:';
 
-export default (source, config) => {
+export default (source, config = {}) => {
   const invalidStatics = ['propTypes'];
   const imports = [];
 

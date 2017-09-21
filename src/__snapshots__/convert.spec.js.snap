@@ -1,4 +1,4 @@
-exports[`convert throws if a reserved static is specified 1`] = `"Cannot read property \'implicitlyImportReact\' of undefined"`;
+exports[`convert throws if a reserved static is specified 1`] = `"You can\'t supply a \`propTypes\` static! That name is reserved."`;
 
 exports[`convert with a config object of \`{"implicitlyImportReact":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 1 renders as expected within React 1`] = `
 Object {
