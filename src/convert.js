@@ -148,7 +148,7 @@ export default (source, config) => {
       );
   }
 
-  const html = (renderer.render(markdownSansAssignments) || '<!-- no input given -->');
+  const html = renderer.render(markdownSansAssignments) || '<!-- no input given -->';
 
   // Collect all the HTML tags and their positions
   const htmlTags = [];
@@ -231,10 +231,19 @@ export default (source, config) => {
         }
       } else {
         // this is a text node, let's wrap stuff on newlines
-        return fragment.split(/\n/g).map((line) => (
-          // Wrap string lines containing significant whitespace or curly braces
-          line.match(/^\s|{|}|\s$/) ? `{${formatEscape(line)}}` : line
-        )).join('\n');
+        return fragment.split(/\n/g).map((line, index, lines) => {
+          // Wrap string lines containing curly braces, and if this isn't the
+          // first line of contiguous text, significant whitespace, too
+          const regex = index > 0 && index < lines.length - 1
+            ? /^\s|{|}|\s$/
+            : /{|}/;
+
+          if (line.match(regex)) {
+            return `{${formatEscape(line)}}`;
+          }
+
+          return line;
+        }).join('\n');
       }
 
       // fall back to returning input
