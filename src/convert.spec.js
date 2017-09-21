@@ -41,6 +41,14 @@ const RUN_ONE_FIXTURE = (component, configuration, index) => {
       expect(() => loadedComponent = convert(component, configuration)).not.toThrowError();
     });
 
+    it('has the expected preamble', () => {
+      // Trim the first line, as this is a version comment
+      const preambleStartOffset = loadedComponent.indexOf('\n');
+      // Take until the function itself begins
+      const preambleEndOffset = loadedComponent.indexOf('function MarkdownComponent(props) {');
+      expect(loadedComponent.slice(preambleStartOffset, preambleEndOffset)).toMatchSnapshot();
+    });
+
     it('transforms with Babel without issue', () => {
       expect(() => transformedComponent = TRANSFORM_WITH_BABEL(loadedComponent)).not.toThrowError();
     });

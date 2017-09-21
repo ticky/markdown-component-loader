@@ -112,23 +112,26 @@ export default [
     <a className="github-link">Check it out on GitHub</a>
 
     **welcome.mdx**
-    <pre><code>Hey there **{'{{'} props.who {'}}'}** ✌🏼
-    </code></pre>
+    \`\`\`markdown
+    {{ <span className="emphasis">Hey there **{'{'+'{ props.who }'+'}'}** ✌🏼</span> }}
+    \`\`\`
 
     **app.jsx**
-    <pre><code>import Welcome from './welcome.mdx';
-
+    \`\`\`jsx
+    {{ <span className="emphasis">import Welcome from './welcome.mdx';</span> }}
+     
     ReactDOM.render(
-      {{'<Welcome who="Monkey Magic" />'}},
-      document.getElementById('app')
+    {{ <span className="emphasis">{\`  <Welcome who="$\{props.who || 'Monkey Magic'}" />,\`}</span>}}
+    {{\`  document.getElementById('app')\`}}
     );
-    </code></pre>
+    \`\`\`
 
     **Rendered:**
-    <pre><code>{'<div id="app">'}
-      {'<p>Hey there <strong>Monkey Magic</strong> ✌️</p>'}
-    {'</div>'}
-    </code></pre>
+    \`\`\`html
+    <div id="app">
+    {{ <span className="emphasis">{\`  <p>Hey there <strong>$\{props.who || 'Monkey Magic'}</strong> ✌🏼</p>\`}</span>}}
+    </div>
+    \`\`\`
     `,
 
   DocChomp`

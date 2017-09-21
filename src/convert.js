@@ -11,7 +11,15 @@ import StringReplacementCache from './string-replacement-cache';
 
 const ASSIGNMENT_COMMENT_PREFIX = '[mcl-assignment]:';
 
-export default (source, config = {}) => {
+const DEFAULT_CONFIGURATION = {
+  implicitlyImportReact: true,
+  passElementProps: false,
+  markdownItPlugins: []
+};
+
+export default (source, config) => {
+  config = Object.assign({}, DEFAULT_CONFIGURATION, config);
+
   const invalidStatics = ['propTypes'];
   const imports = [];
 

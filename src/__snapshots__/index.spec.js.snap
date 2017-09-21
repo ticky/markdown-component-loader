@@ -5,11 +5,7 @@ Array [
 ---
 # Fun test times!
       ",
-    Object {
-      "implicitlyImportReact": true,
-      "markdownItPlugins": Array [],
-      "passElementProps": false,
-    },
+    Object {},
   ],
 ]
 `;
@@ -22,7 +18,6 @@ Array [
 # Fun test times!
       ",
     Object {
-      "implicitlyImportReact": true,
       "markdownItPlugins": Array [
         [Function],
         [Function],
