@@ -71,7 +71,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.DefinePlugin({ IN_BROWSER: true }), // gotta do this to make HTMLtoJSX not break in-browser
+    new webpack.NormalModuleReplacementPlugin(
+      /^highlight\.js$/,
+      'highlight\.js/lib/highlight'
+    ),
     new webpack.optimize.UglifyJsPlugin({ sourceMap: true }),
     new ExtractTextPlugin("[name].css")
   ]
