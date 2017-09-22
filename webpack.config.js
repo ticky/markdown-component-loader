@@ -2,6 +2,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const isDevServer = process.argv.find((arg) => arg.includes('webpack-dev-server'));
 
@@ -79,7 +80,7 @@ module.exports = {
       /^highlight\.js$/,
       'highlight\.js/lib/highlight'
     ),
-    new webpack.optimize.UglifyJsPlugin({ sourceMap: true }),
+    new UglifyJSPlugin({ sourceMap: true }),
     new ExtractTextPlugin("[name].css")
   ]
 };
