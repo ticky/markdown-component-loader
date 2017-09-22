@@ -10,8 +10,15 @@ import formatStatic from './formatters/static';
 import formatEscape from './formatters/js-escape';
 import StringReplacementCache from './string-replacement-cache';
 
-const ASSIGNMENT_COMMENT_PREFIX = 'mclAssignmentBeginI';
-const ASSIGNMENT_COMMENT_SUFFIX = 'IEnd';
+const ASSIGNMENT_EXPRESSION_PREFIX = 'mclAssignmentBeginI';
+const ASSIGNMENT_EXPRESSION_SUFFIX = 'IEnd';
+const ASSIGNMENT_EXPRESSION_REGEXP = (
+  // Assignment Expression IDs are 55 lower-case characters long
+  `${ASSIGNMENT_EXPRESSION_PREFIX}[a-z]{55}${ASSIGNMENT_EXPRESSION_SUFFIX}`
+);
+const ASSIGNMENT_EXPRESSION_COMMENT_REGEXP = (
+  `{/\\*(${ASSIGNMENT_EXPRESSION_REGEXP})\\*/}`
+);
 
 const DEFAULT_CONFIGURATION = {
   implicitlyImportReact: true,
@@ -98,7 +105,7 @@ export default (source, config) => {
   const assignmentExpressionCache = new StringReplacementCache(
     /{({\s*(?:<.*?>|.*?)\s*})}/g,
     (match, value) => value,
-    (identityHash) => `${ASSIGNMENT_COMMENT_PREFIX}${identityHash}${ASSIGNMENT_COMMENT_SUFFIX}`
+    (identityHash) => `${ASSIGNMENT_EXPRESSION_PREFIX}${identityHash}${ASSIGNMENT_EXPRESSION_SUFFIX}`
   );
 
   const markdownSansAssignments = assignmentExpressionCache.load(markdownSansJsxProperties);
@@ -150,8 +157,13 @@ export default (source, config) => {
       );
   }
 
-  // Render markdown to HTML
-  const html = renderer.render(markdownSansAssignments) || '<!-- no input given -->';
+  // Render markdown to HTML, and replace assignment expressions with comments
+  const html = (
+    renderer.render(markdownSansAssignments) || '<!-- no input given -->'
+  ).replace(
+    new RegExp(ASSIGNMENT_EXPRESSION_REGEXP, 'g'),
+    '<!--$&-->'
+  );
 
   // Collect all the HTML tags and their positions
   const htmlTags = [];
@@ -246,9 +258,17 @@ export default (source, config) => {
       // fall back to returning input
       return fragment;
     })
+    // Put it all back together,
     .join('')
-    .replace(/\n/g, '\n          ') // Indent for pretty inspector output 🎉
-    .replace(/\n\s*$/g, '');        // Remove the trailing blank line;
+    // Restore assignment expressions to their original form
+    .replace(
+      new RegExp(ASSIGNMENT_EXPRESSION_COMMENT_REGEXP, 'g'),
+      '$1'
+    )
+    // Indent for pretty inspector output 🎉
+    .replace(/\n/g, '\n          ')
+    // And remove the trailing blank line
+    .replace(/\n\s*$/g, '');
 
   // Unload caches so we've got our values back!
   jsx = jsxPropertyCache.unload(assignmentExpressionCache.unload(jsx));
