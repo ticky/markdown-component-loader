@@ -181,13 +181,9 @@ export default (source, config) => {
 
   // Here, we collect all the positions at which SGML tags begin or end
   let jsx = htmlOffsets
-    .reduce(
-      (acc, item, index, array) => (
-        acc.concat([html.slice(item, array[index + 1])])
-      ),
-      []
-    )
-    .map((fragment) => {
+    .map((offset, index, array) => {
+      let fragment = html.slice(offset, array[index + 1]);
+
       // Then we check, for each of them, whether they are a tag or a text node
       if (fragment[0] === '<' || fragment[fragment.length - 1] === '>') {
         // If they're tags, we check whether they're a comment,
