@@ -243,14 +243,10 @@ export default (source, config) => {
         }
       } else {
         // If they're not tags, they're a text node. We split on newlines, and...
-        return fragment.split(/\n/g).map((line, index, lines) => {
-          // ...wrap string lines containing curly braces, and if this isn't the
-          // first line of contiguous text, significant whitespace, too
-          const regex = index > 0 && index < lines.length - 1
-            ? /^\s|{|}|\s$/
-            : /{|}/;
+        return fragment.split(/\n/g).map((line) => {
+          // ...wrap string lines containing curly braces
 
-          if (line.match(regex)) {
+          if (line.match(/[{}]/)) {
             return `{${formatEscape(decodeEntities(line))}}`;
           }
 
