@@ -134,8 +134,17 @@ exports[`convert happily renders its own homepage renders as expected within Rea
       </a>
     </p>
   </center>
-  <h3>
-    welcome.mdx
+  <h3
+    id="welcomemdx"
+  >
+    <a
+      aria-hidden="true"
+      className="header-anchor"
+      href="#welcomemdx"
+    >
+      🔗
+    </a>
+     welcome.mdx
   </h3>
   <pre>
     <code
@@ -151,8 +160,17 @@ exports[`convert happily renders its own homepage renders as expected within Rea
       <br />
     </code>
   </pre>
-  <h3>
-    app.jsx
+  <h3
+    id="appjsx"
+  >
+    <a
+      aria-hidden="true"
+      className="header-anchor"
+      href="#appjsx"
+    >
+      🔗
+    </a>
+     app.jsx
   </h3>
   <pre>
     <code
@@ -180,8 +198,17 @@ exports[`convert happily renders its own homepage renders as expected within Rea
       <br />
     </code>
   </pre>
-  <h3>
-    Rendered:
+  <h3
+    id="rendered"
+  >
+    <a
+      aria-hidden="true"
+      className="header-anchor"
+      href="#rendered"
+    >
+      🔗
+    </a>
+     Rendered:
   </h3>
   <pre>
     <code
@@ -231,8 +258,17 @@ exports[`convert happily renders its own homepage renders as expected within Rea
       <br />
     </code>
   </pre>
-  <h2>
-    What else can it do?
+  <h2
+    id="what-else-can-it-do"
+  >
+    <a
+      aria-hidden="true"
+      className="header-anchor"
+      href="#what-else-can-it-do"
+    >
+      🔗
+    </a>
+     What else can it do?
   </h2>
   <p>
     Use JSX within Markdown. Plus import objects such as shared snippets, fancy library functions or even whole React components, using YAML front-matter:
@@ -319,8 +355,17 @@ exports[`convert happily renders its own homepage renders as expected within Rea
       <br />
     </code>
   </pre>
-  <h2>
-    Give it a go!
+  <h2
+    id="give-it-a-go"
+  >
+    <a
+      aria-hidden="true"
+      className="header-anchor"
+      href="#give-it-a-go"
+    >
+      🔗
+    </a>
+     Give it a go!
   </h2>
   <p>
     Want to see exactly what Markdown Component Loader will generate when it translates the mdx into a stateless React component?
@@ -337,8 +382,17 @@ exports[`convert happily renders its own homepage renders as expected within Rea
       </a>
     </div>
   </div>
-  <h2>
-    Get started
+  <h2
+    id="get-started"
+  >
+    <a
+      aria-hidden="true"
+      className="header-anchor"
+      href="#get-started"
+    >
+      🔗
+    </a>
+     Get started
   </h2>
   <p>
     Check out the 
