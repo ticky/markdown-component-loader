@@ -4,9 +4,7 @@ import { decode as decodeEntities } from 'he';
 import HighlightJS from 'highlight.js';
 import MarkdownIt from './jsx-friendly-markdown-it';
 
-import formatImport from './formatters/import';
 import formatModule from './formatters/module';
-import formatStatic from './formatters/static';
 import formatEscape from './formatters/js-escape';
 import StringReplacementCache from './string-replacement-cache';
 
@@ -20,6 +18,11 @@ const ASSIGNMENT_EXPRESSION_COMMENT_REGEXP = (
   `{/\\*(${ASSIGNMENT_EXPRESSION_REGEXP})\\*/}`
 );
 
+const IMPLICIT_REACT_IMPORTS = {
+  React: 'react',
+  PropTypes: 'prop-types'
+};
+
 const DEFAULT_CONFIGURATION = {
   implicitlyImportReact: true,
   passElementProps: false,
@@ -32,36 +35,27 @@ export default (source, config) => {
   config = Object.assign({}, DEFAULT_CONFIGURATION, config);
 
   const invalidStatics = ['propTypes'];
-  const imports = [];
-
-  // Import React and PropTypes unless we've been asked otherwise
-  if (config.implicitlyImportReact) {
-    imports.push(formatImport('React', 'react'));
-    imports.push(formatImport('PropTypes', 'prop-types'));
-  }
 
   // Pull out imports & front-matter
-  const { body: markdown, attributes: { imports: importMap, ...staticAttributes } } = frontMatter(source);
+  const { body: markdown, attributes: { imports: customImports, ...statics } } = frontMatter(source);
 
-  // Add additional imports
-  if (importMap) {
-    Object.keys(importMap).forEach((name) => {
-      imports.push(formatImport(name, importMap[name]));
-    });
-  }
+  // Import React and PropTypes unless we've been asked otherwise
+  const imports = config.implicitlyImportReact
+    ? { ...IMPLICIT_REACT_IMPORTS, ...customImports }
+    : customImports;
 
   // Disallow passing `defaultProps` if we're passing our own
   if (config.passElementProps) {
     invalidStatics.push('defaultProps');
   }
 
-  // Add additional statics
-  const statics = Object.keys(staticAttributes).map((attribute) => {
+  // Check for invalid statics
+  Object.keys(statics).map((attribute) => {
     if (invalidStatics.indexOf(attribute) !== -1) {
-      throw new Error(`You can't supply a \`${attribute}\` static! That name is reserved.`);
+      throw new Error(
+        `You can't supply a \`${attribute}\` static! That name is reserved.`
+      );
     }
-
-    return formatStatic(attribute, staticAttributes[attribute]);
   });
 
   // Now, we start processing the markdown itself
@@ -238,9 +232,9 @@ export default (source, config) => {
   jsx = jsxPropertyCache.unload(assignmentExpressionCache.unload(jsx));
 
   return formatModule(
-    config,
-    imports.join(''),
-    statics.join(''),
-    jsx
+    imports,
+    statics,
+    jsx,
+    config
   );
 };

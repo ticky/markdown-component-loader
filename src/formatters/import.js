@@ -1,1 +1,3 @@
-export default (name, source) => `import ${name} from '${source}';\n`;
+import doEscape from './js-escape';
+
+export default (name, source) => `import ${name} from ${doEscape(source)};\n`;
