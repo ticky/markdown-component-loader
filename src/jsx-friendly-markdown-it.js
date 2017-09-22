@@ -20,7 +20,7 @@ Object.keys(markdownItHtmlRegexes).forEach((regexName) => {
   // this adds support for the `.` character within tag names
   markdownItHtmlRegexes[regexName] = new RegExp(
     regex.source.replace(
-      /\[A\-Za\-z\]\[A\-Za\-z0\-9\\-\]\*/g,
+      /\[A-Za-z\]\[A-Za-z0-9\\-\]\*/g,
       '[A-Za-z][A-Za-z0-9\\.\\-]*'
     ),
     regex.flags

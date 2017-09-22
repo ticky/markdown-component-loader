@@ -16,10 +16,10 @@ export default class StringReplacementCache {
         const identityHash = lowercaseHash(match);
 
         const identity = this.identityReplacer(
-            identityHash,
-            match,
-            ...values
-          );
+          identityHash,
+          match,
+          ...values
+        );
 
         this._cache[identity] = this.outputReplacer(match, ...values);
 
@@ -37,7 +37,7 @@ export default class StringReplacementCache {
         .replace(
           new RegExp(
             identity.replace(
-              /[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g,
+              /[-[\]/{}()*+?.\\^$|]/g,
               '\\$&'
             ),
             'g'
