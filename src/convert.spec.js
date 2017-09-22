@@ -1,4 +1,4 @@
-/* global jest, describe, expect, it */
+/* global __dirname, jest, describe, expect, it */
 import convert from './convert';
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -6,10 +6,14 @@ import { transform as BabelTransform } from 'babel-core';
 import renderer from 'react-test-renderer';
 import DocChomp from 'doc-chomp';
 
+import path from 'path';
+import { readFileSync } from 'fs';
+
 import MARKDOWN_COMPONENT_FIXTURES from './__fixtures__/components';
 const BOOL_FIXTURES = [undefined, true, false];
 
 jest.mock('foo');
+jest.mock('./images/logo.svg');
 
 // Call out to Babel and supply the shared configuration
 const TRANSFORM_WITH_BABEL = (code) => (
@@ -130,6 +134,48 @@ describe('convert', () => {
 
         <asdfrafghsgu
       `
+    );
+  });
+
+  describe(`isn't confused by unmatched closing tags`, () => {
+    let loadedComponent;
+
+    it('when transforming', () => {
+      expect(() => loadedComponent = convert(
+        DocChomp`
+          asdf
+
+          </div>
+
+          ghjkl
+        `
+      )).not.toThrowError();
+    });
+
+    it('has the expected preamble', () => {
+      expect(SLICE_OUT_PREAMBLE(loadedComponent)).toMatchSnapshot();
+    });
+
+    it('has the expected rendered body', () => {
+      const openDiv = '<div className={className}';
+      const openDivOffset = loadedComponent.indexOf(openDiv);
+      const closeDiv = '</div>\n  );';
+      const closeDivOffset = loadedComponent.indexOf(closeDiv) + 6;
+
+      expect(loadedComponent.slice(openDivOffset, closeDivOffset)).toMatchSnapshot();
+    });
+
+    it('throws an error when passed to Babel', () => {
+      expect(() => TRANSFORM_WITH_BABEL(loadedComponent)).toThrowErrorMatchingSnapshot();
+    });
+  });
+
+  describe('happily renders its own homepage', () => {
+    RUN_ONE_FIXTURE(
+      readFileSync(
+        path.join(__dirname, '../app/Homepage.mdx'),
+        { encoding: 'utf-8' }
+      )
     );
   });
 

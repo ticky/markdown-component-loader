@@ -44,6 +44,329 @@ exports[`convert gracefully handles loose greater-than and less-than symbols ren
 </div>
 `;
 
+exports[`convert happily renders its own homepage has the expected preamble 1`] = `
+"
+import React from \'react\';
+import PropTypes from \'prop-types\';
+
+MarkdownComponent.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object
+};
+
+MarkdownComponent[\'title\'] = \'Markdown Component Loader\';
+
+"
+`;
+
+exports[`convert happily renders its own homepage renders as expected within React 1`] = `
+Object {
+  "propTypes": Object {
+    "className": [Function],
+    "style": [Function],
+  },
+  "title": "Markdown Component Loader",
+}
+`;
+
+exports[`convert happily renders its own homepage renders as expected within React 2`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <center>
+    <h1>
+      <img
+        alt="Markdown Component Loader"
+        src={Object {}} />
+    </h1>
+    <p>
+      A Webpack loader that turns Markdown into dynamic, stateless React components!
+    </p>
+    <p>
+      <a
+        className="bubble-link github-link"
+        href="https://github.com/ticky/markdown-component-loader">
+        Check it out on GitHub
+      </a>
+    </p>
+  </center>
+  <h3>
+    welcome.mdx
+  </h3>
+  <pre>
+    <code
+      className="language-markdown">
+      <span
+        className="xml">
+        <span
+          className="hljs-comment">
+          <span
+            className="emphasis">
+            Hey there **
+            {{ props.who }}
+            ** ✌🏼
+          </span>
+        </span>
+      </span>
+      <br />
+    </code>
+  </pre>
+  <h3>
+    app.jsx
+  </h3>
+  <pre>
+    <code
+      className="language-jsx">
+      <span
+        className="emphasis">
+        import Welcome from \'./welcome.mdx\';
+      </span>
+      <br />
+       
+      <br />
+      ReactDOM.render(
+      <br />
+      <span
+        className="xml">
+        <span
+          className="hljs-comment">
+          <span
+            className="emphasis">
+              <Welcome who=\"Monkey Magic\" />,
+          </span>
+        </span>
+        <br />
+        <span
+          className="hljs-comment">
+            document.getElementById(\'app\')
+        </span>
+        <br />
+        );
+        <br />
+      </span>
+    </code>
+  </pre>
+  <h3>
+    Rendered:
+  </h3>
+  <pre>
+    <code
+      className="language-html">
+      <span
+        className="hljs-tag">
+        <
+        <span
+          className="hljs-name">
+          div
+        </span>
+         
+        <span
+          className="hljs-attr">
+          id
+        </span>
+        =
+        <span
+          className="hljs-string">
+          \"app\"
+        </span>
+        >
+      </span>
+      <br />
+      <span
+        className="hljs-comment">
+        <span
+          className="emphasis">
+            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
+        </span>
+      </span>
+      <br />
+      <span
+        className="hljs-tag">
+        </
+        <span
+          className="hljs-name">
+          div
+        </span>
+        >
+      </span>
+      <br />
+    </code>
+  </pre>
+  <h2>
+    What else can it do?
+  </h2>
+  <p>
+    Use JSX within Markdown. Plus import objects such as shared snippets, fancy library functions or even whole React components, using YAML front-matter:
+  </p>
+  <pre>
+    <code
+      className="language-markdown">
+      ---
+      <br />
+      <span
+        className="xml">
+        <span
+          className="hljs-comment">
+          <span
+            className="emphasis">
+            imports:
+          </span>
+        </span>
+      </span>
+      <br />
+      <span
+        className="xml">
+        <span
+          className="hljs-comment">
+          <span
+            className="emphasis">
+              numberFormat: number-format
+          </span>
+        </span>
+      </span>
+      <br />
+      <span
+        className="hljs-section">
+        <span
+          className="emphasis">
+            Button: ui/button
+        </span>
+        <br />
+        ---
+      </span>
+      <br />
+      <br />
+      You are visitor number 
+      <span
+        className="xml">
+        <span
+          className="hljs-comment">
+          <span
+            className="emphasis">
+            {{ numberFormat(1000000) }}
+          </span>
+        </span>
+      </span>
+      !
+      <br />
+      <br />
+      <span
+        className="xml">
+        <span
+          className="hljs-comment">
+          <span
+            className="emphasis">
+            <Button path=\"/browser-info\">Details</Button>
+          </span>
+        </span>
+      </span>
+      <br />
+    </code>
+  </pre>
+  <p>
+    Destructured imports, with some added single quotes:
+  </p>
+  <pre>
+    <code
+      className="language-markdown">
+      ---
+      <br />
+      imports:
+      <br />
+      <span
+        className="hljs-section">
+        <span
+          className="emphasis">
+            \'{ window, document }\': global
+        </span>
+        <br />
+        ---
+      </span>
+      <br />
+      <br />
+      Hello, your user agent is 
+      <span
+        className="xml">
+        <span
+          className="hljs-comment">
+          <span
+            className="emphasis">
+            {{ window.navigator.userAgent }}
+          </span>
+        </span>
+      </span>
+      .
+      <br />
+    </code>
+  </pre>
+  <h2>
+    Give it a go!
+  </h2>
+  <p>
+    Want to see exactly what Markdown Component Loader will generate when it translates the mdx into a stateless React component?
+  </p>
+  <div
+    className="repl-image">
+    <div>
+      <a
+        className="bubble-link repl-link"
+        href="repl.html">
+        Launch editor
+      </a>
+    </div>
+  </div>
+  <h2>
+    Get started
+  </h2>
+  <p>
+    Check out the 
+    <a
+      href="https://github.com/ticky/markdown-component-loader">
+      GitHub Readme
+    </a>
+     for how to get started, including details on how to add styles and event handlers to the DOM nodes generated by the markdown, and other options for customizing the loader.
+  </p>
+  <center>
+    <a
+      className="bubble-link github-link"
+      href="https://github.com/ticky/markdown-component-loader">
+      Check it out on GitHub
+    </a>
+    <hr />
+    <p>
+      Made with 💜 by 
+      <a
+        href="https://twitter.com/ticky">
+        @ticky
+      </a>
+    </p>
+  </center>
+</div>
+`;
+
+exports[`convert isn't confused by unmatched closing tags has the expected preamble 1`] = `
+"
+import React from \'react\';
+import PropTypes from \'prop-types\';
+
+MarkdownComponent.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object
+};
+
+"
+`;
+
+exports[`convert isn't confused by unmatched closing tags has the expected rendered body 1`] = `
+"<div className={className} style={style}>
+      <p>asdf</p>
+      </div>
+      <p>ghjkl</p>
+    </div>"
+`;
+
+exports[`convert isn't confused by unmatched closing tags throws an error when passed to Babel 1`] = `"unknown: Adjacent JSX elements must be wrapped in an enclosing tag (17:6)"`;
+
 exports[`convert throws if a reserved static is specified 1`] = `"You can\'t supply a \`propTypes\` static! That name is reserved."`;
 
 exports[`convert with a config object of \`{"implicitlyImportReact":false,"markdownItPlugins":"somenonsensevalue"}\` for component example 1 has the expected preamble 1`] = `

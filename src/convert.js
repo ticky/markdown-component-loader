@@ -178,7 +178,9 @@ export default (source, config) => {
   htmlTags.forEach((tag) => {
     const { state, openIndex, contentIndex, closeIndex, closingIndex } = tag;
 
-    htmlOffsets.push(openIndex);
+    if (typeof openIndex === 'number') {
+      htmlOffsets.push(openIndex);
+    }
 
     if (typeof contentIndex === 'number') {
       // contentIndex + 1 because contentIndex if the offset of '>'
@@ -189,14 +191,16 @@ export default (source, config) => {
       htmlOffsets.push(closingIndex);
     }
 
-    if (state === 'open') {
-      if (html[closeIndex] === '-') {
-        htmlOffsets.push(closeIndex + 3);
+    if (typeof closeIndex === 'number') {
+      if (state === 'open') {
+        if (html[closeIndex] === '-') {
+          htmlOffsets.push(closeIndex + 3);
+        } else {
+          htmlOffsets.push(closeIndex + 2);
+        }
       } else {
-        htmlOffsets.push(closeIndex + 2);
+        htmlOffsets.push(closeIndex + 1);
       }
-    } else {
-      htmlOffsets.push(closeIndex + 1);
     }
   });
 
