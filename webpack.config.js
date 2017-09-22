@@ -76,10 +76,6 @@ module.exports = {
       name: "shared",
       filename: "shared.js"
     }),
-    new webpack.NormalModuleReplacementPlugin(
-      /^highlight\.js$/,
-      'highlight\.js/lib/highlight'
-    ),
     new UglifyJSPlugin({ sourceMap: true }),
     new ExtractTextPlugin("[name].css")
   ]
