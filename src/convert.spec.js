@@ -131,6 +131,14 @@ describe('convert', () => {
     );
   });
 
+  describe('handles interpolations within sentences which should be quoted', () => {
+    RUN_ONE_FIXTURE(
+      DocChomp`
+        foo {{Infinity}} { bar {{Infinity}} } {}
+      `
+    );
+  });
+
   describe('gracefully handles loose greater-than and less-than symbols', () => {
     RUN_ONE_FIXTURE(
       DocChomp`

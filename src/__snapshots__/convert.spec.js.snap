@@ -85,6 +85,43 @@ exports[`convert gracefully handles loose greater-than and less-than symbols ren
 </div>
 `;
 
+exports[`convert handles interpolations within sentences which should be quoted has the expected preamble 1`] = `
+"
+import React from 'react';
+import PropTypes from 'prop-types';
+
+MarkdownComponent.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object
+};
+
+"
+`;
+
+exports[`convert handles interpolations within sentences which should be quoted renders as expected within React 1`] = `
+Object {
+  "propTypes": Object {
+    "className": [Function],
+    "style": [Function],
+  },
+}
+`;
+
+exports[`convert handles interpolations within sentences which should be quoted renders as expected within React 2`] = `
+<div
+  className={undefined}
+  style={undefined}
+>
+  <p>
+    foo 
+    Infinity
+     { bar 
+    Infinity
+     } {}
+  </p>
+</div>
+`;
+
 exports[`convert happily renders its own homepage has the expected preamble 1`] = `
 "
 import React from 'react';
