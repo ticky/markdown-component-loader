@@ -166,52 +166,21 @@ export default (source, config) => {
   );
 
   // Collect all the HTML tags and their positions
-  const htmlTags = [];
+  const htmlOffsets = [0];
 
   walkHtml(
     html,
-    (match, tagFragment, offset, string, tag) => {
-      if (htmlTags.indexOf(tag) === -1) {
-        htmlTags.push(tag);
+    (match, tagFragment, offset) => {
+      if (tagFragment[0] === '<') {
+        htmlOffsets.push(offset);
+      } else { // ∴ tagFragment[tagFragment.length - 1] === '>'
+        htmlOffsets.push(offset + tagFragment.length);
       }
     }
   );
 
-  const htmlOffsets = [0];
-
-  htmlTags.forEach((tag) => {
-    const { state, openIndex, contentIndex, closeIndex, closingIndex } = tag;
-
-    if (typeof openIndex === 'number') {
-      htmlOffsets.push(openIndex);
-    }
-
-    if (typeof contentIndex === 'number') {
-      // contentIndex + 1 because contentIndex if the offset of '>'
-      htmlOffsets.push(contentIndex + 1);
-    }
-
-    if (typeof closingIndex === 'number') {
-      htmlOffsets.push(closingIndex);
-    }
-
-    if (typeof closeIndex === 'number') {
-      if (state === 'open') {
-        if (html[closeIndex] === '-') {
-          htmlOffsets.push(closeIndex + 3);
-        } else {
-          htmlOffsets.push(closeIndex + 2);
-        }
-      } else {
-        htmlOffsets.push(closeIndex + 1);
-      }
-    }
-  });
-
   // Here, we collect all the positions at which SGML tags begin or end
   let jsx = htmlOffsets
-    .sort((first, second) => first - second)
-    .filter((number, index, array) => !index || number !== array[index - 1])
     .reduce(
       (acc, item, index, array) => (
         acc.concat([html.slice(item, array[index + 1])])
