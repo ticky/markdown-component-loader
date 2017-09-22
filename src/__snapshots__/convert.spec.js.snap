@@ -1,3 +1,39 @@
+exports[`convert doesn't trigger any kind of comment highlighting in highlights has the expected preamble 1`] = `
+"
+import React from \'react\';
+import PropTypes from \'prop-types\';
+
+MarkdownComponent.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object
+};
+
+"
+`;
+
+exports[`convert doesn't trigger any kind of comment highlighting in highlights renders as expected within React 1`] = `
+Object {
+  "propTypes": Object {
+    "className": [Function],
+    "style": [Function],
+  },
+}
+`;
+
+exports[`convert doesn't trigger any kind of comment highlighting in highlights renders as expected within React 2`] = `
+<div
+  className={undefined}
+  style={undefined}>
+  <pre>
+    <code
+      className="language-markdown">
+      object
+      <br />
+    </code>
+  </pre>
+</div>
+`;
+
 exports[`convert gracefully handles loose greater-than and less-than symbols has the expected preamble 1`] = `
 "
 import React from \'react\';
@@ -97,16 +133,10 @@ exports[`convert happily renders its own homepage renders as expected within Rea
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -127,23 +157,14 @@ exports[`convert happily renders its own homepage renders as expected within Rea
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <h3>
@@ -173,11 +194,8 @@ exports[`convert happily renders its own homepage renders as expected within Rea
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -204,25 +222,13 @@ exports[`convert happily renders its own homepage renders as expected within Rea
       ---
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            imports:
-          </span>
-        </span>
+        className="emphasis">
+        imports:
       </span>
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              numberFormat: number-format
-          </span>
-        </span>
+        className="emphasis">
+          numberFormat: number-format
       </span>
       <br />
       <span
@@ -238,27 +244,15 @@ exports[`convert happily renders its own homepage renders as expected within Rea
       <br />
       You are visitor number 
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            {{ numberFormat(1000000) }}
-          </span>
-        </span>
+        className="emphasis">
+        {{ numberFormat(1000000) }}
       </span>
       !
       <br />
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            <Button path=\"/browser-info\">Details</Button>
-          </span>
-        </span>
+        className="emphasis">
+        <Button path=\"/browser-info\">Details</Button>
       </span>
       <br />
     </code>
@@ -286,14 +280,8 @@ exports[`convert happily renders its own homepage renders as expected within Rea
       <br />
       Hello, your user agent is 
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            {{ window.navigator.userAgent }}
-          </span>
-        </span>
+        className="emphasis">
+        {{ window.navigator.userAgent }}
       </span>
       .
       <br />
@@ -793,16 +781,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -825,23 +807,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -873,11 +846,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -1423,16 +1393,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -1455,23 +1419,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -1503,11 +1458,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -1987,16 +1939,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -2019,23 +1965,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -2067,11 +2004,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -2539,16 +2473,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -2571,23 +2499,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -2619,11 +2538,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -3169,16 +3085,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -3201,23 +3111,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -3249,11 +3150,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -3733,16 +3631,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -3765,23 +3657,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -3813,11 +3696,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -4285,16 +4165,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -4317,23 +4191,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -4365,11 +4230,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -4864,16 +4726,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -4896,23 +4752,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -4944,11 +4791,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -5530,16 +5374,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -5562,23 +5400,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -5610,11 +5439,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -6130,16 +5956,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -6162,23 +5982,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -6210,11 +6021,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -6718,16 +6526,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -6750,23 +6552,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -6798,11 +6591,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -7279,16 +7069,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false}\` for
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -7311,23 +7095,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false}\` for
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -7359,11 +7134,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false}\` for
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -7837,16 +7609,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -7869,23 +7635,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -7917,11 +7674,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -8475,16 +8229,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -8507,23 +8255,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -8555,11 +8294,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -9047,16 +8783,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -9079,23 +8809,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -9127,11 +8848,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -9607,16 +9325,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -9639,23 +9351,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -9687,11 +9390,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -10245,16 +9945,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -10277,23 +9971,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -10325,11 +10010,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -10817,16 +10499,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -10849,23 +10525,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -10897,11 +10564,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -11377,16 +11041,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -11409,23 +11067,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -11457,11 +11106,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -11964,16 +11610,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -11996,23 +11636,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -12044,11 +11675,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -12638,16 +12266,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -12670,23 +12292,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -12718,11 +12331,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -13246,16 +12856,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -13278,23 +12882,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -13326,11 +12921,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -13842,16 +13434,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -13874,23 +13460,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -13922,11 +13499,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -14411,16 +13985,10 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true}\` for 
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -14443,23 +14011,14 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true}\` for 
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -14491,11 +14050,8 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true}\` for 
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -14965,16 +14521,10 @@ exports[`convert with a config object of \`{"markdownItPlugins":"somenonsenseval
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -14997,23 +14547,14 @@ exports[`convert with a config object of \`{"markdownItPlugins":"somenonsenseval
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -15045,11 +14586,8 @@ exports[`convert with a config object of \`{"markdownItPlugins":"somenonsenseval
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -15595,16 +15133,10 @@ exports[`convert with a config object of \`{"markdownItPlugins":[null,[null,{"co
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -15627,23 +15159,14 @@ exports[`convert with a config object of \`{"markdownItPlugins":[null,[null,{"co
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -15675,11 +15198,8 @@ exports[`convert with a config object of \`{"markdownItPlugins":[null,[null,{"co
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -16159,16 +15679,10 @@ exports[`convert with a config object of \`{"markdownItPlugins":[null]}\` for co
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -16191,23 +15705,14 @@ exports[`convert with a config object of \`{"markdownItPlugins":[null]}\` for co
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -16239,11 +15744,8 @@ exports[`convert with a config object of \`{"markdownItPlugins":[null]}\` for co
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -16711,16 +16213,10 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -16743,23 +16239,14 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -16791,11 +16278,8 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -17341,16 +16825,10 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -17373,23 +16851,14 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -17421,11 +16890,8 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -17905,16 +17371,10 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -17937,23 +17397,14 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -17985,11 +17436,8 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -18457,16 +17905,10 @@ exports[`convert with a config object of \`{"passElementProps":false}\` for comp
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -18489,23 +17931,14 @@ exports[`convert with a config object of \`{"passElementProps":false}\` for comp
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -18537,11 +17970,8 @@ exports[`convert with a config object of \`{"passElementProps":false}\` for comp
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -19036,16 +18466,10 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -19068,23 +18492,14 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -19116,11 +18531,8 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -19702,16 +19114,10 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -19734,23 +19140,14 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -19782,11 +19179,8 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -20302,16 +19696,10 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -20334,23 +19722,14 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -20382,11 +19761,8 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -20890,16 +20266,10 @@ exports[`convert with a config object of \`{"passElementProps":true}\` for compo
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -20922,23 +20292,14 @@ exports[`convert with a config object of \`{"passElementProps":true}\` for compo
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -20970,11 +20331,8 @@ exports[`convert with a config object of \`{"passElementProps":true}\` for compo
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span
@@ -21451,16 +20809,10 @@ exports[`convert with a config object of \`{}\` for component example 3 renders 
     <code
       className="language-markdown">
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-            Hey there **
-            {{ props.who }}
-            ** ✌🏼
-          </span>
-        </span>
+        className="emphasis">
+        Hey there **
+        {{ props.who }}
+        ** ✌🏼
       </span>
       <br />
     </code>
@@ -21483,23 +20835,14 @@ exports[`convert with a config object of \`{}\` for component example 3 renders 
       ReactDOM.render(
       <br />
       <span
-        className="xml">
-        <span
-          className="hljs-comment">
-          <span
-            className="emphasis">
-              <Welcome who=\"Monkey Magic\" />,
-          </span>
-        </span>
-        <br />
-        <span
-          className="hljs-comment">
-            document.getElementById(\'app\')
-        </span>
-        <br />
-        );
-        <br />
+        className="emphasis">
+          <Welcome who=\"Monkey Magic\" />,
       </span>
+      <br />
+        document.getElementById(\'app\')
+      <br />
+      );
+      <br />
     </code>
   </pre>
   <p>
@@ -21531,11 +20874,8 @@ exports[`convert with a config object of \`{}\` for component example 3 renders 
       </span>
       <br />
       <span
-        className="hljs-comment">
-        <span
-          className="emphasis">
-            <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
-        </span>
+        className="emphasis">
+          <p>Hey there <strong>Monkey Magic</strong> ✌🏼</p>
       </span>
       <br />
       <span

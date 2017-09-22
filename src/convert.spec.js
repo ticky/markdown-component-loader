@@ -121,6 +121,16 @@ describe('convert', () => {
     });
   });
 
+  describe(`doesn't trigger any kind of comment highlighting in highlights`, () => {
+    RUN_ONE_FIXTURE(
+      DocChomp`
+        \`\`\`markdown
+        {{ typeof props }}
+        \`\`\`
+      `
+    );
+  });
+
   describe('gracefully handles loose greater-than and less-than symbols', () => {
     RUN_ONE_FIXTURE(
       DocChomp`

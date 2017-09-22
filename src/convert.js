@@ -10,9 +10,8 @@ import formatStatic from './formatters/static';
 import formatEscape from './formatters/js-escape';
 import StringReplacementCache from './string-replacement-cache';
 
-const ASSIGNMENT_COMMENT_PREFIX = '[mcl-assignment]:';
-const ASSIGNMENT_COMMENT_PREFIX_REGEXP =
-  ASSIGNMENT_COMMENT_PREFIX.replace(/[.?*+^$[\]\\(){}|-]/g, "\\$&");
+const ASSIGNMENT_COMMENT_PREFIX = 'mclAssignmentBeginI';
+const ASSIGNMENT_COMMENT_SUFFIX = 'IEnd';
 
 const DEFAULT_CONFIGURATION = {
   implicitlyImportReact: true,
@@ -99,7 +98,7 @@ export default (source, config) => {
   const assignmentExpressionCache = new StringReplacementCache(
     /{({\s*(?:<.*?>|.*?)\s*})}/g,
     (match, value) => value,
-    (identityHash) => `<!--${ASSIGNMENT_COMMENT_PREFIX}${identityHash}-->`
+    (identityHash) => `${ASSIGNMENT_COMMENT_PREFIX}${identityHash}${ASSIGNMENT_COMMENT_SUFFIX}`
   );
 
   const markdownSansAssignments = assignmentExpressionCache.load(markdownSansJsxProperties);
@@ -132,14 +131,7 @@ export default (source, config) => {
         }
 
         return highlightedContent
-          .replace(/\n/g, '<br />')
-          .replace(
-            new RegExp(
-              `&lt;(!--${ASSIGNMENT_COMMENT_PREFIX_REGEXP}[a-z]+--)&gt;`,
-              'g'
-            ),
-            '<$1>'
-          );
+          .replace(/\n/g, '<br />');
       }
     });
 
@@ -219,11 +211,8 @@ export default (source, config) => {
       if (fragment[0] === '<' || fragment[fragment.length - 1] === '>') {
         // If they're tags, we check whether they're a comment,
         if (fragment.slice(0, 4) === '<!--') {
-          // if so, unless they're our special assignment comments...
-          if (fragment.slice(4, 4 + ASSIGNMENT_COMMENT_PREFIX.length) !== ASSIGNMENT_COMMENT_PREFIX) {
-            // ...we replace them with JSX style comments
-            return `{/*${fragment.slice(4, -3)}*/}`;
-          }
+          // and replace them with JSX style comments
+          return `{/*${fragment.slice(4, -3)}*/}`;
         } else {
           // otherwise, we will...
           if (fragment[1] !== '/') {
