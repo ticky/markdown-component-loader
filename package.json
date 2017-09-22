@@ -1,6 +1,6 @@
 {
   "name": "markdown-component-loader",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "Turn Markdown into dynamic, stateless React components",
   "main": "lib/index.js",
   "scripts": {
@@ -45,8 +45,8 @@
     "babel-eslint": "^8.0.0",
     "babel-jest": "^21.0.2",
     "babel-loader": "^7.1.0",
-    "babel-plugin-git-version": "^0.2.0",
     "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-plugin-version-inline": "^1.0.0",
     "babel-polyfill": "^6.16.0",
     "babel-preset-es2015": "^6.16.0",
     "babel-preset-react": "^6.16.0",
@@ -74,7 +74,7 @@
   },
   "babel": {
     "plugins": [
-      ["git-version", { "commitLength": 8 }],
+      "version-inline",
       "transform-object-rest-spread"
     ],
     "presets": [

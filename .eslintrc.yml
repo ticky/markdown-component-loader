@@ -12,8 +12,7 @@ plugins:
   - react
 
 globals:
-  GIT_TAG: false
-  GIT_COMMIT: false
+  __VERSION__: false
 
 parserOptions:
   sourceType: module
