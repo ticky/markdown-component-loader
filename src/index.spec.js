@@ -23,10 +23,8 @@ describe('Webpack loader', () => {
         {},
         FAKE_WEBPACK_CONTEXT,
         {
-          options: {
-            markdownComponentLoader: {
+          query: {
 
-            }
           }
         }
       ),
@@ -48,14 +46,12 @@ describe('Webpack loader', () => {
         {},
         FAKE_WEBPACK_CONTEXT,
         {
-          options: {
-            markdownComponentLoader: {
-              passElementProps: true,
-              markdownItPlugins: [
-                () => 'markdown-it-meow',
-                () => 'markdown-it-purr'
-              ]
-            }
+          query: {
+            passElementProps: true,
+            markdownItPlugins: [
+              () => 'markdown-it-meow',
+              () => 'markdown-it-purr'
+            ]
           }
         }
       ),

@@ -185,7 +185,19 @@ describe('convert', () => {
       readFileSync(
         path.join(__dirname, '../app/Homepage.mdx'),
         { encoding: 'utf-8' }
-      )
+      ),
+      {
+        markdownItPlugins: [
+          [
+            require('markdown-it-anchor'),
+            {
+              permalink: true,
+              permalinkBefore: true,
+              permalinkSymbol: '🔗'
+            }
+          ]
+        ]
+      }
     );
   });
 

@@ -1,4 +1,4 @@
-import { getLoaderConfig } from 'loader-utils';
+import { getOptions } from 'loader-utils';
 
 import convert from './convert';
 
@@ -7,7 +7,7 @@ module.exports = function(source) {
   this.cacheable && this.cacheable();
 
   // Load configuration from Webpack
-  const config = getLoaderConfig(this, 'markdownComponentLoader');
+  const config = getOptions(this);
 
   // Go!
   return convert(source, config);

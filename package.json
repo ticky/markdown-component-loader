@@ -6,7 +6,7 @@
   "scripts": {
     "prepublish": "babel src --out-dir lib --source-maps inline --ignore \"**/*.spec.js,**/__fixtures__,**/__mocks__\"",
     "test": "jest",
-    "build": "webpack",
+    "build": "yarn prepublish && webpack",
     "start": "webpack-dev-server",
     "lint": "eslint .",
     "lint-and-fixup": "eslint --fix ."
@@ -35,7 +35,7 @@
     "he": "^1.1.1",
     "highlight.js": "^9.6.0",
     "jsesc": "^2.2.0",
-    "loader-utils": "^0.2.16",
+    "loader-utils": "^1.1.0",
     "markdown-it": "^8.1.0",
     "sha.js": "^2.4.5"
   },

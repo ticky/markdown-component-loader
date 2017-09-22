@@ -40,7 +40,21 @@ module.exports = {
         test: /\.mdx$/,
         use: [
           'babel-loader',
-          path.join(__dirname, "lib/index.js")
+          {
+            loader: path.join(__dirname, "lib/index.js"),
+            options: {
+              markdownItPlugins: [
+                [
+                  require('markdown-it-anchor'),
+                  {
+                    permalink: true,
+                    permalinkBefore: true,
+                    permalinkSymbol: '🔗'
+                  }
+                ]
+              ]
+            }
+          }
         ],
         exclude: /node_modules/
       },
