@@ -2,6 +2,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 
 const isDevServer = process.argv.find((arg) => arg.includes('webpack-dev-server'));
 
@@ -10,7 +11,7 @@ const devtool = isDevServer ? "cheap-module-eval-source-map" : "source-map";
 module.exports = {
   devtool,
   entry: {
-    app: [
+    site: [
       'babel-polyfill',
       './app/index.js'
     ],
@@ -32,7 +33,8 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.mdx$/,
@@ -70,8 +72,15 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.DefinePlugin({ IN_BROWSER: true }), // gotta do this to make HTMLtoJSX not break in-browser
-    new webpack.optimize.UglifyJsPlugin({ sourceMap: true }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "shared",
+      filename: "shared.js"
+    }),
+    new webpack.NormalModuleReplacementPlugin(
+      /^highlight\.js$/,
+      'highlight\.js/lib/highlight'
+    ),
+    new UglifyJSPlugin({ sourceMap: true }),
     new ExtractTextPlugin("[name].css")
   ]
 };

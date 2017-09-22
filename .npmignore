@@ -1,7 +1,15 @@
+coverage
+__fixtures__
+__mocks__
 __snapshots__
 *.spec.js
 app
 docs
+yarn.lock
+stats.json
+*.tgz
+*.log
+/webpack.config.js
 
 # `lib` is included in npm dist
 !lib

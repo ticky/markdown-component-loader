@@ -1,5 +1,7 @@
 coverage
 node_modules
+*.tgz
+stats.json
 
 # `lib` is not included in git repo
 lib

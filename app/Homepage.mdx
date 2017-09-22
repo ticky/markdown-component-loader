@@ -38,24 +38,24 @@ Use JSX within Markdown. Plus import objects such as shared snippets, fancy libr
 ```markdown
 ---
 {{<span className="emphasis">{'imports:'}</span>}}
-{{<span className="emphasis">{'  window: global/window'}</span>}}
+{{<span className="emphasis">{'  numberFormat: number-format'}</span>}}
 {{<span className="emphasis">{'  Button: ui/button'}</span>}}
 ---
 
-Hello, your user agent is {{<span className="emphasis">{'{{ window.navigator.userAgent }}'}</span>}}.
+You are visitor number {{<span className="emphasis">{'{{ numberFormat(1000000) }}'}</span>}}!
 
-{{<span className="emphasis">{'{\{ <Button path="/browser-info">Details</Button> }\}'}</span>}}
+{{<span className="emphasis">{'<Button path="/browser-info">Details</Button>'}</span>}}
 ```
 
 Destructured imports, with some added single quotes:
 
 ```markdown
 ---
-{{<span className="emphasis">{'imports:'}</span>}}
-{{<span className="emphasis">{'  \'{ Button, Panel }\': ui'}</span>}}
+imports:
+{{<span className="emphasis">{'  \'{ window, document }\': global'}</span>}}
 ---
 
-Hello <code>{{<span className="emphasis">{'{\{ <Button /> }\}'}</span>}}</code>
+Hello, your user agent is {{<span className="emphasis">{'{{ window.navigator.userAgent }}'}</span>}}.
 ```
 
 ## Give it a go!
