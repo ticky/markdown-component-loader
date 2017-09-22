@@ -1,10 +1,10 @@
 import DocChomp from 'doc-chomp';
 
-import { name, version } from '../../package.json';
+const version = `${GIT_TAG} (${GIT_COMMIT})`;
 
 export default ({ passElementProps }, imports, statics, jsx) => {
   let moduleText = DocChomp`
-    // Module generated from Markdown by ${name} v${version}
+    // Module generated from Markdown by Markdown Component Loader ${version}
     ${imports}
     MarkdownComponent.propTypes = {
       className: PropTypes.string,

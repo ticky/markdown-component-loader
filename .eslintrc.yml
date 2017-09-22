@@ -11,8 +11,9 @@ env:
 plugins:
   - react
 
-ecmaFeatures:
-  modules: true
+globals:
+  GIT_TAG: false
+  GIT_COMMIT: false
 
 parserOptions:
   sourceType: module
