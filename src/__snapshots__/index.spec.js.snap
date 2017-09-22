@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Webpack loader calls through to convert function 1`] = `
 Array [
   Array [
