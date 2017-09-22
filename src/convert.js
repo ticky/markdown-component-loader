@@ -27,6 +27,8 @@ const DEFAULT_CONFIGURATION = {
 };
 
 export default (source, config) => {
+  // First, we handle the configuration and front-matter
+
   config = Object.assign({}, DEFAULT_CONFIGURATION, config);
 
   const invalidStatics = ['propTypes'];
@@ -62,8 +64,15 @@ export default (source, config) => {
     return formatStatic(attribute, staticAttributes[attribute]);
   });
 
+  // Now, we start processing the markdown itself
+
   // Hold onto JSX properties and assignment expressions before converting
-  const markdownTagIndexes = [];
+  let offsetForPropertyReplacements = 0;
+  let markdownSansJsxProperties = markdown;
+
+  const jsxPropertyCache = new StringReplacementCache(
+    /[\w]+={[^}]*}\s*}?|{\s*\.\.\.[^}]*}/g
+  );
 
   // Find all opening or void HTML tags
   walkHtml(
@@ -71,35 +80,23 @@ export default (source, config) => {
     (match, tagFragment, offset, string, tag) => {
       // Once we get a tag which is closing
       if (typeof tag.closeIndex === 'number') {
-        // Push its start and end coordinates into our list
-        if (typeof tag.contentIndex === 'number') {
-          markdownTagIndexes.push([tag.openIndex, tag.contentIndex]);
-        } else {
-          markdownTagIndexes.push([tag.openIndex, tag.closeIndex]);
-        }
+        // Replace any assignment expressions within its opening tag
+        const startIndex = tag.openIndex + offsetForPropertyReplacements;
+        const endIndex = (
+          typeof tag.contentIndex === 'number'
+            ? tag.contentIndex
+            : tag.closeIndex
+        ) + offsetForPropertyReplacements;
+
+        const tagWithNoReplacements = markdownSansJsxProperties.slice(startIndex, endIndex);
+        const tagWithPropertyReplacements = jsxPropertyCache.load(tagWithNoReplacements);
+
+        markdownSansJsxProperties = markdownSansJsxProperties.slice(0, startIndex) + tagWithPropertyReplacements + markdownSansJsxProperties.slice(endIndex);
+
+        offsetForPropertyReplacements += tagWithPropertyReplacements.length - tagWithNoReplacements.length;
       }
     }
   );
-
-  let offsetForPropertyReplacements = 0;
-  let markdownSansJsxProperties = markdown;
-
-  // Then, within each HTML tag we found, replace any assignment expressions
-  const jsxPropertyCache = new StringReplacementCache(
-    /[\w]+={[^}]*}\s*}?|{\s*\.\.\.[^}]*}/g
-  );
-
-  markdownTagIndexes.forEach(([start, end]) => {
-    const startIndex = start + offsetForPropertyReplacements;
-    const endIndex = end + offsetForPropertyReplacements;
-
-    const tagWithNoReplacements = markdownSansJsxProperties.slice(startIndex, endIndex);
-    const tagWithPropertyReplacements = jsxPropertyCache.load(tagWithNoReplacements);
-
-    markdownSansJsxProperties = markdownSansJsxProperties.slice(0, startIndex) + tagWithPropertyReplacements + markdownSansJsxProperties.slice(endIndex);
-
-    offsetForPropertyReplacements += tagWithPropertyReplacements.length - tagWithNoReplacements.length;
-  });
 
   // Replace all remaining double-brace assignment expressions with comments
   const assignmentExpressionCache = new StringReplacementCache(
