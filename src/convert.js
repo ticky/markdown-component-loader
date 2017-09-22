@@ -169,14 +169,16 @@ export default (source, config) => {
     html,
     (match, tagFragment, offset) => {
       if (tagFragment[0] === '<') {
+        // Push the offset of opening tags...
         htmlOffsets.push(offset);
       } else { // ∴ tagFragment[tagFragment.length - 1] === '>'
+        // ...and the end offset of closing tags
         htmlOffsets.push(offset + tagFragment.length);
       }
     }
   );
 
-  // Here, we collect all the positions at which SGML tags begin or end
+  // Here, we collect all the positions at which HTML tags begin or end
   let jsx = htmlOffsets
     .map((offset, index, array) => {
       let fragment = html.slice(offset, array[index + 1]);
@@ -209,7 +211,7 @@ export default (source, config) => {
         return fragment.split(/\n/g).map((line) => {
           // ...wrap string lines containing curly braces
 
-          if (line.match(/[{}]/)) {
+          if (line.indexOf('{') !== -1 || line.indexOf('}') !== -1) {
             return `{${formatEscape(decodeEntities(line))}}`;
           }
 
