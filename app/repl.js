@@ -4,7 +4,6 @@ import DocChomp from 'doc-chomp';
 import Codemirror from 'react-codemirror2';
 
 import 'codemirror/lib/codemirror.css';
-import 'codemirror/theme/tomorrow-night-eighties.css';
 import 'codemirror/mode/markdown/markdown';
 import 'codemirror/mode/jsx/jsx';
 
@@ -61,6 +60,10 @@ class REPL extends React.Component {
   render() {
     return (
       <div className="repl">
+        <div className="header">
+          <img id="logo" src={require('./images/logo.svg')} alt="Markdown Component Loader" />
+          <a className="bubble-link blue-bubble" href="index.html">Learn more</a>
+        </div>
         <div className="repl-editors">
           <Codemirror
             className="repl-editor repl-input"
