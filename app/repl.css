@@ -30,31 +30,35 @@ body {
   flex: 1 1 auto;
 }
 
-.repl-editor.ace_editor {
+.repl-editor {
   position: absolute;
   width: 100% !important;
   height: 50% !important;
 }
 
-.repl-editor.ace_editor.repl-input {
+.CodeMirror {
+  height: 100%;
+}
+
+.repl-editor.repl-input {
   top: 0;
 }
 
-.repl-editor.ace_editor.repl-output {
+.repl-editor.repl-output {
   bottom: 0;
 }
 
 @media (min-width: 710px) {
-  .repl-editor.ace_editor {
+  .repl-editor {
     width: 50% !important;
     height: 100% !important;
   }
 
-  .repl-editor.ace_editor.repl-input {
+  .repl-editor.repl-input {
     left: 0;
   }
 
-  .repl-editor.ace_editor.repl-output {
+  .repl-editor.repl-output {
     right: 0;
   }
 }

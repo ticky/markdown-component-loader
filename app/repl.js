@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import DocChomp from 'doc-chomp';
-import AceEditor from 'react-ace';
+import Codemirror from 'react-codemirror2';
 
-import 'brace/mode/markdown';
-import 'brace/mode/jsx';
-import 'brace/theme/tomorrow_night_eighties';
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/theme/tomorrow-night-eighties.css';
+import 'codemirror/mode/markdown/markdown';
+import 'codemirror/mode/jsx/jsx';
 
 import convert from '../src/convert';
 
@@ -34,14 +35,10 @@ const DEFAULT_CONTENT = DocChomp`
   More information about Markdown Component Loader is avaiable [on GitHub](https://github.com/ticky/markdown-component-loader)
 `;
 
-const COMMON_ACE_PROPS = {
-  setOptions: {
-    scrollPastEnd: .33,
-    tabSize: 2
-  },
-  showPrintMargin: false,
-  theme: 'tomorrow_night_eighties',
-  wrapEnabled: true
+const COMMON_CODEMIRROR_OPTIONS = {
+  lineNumbers: true,
+  lineWrapping: true,
+  theme: 'tomorrow-night-eighties'
 };
 
 class REPL extends React.Component {
@@ -58,29 +55,30 @@ class REPL extends React.Component {
   }
 
   componentWillMount() {
-    // this.compile(this.state.input);
+    this.compile(this.state.input);
   }
 
   render() {
     return (
       <div className="repl">
         <div className="repl-editors">
-          <AceEditor
-            {...COMMON_ACE_PROPS}
+          <Codemirror
             className="repl-editor repl-input"
-            ref={(ref) => this._inputEditor = ref}
-            mode="markdown"
+            options={{
+              mode: 'markdown',
+              ...COMMON_CODEMIRROR_OPTIONS
+            }}
             value={this.state.input}
             onChange={this.handleEditorChange}
           />
-          <AceEditor
-            {...COMMON_ACE_PROPS}
+          <Codemirror
             className="repl-editor repl-output"
-            ref={(ref) => this._outputEditor = ref}
-            mode="jsx"
+            options={{
+              mode: 'jsx',
+              readOnly: true,
+              ...COMMON_CODEMIRROR_OPTIONS
+            }}
             value={this.state.output}
-            readOnly={true}
-            highlightActiveLine={false}
           />
         </div>
         {
@@ -94,7 +92,7 @@ class REPL extends React.Component {
     );
   }
 
-  handleEditorChange(input) {
+  handleEditorChange(editor, metadata, input) {
     this.setState({ input }, () => {
       this.compile(input);
     });
@@ -111,7 +109,6 @@ class REPL extends React.Component {
         }
       );
     } catch (error) {
-      console.error(error);
       this.setState({ error });
     }
 
