@@ -156,6 +156,7 @@ exports[`convert happily renders its own homepage renders as expected within Rea
     <h1>
       <img
         alt="Markdown Component Loader"
+        id="logo"
         src={Object {}}
       />
     </h1>
@@ -412,7 +413,7 @@ exports[`convert happily renders its own homepage renders as expected within Rea
   >
     <div>
       <a
-        className="bubble-link repl-link"
+        className="bubble-link white-bubble"
         href="repl.html"
       >
         Launch editor
