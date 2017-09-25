@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  min-height: 100vh;
+}
+
+body {
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0 1em;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Lucida Grande";
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: default;
+}
+
+#logo {
+  max-width: calc(100% + 1em);
+  margin-left: -.5em;
+  margin-right: -.5em;
+}
+
+a:link.bubble-link, a:visited.bubble-link {
+  display: inline-flex;
+  align-items: center;
+  color: #eee;
+  background-color: #333;
+  line-height: 1em;
+  min-height: 3em;
+  padding: 0 3em;
+  border-radius: 2em;
+  text-decoration: none;
+}
+
+a:link.bubble-link:hover {
+  text-decoration: none;
+}

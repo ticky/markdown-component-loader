@@ -1,25 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  min-height: 100%;
-  min-height: 100vh;
-}
-
-body {
-  font-size: 18px;
-  color: black;
-  background-color: white;
-  margin: 0;
-  padding: 0 1em;
-  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Lucida Grande";
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  cursor: default;
-}
+@import "./shared.css";
 
 img {
   max-width: 100%;
@@ -33,12 +12,6 @@ img {
 /* logo */
 h1 {
   margin: 0;
-}
-
-h1 > img {
-  max-width: calc(100% + 1em);
-  margin-left: -.5em;
-  margin-right: -.5em;
 }
 
 /* tagline */
@@ -114,22 +87,6 @@ pre span.emphasis {
   color: #6A00C9;
 }
 
-a:link.bubble-link, a:visited.bubble-link {
-  display: inline-flex;
-  align-items: center;
-  color: #eee;
-  background-color: #333;
-  line-height: 1em;
-  min-height: 3em;
-  padding: 0 3em;
-  border-radius: 2em;
-  text-decoration: none;
-}
-
-a:link.bubble-link:hover {
-  text-decoration: none;
-}
-
 a:link.github-link, a:visited.github-link {
   text-indent: 1em;
   background-color: #6A00C9;
@@ -172,8 +129,8 @@ a:link:hover, a:visited:hover {
   justify-content: center;
 }
 
-.repl-image > div > a:link.bubble-link,
-.repl-image > div > a:visited.bubble-link {
+a:link.bubble-link.white-bubble,
+a:visited.bubble-link.white-bubble {
   color: #6A00C9;
   background-color: white;
 }

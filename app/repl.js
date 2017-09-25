@@ -1,89 +1,128 @@
-/* global ace, document */
+import React from 'react';
+import ReactDOM from 'react-dom';
+import DocChomp from 'doc-chomp';
+import Codemirror from 'react-codemirror2';
+
+import 'codemirror/lib/codemirror.css';
+import 'codemirror/mode/markdown/markdown';
+import 'codemirror/mode/jsx/jsx';
+
 import convert from '../src/convert';
 
-require('./repl.css');
+import './repl.css';
 
-class Editor {
-  constructor(selector, mode) {
-    this.$el = document.querySelector(selector);
-    this.editor = ace.edit(this.$el);
-    this.session = this.editor.getSession();
-    this.document = this.session.getDocument();
+const DEFAULT_CONTENT = DocChomp`
+  ---
+  imports:
+    window: global/window
+  ---
+  # [Markdown Component Loader](https://github.com/ticky/markdown-component-loader)
 
-    this.editor.setTheme('ace/theme/tomorrow_night_eighties');
-    this.editor.setShowPrintMargin(false);
-    this.editor.commands.removeCommands(['gotoline', 'find']);
-    this.$el.setAttribute('style', 'font-family: Menlo, Monaco, Consolas, "Courier New", monospace; line-height: inherit');
+  Turn Markdown into dynamic, stateless React components
 
-    this.session.setMode(mode);
-    this.session.setUseSoftTabs(true);
-    this.session.setTabSize(2);
-    this.session.setUseWorker(false);
-    this.session.setUseWrapMode(true);
+  - Integrate documentation and other prose with user info and context
+  - Show your real UI components alongside documentation
+  - Add other dynamic components inside documentation
 
-    this.editor.setOption('scrollPastEnd', 0.33);
-  }
-}
+  ## REPL
 
-class REPL {
-  constructor() {
-    this.input = new Editor('.repl-input .ace_editor', 'ace/mode/markdown').editor;
+  This REPL allows you to view a generated component as you type.
+  The generated component is an ES6 module, which you can then pass into [Babel](http://babeljs.io), and use with [React](https://facebook.github.io/react/).
 
-    this.output = new Editor('.repl-output .ace_editor', 'ace/mode/jsx').editor;
-    this.output.setReadOnly(true);
-    this.output.setHighlightActiveLine(false);
-    this.output.setHighlightGutterLine(false);
+  You can interpolate strings and React elements here; <code>{{ window.navigator.userAgent }}</code>!
 
-    this.$errorReporter = document.querySelector('.repl-errors');
-  }
+  More information about Markdown Component Loader is avaiable [on GitHub](https://github.com/ticky/markdown-component-loader)
+`;
 
-  clearOutput() {
-    this.$errorReporter.innerText = '';
-  }
+const COMMON_CODEMIRROR_OPTIONS = {
+  lineNumbers: true,
+  lineWrapping: true,
+  theme: 'tomorrow-night-eighties'
+};
 
-  setOutput(output) {
-    this.output.setValue(output, -1);
-  }
+class REPL extends React.Component {
+  constructor(props) {
+    super(props);
 
-  getSource() {
-    return this.input.getValue();
+    this.state = {
+      input: DEFAULT_CONTENT,
+      output: '',
+      error: 'Not yet compiled...'
+    };
+
+    this.handleEditorChange = this.handleEditorChange.bind(this);
   }
 
-  printError(message) {
-    this.$errorReporter.innerText = message;
+  componentWillMount() {
+    this.compile(this.state.input);
   }
 
-  compile() {
-    let transformed;
-    const code = this.getSource();
+  render() {
+    return (
+      <div className="repl">
+        <div className="header">
+          <img id="logo" src={require('./images/logo.svg')} alt="Markdown Component Loader" />
+          <a className="bubble-link blue-bubble" href="index.html">Learn more</a>
+        </div>
+        <div className="repl-editors">
+          <Codemirror
+            className="repl-editor repl-input"
+            options={{
+              mode: 'markdown',
+              ...COMMON_CODEMIRROR_OPTIONS
+            }}
+            value={this.state.input}
+            onChange={this.handleEditorChange}
+          />
+          <Codemirror
+            className="repl-editor repl-output"
+            options={{
+              mode: 'jsx',
+              readOnly: true,
+              ...COMMON_CODEMIRROR_OPTIONS
+            }}
+            value={this.state.output}
+          />
+        </div>
+        {
+          this.state.error && (
+            <div className="repl-reporter">
+              {this.state.error.toString()}
+            </div>
+          )
+        }
+      </div>
+    );
+  }
 
-    this.clearOutput();
+  handleEditorChange(editor, metadata, input) {
+    this.setState({ input }, () => {
+      this.compile(input);
+    });
+  }
+
+  compile(input) {
+    let output;
 
     try {
-      transformed = convert(
-        code,
+      output = convert(
+        input,
         {
           passElementProps: false
         }
       );
-    } catch (err) {
-      this.printError(`Errors:\n${err.message}`);
+    } catch (error) {
+      this.setState({ error });
     }
 
-    if (transformed) {
-      this.setOutput(transformed);
+    if (output) {
+      this.setState({ output, error: null });
     }
   }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const repl = new REPL();
+ReactDOM.render(
+  <REPL />,
+  document.getElementById('root')
+);
 
-  function onSourceChange() {
-    repl.compile();
-  }
-
-  repl.input.addEventListener('change', onSourceChange);
-
-  onSourceChange();
-});

@@ -61,9 +61,16 @@ module.exports = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          use: 'css-loader'
-        }),
-        exclude: /node_modules/
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                minimize: true,
+                sourceMap: true
+              }
+            }
+          ]
+        })
       },
       { test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
