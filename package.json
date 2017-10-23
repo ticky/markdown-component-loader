@@ -72,7 +72,7 @@
   },
   "peerDependencies": {
     "prop-types": "^15.5.10",
-    "react": "^15.3.2"
+    "react": "^15.3.2 || ^16.0"
   },
   "babel": {
     "plugins": [
