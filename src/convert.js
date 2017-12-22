@@ -137,13 +137,15 @@ export default (source, config) => {
   if (config.markdownItPlugins && Array.isArray(config.markdownItPlugins)) {
     renderer = config.markdownItPlugins
       .reduce(
-        (markdownRenderer, pluginDefinition) => (
-          markdownRenderer.use(...(
-            Array.isArray(pluginDefinition)
-              ? pluginDefinition
-              : [pluginDefinition]
-          ))
-        ),
+        (markdownRenderer, pluginDefinition) => {
+          if (!Array.isArray(pluginDefinition)) {
+            pluginDefinition = [pluginDefinition]
+          }
+          if (typeof pluginDefinition[0] === 'string') {
+            pluginDefinition[0] = require(pluginDefinition[0]);
+          }
+          return markdownRenderer.use(...pluginDefinition);
+        },
         renderer
       );
   }

@@ -134,7 +134,7 @@ module.exports = {
 
 * `passElementProps`: Controls whether props can be passed from the parent to the generated elements. Defaults to `false`.
 * `implicitlyImportReact`: Whether to include React and PropTypes in the imports automatically. If set to `false`, you need to either supply React and PropTypes or import them explicitly. Defaults to `true`.
-* `markdownItPlugins`: An array of [MarkdownIt plugin instances](https://www.npmjs.org/browse/keyword/markdown-it-plugin) (and optionally their additional arguments) to use within the markdown renderer. As these are functions, this option is only able to be used via the Webpack configuration object.
+* `markdownItPlugins`: An array of [MarkdownIt plugin instances](https://www.npmjs.org/browse/keyword/markdown-it-plugin) (and optionally their additional arguments) to use within the markdown renderer.
 
 ##### MarkdownIt Plugins
 
@@ -153,6 +153,8 @@ module.exports = {
 ```
 
 The configuration above will supply both [`markdown-it-anchor`](https://www.npmjs.com/package/markdown-it-anchor) and [`markdown-it-table-of-contents`](https://www.npmjs.com/package/markdown-it-table-of-contents) to MarkdownIt's `use` method. `markdown-it-table-of-contents` is supplied within an array, and the entire array is passed as the arguments to `use`, allowing specifying plugin configurations.
+
+Note that if you are using Webpack v1, you will need to pass a string with the path to the plugin, rather than the imported/required plugin itself. So in the example above, you should use `require.resolve('markdown-it-anchor')` instead of `require('markdown-it-anchor')`.
 
 ### Styling and Interaction
 
