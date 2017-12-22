@@ -139,7 +139,7 @@ export default (source, config) => {
       .reduce(
         (markdownRenderer, pluginDefinition) => {
           if (!Array.isArray(pluginDefinition)) {
-            pluginDefinition = [pluginDefinition]
+            pluginDefinition = [pluginDefinition];
           }
           if (typeof pluginDefinition[0] === 'string') {
             pluginDefinition[0] = require(pluginDefinition[0]);
