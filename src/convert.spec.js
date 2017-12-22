@@ -102,6 +102,10 @@ PLUGIN_FIXTURES.push([
   [require("markdown-it-table-of-contents"), { containerClass: 'my-container-class' }]
 ]);
 
+PLUGIN_FIXTURES.push([
+  path.relative(__dirname, require.resolve("markdown-it-anchor"))
+]);
+
 // And now, the party can start!
 describe('convert', () => {
   BOOL_FIXTURES.forEach((implicitlyImportReact) => {
