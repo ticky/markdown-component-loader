@@ -116,15 +116,19 @@ Markdown Component Loader accepts configuration of options via the Webpack confi
 ```javascript
 module.exports = {
   module: {
-    loaders: [
+    rules: [
+      {...more},
       {
         test: /\.mdx$/i,
-        loader: 'babel-loader!markdown-component-loader'
+        use: [
+          'babel-loader',
+          {
+            loader: 'markdown-component-loader',
+            options: {...options}
+          }
+        ]
       }
     ]
-  },
-  markdownComponentLoader: {
-    {...options}
   },
   {...more}
 };
@@ -141,15 +145,16 @@ module.exports = {
 If you supply an array of [MarkdownIt plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin) as `markdownItPlugins`, Markdown Component Loader will chain them into the internal MarkdownIt renderer.
 
 ```javascript
-module.exports = {
-  markdownComponentLoader: {
+{
+  loader: 'markdown-component-loader',
+  options: {
     markdownItPlugins: [
       require('markdown-it-anchor'),
       [require('markdown-it-table-of-contents'), { containerClass: 'my-container-class' }]
     ]
   },
   {...more}
-};
+}
 ```
 
 The configuration above will supply both [`markdown-it-anchor`](https://www.npmjs.com/package/markdown-it-anchor) and [`markdown-it-table-of-contents`](https://www.npmjs.com/package/markdown-it-table-of-contents) to MarkdownIt's `use` method. `markdown-it-table-of-contents` is supplied within an array, and the entire array is passed as the arguments to `use`, allowing specifying plugin configurations.
