@@ -134,7 +134,7 @@ module.exports = {
 
 * `passElementProps`: Controls whether props can be passed from the parent to the generated elements. Defaults to `false`.
 * `implicitlyImportReact`: Whether to include React and PropTypes in the imports automatically. If set to `false`, you need to either supply React and PropTypes or import them explicitly. Defaults to `true`.
-* `markdownItPlugins`: An array of [MarkdownIt plugin instances](https://www.npmjs.org/browse/keyword/markdown-it-plugin) (and optionally their additional arguments) to use within the markdown renderer.
+* `markdownItPlugins`: An array of [MarkdownIt plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin) (and optionally their additional arguments) to use within the markdown renderer. These can be specified either as instances, or as paths as returned by `require.resolve`.
 
 ##### MarkdownIt Plugins
 
@@ -154,7 +154,23 @@ module.exports = {
 
 The configuration above will supply both [`markdown-it-anchor`](https://www.npmjs.com/package/markdown-it-anchor) and [`markdown-it-table-of-contents`](https://www.npmjs.com/package/markdown-it-table-of-contents) to MarkdownIt's `use` method. `markdown-it-table-of-contents` is supplied within an array, and the entire array is passed as the arguments to `use`, allowing specifying plugin configurations.
 
-Note that if you are using Webpack v1, you will need to pass a string with the path to the plugin, rather than the imported/required plugin itself. So in the example above, you should use `require.resolve('markdown-it-anchor')` instead of `require('markdown-it-anchor')`.
+###### Legacy Webpack compatibility
+
+For compatibility with Webpack 1.x, where plugin configuration must be JSON compatible, plugins can be passed as path strings rather than the plugin object itself.
+
+The equivalent of the example above in Webpack 1.x would be as follows.
+
+```javascript
+module.exports = {
+  markdownComponentLoader: {
+    markdownItPlugins: [
+      require.resolve('markdown-it-anchor'),
+      [require.resolve('markdown-it-table-of-contents'), { containerClass: 'my-container-class' }]
+    ]
+  },
+  {...more}
+};
+```
 
 ### Styling and Interaction
 
