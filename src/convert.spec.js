@@ -219,7 +219,7 @@ describe('convert', () => {
       `
     )).toThrowErrorMatchingSnapshot();
   });
-  
+
   describe('accepts plugins specified as a string', () => {
     RUN_ONE_FIXTURE(
       readFileSync(
