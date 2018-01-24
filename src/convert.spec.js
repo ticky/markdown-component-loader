@@ -219,4 +219,18 @@ describe('convert', () => {
       `
     )).toThrowErrorMatchingSnapshot();
   });
+
+  describe('accepts plugins specified as a string', () => {
+    RUN_ONE_FIXTURE(
+      readFileSync(
+        path.join(__dirname, '../app/Homepage.mdx'),
+        { encoding: 'utf-8' }
+      ),
+      {
+        markdownItPlugins: [
+          path.relative(__dirname, require.resolve("markdown-it-anchor"))
+        ]
+      }
+    );
+  });
 });
