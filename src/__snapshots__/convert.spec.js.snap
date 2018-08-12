@@ -1080,7 +1080,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -1418,56 +1418,56 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"markd
             </li>
             <li>
               <a
-                href="#heres-a-couple-of-hyperlinks"
+                href="#here's-a-couple-of-hyperlinks"
               >
                 Here's a couple of hyperlinks
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-no-interpolations"
+                href="#here's-a-code-snippet-with-no-interpolations"
               >
                 Here's a code snippet with no interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-things-which-shouldnt-be-treated-as-interpolations"
+                href="#here's-a-code-snippet-with-things-which-shouldn't-be-treated-as-interpolations"
               >
                 Here's a code snippet with things which shouldn't be treated as interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-paragraph-with-a-simple-interpolation"
+                href="#here's-a-paragraph-with-a-simple-interpolation"
               >
                 Here's a paragraph with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-a-simple-interpolation"
+                href="#here's-a-code-snippet-with-a-simple-interpolation"
               >
                 Here's a code snippet with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-arrows-in-it"
+                href="#here's-a-code-snippet-with-arrows-in-it"
               >
                 Here's a code snippet with arrows in it
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-code-snippet"
+                href="#here's-an-unhinted-code-snippet"
               >
                 Here's an unhinted code snippet
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-snippet-with-no-discernible-language"
+                href="#here's-an-unhinted-snippet-with-no-discernible-language"
               >
                 Here's an unhinted snippet with no discernible language
               </a>
@@ -1761,7 +1761,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -2369,7 +2369,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -2957,7 +2957,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -3295,56 +3295,56 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
             </li>
             <li>
               <a
-                href="#heres-a-couple-of-hyperlinks"
+                href="#here's-a-couple-of-hyperlinks"
               >
                 Here's a couple of hyperlinks
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-no-interpolations"
+                href="#here's-a-code-snippet-with-no-interpolations"
               >
                 Here's a code snippet with no interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-things-which-shouldnt-be-treated-as-interpolations"
+                href="#here's-a-code-snippet-with-things-which-shouldn't-be-treated-as-interpolations"
               >
                 Here's a code snippet with things which shouldn't be treated as interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-paragraph-with-a-simple-interpolation"
+                href="#here's-a-paragraph-with-a-simple-interpolation"
               >
                 Here's a paragraph with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-a-simple-interpolation"
+                href="#here's-a-code-snippet-with-a-simple-interpolation"
               >
                 Here's a code snippet with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-arrows-in-it"
+                href="#here's-a-code-snippet-with-arrows-in-it"
               >
                 Here's a code snippet with arrows in it
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-code-snippet"
+                href="#here's-an-unhinted-code-snippet"
               >
                 Here's an unhinted code snippet
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-snippet-with-no-discernible-language"
+                href="#here's-an-unhinted-snippet-with-no-discernible-language"
               >
                 Here's an unhinted snippet with no discernible language
               </a>
@@ -3638,7 +3638,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -4246,7 +4246,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -4834,7 +4834,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -5432,7 +5432,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -5801,56 +5801,56 @@ exports[`convert with a config object of \`{"implicitlyImportReact":false,"passE
             </li>
             <li>
               <a
-                href="#heres-a-couple-of-hyperlinks"
+                href="#here's-a-couple-of-hyperlinks"
               >
                 Here's a couple of hyperlinks
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-no-interpolations"
+                href="#here's-a-code-snippet-with-no-interpolations"
               >
                 Here's a code snippet with no interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-things-which-shouldnt-be-treated-as-interpolations"
+                href="#here's-a-code-snippet-with-things-which-shouldn't-be-treated-as-interpolations"
               >
                 Here's a code snippet with things which shouldn't be treated as interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-paragraph-with-a-simple-interpolation"
+                href="#here's-a-paragraph-with-a-simple-interpolation"
               >
                 Here's a paragraph with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-a-simple-interpolation"
+                href="#here's-a-code-snippet-with-a-simple-interpolation"
               >
                 Here's a code snippet with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-arrows-in-it"
+                href="#here's-a-code-snippet-with-arrows-in-it"
               >
                 Here's a code snippet with arrows in it
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-code-snippet"
+                href="#here's-an-unhinted-code-snippet"
               >
                 Here's an unhinted code snippet
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-snippet-with-no-discernible-language"
+                href="#here's-an-unhinted-snippet-with-no-discernible-language"
               >
                 Here's an unhinted snippet with no discernible language
               </a>
@@ -6149,7 +6149,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -6793,7 +6793,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -7417,7 +7417,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -8023,7 +8023,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -8611,7 +8611,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -8955,56 +8955,56 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"markdo
             </li>
             <li>
               <a
-                href="#heres-a-couple-of-hyperlinks"
+                href="#here's-a-couple-of-hyperlinks"
               >
                 Here's a couple of hyperlinks
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-no-interpolations"
+                href="#here's-a-code-snippet-with-no-interpolations"
               >
                 Here's a code snippet with no interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-things-which-shouldnt-be-treated-as-interpolations"
+                href="#here's-a-code-snippet-with-things-which-shouldn't-be-treated-as-interpolations"
               >
                 Here's a code snippet with things which shouldn't be treated as interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-paragraph-with-a-simple-interpolation"
+                href="#here's-a-paragraph-with-a-simple-interpolation"
               >
                 Here's a paragraph with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-a-simple-interpolation"
+                href="#here's-a-code-snippet-with-a-simple-interpolation"
               >
                 Here's a code snippet with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-arrows-in-it"
+                href="#here's-a-code-snippet-with-arrows-in-it"
               >
                 Here's a code snippet with arrows in it
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-code-snippet"
+                href="#here's-an-unhinted-code-snippet"
               >
                 Here's an unhinted code snippet
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-snippet-with-no-discernible-language"
+                href="#here's-an-unhinted-snippet-with-no-discernible-language"
               >
                 Here's an unhinted snippet with no discernible language
               </a>
@@ -9300,7 +9300,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -9916,7 +9916,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -10512,7 +10512,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -10856,56 +10856,56 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
             </li>
             <li>
               <a
-                href="#heres-a-couple-of-hyperlinks"
+                href="#here's-a-couple-of-hyperlinks"
               >
                 Here's a couple of hyperlinks
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-no-interpolations"
+                href="#here's-a-code-snippet-with-no-interpolations"
               >
                 Here's a code snippet with no interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-things-which-shouldnt-be-treated-as-interpolations"
+                href="#here's-a-code-snippet-with-things-which-shouldn't-be-treated-as-interpolations"
               >
                 Here's a code snippet with things which shouldn't be treated as interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-paragraph-with-a-simple-interpolation"
+                href="#here's-a-paragraph-with-a-simple-interpolation"
               >
                 Here's a paragraph with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-a-simple-interpolation"
+                href="#here's-a-code-snippet-with-a-simple-interpolation"
               >
                 Here's a code snippet with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-arrows-in-it"
+                href="#here's-a-code-snippet-with-arrows-in-it"
               >
                 Here's a code snippet with arrows in it
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-code-snippet"
+                href="#here's-an-unhinted-code-snippet"
               >
                 Here's an unhinted code snippet
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-snippet-with-no-discernible-language"
+                href="#here's-an-unhinted-snippet-with-no-discernible-language"
               >
                 Here's an unhinted snippet with no discernible language
               </a>
@@ -11201,7 +11201,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -11817,7 +11817,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -12413,7 +12413,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -13019,7 +13019,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -13394,56 +13394,56 @@ exports[`convert with a config object of \`{"implicitlyImportReact":true,"passEl
             </li>
             <li>
               <a
-                href="#heres-a-couple-of-hyperlinks"
+                href="#here's-a-couple-of-hyperlinks"
               >
                 Here's a couple of hyperlinks
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-no-interpolations"
+                href="#here's-a-code-snippet-with-no-interpolations"
               >
                 Here's a code snippet with no interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-things-which-shouldnt-be-treated-as-interpolations"
+                href="#here's-a-code-snippet-with-things-which-shouldn't-be-treated-as-interpolations"
               >
                 Here's a code snippet with things which shouldn't be treated as interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-paragraph-with-a-simple-interpolation"
+                href="#here's-a-paragraph-with-a-simple-interpolation"
               >
                 Here's a paragraph with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-a-simple-interpolation"
+                href="#here's-a-code-snippet-with-a-simple-interpolation"
               >
                 Here's a code snippet with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-arrows-in-it"
+                href="#here's-a-code-snippet-with-arrows-in-it"
               >
                 Here's a code snippet with arrows in it
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-code-snippet"
+                href="#here's-an-unhinted-code-snippet"
               >
                 Here's an unhinted code snippet
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-snippet-with-no-discernible-language"
+                href="#here's-an-unhinted-snippet-with-no-discernible-language"
               >
                 Here's an unhinted snippet with no discernible language
               </a>
@@ -13744,7 +13744,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -14396,7 +14396,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -15028,7 +15028,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -15642,7 +15642,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -16230,7 +16230,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -16568,56 +16568,56 @@ exports[`convert with a config object of \`{"markdownItPlugins":[null,[null,{"co
             </li>
             <li>
               <a
-                href="#heres-a-couple-of-hyperlinks"
+                href="#here's-a-couple-of-hyperlinks"
               >
                 Here's a couple of hyperlinks
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-no-interpolations"
+                href="#here's-a-code-snippet-with-no-interpolations"
               >
                 Here's a code snippet with no interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-things-which-shouldnt-be-treated-as-interpolations"
+                href="#here's-a-code-snippet-with-things-which-shouldn't-be-treated-as-interpolations"
               >
                 Here's a code snippet with things which shouldn't be treated as interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-paragraph-with-a-simple-interpolation"
+                href="#here's-a-paragraph-with-a-simple-interpolation"
               >
                 Here's a paragraph with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-a-simple-interpolation"
+                href="#here's-a-code-snippet-with-a-simple-interpolation"
               >
                 Here's a code snippet with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-arrows-in-it"
+                href="#here's-a-code-snippet-with-arrows-in-it"
               >
                 Here's a code snippet with arrows in it
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-code-snippet"
+                href="#here's-an-unhinted-code-snippet"
               >
                 Here's an unhinted code snippet
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-snippet-with-no-discernible-language"
+                href="#here's-an-unhinted-snippet-with-no-discernible-language"
               >
                 Here's an unhinted snippet with no discernible language
               </a>
@@ -16911,7 +16911,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -17519,7 +17519,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -18107,7 +18107,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -18445,56 +18445,56 @@ exports[`convert with a config object of \`{"passElementProps":false,"markdownIt
             </li>
             <li>
               <a
-                href="#heres-a-couple-of-hyperlinks"
+                href="#here's-a-couple-of-hyperlinks"
               >
                 Here's a couple of hyperlinks
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-no-interpolations"
+                href="#here's-a-code-snippet-with-no-interpolations"
               >
                 Here's a code snippet with no interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-things-which-shouldnt-be-treated-as-interpolations"
+                href="#here's-a-code-snippet-with-things-which-shouldn't-be-treated-as-interpolations"
               >
                 Here's a code snippet with things which shouldn't be treated as interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-paragraph-with-a-simple-interpolation"
+                href="#here's-a-paragraph-with-a-simple-interpolation"
               >
                 Here's a paragraph with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-a-simple-interpolation"
+                href="#here's-a-code-snippet-with-a-simple-interpolation"
               >
                 Here's a code snippet with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-arrows-in-it"
+                href="#here's-a-code-snippet-with-arrows-in-it"
               >
                 Here's a code snippet with arrows in it
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-code-snippet"
+                href="#here's-an-unhinted-code-snippet"
               >
                 Here's an unhinted code snippet
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-snippet-with-no-discernible-language"
+                href="#here's-an-unhinted-snippet-with-no-discernible-language"
               >
                 Here's an unhinted snippet with no discernible language
               </a>
@@ -18788,7 +18788,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -19396,7 +19396,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -19984,7 +19984,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -20582,7 +20582,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -20951,56 +20951,56 @@ exports[`convert with a config object of \`{"passElementProps":true,"markdownItP
             </li>
             <li>
               <a
-                href="#heres-a-couple-of-hyperlinks"
+                href="#here's-a-couple-of-hyperlinks"
               >
                 Here's a couple of hyperlinks
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-no-interpolations"
+                href="#here's-a-code-snippet-with-no-interpolations"
               >
                 Here's a code snippet with no interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-things-which-shouldnt-be-treated-as-interpolations"
+                href="#here's-a-code-snippet-with-things-which-shouldn't-be-treated-as-interpolations"
               >
                 Here's a code snippet with things which shouldn't be treated as interpolations
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-paragraph-with-a-simple-interpolation"
+                href="#here's-a-paragraph-with-a-simple-interpolation"
               >
                 Here's a paragraph with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-a-simple-interpolation"
+                href="#here's-a-code-snippet-with-a-simple-interpolation"
               >
                 Here's a code snippet with a simple interpolation
               </a>
             </li>
             <li>
               <a
-                href="#heres-a-code-snippet-with-arrows-in-it"
+                href="#here's-a-code-snippet-with-arrows-in-it"
               >
                 Here's a code snippet with arrows in it
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-code-snippet"
+                href="#here's-an-unhinted-code-snippet"
               >
                 Here's an unhinted code snippet
               </a>
             </li>
             <li>
               <a
-                href="#heres-an-unhinted-snippet-with-no-discernible-language"
+                href="#here's-an-unhinted-snippet-with-no-discernible-language"
               >
                 Here's an unhinted snippet with no discernible language
               </a>
@@ -21299,7 +21299,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -21943,7 +21943,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -22567,7 +22567,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
@@ -23173,7 +23173,7 @@ MarkdownComponent['anObject'] = {
 };
 
 MarkdownComponent['NoReallyDontDoThis'] = function anonymous(props
-/*\`\`*/) {
+) {
  return React.createElement('span', Object.assign({}, props), 'Please don\\\\'t do this.'); 
 };
 
