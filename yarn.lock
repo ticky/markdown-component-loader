@@ -4867,9 +4867,9 @@ markdown-it-anchor@4.0.0:
   dependencies:
     string "^3.3.3"
 
-markdown-it-table-of-contents@0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/markdown-it-table-of-contents/-/markdown-it-table-of-contents-0.4.0.tgz#950541bec9a365a75265f5265a09dc0cb5935909"
+markdown-it-table-of-contents@0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/markdown-it-table-of-contents/-/markdown-it-table-of-contents-0.4.3.tgz#6453925a76e49b9b3d9569a0d89f1c2168b46982"
 
 markdown-it@^8.1.0:
   version "8.4.0"
