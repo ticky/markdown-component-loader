@@ -63,7 +63,7 @@
     "markdown-it-table-of-contents": "0.4.3",
     "prop-types": "15.6.2",
     "react": "16.5.2",
-    "react-codemirror2": "2.0.2",
+    "react-codemirror2": "5.1.0",
     "react-dom": "16.5.2",
     "react-test-renderer": "16.5.2",
     "uglifyjs-webpack-plugin": "2.0.1",
