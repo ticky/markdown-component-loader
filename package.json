@@ -30,7 +30,7 @@
   "dependencies": {
     "any-base": "^1.0.0",
     "doc-chomp": "1.1.0",
-    "front-matter": "^2.1.0",
+    "front-matter": "^3.0.0",
     "hastml": "^0.1.0",
     "he": "^1.1.1",
     "highlight.js": "^9.6.0",
