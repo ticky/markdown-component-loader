@@ -62,10 +62,10 @@
     "markdown-it-anchor": "4.0.0",
     "markdown-it-table-of-contents": "0.4.3",
     "prop-types": "15.6.2",
-    "react": "16.5.2",
+    "react": "16.6.0",
     "react-codemirror2": "5.1.0",
-    "react-dom": "16.5.2",
-    "react-test-renderer": "16.5.2",
+    "react-dom": "16.6.0",
+    "react-test-renderer": "16.6.0",
     "uglifyjs-webpack-plugin": "2.0.1",
     "webpack": "3.12.0",
     "webpack-dev-server": "2.11.3"
