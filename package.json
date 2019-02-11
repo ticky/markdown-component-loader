@@ -61,7 +61,7 @@
     "json-loader": "0.5.7",
     "markdown-it-anchor": "4.0.0",
     "markdown-it-table-of-contents": "0.4.3",
-    "prop-types": "15.6.2",
+    "prop-types": "15.7.1",
     "react": "16.8.1",
     "react-codemirror2": "5.1.0",
     "react-dom": "16.8.1",
