@@ -60,7 +60,7 @@
     "jest": "21.2.1",
     "json-loader": "0.5.7",
     "markdown-it-anchor": "4.0.0",
-    "markdown-it-table-of-contents": "0.4.3",
+    "markdown-it-table-of-contents": "0.4.4",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-codemirror2": "5.1.0",
