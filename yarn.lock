@@ -4280,9 +4280,9 @@ ignore@^5.1.1:
   version "5.1.4"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.4.tgz#84b7b3dbe64552b6ef0eca99f6743dbec6d97adf"
 
-image-webpack-loader@5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/image-webpack-loader/-/image-webpack-loader-5.1.0.tgz#b3bd39c6bb56aa9eabefafbe0a37e389daeb5b89"
+image-webpack-loader@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/image-webpack-loader/-/image-webpack-loader-6.0.0.tgz#c60ed8a1a2dc626d93cbc50f087668a3f2cb2d02"
   dependencies:
     imagemin "^7.0.0"
     loader-utils "^1.2.3"
@@ -4291,7 +4291,7 @@ image-webpack-loader@5.1.0:
     imagemin-gifsicle "^6.0.1"
     imagemin-mozjpeg "^8.0.0"
     imagemin-optipng "^7.0.0"
-    imagemin-pngquant "^6.0.0"
+    imagemin-pngquant "^8.0.0"
     imagemin-svgo "^7.0.0"
     imagemin-webp "^5.1.0"
 
@@ -4319,13 +4319,14 @@ imagemin-optipng@^7.0.0:
     is-png "^2.0.0"
     optipng-bin "^6.0.0"
 
-imagemin-pngquant@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/imagemin-pngquant/-/imagemin-pngquant-6.0.0.tgz#7c0c956338fa9a3a535deb63973c1c894519cc78"
+imagemin-pngquant@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/imagemin-pngquant/-/imagemin-pngquant-8.0.0.tgz#bf7a41d850c6998f2475c54058ab1db9c516385d"
   dependencies:
-    execa "^0.10.0"
-    is-png "^1.0.0"
-    is-stream "^1.1.0"
+    execa "^1.0.0"
+    is-png "^2.0.0"
+    is-stream "^2.0.0"
+    ow "^0.13.2"
     pngquant-bin "^5.0.0"
 
 imagemin-svgo@^7.0.0:
@@ -4719,10 +4720,6 @@ is-plain-object@^2.0.1, is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   dependencies:
     isobject "^3.0.1"
 
-is-png@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/is-png/-/is-png-1.1.0.tgz#d574b12bf275c0350455570b0e5b57ab062077ce"
-
 is-png@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/is-png/-/is-png-2.0.0.tgz#ee8cbc9e9b050425cedeeb4a6fb74a649b0a4a8d"
@@ -4760,6 +4757,10 @@ is-retry-allowed@^1.0.0, is-retry-allowed@^1.1.0:
 is-stream@^1.0.0, is-stream@^1.0.1, is-stream@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
+
+is-stream@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-2.0.0.tgz#bde9c32680d6fae04129d6ac9d921ce7815f78e3"
 
 is-svg@^3.0.0:
   version "3.0.0"
@@ -6387,6 +6388,12 @@ output-file-sync@^1.1.2:
     graceful-fs "^4.1.4"
     mkdirp "^0.5.1"
     object-assign "^4.1.0"
+
+ow@^0.13.2:
+  version "0.13.2"
+  resolved "https://registry.yarnpkg.com/ow/-/ow-0.13.2.tgz#375e76d3d3f928a8dfcf0cd0b9c921cb62e469a0"
+  dependencies:
+    type-fest "^0.5.1"
 
 p-cancelable@^0.3.0:
   version "0.3.0"
@@ -8334,6 +8341,10 @@ type-check@~0.3.2:
   resolved "https://registry.yarnpkg.com/type-check/-/type-check-0.3.2.tgz#5884cab512cf1d355e3fb784f30804b2b520db72"
   dependencies:
     prelude-ls "~1.1.2"
+
+type-fest@^0.5.1:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.5.2.tgz#d6ef42a0356c6cd45f49485c3b6281fc148e48a2"
 
 type-is@~1.6.17, type-is@~1.6.18:
   version "1.6.18"
