@@ -26,7 +26,9 @@ const IMPLICIT_REACT_IMPORTS = {
 const DEFAULT_CONFIGURATION = {
   implicitlyImportReact: true,
   passElementProps: false,
-  markdownItPlugins: []
+  markdownItPlugins: [],
+  enabledMarkdownItRules: ['smartquotes'],
+  disabledMarkdownItRules: []
 };
 
 export default (source, config) => {
@@ -104,7 +106,8 @@ export default (source, config) => {
   // Configure Markdown renderer, highlight code snippets, and post-process
   let renderer = new MarkdownIt()
     .configure('commonmark')
-    .enable(['smartquotes'])
+    .enable(config.enabledMarkdownItRules)
+    .disable(config.disabledMarkdownItRules)
     .set({
       // We need explicit line breaks
       breaks: true,
