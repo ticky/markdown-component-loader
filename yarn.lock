@@ -7058,9 +7058,9 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-codemirror2@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/react-codemirror2/-/react-codemirror2-7.0.0.tgz#d74570398439184d26bcf04e434aac2087aa32f5"
+react-codemirror2@7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/react-codemirror2/-/react-codemirror2-7.1.0.tgz#b874a275ad4f6f2ee5adb23b550c0f4b8b82776d"
 
 react-dom@16.12.0:
   version "16.12.0"
