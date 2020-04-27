@@ -33,7 +33,7 @@
     "front-matter": "^3.0.0",
     "hastml": "^0.1.0",
     "he": "^1.1.1",
-    "highlight.js": "^9.6.0",
+    "highlight.js": "^10.0.0",
     "jsesc": "^2.2.0",
     "loader-utils": "^2.0.0",
     "markdown-it": "^10.0.0",
