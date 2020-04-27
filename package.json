@@ -59,7 +59,7 @@
     "image-webpack-loader": "6.0.0",
     "jest": "25.4.0",
     "json-loader": "0.5.7",
-    "markdown-it-anchor": "4.0.0",
+    "markdown-it-anchor": "5.2.7",
     "markdown-it-table-of-contents": "0.4.4",
     "prop-types": "15.7.2",
     "react": "16.12.0",
