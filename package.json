@@ -50,7 +50,7 @@
     "babel-polyfill": "6.26.0",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-react": "6.24.1",
-    "codemirror": "5.52.2",
+    "codemirror": "5.53.2",
     "css-loader": "3.5.0",
     "eslint": "6.8.0",
     "eslint-plugin-react": "7.5.1",
