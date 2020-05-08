@@ -68,7 +68,7 @@
     "react-test-renderer": "16.13.1",
     "uglifyjs-webpack-plugin": "2.2.0",
     "webpack": "4.43.0",
-    "webpack-dev-server": "3.10.3"
+    "webpack-dev-server": "3.11.0"
   },
   "peerDependencies": {
     "prop-types": "^15.5.10",
