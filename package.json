@@ -36,7 +36,7 @@
     "highlight.js": "^10.0.0",
     "jsesc": "^3.0.0",
     "loader-utils": "^2.0.0",
-    "markdown-it": "^10.0.0",
+    "markdown-it": "^11.0.0",
     "sha.js": "^2.4.5"
   },
   "devDependencies": {
