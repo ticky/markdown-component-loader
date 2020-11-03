@@ -7,7 +7,7 @@
     "prepublish": "babel src --out-dir lib --source-maps inline --ignore \"**/*.spec.js,**/__fixtures__,**/__mocks__\"",
     "test": "jest",
     "build": "yarn prepublish && webpack",
-    "start": "webpack-dev-server",
+    "start": "webpack serve",
     "lint": "eslint .",
     "lint-and-fixup": "eslint --fix ."
   },
@@ -40,34 +40,35 @@
     "sha.js": "^2.4.5"
   },
   "devDependencies": {
-    "babel-cli": "6.26.0",
-    "babel-core": "6.26.3",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "10.1.0",
-    "babel-jest": "25.5.0",
+    "babel-jest": "^23.4.2",
     "babel-loader": "8.1.0",
-    "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-plugin-version-inline": "1.0.0",
-    "babel-polyfill": "6.26.0",
-    "babel-preset-es2015": "6.24.1",
-    "babel-preset-react": "6.24.1",
     "codemirror": "5.53.2",
     "css-loader": "3.6.0",
     "eslint": "6.8.0",
     "eslint-plugin-react": "7.5.1",
-    "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "6.0.0",
     "image-webpack-loader": "6.0.0",
     "jest": "25.5.0",
     "json-loader": "0.5.7",
     "markdown-it-anchor": "5.3.0",
     "markdown-it-table-of-contents": "0.4.4",
+    "mini-css-extract-plugin": "^1.2.1",
     "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-codemirror2": "7.2.1",
     "react-dom": "16.13.1",
     "react-test-renderer": "16.13.1",
-    "uglifyjs-webpack-plugin": "2.2.0",
     "webpack": "4.43.0",
+    "webpack-cli": "4",
     "webpack-dev-server": "3.11.0"
   },
   "peerDependencies": {
@@ -77,11 +78,11 @@
   "babel": {
     "plugins": [
       "version-inline",
-      "transform-object-rest-spread"
+      "@babel/plugin-proposal-object-rest-spread"
     ],
     "presets": [
-      "es2015",
-      "react"
+      "@babel/preset-env",
+      "@babel/preset-react"
     ]
   },
   "jest": {

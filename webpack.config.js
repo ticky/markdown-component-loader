@@ -1,24 +1,16 @@
-/* global process, __dirname */
+/* global __dirname */
 const path = require('path');
-const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const isDevServer = process.argv.find((arg) => arg.includes('webpack-dev-server'));
+// const isDevServer = process.argv.find((arg) => arg.includes('webpack serve'));
 
-const devtool = isDevServer ? "cheap-module-eval-source-map" : "source-map";
+// const devtool = isDevServer ? "cheap-module-eval-source-map" : "source-map";
 
 module.exports = {
-  devtool,
+  // devtool,
   entry: {
-    site: [
-      'babel-polyfill',
-      './app/index.js'
-    ],
-    repl: [
-      'babel-polyfill',
-      './app/repl.js'
-    ]
+    site: './app/index.js',
+    repl: './app/repl.js'
   },
   output: {
     path: path.join(__dirname, "docs"),
@@ -60,17 +52,15 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          use: [
-            {
-              loader: 'css-loader',
-              options: {
-                minimize: true,
-                sourceMap: true
-              }
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
             }
-          ]
-        })
+          }
+        ]
       },
       { test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
@@ -92,12 +82,13 @@ module.exports = {
       }
     ]
   },
+  optimization: {
+    minimize: true,
+    splitChunks: {
+      chunks: 'all'
+    }
+  },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin({
-      name: "shared",
-      filename: "shared.js"
-    }),
-    new UglifyJSPlugin({ sourceMap: true }),
-    new ExtractTextPlugin("[name].css")
+    new MiniCssExtractPlugin()
   ]
 };
