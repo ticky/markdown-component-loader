@@ -7,7 +7,7 @@
     "prepublish": "babel src --out-dir lib --source-maps inline --ignore \"**/*.spec.js,**/__fixtures__,**/__mocks__\"",
     "test": "jest",
     "build": "yarn prepublish && webpack",
-    "start": "webpack serve",
+    "start": "NODE_ENV=development webpack serve",
     "lint": "eslint .",
     "lint-and-fixup": "eslint --fix ."
   },
@@ -53,9 +53,11 @@
     "babel-plugin-version-inline": "1.0.0",
     "codemirror": "5.53.2",
     "css-loader": "3.6.0",
+    "css-minimizer-webpack-plugin": "^1.1.5",
     "eslint": "6.8.0",
     "eslint-plugin-react": "7.5.1",
     "file-loader": "6.0.0",
+    "html-webpack-plugin": "^4.5.0",
     "image-webpack-loader": "6.0.0",
     "jest": "25.5.0",
     "json-loader": "0.5.7",
@@ -67,6 +69,7 @@
     "react-codemirror2": "7.2.1",
     "react-dom": "16.13.1",
     "react-test-renderer": "16.13.1",
+    "terser-webpack-plugin": "4.2.3",
     "webpack": "4.43.0",
     "webpack-cli": "4",
     "webpack-dev-server": "3.11.0"

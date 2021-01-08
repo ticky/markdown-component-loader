@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import DocChomp from 'doc-chomp';
-import Codemirror from 'react-codemirror2';
+import { Controlled as Codemirror } from 'react-codemirror2';
 
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/mode/markdown/markdown';
@@ -50,10 +50,10 @@ class REPL extends React.Component {
       error: 'Not yet compiled...'
     };
 
-    this.handleEditorChange = this.handleEditorChange.bind(this);
+    this.handleEditorBeforeChange = this.handleEditorBeforeChange.bind(this);
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.compile(this.state.input);
   }
 
@@ -61,7 +61,7 @@ class REPL extends React.Component {
     return (
       <div className="repl">
         <div className="header">
-          <img id="logo" src={require('./images/logo.svg')} alt="Markdown Component Loader" />
+          <img id="logo" src={require('./images/logo.svg').default} alt="Markdown Component Loader" />
           <a className="bubble-link blue-bubble" href="index.html">Learn more</a>
         </div>
         <div className="repl-editors">
@@ -72,7 +72,7 @@ class REPL extends React.Component {
               ...COMMON_CODEMIRROR_OPTIONS
             }}
             value={this.state.input}
-            onChange={this.handleEditorChange}
+            onBeforeChange={this.handleEditorBeforeChange}
           />
           <Codemirror
             className="repl-editor repl-output"
@@ -95,7 +95,7 @@ class REPL extends React.Component {
     );
   }
 
-  handleEditorChange(editor, metadata, input) {
+  handleEditorBeforeChange(editor, metadata, input) {
     this.setState({ input }, () => {
       this.compile(input);
     });
@@ -120,6 +120,8 @@ class REPL extends React.Component {
     }
   }
 }
+
+console.debug(REPL, Codemirror);
 
 ReactDOM.render(
   <REPL />,

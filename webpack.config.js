@@ -1,13 +1,16 @@
-/* global __dirname */
+/* global process, __dirname */
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
-// const isDevServer = process.argv.find((arg) => arg.includes('webpack serve'));
+const isDevServer = process.argv.find((arg) => arg.includes('webpack serve'));
 
-// const devtool = isDevServer ? "cheap-module-eval-source-map" : "source-map";
+const devtool = isDevServer ? "inline-source-map" : "source-map";
 
 module.exports = {
-  // devtool,
+  devtool,
   entry: {
     site: './app/index.js',
     repl: './app/repl.js'
@@ -64,18 +67,11 @@ module.exports = {
       },
       { test: /\.(jpe?g|png|gif|svg)$/i,
         use: [
-          {
-            loader: 'file-loader',
-            options: {
-              hash: 'sha512',
-              digest: 'hex',
-              name: '[hash].[ext]'
-            }
-          },
+          'file-loader',
           {
             loader: 'image-webpack-loader',
             options: {
-              bypassOnDebug: true
+              disable: true
             }
           }
         ]
@@ -83,12 +79,37 @@ module.exports = {
     ]
   },
   optimization: {
-    minimize: true,
+    minimize: !isDevServer,
+    minimizer: [
+      new TerserPlugin(),
+      new CssMinimizerPlugin()
+    ],
     splitChunks: {
-      chunks: 'all'
+      cacheGroups: {
+        shared: {
+          test: /[\\/]node_modules[\\/]/,
+          // cacheGroupKey here is `commons` as the key of the cacheGroup
+          name(module, chunks, cacheGroupKey) {
+            const moduleFileName = module.identifier().split('/').reduceRight(item => item);
+            const allChunksNames = chunks.map((item) => item.name).join('~');
+            return `${cacheGroupKey}-${allChunksNames}-${moduleFileName}`;
+          },
+          chunks: 'all'
+        }
+      }
     }
   },
   plugins: [
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: 'templates/index.html',
+      chunks: ['site']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'repl.html',
+      template: 'templates/repl.html',
+      chunks: ['repl']
+    })
   ]
 };

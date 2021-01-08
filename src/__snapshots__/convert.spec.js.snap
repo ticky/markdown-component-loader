@@ -32,7 +32,6 @@ exports[`convert accepts plugins specified as a string renders as expected withi
       <img
         alt="Markdown Component Loader"
         id="logo"
-        src={Object {}}
       />
     </h1>
     <p>
@@ -439,7 +438,6 @@ exports[`convert happily renders its own homepage renders as expected within Rea
       <img
         alt="Markdown Component Loader"
         id="logo"
-        src={Object {}}
       />
     </h1>
     <p>
