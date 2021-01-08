@@ -233,4 +233,22 @@ describe('convert', () => {
       }
     );
   });
+
+  describe('accepts rules to enable as an array', () => {
+    const docText = DocChomp`
+      | hdr1 | hdr2 |
+      | ---- | ---- |
+      | val1 | val2 |
+    `;
+
+    RUN_ONE_FIXTURE(docText, { enabledMarkdownItRules: ['table'] });
+  });
+
+  describe('accepts rules to disable as an array', () => {
+    const docText = "'single-quoted'";
+
+    // Disabling overrides enabling.
+    RUN_ONE_FIXTURE(docText, { enabledMarkdownItRules: ['smartquotes'], disabledMarkdownItRules: ['smartquotes'] });
+  });
+
 });

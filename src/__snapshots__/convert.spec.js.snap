@@ -293,6 +293,91 @@ exports[`convert accepts plugins specified as a string renders as expected withi
 </div>
 `;
 
+exports[`convert accepts rules to disable as an array has the expected preamble 1`] = `
+"
+import React from 'react';
+import PropTypes from 'prop-types';
+
+MarkdownComponent.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object
+};
+
+"
+`;
+
+exports[`convert accepts rules to disable as an array renders as expected within React 1`] = `
+Object {
+  "propTypes": Object {
+    "className": [Function],
+    "style": [Function],
+  },
+}
+`;
+
+exports[`convert accepts rules to disable as an array renders as expected within React 2`] = `
+<div
+  className={undefined}
+  style={undefined}
+>
+  <p>
+    'single-quoted'
+  </p>
+</div>
+`;
+
+exports[`convert accepts rules to enable as an array has the expected preamble 1`] = `
+"
+import React from 'react';
+import PropTypes from 'prop-types';
+
+MarkdownComponent.propTypes = {
+  className: PropTypes.string,
+  style: PropTypes.object
+};
+
+"
+`;
+
+exports[`convert accepts rules to enable as an array renders as expected within React 1`] = `
+Object {
+  "propTypes": Object {
+    "className": [Function],
+    "style": [Function],
+  },
+}
+`;
+
+exports[`convert accepts rules to enable as an array renders as expected within React 2`] = `
+<div
+  className={undefined}
+  style={undefined}
+>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          hdr1
+        </th>
+        <th>
+          hdr2
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          val1
+        </td>
+        <td>
+          val2
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`convert doesn't trigger any kind of comment highlighting in highlights has the expected preamble 1`] = `
 "
 import React from 'react';

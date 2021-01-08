@@ -139,6 +139,8 @@ module.exports = {
 * `passElementProps`: Controls whether props can be passed from the parent to the generated elements. Defaults to `false`.
 * `implicitlyImportReact`: Whether to include React and PropTypes in the imports automatically. If set to `false`, you need to either supply React and PropTypes or import them explicitly. Defaults to `true`.
 * `markdownItPlugins`: An array of [MarkdownIt plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin) (and optionally their additional arguments) to use within the markdown renderer. These can be specified either as instances, or as paths as returned by `require.resolve`.
+* `enabledMarkdownItRules`: An array of [MarkdownIt rules](https://github.com/markdown-it/markdown-it/blob/master/lib/parser_block.js) the loader should enable on the renderer. Defaults to `['smartquotes']`.
+* `disabledMarkdownItRules`: An array of MarkdownIt rules the loader should disable on the renderer (for disabling default rules).
 
 ##### MarkdownIt Plugins
 
@@ -151,7 +153,8 @@ If you supply an array of [MarkdownIt plugins](https://www.npmjs.org/browse/keyw
     markdownItPlugins: [
       require('markdown-it-anchor'),
       [require('markdown-it-table-of-contents'), { containerClass: 'my-container-class' }]
-    ]
+    ],
+    enabledMarkdownItRules: ['smartquotes', 'table'],
   },
   {...more}
 }
