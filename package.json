@@ -61,7 +61,7 @@
     "image-webpack-loader": "6.0.0",
     "jest": "25.5.4",
     "json-loader": "0.5.7",
-    "markdown-it-anchor": "5.3.0",
+    "markdown-it-anchor": "7.1.0",
     "markdown-it-table-of-contents": "0.4.4",
     "mini-css-extract-plugin": "1.2.1",
     "prop-types": "15.7.2",
